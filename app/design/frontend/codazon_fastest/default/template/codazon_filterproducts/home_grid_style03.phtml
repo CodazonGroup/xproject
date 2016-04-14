@@ -7,15 +7,13 @@
 <?php
 	$_collectionSize = $_productCollection->count();
 	$_columnsCount = $this->getColumnsCount();
-
+	$_qsHelper = $this->helper('quickshop');
     $_helper = $this->helper('catalog/output');
 	$_uniqId = uniqid('grid');
 	$options = $this->getDataArray();
 	$curPage = (int)$this->getCurPage();
 	$_limit = (int)$this->getLimit();
 	$wlHelper = $this->helper('wishlist');
-	
-	
 	$_width = $options['thumb_height']; $_height = $options['thumb_height'];
 	$_imgHelper = $this->helper('catalog/image');
 ?>
@@ -34,8 +32,6 @@
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img class="img-responsive" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
                     <?php endif ?>
                     </div>
-                    
-                    
                     <div class="cdz-product-bottom">
 						<div class="cdz-buttons-container">
                         	<div class="cdz-buttons-inner">
@@ -44,7 +40,7 @@
                                     <button data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Cart') ?>" type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
                                 <?php endif; ?>
                             <?php endif ?>
-                            <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Quick Shop') ?>" class="qs-button" href="javascript:void(0)" data-href="#"><span><span><?php echo $this->__('Quick Shop') ?></span></span></a>
+                            <?php echo $_qsHelper->getQuickshopHtml($_product) ?>
                             <?php if( $this->display('compare_btn') ):?>
 							<?php if($_compareUrl = $this->getAddToCompareUrl($_product)): ?>
                             <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Compare') ?>" href="<?php echo $_compareUrl ?>" class="action link-compare"><?php echo $this->__('Add to Compare') ?></a>

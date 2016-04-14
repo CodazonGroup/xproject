@@ -37,20 +37,20 @@ $width = 380;
 $height = 280;
 ?>
 
-<div id="messages_product_view">
+<!-- <div id="messages_product_view">
     <?php Mage::app()->getLayout()->getMessagesBlock()->setMessages(Mage::getSingleton('customer/session')->getMessages(true)); ?>
     <?php echo Mage::app()->getLayout()->getMessagesBlock()->getGroupedHtml(); ?>
 </div>
-
+ -->
 <?php echo $this->getChildHtml('aw_blog_comments_toolbar'); ?>
 <ol class="post-list">
 <?php foreach ($posts as $_post): ?>
-    <li class="postWrapper postWrapper-<?php echo $_post->getId() ?>">
+    <li class="row postWrapper postWrapper-<?php echo $_post->getId() ?>">
 		<div class="post-image cdz-blog-left col-sm-10">
 		    <a href="<?php echo $_post->getAddress() ?>">                
 		         <img class="img-responsive" width="<?php echo $width ?>" height="<?php echo $height ?>" src="<?php echo $helper->getImage($_post,array('width' => $width,'height' => $height)) ?>" />
 		    </a>
-		    
+		    <div class="blog-date"><?php echo $_post->getCreatedTime(); ?></span></div>
 		</div>
 		<div class="post-details cdz-blog-right col-sm-14">
 		    <div class="post-header">
@@ -62,7 +62,7 @@ $height = 280;
 		                    <?php echo $_post->getTitle(); ?>
 		                </a>
 		            </h2>
-					<div class="blog-date"><?php echo $_post->getCreatedTime(); ?></span></div>
+					
 		            <div class="addthis_toolbox addthis_default_style" addthis:url="<?php echo $_post->getAddress() ?>">
 		                <a class="addthis_button_facebook"></a>
 		                <a class="addthis_button_twitter"></a>

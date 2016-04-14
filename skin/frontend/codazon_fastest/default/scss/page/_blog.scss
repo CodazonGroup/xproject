@@ -184,6 +184,19 @@
 	}
 	
 }
+.post-image{
+	.blog-date {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		background: #fff;
+		color: #333333;
+		padding: 7px 10px;
+		color: #999999;
+		font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+		float: left;
+	}
+}
 .postContent{
 	.aw-blog-read-more{
 		display:block;

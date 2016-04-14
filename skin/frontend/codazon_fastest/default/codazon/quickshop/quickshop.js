@@ -9,6 +9,7 @@ cdzQuickshop.prototype = {
 			iframe: '#cdz-qsiframe',
 		}, options || { });
 		this.config = config;
+		jQuery(config.iframe).appendTo('body');
 		this.bindQuickshop(config,this);
 	},
 	notice: function(){
@@ -18,13 +19,11 @@ cdzQuickshop.prototype = {
 		
 	},
 	bindQuickshop: function(config,qs){
-		//$handler = jQuery(config.handler);
 		$iframe = jQuery(config.iframe);
 		$loader = $iframe.find('.ajax-load-wrapper');
 		$iframe.on('show.bs.modal', function (e) {
 			urlKey = jQuery(e.relatedTarget).data('url');
 			qs.productUrl = urlKey;
-			console.log(urlKey);
 			$iframe.find('.product-content').html('');
 			$loader.show();
 			jQuery.ajax({		
