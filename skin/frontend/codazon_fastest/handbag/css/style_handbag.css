@@ -9,87 +9,72 @@
  * Codazon_Theme_Var
  * ============================================ */
 /*Setting padding for template*/
+/*Spacing for each area*/
 /*Handbag Homepage*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\000031}}
 .wrapper {
   z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\000034}}
 .wrapper-ads03 {
   margin: 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\000037}}
 .col-main .widget-static-block .cdz-block-title .b-title {
   font-family: "Poppins";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000310}}
 .cdz-slideshow .owl-carousel.owl-theme .owl-dots .owl-dot.active span,
 .cdz-slideshow .owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000314}}
 .smallbanner-row.first {
   margin: 0 -10px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000318}}
 .nav-tabs .nav-tab-item, .nav.nav-tabs .nav-tab-item {
   margin: 0 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000320}}
 .nav-tabs .nav-tab-item .switch, .nav.nav-tabs .nav-tab-item .switch {
   text-transform: uppercase;
   padding: 10px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000329}}
 .ajax-load-wrapper .ajax-load-button a {
   color: #666972;
   border-color: #666972;
   border-width: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000333}}
 .ajax-load-wrapper .ajax-load-button a:hover {
   border-width: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000338}}
 .cdz-products-wrap .nav-tabs, .cdz-products-wrap .nav.nav-tabs {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000344}}
 .products-grid .item .product-item-info .product-name {
   font-size: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000350}}
 .products-grid .product-item-info .product-name {
   font-size: 12px;
   font-weight: 600;
 }
 
 @media (min-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000361}}
   .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {
     width: 20%;
-    min-height: inherit;
+    min-height: 350px;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000368}}
 .block-related .product-items .product {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000370}}
 .block-related .product-items .product .checkbox {
   margin-top: 20px;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000376}}
 .block-related .block-subtitle {
   text-transform: uppercase;
   font-size: 11px;
@@ -97,76 +82,63 @@
 }
 
 /*Block style ------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000384}}
 .cdz-block-title .b-title {
   border-bottom-width: 3px;
   min-width: inherit;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/store\/_handbag_content\.scss}line{font-family:\0000388}}
 .cdz-block-title .b-title:before {
   display: none;
 }
 
 /*------Block style*/
+/*update 04/14*/
 /*Handbag Header*/
 /*Header 03*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\000032}}
 .cdz-header-style-03 {
   position: relative;
   z-index: 4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\000035}}
 .cdz-header-style-03 .header {
   -webkit-box-shadow: 0 0 10px #bdbdbd;
   -moz-box-shadow: 0 0 10px #bdbdbd;
   box-shadow: 0 0 10px #bdbdbd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\000039}}
 .cdz-header-style-03 .header .logo {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000311}}
 .cdz-header-style-03 .header .logo img {
   display: block;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000316}}
 .cdz-header-style-03 .header .cdz-header-menu-content {
   position: relative;
   text-align: center;
   padding: 0px 120px;
   margin: 10px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000324}}
 .cdz-header-style-03 .header .cdz-header-menu-content .cdz-main-menu .groupmenu li.level0 .groupmenu-drop {
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000332}}
 .cdz-header-style-03 .header .cdz-header-menu-content .cdz-main-menu .groupmenu li.level0.nav-home a.menu-link {
   color: #666972;
   font: 600 13px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000342}}
 .cdz-header-style-03 .header .sticky-menu.active .cdz-header-menu-content {
   text-align: left;
   padding: 0px 120px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000346}}
 .cdz-header-style-03 .header .sticky-menu.active .form-search input[type="text"] {
   border: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000351}}
 .cdz-header-style-03 .header .search-wrapper .cdz-header-cart {
   position: absolute;
   right: 0;
   top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000356}}
 .cdz-header-style-03 .header .search-wrapper .cdz-header-cart .cdz-top-cart .cart-subtotal {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000358}}
 .cdz-header-style-03 .header .search-wrapper .cdz-header-cart .cart-icon:before {
   background-color: #f1f1f1;
   background-image: url("../images/icon.png");
@@ -181,7 +153,6 @@
   width: 40px;
   border-radius: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000374}}
 .cdz-header-style-03 .header .block-search {
   margin-bottom: 0 !important;
   position: absolute;
@@ -190,25 +161,20 @@
   width: auto;
   z-index: 4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000382}}
 .cdz-header-style-03 .header .block-search .block-title {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000385}}
 .cdz-header-style-03 .header .block-search .search-icon span {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000388}}
 .cdz-header-style-03 .header .block-search .block-content {
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000391}}
 .cdz-header-style-03 .header .block-search .label {
   text-decoration: none;
   display: inline-block;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\0000395}}
 .cdz-header-style-03 .header .block-search .label span {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -219,7 +185,6 @@
   position: absolute;
   width: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003106}}
 .cdz-header-style-03 .header .block-search .label:before {
   -webkit-font-smoothing: antialiased;
   font-size: 22px;
@@ -235,7 +200,6 @@
   speak: none;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003122}}
 .cdz-header-style-03 .header .block-search .form-search input[type="text"] {
   width: 0;
   -moz-transition: all 500ms ease;
@@ -253,18 +217,15 @@
   outline: inherit;
   margin-right: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003133}}
 .cdz-header-style-03 .header .block-search .form-search .button {
   background: transparent !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003136}}
 .cdz-header-style-03 .header .block-search .form-search .button:before {
   color: #666972;
   background: #f1f1f1;
   border-radius: 40px;
   width: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003145}}
 .cdz-header-style-03 .header .block-search .form-search:hover input[type="text"] {
   border-left-width: 0px;
   padding-right: 40px;
@@ -272,47 +233,38 @@
   width: 280px;
   margin-right: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/header\/_header-03\.scss}line{font-family:\00003152}}
 .cdz-header-style-03 .header .block-search .form-search:hover .button:before {
   color: #666972;
 }
 
 /*Handbag  Footer*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\000032}}
 .newsletter-style02 .block.block-subscribe {
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000310}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content {
   margin: 0;
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000313}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .input-box {
   width: 74%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000315}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .input-box input {
   border: 1px solid;
   border-color: #666972;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000321}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .actions {
   width: 24%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000324}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .actions .button {
   border-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000329}}
 .footer-newsletter-02 .social {
   text-align: right;
   margin: 20px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000332}}
 .footer-newsletter-02 .social a {
   display: inline-block;
   color: white;
@@ -327,75 +279,62 @@
   margin: 0px 5px 0 0;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000345}}
 .footer-newsletter-02 .social a:hover {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000355}}
 .page-footer .footer-newsletter-02.top-footer-wrapper {
   padding: 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000359}}
 .fototer-contact span.fa {
   padding-right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000364}}
 .footer-style-02 .bottom-footer-wrapper {
   border-top: 1px solid;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000368}}
 .footer-style-02 .footer-link li {
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/footer\/_footer-03\.scss}line{font-family:\0000370}}
 .footer-style-02 .footer-link li.last {
   border: 0;
 }
 
 /*Color Important*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031}}
 body {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
   background: #f0f1f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032}}
 body a {
   color: #999999;
   text-decoration: none;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000033}}
 a:hover {
   text-decoration: none;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000034}}
 a:hover, a:focus {
   color: #999999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000035}}
 .wrapper {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
   background: #f0f1f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000036}}
 .pages {
   background: #f0f1f2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000038}}
 .page-title h1,
 .page-title h2 {
   text-transform: uppercase;
@@ -407,25 +346,21 @@ a:hover, a:focus {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000319}}
 .cdz-dropdown-content {
   background: white;
   border-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000326}}
 .cdz-best-seller-wra .nav-tabs .nav-tab-item .switch:hover {
   color: #f8b5ad;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000330}}
 .cdz-best-seller-wra .nav-tabs .nav-tab-item .switch:active {
   color: #f8b5ad;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000334}}
 .cdz-best-seller-wra .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
 .cdz-best-seller-wra .nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
@@ -436,14 +371,12 @@ a:hover, a:focus {
  * ============================================ */
 /*three block*/
 /*Background parallax*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000346}}
 .bg-wrapper-ads {
   background-image: url(../images/bg-parallax.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000351}}
 .bg-wrapper-ads .bg-parallax {
   background-size: cover !important;
   -webkit-background-size: cover;
@@ -452,16 +385,13 @@ a:hover, a:focus {
   padding: 5rem 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000362}}
 .groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000365}}
 .groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link :hover {
   text-decoration: underline;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000366}}
 .groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link :after {
   display: inline-block;
   font-family: FontAwesome;
@@ -473,13 +403,11 @@ a:hover, a:focus {
   content: "\f105";
   font-size: 14px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000370}}
 .groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .action.primary {
   color: white;
   border-color: white;
   background: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000374}}
 .groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .action.primary :hover {
   color: #f8b5ad;
   border-color: #f8b5ad;
@@ -489,92 +417,74 @@ a:hover, a:focus {
 /* ============================================ *
  * Codazon_Footer style 1
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000390}}
 .footer-top-ads {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000393}}
 .footer-top-ads .ftop-ads-small {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\0000398}}
 .footer-top-ads .block.block-subscribe .actions .button {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003104}}
 .footer-top-ads .block.block-subscribe .actions .button:hover {
   background: white;
   color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003115}}
 .block.block-subscribe .block-content input {
   border-color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003121}}
 .page-footer {
   background: white;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003124}}
 .page-footer .top-footer-wrapper {
   background-color: #f8f8f8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003127}}
 .page-footer .footer-bottom {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003130}}
 .page-footer a {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003133}}
 .page-footer a:hover {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003136}}
 .page-footer p.h5 {
   color: #666972;
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003142}}
 .page-footer .item_tag li a {
   color: #666972;
   background-color: white;
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003147}}
 .page-footer .item_tag li a:hover {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003155}}
 .page-footer .footer-social a {
   border: 1px solid;
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003158}}
 .page-footer .footer-social a:hover {
   color: white;
   background-color: #666972;
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003165}}
 .page-footer .bottom-footer-wrapper {
   background: white;
   border-top-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003169}}
 .page-footer .copyright {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003174}}
 .page-footer .footer-bottom-link li a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
@@ -585,24 +495,20 @@ a:hover, a:focus {
 /* ============================================ *
  * End Codazon_Footer Style 2
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003192}}
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .input-box input {
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003200}}
 .footer-newsletter-02 .social a {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003204}}
 .footer-newsletter-02 .social a:hover {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003216}}
 .footer-style-02 .footer-link li {
   border-bottom: 1px solid #eeeeee;
 }
@@ -613,27 +519,23 @@ a:hover, a:focus {
 /* ============================================ *
  * Codazon_Slider
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003229}}
 .cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-'] {
   color: #666972;
   background-color: white;
   border-color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003234}}
 .cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-']:hover {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003239}}
 .cdz-brand-slider-wrap .cdz-banners-item {
   background-color: white;
   border-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003243}}
 .owl-nav [class*='owl-']:hover {
   color: white;
   background-color: #f8b5ad;
@@ -642,22 +544,18 @@ a:hover, a:focus {
 
 /* ============================================ */
 /*Block Home Jewelry*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003252}}
 .wrapper-ads02 {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003257}}
 .wrapper-ads03 .text-area i {
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003260}}
 .wrapper-ads03 .text-area h5 {
   background: #9a9ca4;
 }
 
 /*Default Input and Validate input --- */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003266}}
 input.input-text {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   width: 100%;
@@ -666,7 +564,6 @@ input.input-text {
   border: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003273}}
 textarea.input-text {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   width: 100%;
@@ -675,7 +572,6 @@ textarea.input-text {
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003280}}
 .validate-select {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   width: 100%;
@@ -685,42 +581,35 @@ textarea.input-text {
   max-width: inherit;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003289}}
 .input-text:focus {
   border: 1px solid #666972;
   outline-color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003294}}
 .input-text.validation-failed {
   border-color: #fc7070;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003295}}
 .validate-select.validation-failed {
   border-color: #fc7070;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003296}}
 .input-text.validation-failed:focus {
   outline-color: #ef9384;
 }
 
 /*---Default Input and Validate input */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003300}}
 .popup-content-title.h3 {
   color: #666972;
 }
 
 /*Slideshow and Caption area----*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003306}}
 .slide-caption .slide-title span {
   border: 2px solid #282828;
   font-weight: 600;
   color: #282828;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003315}}
 .slide-caption.cls-white .slide-title span {
   color: #fff;
 }
@@ -729,13 +618,11 @@ textarea.input-text {
 /* ============================================ *
  * Codazon_Blog
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003324}}
 .cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav .owl-next, .cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav .owl-prev {
   background: white;
   font-size: 0px;
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003332}}
 .cdz_wapper-blog01 .blog-text-link a {
   color: #666972;
 }
@@ -746,41 +633,33 @@ textarea.input-text {
 /* ============================================ *
  * Codazon_Blog style 2 - Home Handbag
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003344}}
 .cdz-wapper-blog-02 .owl-item {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003347}}
 .cdz-wapper-blog-02 .owl-item h5.blog-title a {
   font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003352}}
 .cdz-wapper-blog-02 .owl-item .cdz-blog-right {
   font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003355}}
 .cdz-wapper-blog-02 .owl-item .blog-author {
   color: #9a9ca4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003358}}
 .cdz-wapper-blog-02 .owl-item .blog-desc {
   font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003362}}
 .cdz-wapper-blog-02 .owl-item .blog-date {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003367}}
 .cdz-wapper-blog-02 .owl-item .blog-text-link a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
   background-color: white;
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003372}}
 .cdz-wapper-blog-02 .owl-item .blog-text-link a:hover {
   background: #f8b5ad;
   border-color: #f8b5ad;
@@ -793,75 +672,58 @@ textarea.input-text {
 /* ============================================ *
  * Header style 2
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003389}}
 .cdz-header-style-02 .header .cdz-header-bottom {
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003397}}
 .cdz-header-style-02 .header .cdz-bottom-logo-cart .cdz-main-menu .groupmenu li.level0 a.menu-link {
   border-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003399}}
 .cdz-header-style-02 .header .cdz-bottom-logo-cart .cdz-main-menu .groupmenu li.level0 a.menu-link:hover {
   border-color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003404}}
 .cdz-header-style-02 .header .cdz-bottom-logo-cart .cdz-main-menu .groupmenu .parent:hover:after {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003411}}
 .cdz-header-style-02 .header .sticky-menu .cdz-top-cart {
   background-color: white;
   color: white;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003416}}
 .cdz-header-style-02 .header .sticky-menu .cdz-top-cart .cart-icon {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003419}}
 .cdz-header-style-02 .header .sticky-menu .cdz-top-cart .cart-icon .cart-subtotal .price {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003424}}
 .cdz-header-style-02 .header .sticky-menu .cdz-top-cart .cart-label {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003427}}
 .cdz-header-style-02 .header .sticky-menu .cdz-top-cart .cart-icon:before {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003436}}
 .cdz-header-style-02 .header .sticky-menu.active .block-search .button:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003440}}
 .cdz-header-style-02 .header .sticky-menu.active .block-search .form-search:hover input[type="text"] {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003443}}
 .cdz-header-style-02 .header .sticky-menu.active .block-search .form-search:hover .button:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003448}}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart {
   color: white;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003451}}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart .cart-icon {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003454}}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart .cart-icon .cart-subtotal .price {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003461}}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart .cart-label {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003464}}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart .cart-icon:before {
   color: white;
 }
@@ -872,25 +734,29 @@ textarea.input-text {
 /* ============================================ *
  * Header style 4
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003482}}
 .cdz-header-style-04 .header .cdz-bottom-logo-cart {
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003487}}
+.cdz-header-style-04 .header .sticky-menu .cdz-header-cart .cdz-top-login .cdz-trigger:before {
+  color: #67696c;
+  border-color: #67696c;
+}
 .cdz-header-style-04 .header .sticky-menu .cdz-top-cart {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003489}}
 .cdz-header-style-04 .header .sticky-menu .cdz-top-cart .cart-icon {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003492}}
 .cdz-header-style-04 .header .sticky-menu .cdz-top-cart .cart-icon .cart-subtotal .price {
-  color: white;
+  color: #67696c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003500}}
+.cdz-header-style-04 .header .sticky-menu .cdz-top-cart .cart-qty {
+  color: #666972;
+  background-color: white;
+}
 .cdz-header-style-04 .header .sticky-menu .cdz-top-cart .cart-icon:before {
-  color: white;
+  color: #67696c;
+  border-color: #67696c;
 }
 
 /* ============================================ *
@@ -899,131 +765,117 @@ textarea.input-text {
 /* ============================================ *
  * Header
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003517}}
 .cdz-top-login .cdz-dropdown-content {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003520}}
 .cdz-top-login .block-login .block-content button.button, #login-form .block-login .block-content button.button {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003524}}
 .cdz-top-login .block-login .block-content button.button:hover, #login-form .block-login .block-content button.button:hover {
   background: white;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003533}}
 .header .sticky-menu.active .form-search .button:hover {
   background: none;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003542}}
 .header {
   background-color: white;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003545}}
 .header .cdz-header-top {
   border-bottom: 1px solid #eeeeee;
   background-color: #fefefe;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003551}}
 .header .cdz-header-top .cdz-top-link .link a {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003556}}
 .header .cdz-header-top .cdz-top-link li a {
   color: #bab9ba;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003559}}
 .header .cdz-header-top .cdz-top-link li a:visited, .header .cdz-header-top .cdz-top-link li a:hover, .header .cdz-header-top .cdz-top-link li a:active {
   color: lignten(#bab9ba, 10%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003563}}
 .header .cdz-header-top .cdz-top-link li .forgot-password a {
   color: #bab9ba;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003572}}
 .header #cdz-pc-stores .cdz-dropdown-content a:hover {
   background: #f8f8f8;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003577}}
 .header #cdz-pc-stores .cdz-trigger {
   color: #bab9ba;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003579}}
 .header #cdz-pc-stores .cdz-trigger:hover {
   color: lignten(#bab9ba, 10%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003584}}
 .header .cdz-col-left {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003588}}
 .header-bottom {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003591}}
 .cdz-content-search {
   float: right;
 }
 
 /*Search box area*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003595}}
 .cdz-header-menu {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003601}}
 .block-search .label:hover:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003604}}
 .block-search .label:active:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003607}}
 .block-search .control {
   border-top: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003611}}
 .block-search input[type="text"] {
   color: #666972;
   background-color: white;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003616}}
 .block-search .button:hover:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003619}}
 .block-search .button.disabled,
 .block-search .button:focus:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003623}}
 .block-search .button:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003626}}
 .block-search .cat-search-enable {
   border-color: #d9d9d9;
+  color: #666972;
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003629}}
 .block-search .cat-search-enable .current-cat {
   border-color: #d9d9d9;
 }
+.block-search .cat-search-enable .button {
+  background-color: #f8b5ad;
+}
+.block-search .cat-search-enable .button:before {
+  color: white;
+}
+.block-search .cat-search-enable .button:hover {
+  background-color: white;
+}
+.block-search .cat-search-enable .button:hover:before {
+  color: #666972;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003634}}
 .block-search .button[disabled],
 fieldset[disabled] .block-search .button {
   cursor: not-allowed;
@@ -1031,91 +883,74 @@ fieldset[disabled] .block-search .button {
   opacity: 0.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003641}}
 .block-search input ::-webkit-input-placeholder {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003644}}
 .block-search input :-moz-placeholder {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003647}}
 .block-search input ::-moz-placeholder {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003650}}
 .block-search input :-ms-input-placeholder {
   color: #666972;
 }
 
 /*----- Codazon Search box*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003659}}
 .search-autocomplete ul li {
   border-top: 1px solid #e5e5e5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003661}}
 .search-autocomplete ul li .amount {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003668}}
 .mobile-search-wrapper .block-search .mobile-search-icon {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003672}}
 .mobile-search-wrapper .ui-dialog .minisearch {
   border: 1px solid #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003675}}
 .mobile-search-wrapper .ui-dialog input[type="text"] {
   color: #666972;
   border-color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003680}}
 .mobile-search-wrapper .ui-dialog .button:before {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003683}}
 .mobile-search-wrapper .ui-dialog .button:hover:before {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003687}}
 .mobile-search-wrapper .ui-dialog .button:focus:before {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003690}}
 .mobile-search-wrapper .ui-dialog .button:before {
   color: #666972;
 }
 
 /*------Search area*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003696}}
 .block-cart.cdz-dropdown-content {
   right: 0;
   left: auto;
   min-width: 350px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003697}}
 .block-cart.cdz-dropdown-content .empty {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003698}}
 .block-cart.cdz-dropdown-content .block-title {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003700}}
 .block-cart .button {
   float: none;
   width: 100%;
@@ -1123,61 +958,50 @@ fieldset[disabled] .block-search .button {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003707}}
 .cdz-top-cart .block-cart.cdz-dropdown-content {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003712}}
+.header .block-cart, .header .block:not(.block-static-block) {
+  /*.button:hover{
+  	background:$btn_primary_background;
+  	color:$btn_primary_text
+  }*/
+}
 .header .block-cart .summary, .header .block:not(.block-static-block) .summary {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003714}}
 .header .block-cart .summary h4, .header .block:not(.block-static-block) .summary h4 {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003715}}
 .header .block-cart .summary p, .header .block:not(.block-static-block) .summary p {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003717}}
 .header .block-cart .actions, .header .block:not(.block-static-block) .actions {
   border-bottom: 1px solid #eeeeee;
+  /*.button{
+  	background:$btn_default_background;
+  	color:$btn_default_text
+  	}*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003719}}
-.header .block-cart .actions .button, .header .block:not(.block-static-block) .actions .button {
-  background: #f8b5ad;
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003724}}
-.header .block-cart .button:hover, .header .block:not(.block-static-block) .button:hover {
-  background: white;
-  color: #f8b5ad;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003728}}
 .header .block-cart .block-subtitle, .header .block:not(.block-static-block) .block-subtitle {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003729}}
 .header .block-cart .mini-products-list, .header .block:not(.block-static-block) .mini-products-list {
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003732}}
 .header .block-cart .cart-viewcart a, .header .block:not(.block-static-block) .cart-viewcart a {
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003734}}
 .header .block-cart .btn-edit, .header .block:not(.block-static-block) .btn-edit {
   font-size: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003735}}
 .header .block-cart .btn-edit:before, .header .block:not(.block-static-block) .btn-edit:before {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003738}}
 .header .block-cart .btn-remove, .header .block:not(.block-static-block) .btn-remove {
   font-size: 0;
   width: 0;
@@ -1185,7 +1009,6 @@ fieldset[disabled] .block-search .button {
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003739}}
 .header .block-cart .btn-remove:before, .header .block:not(.block-static-block) .btn-remove:before {
   color: #666972;
   border: 1px solid #eeeeee;
@@ -1198,49 +1021,40 @@ fieldset[disabled] .block-search .button {
 /* ============================================ *
  * Codazon_Product grid & List
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003757}}
 .codazon-filter-style-02 .products-grid .product-item-info .product-name a, .codazon-filter-style-05 .products-grid .product-item-info .product-name a {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003763}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch,
 .cdz-best-seller-wrap .nav.nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003768}}
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch,
 .cdz-best-seller-wrap .nav.nav-tabs .active.nav-tab-item .switch {
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003773}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch {
   color: #d5d5d5;
   background: transparent;
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003779}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:visited {
   color: #d5d5d5;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003783}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:hover {
   color: #f8b5ad;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003787}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:active {
   color: #666972;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003791}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003795}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item:not(.disabled) .switch:active,
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch,
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch:focus,
@@ -1248,166 +1062,133 @@ fieldset[disabled] .block-search .button {
   background: transparent;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003803}}
 .cdz-best-seller-wrap .nav-tabs .item.content {
   background: transparent;
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003808}}
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003812}}
 .cdz-best-seller-wrap .product-name a {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003817}}
 .isotope-wrap .products-grid .product-item-info .product-name {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003819}}
 .isotope-wrap .products-grid .product-item-info .product-name a {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003824}}
 .isotope-wrap .products-grid .product-item-info .cdz-product-wishlist .action:before {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003829}}
 .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .cdz-buttons button.btn-cart, .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .qs-button, .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .action {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003834}}
 .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .cdz-buttons button.btn-cart:hover, .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .qs-button:hover, .isotope-wrap .products-grid .product-item-info .cdz-buttons-container .action:hover {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003848}}
 .toolbar-bottom .pager li {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003851}}
 .toolbar-bottom .pager li.current {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003856}}
 .toolbar-bottom .pager a.next, .toolbar-bottom .pager a.previous {
   border: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003862}}
 .product-name a {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003863}}
 .price {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003866}}
 .old-price {
   margin-left: 10px;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003870}}
 .old-price .price {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003873}}
 .products-list .product-item {
   background: white;
   border: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003877}}
 .products-grid .isotope .item.product-item .out-of-stock span {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003878}}
 .products-grid .isotope .item.product-item .price {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003881}}
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #d5d5d5;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003885}}
 .products-grid .product-item .product-item-info .cdz-product-bottom {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003890}}
 .products-grid .product-items:not(.owl-carousel) {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003893}}
 .product-item .price {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003898}}
 .product-name a {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003899}}
 .product-item-info {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003904}}
 .products-list .product-item {
   background: white;
   border: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003915}}
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #d5d5d5;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003920}}
 .products-grid .product-item-info .product-name {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003923}}
 .products-grid .product-item-info .cdz-product-bottom {
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003929}}
 .products-grid .isotope .iso-item.product-item {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003931}}
 .products-grid .isotope .iso-item.product-item .product-item-link {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003934}}
 .products-grid .isotope .iso-item.product-item .product-item-link:visited,
 .products-grid .isotope .iso-item.product-item .product-item-link:hover,
 .products-grid .isotope .iso-item.product-item .product-item-link:active {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003939}}
 .products-grid .isotope .iso-item.product-item .price {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003943}}
 .products-grid .isotope .iso-item.product-item.width-1.width-2 .product-item-link {
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
@@ -1418,7 +1199,6 @@ fieldset[disabled] .block-search .button {
 /* ============================================ *
  * Codazon_Button style
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003958}}
 .action.primary, button.button, .btn {
   background: white;
   border-color: #f8b5ad;
@@ -1427,7 +1207,6 @@ fieldset[disabled] .block-search .button {
   outline: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003965}}
 .action.primary:focus, button.button:focus, .btn:focus,
 .action.primary:active, button.button:active.btn:active, .btn:hover {
   background: #f8b5ad;
@@ -1436,7 +1215,6 @@ fieldset[disabled] .block-search .button {
   outline: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003972}}
 .action.primary:hover, button.button:hover {
   background: #f8b5ad;
   border-color: #f8b5ad;
@@ -1444,7 +1222,6 @@ fieldset[disabled] .block-search .button {
   border: 3px solid;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003978}}
 button {
   color: white;
   background-color: #f8b5ad;
@@ -1453,56 +1230,48 @@ button {
   outline: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003985}}
 button:hover {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003990}}
 .cdz-buttons-container button.btn-cart {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\00003995}}
 .cdz-buttons-container button.btn-cart:hover {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031000}}
 .cdz-buttons-container .qs-button {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031005}}
 .cdz-buttons-container .qs-button:hover {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031010}}
 .actions-secondary:not(.cdz-product-wishlist &) .action {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031015}}
 .actions-secondary:not(.cdz-product-wishlist &) .action:hover {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031020}}
 .cdz-buttons-container .action,
 .addto-hover-container .action {
   color: white;
@@ -1510,7 +1279,6 @@ button:hover {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031027}}
 .cdz-buttons-container .action:hover,
 .addto-hover-container .action:hover {
   color: #f8b5ad;
@@ -1518,70 +1286,57 @@ button:hover {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031033}}
 .product-addto-links .action {
   color: #f8b5ad;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031037}}
 .product-addto-links .action:visited {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031040}}
 .product-addto-links .action:hover {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031043}}
 .product-addto-links .action:active {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031046}}
 .product-addto-links .action span {
   border-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031049}}
 .product-addto-links .action:hover span {
   color: #f8b5ad;
   background-color: white;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031055}}
 .cdz-product-wishlist a.link-wishlist {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031058}}
 .cdz-product-wishlist a.link-wishlist:visited {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031061}}
 .cdz-product-wishlist a.link-wishlist:hover {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031064}}
 .cdz-product-wishlist a.link-wishlist:active {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031067}}
 .cdz-product-wishlist a.link-wishlist:hover:before {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031070}}
 .product-item-info:hover .cdz-product-wishlist a.link-wishlist {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031074}}
 .ajax-load-wrapper .ajax-load-button .ajax-loader:focus,
 .ajax-load-wrapper .ajax-load-button a:focus,
 .ajax-load-wrapper .ajax-load-button .ajax-loader:active,
@@ -1591,7 +1346,6 @@ button:hover {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031082}}
 .ajax-load-wrapper .ajax-load-button .ajax-loader:hover,
 .ajax-load-wrapper .ajax-load-button a:hover {
   background: #f8b5ad;
@@ -1599,7 +1353,6 @@ button:hover {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031088}}
 .ajax-load-wrapper .ajax-load-button .ajax-loader:hover,
 .ajax-load-wrapper .ajax-load-button a:hover {
   color: white;
@@ -1607,7 +1360,6 @@ button:hover {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031094}}
 #back-top a {
   background: white;
   border-color: #f8b5ad;
@@ -1615,7 +1367,6 @@ button:hover {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031100}}
 #back-top a:focus,
 #back-top a:active {
   background: #f8b5ad;
@@ -1623,14 +1374,12 @@ button:hover {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031106}}
 #back-top a:hover {
   background: #f8b5ad;
   border-color: #f8b5ad;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031113}}
 .qs-button {
   background: white;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
@@ -1639,7 +1388,6 @@ button:hover {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031120}}
 .qs-button:focus,
 .qs-button:active {
   background: #f8b5ad;
@@ -1647,37 +1395,31 @@ button:hover {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031126}}
 .qs-button:hover {
   background: #f8b5ad;
   border-color: #f8b5ad;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031131}}
 .qs-button:hover {
   color: white;
   background-color: #f8b5ad;
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031136}}
 .btn {
   border-radius: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031138}}
 .btn-link {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031139}}
 .btn-link:hover, .btn-link:focus {
   color: #f8b5ad;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031144}}
 .ajax-load-button .ajax-loader,
 .ajax-load-button a {
   background: white;
@@ -1696,31 +1438,26 @@ button:hover {
 /* ============================================ *
  * Codazon_Product detail
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031163}}
 .product-shop .qty-ctl button {
   border-color: #eeeeee;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031164}}
 .data-table .input-text.qty {
   min-width: 40px;
   padding: 0 8px;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031166}}
 .qty-ctl .increase:before {
   border-color: #eeeeee;
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031170}}
 .qty-ctl .decrease:before {
   border-color: #eeeeee;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031175}}
 .product-name h1,
 .product-name .h1 {
   text-transform: uppercase;
@@ -1733,134 +1470,105 @@ button:hover {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031188}}
 .product-view .product-name h1 {
   font: 500 22px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031189}}
 .product-view .product-shop-sku {
   clear: left;
   color: #d5d5d5;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031193}}
 .product-view .product-shop-sku strong {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031196}}
 .product-view #downloadable-links-list {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031198}}
 .product-view #downloadable-links-list .label {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031204}}
 .product-view .grouped-items-table .availability.out-of-stock span {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031205}}
 .product-view .grouped-items-table .price-box .regular-price .price {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031207}}
 .product-view .availability label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031208}}
 .product-view .availability.in-stock {
   font-weight: 400;
   color: #999999;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031212}}
 .product-view .availability.in-stock span {
   color: #f8b5ad;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031213}}
 .product-view .availability.in-stock strong {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031215}}
 .product-view .availability.out-of-stock span {
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031218}}
 .product-view .availability.in-stock strong {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031219}}
 .product-view .ratings .rating-links {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031222}}
 .product-view .ratings .rating-links a {
   color: #d5d5d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031223}}
 .product-view .no-rating {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031224}}
 .product-view .cdz-social-listing {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031226}}
 .product-view .cdz-social-listing li {
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031228}}
 .product-view .cdz-social-listing li .trasition-all {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031231}}
 .product-view .action.primary, .product-view button.button {
   background: #f8b5ad;
   border: 3px solid #f8b5ad;
   color: white;
   line-height: 28px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031232}}
 .product-view .button.btn-cart {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031235}}
 .product-view button.button:hover {
   background: white;
   border: 3px solid #f8b5ad;
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031238}}
 .product-view .add-to-links li a {
   border: 1px solid #eeeeee;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031243}}
 .product-view .add-to-links li.compare a {
   border-right: 1px solid #eeeeee !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031244}}
 .product-view .add-to-links li a:hover {
   border: 1px solid #666972 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031246}}
 .product-view .size-chart-btn {
   color: #666972;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031250}}
 .product-view .short-description h2 {
   color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031251}}
 .product-view .product-options .swatch-attr .select-label {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031253}}
 .product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price {
   color: #f8b5ad;
   font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
@@ -1868,12 +1576,10 @@ button:hover {
 
 /**/
 /*Start Product media*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031258}}
 .product-view-media .more-views li a:hover img {
   border: 2px solid #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031262}}
 .catalog-product-view .product-essential,
 .catalog-product-view .product-detail-tab,
 .catalog-product-view .box-reviews,
@@ -1883,18 +1589,15 @@ button:hover {
 }
 
 /*End Product media*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031271}}
 .product-view .box-collateral h2, .block-related .block-title {
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   border-bottom: 1px solid #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031273}}
 .product-view .box-collateral h2 strong, .product-view .block-related .block-title strong {
   border-bottom: 3px solid #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031276}}
 .product-collateral .product-tabs li a::before, .product-collateral .product-tabs li a::after {
   background: #666972;
 }
@@ -1905,7 +1608,6 @@ button:hover {
 /* ============================================ *
  * Codazon_Checkout
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031288}}
 .form-list .control label,
 .sp-methods dt label,
 #checkout-shipping-method-load .sp-methods dd label,
@@ -1914,37 +1616,31 @@ button:hover {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031293}}
 .cart form fieldset {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031297}}
 .cart-collaterals #discount-coupon-form, .cart-collaterals .cart .giftcard, .cart-collaterals .shipping, .cart-collaterals .totals-content {
   /* width: 100%; */
   background: white;
   border-top: 3px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031302}}
 .cart-collaterals tfoot strong {
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031304}}
 .cart-collaterals .totals .checkout-types .button {
   background: #f8b5ad;
   color: white;
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031305}}
 .cart-collaterals .totals .checkout-types .button:hover {
   background: white;
   color: #f8b5ad;
 }
 
 /*Custom Checkout form ------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031312}}
 .cdz-onestepcheckout li.section .step {
   background: white;
   padding: 20px;
@@ -1954,33 +1650,27 @@ button:hover {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031317}}
 .cdz-onestepcheckout .section .step-title {
   text-align: center !important;
   font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif !important;
   color: #666972 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031322}}
 .cdz-onestepcheckout .buttons-set {
   background: #f4f4f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031324}}
 .cdz-onestepcheckout .buttons-set p.required {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #d5d5d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031325}}
 .cdz-onestepcheckout .buttons-set button.button {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031329}}
 .cdz-onestepcheckout .buttons-set button.button:hover {
   background: white;
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031335}}
 .cart-empty {
   background: white;
   padding: 20px;
@@ -1993,70 +1683,56 @@ button:hover {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031337}}
 .form-list .field label {
   color: #444444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031340}}
 .form-list .field.active label {
   background: #eeeeee;
   color: #aaaaaa;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031344}}
 .form-list select {
   color: #444444;
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031353}}
 .form-list .field-select-box label {
   background: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031358}}
 .opc h3, .opc h4 {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031362}}
 .form-list .wide label {
   color: #444444;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031365}}
 .form-list .wide.active label {
   background: #eeeeee;
   color: #aaaaaa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031373}}
 .opc-block-progress .block-title strong {
   font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031376}}
 .opc-block-progress .block-content dt.complete:after {
   background: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031378}}
 .opc-block-progress .changelink a:before {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031383}}
 .opc-block-progress .block-content dt, .checkout-progress li span {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031387}}
 #shipping-progress-opcheckout:before, #shipping_method-progress-opcheckout:before, #payment-progress-opcheckout:before, .checkout-progress li:before {
   background: #7f828c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031390}}
 .opc-block-progress .block-content dt:before, .checkout-progress li span:before {
   color: #7f828c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031393}}
 .opc-block-progress .block-content dt.complete:before, .checkout-progress li.active span:before {
   background: #f8b5ad;
   color: white;
@@ -2068,62 +1744,51 @@ button:hover {
 /* ============================================ *
  * Codazon_My Account
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031405}}
 .manage-address, .change-pass {
   background: white;
   border-color: #f8b5ad;
   color: #f8b5ad;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031410}}
 .manage-address a, .change-pass a {
   color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031413}}
 .manage-address:hover, .change-pass:hover {
   background: #f8b5ad;
   border-color: #f8b5ad;
   color: white;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031418}}
 .manage-address:hover a, .change-pass:hover a {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031421}}
 .dashboard .welcome-msg {
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031425}}
 .dashboard .head {
   border-bottom: 1px solid #eeeeee;
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031430}}
 .box-account-content {
   border: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031434}}
 .customer-address-info .box-title {
   border-bottom: 1px solid #eeeeee;
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031437}}
 .customer-address-info .box-title h3 {
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /*Custom my account full width*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031441}}
 .my-account-logo {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031456}}
 .customer-account-index .wrapper,
 .customer-account-edit .wrapper,
 .wishlist-index-index .wrapper,
@@ -2139,7 +1804,6 @@ button:hover {
 .sales-order-view .wrapper {
   background: #f0f1f2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031457}}
 .customer-account-index .col-left.sidebar,
 .customer-account-edit .col-left.sidebar,
 .wishlist-index-index .col-left.sidebar,
@@ -2156,7 +1820,6 @@ button:hover {
   background: #666972;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031462}}
 .customer-account-index .sidebar .block:not(.block-static-block), .customer-account-index .col-main-containter .col-main .col-wrapper-main,
 .customer-account-edit .sidebar .block:not(.block-static-block),
 .customer-account-edit .col-main-containter .col-main .col-wrapper-main,
@@ -2190,7 +1853,6 @@ button:hover {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031467}}
 .customer-account-index .block-account .block-content li,
 .customer-account-edit .block-account .block-content li,
 .wishlist-index-index .block-account .block-content li,
@@ -2207,7 +1869,6 @@ button:hover {
   color: white;
   border-bottom: 1px solid #9a9ca4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031470}}
 .customer-account-index .block-account .block-content li a,
 .customer-account-edit .block-account .block-content li a,
 .wishlist-index-index .block-account .block-content li a,
@@ -2225,7 +1886,6 @@ button:hover {
   border-bottom: 1px solid #4e5057;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031475}}
 .customer-account-index .block-account .block-content li a:hover,
 .customer-account-edit .block-account .block-content li a:hover,
 .wishlist-index-index .block-account .block-content li a:hover,
@@ -2241,7 +1901,6 @@ button:hover {
 .sales-order-view .block-account .block-content li a:hover {
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031476}}
 .customer-account-index .block-account .block-content li strong,
 .customer-account-edit .block-account .block-content li strong,
 .wishlist-index-index .block-account .block-content li strong,
@@ -2259,7 +1918,6 @@ button:hover {
   border-bottom: 1px solid #4e5057;
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031482}}
 .customer-account-index .block-account .block-content li:first-child,
 .customer-account-edit .block-account .block-content li:first-child,
 .wishlist-index-index .block-account .block-content li:first-child,
@@ -2275,7 +1933,6 @@ button:hover {
 .sales-order-view .block-account .block-content li:first-child {
   border-top: 1px solid #4e5057;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031484}}
 .customer-account-index .block-account .block-content li:first-child a,
 .customer-account-edit .block-account .block-content li:first-child a,
 .wishlist-index-index .block-account .block-content li:first-child a,
@@ -2292,7 +1949,6 @@ button:hover {
   color: white;
   border-top: 1px solid #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031488}}
 .customer-account-index .block-account .block-content li:first-child a:hover,
 .customer-account-edit .block-account .block-content li:first-child a:hover,
 .wishlist-index-index .block-account .block-content li:first-child a:hover,
@@ -2308,7 +1964,6 @@ button:hover {
 .sales-order-view .block-account .block-content li:first-child a:hover {
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031489}}
 .customer-account-index .block-account .block-content li:first-child strong,
 .customer-account-edit .block-account .block-content li:first-child strong,
 .wishlist-index-index .block-account .block-content li:first-child strong,
@@ -2326,7 +1981,6 @@ button:hover {
   border-top: 1px solid #7f828c;
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031497}}
 .customer-account-index .block:not(.block-static-block) .block-title,
 .customer-account-edit .block:not(.block-static-block) .block-title,
 .wishlist-index-index .block:not(.block-static-block) .block-title,
@@ -2342,7 +1996,6 @@ button:hover {
 .sales-order-view .block:not(.block-static-block) .block-title {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031500}}
 .customer-account-index .my-account-logo,
 .customer-account-edit .my-account-logo,
 .wishlist-index-index .my-account-logo,
@@ -2358,7 +2011,6 @@ button:hover {
 .sales-order-view .my-account-logo {
   background: #9a9ca4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031503}}
 .customer-account-index .my-account-logo .logo-myaccount a:before,
 .customer-account-edit .my-account-logo .logo-myaccount a:before,
 .wishlist-index-index .my-account-logo .logo-myaccount a:before,
@@ -2375,7 +2027,6 @@ button:hover {
   background: #7f828c;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031507}}
 .customer-account-index .my-account-logo .logo-myaccount a:hover,
 .customer-account-edit .my-account-logo .logo-myaccount a:hover,
 .wishlist-index-index .my-account-logo .logo-myaccount a:hover,
@@ -2391,7 +2042,6 @@ button:hover {
 .sales-order-view .my-account-logo .logo-myaccount a:hover {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031511}}
 .customer-account-index .my-account-logo .logout-link,
 .customer-account-edit .my-account-logo .logout-link,
 .wishlist-index-index .my-account-logo .logout-link,
@@ -2407,7 +2057,6 @@ button:hover {
 .sales-order-view .my-account-logo .logout-link {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031513}}
 .customer-account-index .my-account-logo .logout-link a:hover,
 .customer-account-edit .my-account-logo .logout-link a:hover,
 .wishlist-index-index .my-account-logo .logout-link a:hover,
@@ -2423,7 +2072,6 @@ button:hover {
 .sales-order-view .my-account-logo .logout-link a:hover {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031516}}
 .customer-account-index .my-account-logo .logout-link a,
 .customer-account-edit .my-account-logo .logout-link a,
 .wishlist-index-index .my-account-logo .logout-link a,
@@ -2439,7 +2087,6 @@ button:hover {
 .sales-order-view .my-account-logo .logout-link a {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031520}}
 .customer-account-index .my-account-logo .logout-link a:before,
 .customer-account-edit .my-account-logo .logout-link a:before,
 .wishlist-index-index .my-account-logo .logout-link a:before,
@@ -2455,7 +2102,6 @@ button:hover {
 .sales-order-view .my-account-logo .logout-link a:before {
   background: #7f828c;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031524}}
 .customer-account-index .col2-set .col-1 h2,
 .customer-account-index .col2-set .col-2 h2,
 .customer-account-edit .col2-set .col-1 h2,
@@ -2486,7 +2132,6 @@ button:hover {
   font-weight: 600;
   border-bottom: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031531}}
 .customer-account-index .col2-set .col-1 h3,
 .customer-account-index .col2-set .col-2 h3,
 .customer-account-edit .col2-set .col-1 h3,
@@ -2523,55 +2168,45 @@ button:hover {
 /* ============================================ *
  * Codazon_Menu Megamenu
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031545}}
 .cms-index-index .cdz-main-menu .groupmenu li.level0.nav-home > a.menu-link {
   color: #f8b5ad;
   background-color: white;
   border-color: #666972;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 600 13px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031554}}
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
   color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031558}}
 .cdz-main-menu .groupmenu li.level0 a.menu-link:visited, .cdz-main-menu .groupmenu li.level0 a.menu-link:hover, .cdz-main-menu .groupmenu li.level0 a.menu-link:active {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031562}}
 .cdz-main-menu .groupmenu li.level0:hover > a.menu-link {
   color: #f8b5ad;
   background-color: white;
   border-color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031571}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content {
   color: #666972;
   font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031574}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content .groupdrop-title {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031577}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031580}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a:hover, .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a:active {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031585}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content .groupdrop-link li a:hover:before {
   background-color: #f8b5ad;
 }
 
 /*Sticky menu------*/
 @media (min-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031600}}
   .header .sticky-menu.active {
     box-shadow: 0 0 5px #bdbdbd;
     -moz-box-shadow: 0 0 5px #bdbdbd;
@@ -2580,15 +2215,12 @@ button:hover {
     -ms-box-shadow: 0 0 5px #bdbdbd;
     background: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031604}}
   .header .sticky-menu.active .cdz-header-cart .cdz-dropdown {
     position: initial;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031606}}
   .header .sticky-menu.active .cdz-header-cart .cart-icon .cart-qty {
     background-color: #f8b5ad;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031613}}
   .header .sticky-menu.active .block-search .form-search input[type="text"] {
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -2598,62 +2230,53 @@ button:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031616}}
   .header .sticky-menu.active .block-search .form-search .button:before {
     color: #666972;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031618}}
   .header .sticky-menu.active .block-search .form-search:hover .button:before {
     color: #666972;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031628}}
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
   color: #666972;
   font: 600 13px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031632}}
 .cdz-main-menu .groupmenu li.level0 a.menu-link:hover,
 .cdz-main-menu .groupmenu li.level0 a.menu-link:active,
 .cdz-main-menu .groupmenu li.level0 a.menu-link:visited {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031638}}
+.cdz-main-menu .groupmenu li.level0.parent:hover:after {
+  color: white;
+}
 .cdz-main-menu .groupmenu li.level0:hover > a.menu-link {
   color: #666972;
   background-color: white;
   border-color: #666972;
   font: 600 13px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031645}}
 .cdz-main-menu .groupmenu-drop {
   background-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031647}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content {
   color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031650}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content .groupdrop-title {
   text-transform: uppercase;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031654}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a {
   font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031659}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a:visited {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031662}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a:hover,
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content a:active {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031671}}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content .groupdrop-link li a:hover:before {
   background-color: #f8b5ad;
 }
@@ -2664,91 +2287,100 @@ button:hover {
 /* ============================================ *
  * Codazon_Menu Vertical
  * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031688}}
 .menu-vertical-title {
   background: #f8b5ad;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031692}}
 .menu-vertical-title h3:before {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031699}}
 .menu-vertical .cdz-nav-wrap {
   border: 1px solid #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031701}}
-.menu-vertical .cdz-nav-wrap li.vertical-level1:first-child a.vertical-level1 {
-  background: lighten #fafafa, 10%;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031704}}
-.menu-vertical .cdz-nav-wrap li.vertical-level1:nth-child(2n) a.vertical-level1 {
-  background-color: #fafafa;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031706}}
 .menu-vertical .cdz-nav-wrap li.vertical-level1 a.vertical-level1 {
   color: #666972;
+  background-color: #fafafa;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031710}}
 .menu-vertical .cdz-nav-wrap li.vertical-level1:hover a.vertical-level1 {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031718}}
 .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat {
   background: white;
   border-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031721}}
+.menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a {
+  color: #666972;
+}
+.menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a:hover, .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a:active {
+  color: #f8b5ad;
+}
 .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat li.level4 {
   border-bottom-color: #eeeeee;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031728}}
+.menu-vertical .cdz-nav-wrap .parent:after {
+  color: #666972;
+}
 .menu-vertical .cdz-nav-wrap .parent:hover:after {
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031734}}
+.menu-vertical .cdz-nav-wrap .cdz-sub-cat .parent:after {
+  color: #666972;
+}
+.menu-vertical .cdz-nav-wrap .cdz-sub-cat .parent:hover:after {
+  color: #f8b5ad;
+}
 .menu-vertical .cdz-nav-wrap .view-all a {
   color: #f8b5ad;
 }
 
 @media (max-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031744}}
   .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat {
     border-color: #f8b5ad;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031747}}
   .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat li a.vertical-level2 {
     font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   }
 }
+/*menu vertical style home Sportwear*/
+.menu-vertical-style02 .nav.nav-tabs .nav-tab-item .switch {
+  background: #f8b5ad;
+  color: white;
+  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 700;
+}
+.menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
+  background: #fafafa;
+  color: #666972;
+}
+.menu-vertical-style02 .nav-tab-content {
+  background: #fafafa;
+  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
 /* ============================================ *
  * Codazon_Menu Vertical
  * ============================================ */
 /* ============================================ *
 * Codazon_BlockSidebar
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031769}}
 .cdz-block-title .b-title {
   border-bottom-color: #666972;
   color: #666972;
   font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031775}}
 .cdz-block-title .b-title:before {
   background: #f0f1f2;
 }
 
 /*Block Sidebar*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031779}}
 .block:not(.block-static-block) {
   border-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031782}}
 .block:not(.block-static-block) .block-collapsible-nav-title,
 .block:not(.block-static-block) .block-title {
   color: #666972;
@@ -2756,31 +2388,26 @@ button:hover {
   border-bottom-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031789}}
 .block:not(.block-static-block) .block-collapsible-nav-title strong,
 .block:not(.block-static-block) .block-title strong {
   font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   border-bottom: 3px solid #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031794}}
 .block.review-add .block-content {
   padding-top: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031797}}
 .sidebar .block:not(.block-static-block) {
   background: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031801}}
 .sidebar .block .actions .button {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   background: #f8b5ad;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031807}}
 .sidebar .product-name {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
@@ -2791,38 +2418,30 @@ button:hover {
 /* ============================================ *
 * Codazon_Product Filter Drug store
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031818}}
 .cdz-block-newproduct .cdz-block-title p.b-title, .cdz-home-block .cdz-block-title p.b-title {
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031825}}
 .col1-layout .codazon-filter-style-04 .products-grid {
   border-left-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031827}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031829}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item {
   border-right-color: #eeeeee;
   border-bottom-color: #eeeeee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031832}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .product-item-info {
   border-color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031836}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .product-name a {
   color: #f8b5ad;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031842}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item:hover .product-item-info {
   border-color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031847}}
 .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .cdz-buttons-inner .qs-button:hover {
   color: #f8b5ad;
 }
@@ -2830,64 +2449,51 @@ button:hover {
 /*==============================
 ================= Deals categories Home Drug
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031866}}
 .cdz-best-selling .products-grid .product-items .item .product-item-info {
   border-color: #eeeeee;
 }
 
 @media (max-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031882}}
   .codazon-filter-style-05 .products-grid .product-items .item .product-item-info .cdz-product-bottom .product-name a.product-item-link {
     color: #f8b5ad;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031884}}
   .codazon-filter-style-05 .products-grid .product-items .item .product-item-info .cdz-product-bottom .price {
     color: #666972;
   }
 }
 @media (min-width: 767px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031900}}
   .codazon-filter-style-05 .products-grid .product-items .item {
     box-shadow: 0 0 0 0px #eeeeee, 0 1px 0 0 #eeeeee, 1px 1px 0 0 #eeeeee, 1px 0 0 0 #eeeeee inset, 0 1px 0 0 #eeeeee inset;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031909}}
   .codazon-filter-style-05 .products-grid .product-items .product-item-description {
     color: #d5d5d5;
     font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031911}}
   .codazon-filter-style-05 .products-grid .product-items .item.product-item .product-name a {
     color: #f8b5ad;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031912}}
   .codazon-filter-style-05 .products-grid .product-items .item.product-item .price {
     color: #666972;
   }
 }
 @media (max-width: 991px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031922}}
   .col1-layout .codazon-filter-style-04 .products-grid {
     border-left-color: #eeeeee;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031925}}
   .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item {
     border-right-color: #eeeeee !important;
     border-bottom-color: #eeeeee !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031928}}
   .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .product-item-info {
     border-color: white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031932}}
   .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .product-name a {
     color: #f8b5ad;
     font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031938}}
   .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item:hover .product-item-info {
     border-color: transparent;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031943}}
   .col1-layout .codazon-filter-style-04 .products-grid .product-items:not(.owl-carousel) .product-item .cdz-buttons-inner .qs-button:hover {
     color: #f8b5ad;
   }
@@ -2901,7 +2507,6 @@ button:hover {
 /* ============================================ *
 * Codazon_Login and Register
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031965}}
 .account-create form .legend,
 .account-login form .legend,
 form .legend {
@@ -2910,13 +2515,11 @@ form .legend {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031973}}
 .account-login .page-title .field.note,
 .account-create .page-title .field.note {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031977}}
 .account-login #login-form,
 .account-create #form-validate,
 .customer-account-forgotpassword .col-main #form-validate,
@@ -2930,14 +2533,12 @@ form .legend {
   -moz-border-radius: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031984}}
 .control.signup-newsletter label, .control#remember-me-box label, .link-tip, .forgot-password-link {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   text-transform: uppercase;
   color: #b5b7bc;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031990}}
 .account-create .buttons-set button.button {
   border-color: #f8b5ad;
   background: #f8b5ad;
@@ -2945,7 +2546,6 @@ form .legend {
   font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000031997}}
 .account-create .buttons-set button.button:hover {
   background: white;
   color: #f8b5ad;
@@ -2953,7 +2553,6 @@ form .legend {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032003}}
 .account-login .buttons-set button.button {
   background: #f8b5ad;
   color: white;
@@ -2961,7 +2560,6 @@ form .legend {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032009}}
 .account-login .buttons-set button.button:hover {
   background: white;
   color: #f8b5ad;
@@ -2969,7 +2567,6 @@ form .legend {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032015}}
 .customer-account-forgotpassword .buttons-set button.button {
   background: #f8b5ad;
   color: white;
@@ -2977,7 +2574,6 @@ form .legend {
   border-color: #f8b5ad;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032021}}
 .customer-account-forgotpassword .buttons-set button.button:hover {
   background: white;
   color: #f8b5ad;
@@ -2988,12 +2584,10 @@ form .legend {
 /* ============================================ *
 * Codazon_Login and Register
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032034}}
 .cdz-popup-wrapper .cdz-popup-newsletter .popup-content .popup-content-ads .block.block-subscribe .actions .button {
   background: #f8b5ad;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032038}}
 .cdz-popup-wrapper .cdz-popup-newsletter .popup-content .popup-content-ads .block.block-subscribe .actions .button:hover {
   background: white;
   color: #f8b5ad;
@@ -3006,26 +2600,21 @@ form .legend {
 * Codazon_Categories default
 * ============================================ */
 /*Product list type*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032051}}
 .rating-links {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032053}}
 .rating-links a {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032054}}
 .rating-links span {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032058}}
 .products-list .add-to-links li {
   background: white;
   border-color: #f8b5ad;
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032064}}
 .products-list .btn-cart {
   background: #f8b5ad;
   border-color: #f8b5ad;
@@ -3036,41 +2625,33 @@ form .legend {
 /* ============================================ *
 * Codazon_Categories default
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032077}}
 .block-layered-nav dd ol li a {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032078}}
 .block-layered-nav dd ol li label {
   border-color: #a2a2a2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032082}}
 .block-layered-nav dd ol li a:hover {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032084}}
 .block-layered-nav .price-btn {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032095}}
 .block-layered-nav .block-content > dl > dd {
   border-bottom-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032102}}
 #cdz-filter-bar .block-title strong {
   background: #f8b5ad;
   color: white;
   border-color: #f8b5ad;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032109}}
 #cdz-filter-bar .block-title strong:hover {
   background: white;
   color: #f8b5ad;
   border-color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032115}}
 #cdz-filter-bar .block-content {
   background: white;
   padding: 20px;
@@ -3080,40 +2661,32 @@ form .legend {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032118}}
 #cdz-filter-bar .block-content #narrow-by-list dt {
   color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032123}}
 #cdz-filter-bar .block-content #narrow-by-list .slider.slider-horizontal {
   width: 160px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032124}}
 #cdz-filter-bar .block-content #narrow-by-list .price-btn {
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032132}}
 #cdz-filter-bar dd ol li a {
   color: #666972;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032133}}
 #cdz-filter-bar dd ol li label {
   border-color: #a2a2a2;
   color: #999999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032138}}
 #cdz-filter-bar dd ol li a:hover {
   color: #f8b5ad;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032142}}
 #cdz-filter-bar .configurable-swatch-list .swatch-link .count {
   border-color: #bbbbbb;
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032148}}
 #cdz-filter-bar .block-content > dl > dd {
   border-bottom-color: #eeeeee;
 }
@@ -3125,7 +2698,6 @@ form .legend {
  /* ============================================ *
 * Codazon_Set layout for Col-main
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032162}}
 .col-main-containter .col-main .col-wrapper-main,
 .catalog-product-view .product-essential,
 .catalog-product-view .product-detail-tab,
@@ -3141,7 +2713,6 @@ form .legend {
   -moz-border-radius: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032182}}
 .catalog-product-view .col-main-containter .col-wrapper-main,
 .cms-index-index .col-main-containter .col-wrapper-main,
 .catalog-product-view .col-main-containter .col-wrapper-main,
@@ -3160,7 +2731,6 @@ form .legend {
   -moz-border-radius: 0px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032189}}
 .contacts-index-index .col-main-containter .col-main .col-wrapper-main, .catalog-product-view .col-main-containter .col-main .col-wrapper-main {
   background-color: transparent;
   padding: 0px;
@@ -3170,7 +2740,6 @@ form .legend {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032191}}
 .contacts-index-index .col-main-containter .col-main .col-wrapper-main #contactForm, .catalog-product-view .col-main-containter .col-main .col-wrapper-main #contactForm {
   background: white;
   padding: 20px;
@@ -3187,39 +2756,31 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032205}}
 .nav-tabs,
 .nav.nav-tabs {
   border-bottom-color: #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032210}}
 .nav-tabs .nav-tab-item.active .switch {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032214}}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #d5d5d5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032218}}
 .nav-tabs .nav-tab-item h2 {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032221}}
 .nav-tabs .nav-tab-item .switch:visited {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032224}}
 .nav-tabs .nav-tab-item .switch:hover {
   color: #666972;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032227}}
 .nav-tabs .nav-tab-item .switch:active {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032233}}
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
 .nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
 .nav-tabs active.nav-tab-item:not(.disabled) .switch {
@@ -3228,7 +2789,6 @@ form .legend {
   color: #666972;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/xproject\/fastest_magento1\/skin\/frontend\/codazon_fastest\/default\/scss\/_global\.scss}line{font-family:\000032241}}
 .nav-tabs .nav-tab-item:not(.disabled) .switch:active,
 .nav-tabs .active.nav-tab-item .switch,
 .nav-tabs .active.nav-tab-item .switch:focus,
@@ -3241,5 +2801,7 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
-
-/*# sourceMappingURL=style_handbag.css.map */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: white;
+}

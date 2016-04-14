@@ -10,6 +10,7 @@
  * ============================================ */
 /*Setting padding for template*/
 /*Spacing for each area*/
+/*update 04/14*/
 /*Sport Homepage*/
 .page {
   max-width: 1200px;
@@ -31,6 +32,10 @@
   border: 70px solid white;
   border-left-color: #f19967;
   border-bottom-color: #f19967;
+}
+
+.cdz-slideshow {
+  margin: 0;
 }
 
 /*Sport Header*/
@@ -155,6 +160,7 @@
   margin-top: 15px;
 }
 
+/*update 04/14*/
 /*Sport Footer*/
 /*Color Important*/
 body {
@@ -2657,5 +2663,7 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
-
-/*# sourceMappingURL=style_sport.css.map */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: white;
+}

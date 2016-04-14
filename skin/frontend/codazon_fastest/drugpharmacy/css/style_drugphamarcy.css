@@ -657,6 +657,7 @@ input.input-text,
 /* ============================================ *
 * Codazon_Drug homepages Responsive
 * ============================================ */
+/*update 04/14*/
 /*Drug Pharmacy Header*/
 /*Header 02*/
 .cms-index-index
@@ -3425,5 +3426,7 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
-
-/*# sourceMappingURL=style_drugphamarcy.css.map */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: white;
+}
