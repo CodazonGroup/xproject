@@ -60,10 +60,4 @@ class AW_Blog_Model_Blog extends Mage_Core_Model_Abstract
         }
         return parent::_beforeSave();
     }
-    
-    public function getCreatedTime(){
-    	$time = $this->getData('created_time');
-    	$time = strtotime($time);
-    	return date('F j, Y', $time);
-    }
 }

@@ -21,6 +21,12 @@
 			<blogfeatures>
 				<class>Codazon_Blogfeatures_Model</class>
 			</blogfeatures>
+			<blog>
+				<rewrite>
+					<blog>Codazon_Blogfeatures_Model_Blog</blog>
+					<post>Codazon_Blogfeatures_Model_Post</post>
+				</rewrite>
+			</blog>
 		</models>
 		<helpers>
 			<blogfeatures>
@@ -35,6 +41,9 @@
 				<rewrite>
 					<manage_blog_edit_tab_form>Codazon_Blogfeatures_Block_Blog_Manage_Blog_Edit_Tab_Form</manage_blog_edit_tab_form>
 					<manage_blog_edit_form>Codazon_Blogfeatures_Block_Blog_Manage_Blog_Edit_Form</manage_blog_edit_form>
+					<menu_sidebar>Codazon_Blogfeatures_Block_Menu_Sidebar</menu_sidebar>
+					<blog>Codazon_Blogfeatures_Block_Blog</blog>
+					<cat>Codazon_Blogfeatures_Block_Cat</cat>
 				</rewrite>
 			</blog>
 		</blocks>
