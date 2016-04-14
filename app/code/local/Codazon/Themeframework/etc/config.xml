@@ -49,4 +49,13 @@
             </modules>
         </translate>
 	</frontend>
+	<adminhtml>
+		<layout>
+            <updates>
+                <themeframework module="Codazon_Themeframework">
+                    <file>codazon_themeframework.xml</file>
+                </themeframework>
+            </updates>
+        </layout>
+	</adminhtml>
 </config>

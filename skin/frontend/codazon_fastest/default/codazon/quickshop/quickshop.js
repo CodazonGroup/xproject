@@ -31,7 +31,6 @@ cdzQuickshop.prototype = {
 				url: qs.productUrl,
 				type: 'GET',
 				dataType: "html",
-				/*cache: false,*/
 				success: function(res){
 					$loader.hide();
 					$iframe.find('.modal-dialog').html(res);
@@ -46,17 +45,5 @@ cdzQuickshop.prototype = {
 		$iframe.on('hide.bs.modal', function (e) {
 			$iframe.find('.modal-dialog').hide('');
 		});
-		/*jQuery(config.handler).each(function(index, element) {
-            jQuery(this).hover(
-				function(){
-					$this = jQuery(this);
-					urlKey = $this.data('url');
-					qs.productUrl = urlKey;
-				},
-				function(){
-					
-				}
-			);
-        });*/
 	}
 }

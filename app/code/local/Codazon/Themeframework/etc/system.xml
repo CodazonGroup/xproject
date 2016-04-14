@@ -8,9 +8,8 @@
 	</tabs>
 	<sections>
 		<codazon_settings translate="label" module="themeframework">
-			<label>Settings</label>
+			<label>Fastest Theme Settings</label>
 			<tab>codazon</tab>
-			<frontend_type>text</frontend_type>
 			<sort_order>0</sort_order>
 			<show_in_default>1</show_in_default>
 			<show_in_website>1</show_in_website>
@@ -455,7 +454,8 @@
 							<sort_order>15</sort_order>
 						</contact_info_heading>
 						<contact_info>
-							<frontend_type>textarea</frontend_type>
+							<frontend_type>editor</frontend_type>
+							<frontend_model>themeframework/adminhtml_system_config_editor</frontend_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>

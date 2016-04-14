@@ -463,12 +463,19 @@
 		$('.codazon-ajax-wrap').bind('contentUpdated',function(){
 			var $this = $(this);
 			setTimeout(function(){
-				$this.find('[data-toggle="tooltip, .cdz-tooltip"]').tooltip();
+				$this.find('[data-toggle="tooltip"],.cdz-tooltip').tooltip();
 				if(typeof $.fn.unveil !== 'undefined'){
 					$this.find('.cdz-lazy').unveil();
 				}
 				$this.sameHeightItems();
-			},1000);
+			},100);
+		});
+		$('[data-toggle="tab"]').click(function(){
+			var tab = $(this).attr('href');
+			var $tab = $(tab);
+			setTimeout(function(){
+				$tab.sameHeightItems();
+			},300);
 		});
 		if( !$('body').hasClass('checkout-onepage-index') ){
 			window.fieldLabelEffect();

@@ -1,0 +1,7 @@
+.minicolor {
+	height: auto !important; 
+	padding-left: 2px !important;
+}
+.minicolor + .minicolors-swatch {
+	left: auto; right: 0; top: 0;
+}

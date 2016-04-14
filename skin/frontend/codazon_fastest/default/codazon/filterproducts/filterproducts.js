@@ -74,7 +74,7 @@ $.fn.cdzLoadProductBlock = function(options){
 			var wrapTop = $this.offset().top;
 			var scrollTop = jQuery(window).scrollTop();
 			var winHeight = jQuery(window).height();
-			if( (scrollTop + winHeight) >= wrapTop ){
+			//if( (scrollTop + winHeight) >= wrapTop ){
 				if( (!$this.hasClass('loaded')) && $this.is('*:visible') ){
 					$this.addClass('loaded');
 					var $loader = $this.find('.codazon-loader-wrap');
@@ -98,7 +98,7 @@ $.fn.cdzLoadProductBlock = function(options){
 						}
 					}).always(function(){ $loader.hide(); });
 				}
-			}	
+			//}	
 		}
 		
 		loadProductByAjax();

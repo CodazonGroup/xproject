@@ -11919,6 +11919,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 }
 
 /*Logo and Cart area*/
+/*update 04/14*/
 /*Header 02*/
 .cms-index-index
 .cdz-header-style-02 {
@@ -13574,7 +13575,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
   color: #282828;
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-.postTitle h3 {
+.postTitle blog-date {
   color: #999999;
 }
 
@@ -16379,6 +16380,7 @@ body {
   padding: 10px 17px;
 }
 
+/*update 04/14*/
 /* ============================================ *
  * Content
  * ============================================ */
@@ -16792,6 +16794,12 @@ body {
   margin: 0;
 }
 
+/*Box Style Home Sport*/
+.box-style01 .cdz-block-title {
+  padding: 20px 20px 0;
+  text-align: inherit;
+}
+
 /* ============================================ *
  * Codazon_Slider
  * ============================================ */
@@ -16971,6 +16979,19 @@ body {
   -webkit-opacity: 0.2;
   -moz-opacity: 0.2;
   opacity: 0.2;
+}
+
+.owl-theme .owl-nav {
+  margin: 0;
+}
+
+.owl-carousel {
+  width: auto !important;
+  margin: 0 -10px;
+}
+.owl-carousel .item {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* ============================================ */
@@ -22020,6 +22041,11 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: #f2f2f2;
+}
+
 /* ============================================ *
  * Codazon_Theme_Var
  * ============================================ */
@@ -23291,5 +23317,3 @@ form .legend {
 /* ============================================ *
 * Codazon_Login & Register
 * ============================================ */
-
-/*# sourceMappingURL=styles.css.map */
