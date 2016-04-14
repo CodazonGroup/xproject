@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<widgets> 
+	<codazon_facebook_feeds type="themeframework/widget_facebookfeeds" translate="name description" module="themeframework">
+		<name>Codazon Facebook Feed</name>
+		<parameters>
+			<title translate="label">
+				<visible>1</visible>
+                <required>0</required>
+                <label>Title</label>
+                <type>text</type>
+				<value>Facebook</value>
+			</title>
+			<page_url>
+				<visible>1</visible>
+                <required>0</required>
+                <label>Page URL</label>
+                <type>text</type>
+				<value><![CDATA[https://www.facebook.com/facebook]]></value>
+			</page_url>
+			<hide_cover>
+				<visible>1</visible>
+				<required>0</required>
+				<label>Hide page cover</label>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<value>0</value>
+			</hide_cover>
+			<show_facepile>
+				<visible>1</visible>
+				<required>0</required>
+				<label>Show facepile</label>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<value>1</value>
+			</show_facepile>
+			<template>
+				<visible>0</visible>
+				<required>0</required>
+				<type>text</type>
+				<label>Custom Template</label>
+				<value>codazon_themeframework/widget/facebookfeeds.phtml</value>
+			</template>
+		</parameters>
+	</codazon_facebook_feeds>
+	<codazon_twitter_feeds type="themeframework/widget_twitterfeeds" translate="name description" module="themeframework">
+		<name>Codazon Twitter Feed</name>
+		<parameters>
+			<title translate="label">
+				<visible>1</visible>
+                <required>0</required>
+                <label>Title</label>
+                <type>text</type>
+				<value>Twitter</value>
+			</title>
+			<user_name>
+				<visible>1</visible>
+                <required>0</required>
+                <label>User name</label>
+                <type>text</type>
+				<value>twitter</value>
+			</user_name>
+			<limit>
+				<visible>1</visible>
+                <required>0</required>
+                <label>Tweets count</label>
+                <type>text</type>
+				<value>2</value>
+			</limit>
+			<template>
+				<visible>1</visible>
+				<required>0</required>
+				<label>Custom Template</label>
+				<type>text</type>
+				<value>codazon_themeframework/widget/twitterfeeds.phtml</value>
+			</template>
+		</parameters>
+	</codazon_twitter_feeds>   
+	<codazon_categoriestmenu type="themeframework/widget_categoriesmenu" translate="name description" module="themeframework">
+        <name>Codazon Categories Menu</name>
+        <description type="desc">Menu list of choosen category and all its children</description>
+        <parameters>
+			<id_path translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Category</label>
+                <type>label</type>
+                <helper_block>
+                    <type>adminhtml/catalog_category_widget_chooser</type>
+                    <data>
+                        <button translate="open">
+                            <open>Select Category...</open>
+                        </button>
+                    </data>
+                </helper_block>
+                <sort_order>10</sort_order>
+            </id_path>
+			<template translate="label">
+				<visible>1</visible>
+                <required>0</required>
+                <label>Custom Template</label>
+                <type>text</type>
+				<description>Leave empty to use default template: 'themeframework/widget/categoriesmenu.phtml'</description>
+			</template>
+			<wrap_class translate="label">
+				<visible>1</visible>
+                <required>0</required>
+                <label>Wrap Class</label>
+                <type>text</type>
+			</wrap_class>
+			<limit>
+				<visible>1</visible>
+                <required>0</required>
+                <label>Children count</label>
+                <type>text</type>
+				<value>9</value>
+			</limit>
+        </parameters>
+    </codazon_categoriestmenu>
+</widgets>

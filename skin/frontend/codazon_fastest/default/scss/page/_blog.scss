@@ -1,0 +1,259 @@
+/* ============================================ *
+ * Codazon_Blog
+ * ============================================ */
+.cdz_wapper-blog01 .cdz-post {
+  background-color: #ffffff;
+}
+.cdz_wapper-blog01 .blog-title {
+  margin: 0px 0 10px;
+  font: $f_h5;
+}
+.cdz_wapper-blog01 .blog-title a {
+  color: #282828;
+  text-decoration: none;
+  font: $f_h5;
+}
+.cdz_wapper-blog01 .blog-title a:visited {
+  color: #282828;
+  text-decoration: none;
+}
+.cdz_wapper-blog01 .blog-title a:hover {
+  color: #fc7070;
+  text-decoration: none;
+}
+.cdz_wapper-blog01 .blog-title a:active {
+  color: #fc7070;
+  text-decoration: none;
+}
+.cdz_wapper-blog01 .blog-text-link a {
+  display: inline-block;
+  margin-top: 10px;
+  position: relative;
+}
+.cdz_wapper-blog01 .blog-text-link a:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f101';
+  font-size: 12px;
+  margin-right: 5px;
+}
+.cdz_wapper-blog01 .cdz-blog-bottom {
+  padding: 20px;
+  
+}
+.cdz_wapper-blog01 .cdz-blog-bottom .blog-author{
+	display:none
+  
+}
+.cdz_wapper-blog01 .blog-desc {
+  color: #999999;
+  font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.cdz_wapper-blog01 .blog-text-link{margin:0}
+.cdz_wapper-blog01 .cdz-blog-top {
+  position: relative;
+  overflow: hidden;
+}
+.cdz_wapper-blog01 .cdz-blog-top .blog-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #fff;
+  color: #333333;
+  padding: 7px 10px;
+  color: #999999;
+  font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  float: left;
+}
+.cdz_wapper-blog01 .cdz-blog-top .blog-date:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f073';
+  font-size: 16px;
+  margin-right: 5px;
+}
+.cdz_wapper-blog01 .cdz-blog-top a img {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.cdz_wapper-blog01 .cdz-blog-top:hover a img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+}
+
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+}
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav [class*='owl-'] {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	font-size: 0;
+	margin: 0 5px;
+	padding: 0;
+	border: 2px solid #282828;
+	color: #282828;
+	background-color: #ffffff;
+	border-color: #282828;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	display: inline-block;
+	left: inherit;
+	right: inherit;
+}
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav [class*='owl-']:hover {
+  color: #ffffff;
+  background-color: #282828;
+  border-color: #282828;
+}
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-controls {margin:0}
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav [class*='owl-']:before {
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  line-height: 34px;
+  content: '\f104';
+  font-family: FontAwesome;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  text-align: center;
+}
+
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav [class*='owl-'].owl-next:before {
+  content: '\f105';
+}
+.cdz_wapper-blog01 .owl-theme.owl-carousel .owl-nav [class*='owl-'].disabled {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+}
+.cdz_wapper-blog01 {
+  background-color: transparent;
+}
+.cdz_wapper-blog01 .owl-carousel .owl-stage-outer{padding-top:50px;}
+
+
+/*AW Blog List and Post detail*/
+.postTitle{
+	border:0!important;	
+	h2{
+		text-transform: inherit;
+		a{
+		color:$main_text;
+		font:$f_h3;
+		}
+	}
+	h3{
+		color:$main_note_text
+	}
+	
+}
+.postContent{
+	.aw-blog-read-more{
+		display:block;
+		color:$main_text;
+		font:$f_h6;
+		margin-top:10px;
+		text-transform:uppercase;
+		text-decoration:underline;
+	}
+}
+.postDetails{
+	color:$main_text;
+	font:$f_note;
+	text-transform:uppercase;
+	color:$main_note_text
+}
+.postContent {
+	.separator img{}
+}
+.blog-index-list .toolbar{display:none}
+.postWrapper:last-child{padding-bottom:0}
+
+
+/* ============================================ *
+ * Codazon_Blog style 2 - Home Handbag
+ * ============================================ */
+ .cdz-wapper-blog-02{
+	 .owl-item{
+		 h5.blog-title {
+			 padding:20px 10px 0;
+			 a{
+			 }
+		 }
+		 .cdz-blog-right{
+		 }
+		.blog-author{
+			font-size:80%;
+			padding:0 10px 20px
+		}
+		.blog-desc{
+			padding:0 10px 20px
+		}
+		.blog-date{
+			position: absolute;
+			height: 45px;
+			width: 45px;
+			right: 10px;
+			top: 0;
+			padding: 5px 10px;
+			font-size:11px
+		}
+		.blog-text-link{
+			text-align:center;
+			margin: 0 0 0 -10px;
+			a{
+				border: 1px solid;
+				box-sizing: border-box;
+				vertical-align: middle;
+				display: inline-block;
+				padding: 10px 20px;
+				span{
+					text-transform: uppercase;
+					font-size: 80%;
+				}
+				&:hover{
+				}
+			}
+		}
+	 }
+ }
+/* ============================================ *
+ * Codazon_Blog style 2 - Home Handbag
+ * ============================================ */

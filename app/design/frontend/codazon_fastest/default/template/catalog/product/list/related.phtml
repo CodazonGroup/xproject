@@ -1,0 +1,157 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php if($this->getItems()->getSize()): ?>
+<?php
+$template = $this->getLayout()->getBlock('root')->getTemplate();
+$_helper =  $this->helper('catalog/output');
+switch($template){
+	case 'page/2columns-left.phtml':
+	case 'page/2columns-right.phtml':
+		$itemsNum = 4; break;
+	case 'page/3columns.phtml':
+		$itemsNum = 3; break;
+	case 'page/1column.phtml':
+	default:
+		$itemsNum = 5; break;
+}
+?>
+
+<div class="block block-related">
+    <div class="block-title">
+        <strong><span><?php echo $this->__('Related Products') ?></span></strong>
+    </div>
+    <div class="block-content products-grid">
+        <div class="block-subtitle"><?php echo $this->__('Check items to add to the cart or') ?>&nbsp;<a href="#" onclick="selectAllRelated(this); return false;"><?php echo $this->__('select all') ?></a></div>
+        <ul class="product-items same-height owl-carousel owl-theme" id="block-related">
+        <?php $i=0; foreach($this->getItems() as $_product): ?>
+            <li class="product product-item">
+                <?php if(!$_product->isComposite() && $_product->isSaleable()): ?>
+                    <?php if (!$_product->getRequiredOptions()): ?>
+                        <input type="checkbox" class="checkbox related-checkbox" id="related-checkbox<?php echo $_product->getId() ?>" name="related_products[]" value="<?php echo $_product->getId() ?>"  style="z-index:999;"/>
+                    <?php endif; ?>
+                <?php endif; ?>
+                <div class="product-item-info">
+                	<div class="cdz-hover-section">
+                    	<div class="cdz-product-top">
+                            <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->escapeHtml($_product->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail')->resize(260,320) ?>" alt="<?php echo $this->escapeHtml($_product->getName()) ?>" /></a>
+                            <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                            <div class="cdz-product-wishlist">
+                                <div class="actions-secondary"><a data-toggle="tooltip" data-placement="right" title="<?php echo $this->__('Add to Wishlist') ?>" href="<?php echo $this->getAddToWishlistUrl($_product) ?>" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a></div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+					</div>
+                    <div class="product-item-details">
+                        <h3 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>"><?php echo $this->escapeHtml($_product->getName()) ?></a></h3>
+                        <?php
+						$desc = $this->stripTags($_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description'));
+						if(strlen($desc)>80) {
+							$strCutTitle = substr($desc, 0, 80);
+							$desc = substr($strCutTitle, 0, strrpos($strCutTitle, ' '))."&hellip;";
+						}
+						?>
+						<div class="desc product-item-description"><?php echo $desc; ?></div>
+                        <?php echo $this->getPriceHtml($_product, true, '-related') ?>
+                        <div class="cdz-product-bottom">
+                            <div class="cdz-buttons-container">
+                                <div class="cdz-buttons-inner">
+									<?php if($_product->isSaleable()): ?>
+                                        <button data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Cart') ?>" type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    <?php endif ?>
+                                    <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Quick Shop') ?>" class="qs-button" href="javascript:void(0)" data-href="#"><span><span><?php echo $this->__('Quick Shop') ?></span></span></a>
+                                    <?php if($_compareUrl = $this->getAddToCompareUrl($_product)): ?>
+                                    <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Compare') ?>" href="<?php echo $_compareUrl ?>" class="action link-compare"><?php echo $this->__('Add to Compare') ?></a>
+                                    <?php endif ?>
+                                </div>
+                            </div>
+						</div>
+                    </div>
+                </div>
+            </li>
+        <?php $i++; endforeach ?>
+        </ul>
+        <!--script type="text/javascript">decorateList('block-related', 'none-recursive')</script-->
+    </div>
+    <script type="text/javascript">
+    //<![CDATA[
+    $$('.related-checkbox').each(function(elem){
+        Event.observe(elem, 'click', addRelatedToProduct)
+    });
+
+    var relatedProductsCheckFlag = false;
+    function selectAllRelated(txt){
+        if (relatedProductsCheckFlag == false) {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = true;
+            });
+            relatedProductsCheckFlag = true;
+            txt.innerHTML="<?php echo Mage::helper('core')->jsQuoteEscape($this->__('unselect all')) ?>";
+        } else {
+            $$('.related-checkbox').each(function(elem){
+                elem.checked = false;
+            });
+            relatedProductsCheckFlag = false;
+            txt.innerHTML="<?php echo Mage::helper('core')->jsQuoteEscape($this->__('select all')) ?>";
+        }
+        addRelatedToProduct();
+    }
+
+    function addRelatedToProduct(){
+        var checkboxes = $$('.related-checkbox');
+        var values = [];
+        for(var i=0;i<checkboxes.length;i++){
+            if(checkboxes[i].checked) values.push(checkboxes[i].value);
+        }
+        if($('related-products-field')){
+            $('related-products-field').value = values.join(',');
+        }
+    }
+    //]]>
+    </script>
+    <script>
+	(function( $ ) {
+		$('#block-related').owlCarousel({
+			loop: false,
+			margin: 20,
+			responsiveClass: true,
+			nav: true,
+			dots: false,
+			responsive:{
+				0:{items: 	2},
+				320:{items:	2},
+				360:{items:	2},
+				480:{items:	2},
+				768:{items: 3},
+				980:{items:	4},
+				1024:{items: <?php echo $itemsNum - 1 ?>},
+				1280:{items: <?php echo $itemsNum ?>},
+			}	
+		})
+	})( jQuery );
+	</script>
+</div>
+<?php endif ?>

@@ -1,0 +1,2 @@
+J:\xampp\mysql\bin\mysqldump -d --comments=FALSE -u root xproject-magento1 > 1_schema.sql
+J:\xampp\mysql\bin\mysqldump -t --order-by-primary --comments=FALSE -u root xproject-magento1 > 2_init_data.sql

@@ -1,0 +1,21 @@
+.page{max-width:1200px; margin:0 auto;}
+
+/*header logo color*/
+.cdz-header-style-04.header-container{
+	margin-bottom:20px;
+	.header {
+		h1.logo{
+			background: $header_logo_background;
+			&:before{
+				border-left-color: $header_logo_background;
+				border-bottom-color: $header_logo_background;
+			}
+			&:after{
+				border: 70px solid $header_background;
+				border-left-color: $header_logo2_background;
+				border-bottom-color: $header_logo2_background;
+			}
+		}
+	}
+}
+/*update 04/14*/

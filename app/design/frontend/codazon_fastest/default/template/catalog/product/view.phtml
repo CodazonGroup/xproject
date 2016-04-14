@@ -1,0 +1,259 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product view template
+ *
+ * @see Mage_Catalog_Block_Product_View
+ * @see Mage_Review_Block_Product_View
+ */
+?>
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php $_product = $this->getProduct(); ?>
+<script type="text/javascript">
+    var optionsPrice = new Product.OptionsPrice(<?php echo $this->getJsonConfig() ?>);
+</script>
+<div id="messages_product_view"><?php echo $this->getMessagesBlock()->toHtml() ?></div>
+<div class="product-view" itemtype="http://schema.org/Product" itemscope="">
+    <div class="product-essential">
+    <form action="<?php echo $this->getSubmitUrl($_product, array('_secure' => $this->_isSecure())) ?>" method="post" id="product_addtocart_form"<?php if($_product->getOptions()): ?> enctype="multipart/form-data"<?php endif; ?>>
+        <?php echo $this->getBlockHtml('formkey') ?>
+        <div class="no-display">
+            <input type="hidden" name="product" value="<?php echo $_product->getId() ?>" />
+            <input type="hidden" name="related_product" id="related-products-field" value="" />
+        </div>
+		<div class="row">
+			<div class="col-sm-24">
+				<div class="row">
+				<div class="col-sm-13 product-view-media">
+					<div class="product-img-box">
+						<?php echo $this->getChildHtml('media') ?>
+					</div>
+				</div>
+				<div class="col-sm-10 product-view-info pull-right">
+					<div class="product-shop">
+						<div class="product-shop-wrap product-shop-title">
+							<div class="product-name">
+								<h1 itemprop="name" class="product-name-h1"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></h1>
+							</div>
+							<div class="row product-rating-sku">
+								<div class="col-sm-24">
+									<div class="row">
+										<div class="col-sm-6">
+										<h3 class="product-shop-sku"><span><?php echo $this->__('SKU: ') ?></span><strong><?php echo $this->htmlEscape($_product->getData('sku'));?></strong></h3>
+										<?php echo $this->getChildHtml('alert_urls') ?>
+										<meta content="<?php echo $this->htmlEscape($_product->getData('sku'));?>" itemprop="productID">
+										</div>
+										<div class="col-sm-18 pull-right">
+											<div itemtype="http://schema.org/AggregateRating" itemscope="itemscope" itemprop="aggregateRating" class="ratings-content">
+											<meta content="100" itemprop="ratingValue">
+											<meta content="1" itemprop="ratingCount">
+											<meta content="0" itemprop="worstRating">
+											<meta content="100" itemprop="bestRating">
+											<?php echo $this->getReviewsSummaryHtml($_product, false, true)?>
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="product-shop-wrap product-shop-price-stock">
+							<div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+								<?php echo $this->getChildHtml('product_type_data') ?>
+								<?php echo $this->getTierPriceHtml() ?>
+								<?php echo $this->getChildHtml('extrahint') ?>
+							</div>
+						</div>
+						<div class="product-shop-wrap product-shop-button">
+						<?php if (!$this->hasOptions()):?>
+							<div class="add-to-box">
+								<?php if($_product->isSaleable()): ?>
+									<?php echo $this->getChildHtml('addtocart') ?>
+									<?php if( $this->helper('wishlist')->isAllow() || $_compareUrl=$this->helper('catalog/product_compare')->getAddUrl($_product)): ?>
+										<span class="or"><?php echo $this->__('OR') ?></span>
+									<?php endif; ?>
+								<?php endif; ?>
+								<?php echo $this->getChildHtml('addto') ?>
+							</div>
+							<?php echo $this->getChildHtml('extra_buttons') ?>
+						<?php elseif (!$_product->isSaleable()): ?>
+							<div class="add-to-box">
+								<?php echo $this->getChildHtml('addto') ?>
+							</div>
+						<?php endif; ?>
+						</div>
+												
+						<div class="product-shop-wrap product-shop-option">
+						<?php echo $this->getChildHtml('other');?>
+
+						<?php if ($_product->isSaleable() && $this->hasOptions()):?>
+							<?php echo $this->getChildChildHtml('container1', '', true, true) ?>
+						<?php endif;?>
+						</div>
+						
+						<div class="product-shop-wrap product-shop-social">
+							<div class="row">
+								<div class="col-sm-16">
+									<ul class="cdz-social-listing">
+										<li class="cdz-facebook">
+											<a target="_blank" href="#" title="" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Share on Facebook"><i class="fa fa-facebook"></i>
+											</a>
+										</li>
+										
+										<li class="twitter">
+											<a target="_blank" rel="nofollow" title="" href="#" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Share on Twitter"><i class="fa fa-twitter"></i>
+											</a>
+										</li>
+										<li class="linkedin">
+											<a  target="_blank" rel="nofollow" title="" href="#" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Share on LinkedIn"><i class="fa fa-linkedin"></i>
+											</a>
+										</li>
+										<li class="tumblr">
+										<a target="_blank" rel="nofollow" title="" href="#" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Share on Tumblr"><i class="fa fa-tumblr"></i>
+										</a>
+										</li>
+										<li class="google-plus">
+											<a target="_blank" rel="nofollow" title="" href="#" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Share on Google Plus"><i class="fa fa-google-plus"></i>
+										</a>
+										</li>
+										<li class="pinterest">
+										<a target="_blank" rel="nofollow" title="" href="#" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="Pin this"><i class="fa fa-pinterest"></i>
+										</a>
+										</li>
+										<li class="email">
+										<?php if ($this->canEmailToFriend()): ?>
+											<a rel="nofollow" title="" class="trasition-all" data-placement="top" data-toggle="tooltip" data-original-title="<?php echo $this->__('Email to a Friend') ?>" class="email-to-friend" href="<?php echo $this->helper('catalog/product')->getEmailToFriendUrl($_product) ?>"><i class="fa fa-envelope"></i></a>
+										<?php endif; ?>
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-8 align-right pull-right">
+								<?php echo $this->getChildHtml('codazon_product_area01') ?>
+								</div>
+							</div>
+						</div>
+						
+						<div class="product-shop-wrap product-shop-desc">
+						<?php if ($_product->getShortDescription()):?>
+							<div class="short-description">
+								<h2><?php echo $this->__('Quick Overview') ?></h2>
+								<div class="std" itemprop="description"><?php echo $_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description') ?></div>
+							</div>
+						<?php endif;?>
+						</div>
+					</div>
+				</div>
+				</div>	
+			</div>
+		</div>	
+        <div class="clearer"></div>
+        <?php if ($_product->isSaleable() && $this->hasOptions()):?>
+            <?php echo $this->getChildChildHtml('container2', '', true, true) ?>
+        <?php endif;?>
+    </form>
+    <script type="text/javascript">
+    //<![CDATA[
+        var productAddToCartForm = new VarienForm('product_addtocart_form');
+        productAddToCartForm.submit = function(button, url) {
+            if (this.validator.validate()) {
+                var form = this.form;
+                var oldUrl = form.action;
+
+                if (url) {
+                   form.action = url;
+                }
+                var e = null;
+                try {
+                    this.form.submit();
+                } catch (e) {
+                }
+                this.form.action = oldUrl;
+                if (e) {
+                    throw e;
+                }
+
+                if (button && button != 'undefined') {
+                    button.disabled = true;
+                }
+            }
+        }.bind(productAddToCartForm);
+
+        productAddToCartForm.submitLight = function(button, url){
+            if(this.validator) {
+                var nv = Validation.methods;
+                delete Validation.methods['required-entry'];
+                delete Validation.methods['validate-one-required'];
+                delete Validation.methods['validate-one-required-by-name'];
+                // Remove custom datetime validators
+                for (var methodName in Validation.methods) {
+                    if (methodName.match(/^validate-datetime-.*/i)) {
+                        delete Validation.methods[methodName];
+                    }
+                }
+
+                if (this.validator.validate()) {
+                    if (url) {
+                        this.form.action = url;
+                    }
+                    this.form.submit();
+                }
+                Object.extend(Validation.methods, nv);
+            }
+        }.bind(productAddToCartForm);
+    //]]>
+    </script>
+    </div>
+
+    <div class="product-collateral">
+		<div class="product-detail-tab">
+			<?php
+			$tabHtml = $tabtitle = $tabAlias = array();
+			foreach ($this->getChildGroup('detailed_info', 'getChildHtml') as $alias => $html){
+				$tabAlias[] = $alias;
+				$tabHtml[] = $html;
+				$tabTitle[] = $this->getChildData($alias, 'title')?$this->getChildData($alias, 'title'):$alias;
+			}
+			$tabsNum = count($tabHtml);
+			?>
+			<ul class="nav nav-tabs">
+			<?php for($i=0; $i < $tabsNum; $i++): ?>
+				<li class="nav-tab-item <?php echo ($i == 0)?'active':''; ?>"><a href="#<?php echo "box-{$tabAlias[$i]}"?>" data-toggle="tab" class="data switch"><h2><strong><?php echo $this->escapeHtml($tabTitle[$i]) ?></strong></h2></a></li>
+			<?php endfor ?>
+			</ul>
+			<div class="nav-tab-content tab-content">
+				<?php for($i=0; $i < $tabsNum; $i++): ?>
+				<div id="<?php echo "box-{$tabAlias[$i]}"?>" class="tab-pane fade box-collateral <?php echo ($i == 0)?'active in':''; ?> <?php echo "box-{$tabAlias[$i]}"?>">
+					<?php echo $tabHtml[$i] ?>
+				</div>
+				<?php endfor ?>
+			</div>
+		</div>
+        <?php echo $this->getChildHtml('product_additional_data') ?>
+    </div>
+</div>
+<?php echo $this->getChildHtml('catalog.product.related') ?>
+<?php echo $this->getChildHtml('upsell_products') ?>

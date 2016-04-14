@@ -1,0 +1,5 @@
+<?php
+class Codazon_Themeframework_Block_Widget_Facebookfeeds extends Mage_Core_Block_Template implements Mage_Widget_Block_Interface
+{
+	
+}

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<tabs>
+		<codazon translate="label" module="themeframework">
+			<label>Codazon</label>
+			<sort_order>200</sort_order>
+		</codazon>
+	</tabs>
+	<sections>
+		<codazon_settings translate="label" module="themeframework">
+			<label>Settings</label>
+			<tab>codazon</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>0</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<general translate="label">
+					<label>General</label>
+					<sort_order>0</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<boxedwide translate="label">
+							<label>Boxed/Wide</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_boxedwide</source_model>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</boxedwide>
+						<enable_rtl translate="label">
+							<label>RTL Support</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_rtl>
+					</fields>
+				</general>
+				<header translate="label">
+					<label>Header</label>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_ajaxcart>
+							<label>Ajax Cart Pro</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_ajaxcart>
+						<use_default_menu>
+							<label>Default Menu</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</use_default_menu>
+						<enable_sticky>
+							<label>Sticky header</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</enable_sticky>
+					</fields>
+				</header>
+				
+				<category_view translate="label">
+					<label>Category View</label>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<alternative_image>
+							<label>Alternative Image</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</alternative_image>
+						<keep_image_aspect_ratio>
+							<label>Keep Image Aspect Ratio</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
+						</keep_image_aspect_ratio>
+						<image_width>
+							<label>Image Width</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</image_width>
+						<image_height>
+							<label>Image Height</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</image_height>
+						<show_compare_wishlist>
+							<label>Show Add to Compare/Wishlist</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>40</sort_order>
+						</show_compare_wishlist>
+						<show_rating>
+							<label>Show Review/Rating Star</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>40</sort_order>
+						</show_rating>
+						<show_description>
+							<label>Show Description</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>40</sort_order>
+						</show_description>
+						<enable_hover_effect>
+							<label>Enable Hover Effect</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment><![CDATA[If enable, all of the action links that "Add to Cart" button, "Add to Compare" link and "Add to Wishlist" link will be moved into the product image area.]]></comment>
+							<sort_order>40</sort_order>
+						</enable_hover_effect>
+						<template_one_column>
+							<label>Template One Column</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>45</sort_order>
+						</template_one_column>
+						<products_per_row_desktop_1>
+							<label>Products Per Row (Desktop view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>50</sort_order>
+						</products_per_row_desktop_1>
+						<products_per_row_tablet_1>
+							<label>Products Per Row (Tablet view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>50</sort_order>
+						</products_per_row_tablet_1>
+						<products_per_row_mobile_1>
+							<label>Products Per Row (Mobile view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>50</sort_order>
+						</products_per_row_mobile_1>
+						<template_two_columns>
+							<label>Template Two Columns</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>55</sort_order>
+						</template_two_columns>
+						<products_per_row_desktop_2>
+							<label>Products Per Row (Desktop view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>60</sort_order>
+						</products_per_row_desktop_2>
+						<products_per_row_tablet_2>
+							<label>Products Per Row (Tablet view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>60</sort_order>
+						</products_per_row_tablet_2>
+						<products_per_row_mobile_2>
+							<label>Products Per Row (Mobile view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>60</sort_order>
+						</products_per_row_mobile_2>
+						<template_three_columns>
+							<label>Template Three Columns</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>65</sort_order>
+						</template_three_columns>
+						<products_per_row_desktop_3>
+							<label>Products Per Row (Desktop view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>70</sort_order>
+						</products_per_row_desktop_3>
+						<products_per_row_tablet_3>
+							<label>Products Per Row (Tablet view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>70</sort_order>
+						</products_per_row_tablet_3>
+						<products_per_row_mobile_3>
+							<label>Products Per Row (Mobile view)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>70</sort_order>
+						</products_per_row_mobile_3>
+					</fields>
+				</category_view>
+				<product_view translate="label">
+					<label>Product View</label>
+					<sort_order>30</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<keep_image_aspect_ratio>
+							<label>Keep Image Aspect Ratio</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</keep_image_aspect_ratio>
+						<base_image_width>
+							<label>Base Image Width</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
+						</base_image_width>
+						<base_image_height>
+							<label>Base Image Height</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
+						</base_image_height>
+						<more_view_image_width>
+							<label>More View Image Width</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</more_view_image_width>
+						<more_view_image_height>
+							<label>More View Image Height</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</more_view_image_height>
+						<more_view_thumb_style translate="label">
+							<label>More View Thumbnail Style</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_thumbnailstyle</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>40</sort_order>
+						</more_view_thumb_style>
+						<disable_zoom>
+							<label>Disable Product Zoom</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>40</sort_order>
+						</disable_zoom>
+					</fields>
+				</product_view>
+				<product_compare translate="label">
+					<label>Product Compare</label>
+					<sort_order>40</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<show_compare_link>
+							<label>Show Compare Link in TopLinks Area</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</show_compare_link>
+					</fields>
+				</product_compare>
+				<newsletter_popup>
+					<label>Newsletter Popup</label>
+					<sort_order>50</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<enable_newsletter_popup>
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</enable_newsletter_popup>
+						<newsletter_static_block_id>
+							<label>Newsletter Static Block Id</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
+						</newsletter_static_block_id>
+						<popup_width>
+							<label>Popup Width</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</popup_width>
+						<popup_height>
+							<label>Popup Height</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
+						</popup_height>
+					</fields>
+				</newsletter_popup>
+				<contact_us>
+					<label>Contact Us</label>
+					<sort_order>60</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<google_map_heading>
+							<label>Google Map</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>5</sort_order>
+						</google_map_heading>
+						<show_google_map>
+							<label>Google Map</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>5</sort_order>
+						</show_google_map>
+						<address>
+							<label>Address</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</address>
+						<latitude>
+							<label>Latitude</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</latitude>
+						<longtitude>
+							<label>Longtitude</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</longtitude>
+						<zoom>
+							<label>Zoom</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</zoom>
+						<contact_info_heading>
+							<label>Contact Information</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>15</sort_order>
+						</contact_info_heading>
+						<contact_info>
+							<frontend_type>textarea</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
+						</contact_info>
+					</fields>
+				</contact_us>
+			</groups>
+		</codazon_settings>
+	</sections>
+</config>

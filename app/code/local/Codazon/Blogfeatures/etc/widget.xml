@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<widgets>    
+	<blogfeatures_codazonblogpostlist type="blogfeatures/codazonblogpostlist" translate="name description" module="blogfeatures">
+        <name>Codazon Blog Post List</name>
+        <description type="desc">Show Blog Post List</description>
+        <parameters>
+		    <blog_title>
+                <label>Title</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+				<value></value>
+            </blog_title>
+		    <categories>
+                <label>Categories</label>
+                <visible>1</visible>
+                <type>multiselect</type>
+                <source_model>blogfeatures/categories</source_model>    
+            </categories>
+		    <orderby>
+                <label>Order By</label>
+                <visible>1</visible>
+                <type>select</type>
+                <values>
+                    <title translate="label">
+						<value>title</value>
+                        <label>Title</label>
+                    </title>
+                   	<post_id translate="label">
+						<value>post_id</value>
+                        <label>ID</label>
+                    </post_id>
+					<created_time translate="label">
+						<value>created_time</value>
+                        <label>Created Time</label>
+					</created_time>
+					<update_time translate="label">
+						<value>update_time</value>
+                        <label>Updated Time</label>
+					</update_time>
+                </values>
+            </orderby>
+		    <order>
+                <label>Order</label>
+                <visible>1</visible>
+                <type>select</type>
+                <values>
+                    <asc translate="label">
+						<value>asc</value>
+                        <label>ASC</label>
+                    </asc>
+                    <desc translate="label">
+						<value>desc</value>
+                        <label>DESC</label>
+                    </desc>
+                </values>
+            </order>
+		    <post_count>
+                <label>Post Count</label>
+                <visible>1</visible>
+                <type>text</type>
+				<value>6</value>
+            </post_count>
+			<desc_length>
+				<label>Description Length</label>
+                <visible>1</visible>
+                <type>text</type>
+				<value>100</value>
+			</desc_length>
+			<use_slider>
+				<label>Use Slider</label>
+                <visible>1</visible>
+                <type>select</type>
+				<source_model>adminhtml/system_config_source_yesno</source_model>
+			</use_slider>
+			<items_1280>
+				<label>Window width ≥ 1280</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>If not setting "Yes" for "Auto width", you can choose number of items per slide page. Default: 4</description>
+			</items_1280>
+			<items_1024>
+				<label>1024 ≤  Window width &lt; 1280</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 3</description>
+			</items_1024>
+			<items_768>
+				<label>768 ≤ Window width &lt; 1024</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 3</description>
+			</items_768>
+			<items_480>
+				<label>480 ≤ Window width &lt; 768</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 2</description>
+			</items_480>
+			<items_320>
+				<label>320 ≤ Window width &lt; 480</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 2</description>
+			</items_320>
+			<items_0>
+				<label>Window width &lt; 320</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 1</description>
+			</items_0>
+			<thumb_width>
+				<label>Thumbnail Width</label>
+                <visible>1</visible>
+                <type>text</type>
+			</thumb_width>
+			<thumb_height>
+				<label>Thumbnail Height</label>
+                <visible>1</visible>
+                <type>text</type>
+			</thumb_height>
+			<template>
+				<label>Template</label>
+				<visible>1</visible>
+				<type>text</type>
+				<description>Leave empty for using default template.</description>
+			</template>
+			<show_in_front>
+				<label>Show in Frontend</label>
+				<visible>1</visible>
+				<required>1</required>
+				<type>multiselect</type>
+				<source_model>blogfeatures/showinfront</source_model> 
+			</show_in_front>
+        </parameters>
+    </blogfeatures_codazonblogpostlist>
+</widgets>

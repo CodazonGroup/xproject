@@ -1,0 +1,127 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+
+<div class="header-container cdz-header-style-01">
+    <div class="header hidden-xs">
+        <div class="cdz-header-top  no-padding">
+			<div class="cdz-header-top-content container">
+				<div class="row">
+					<div class="col-sm-12 cdz-col-left" id="cdz-pc-stores">
+						<?php echo $this->getChildHtml('store_switcher_style_01') ?>
+						<?php echo $this->getChildHtml('store_language_style_01') ?>
+						<?php echo $this->getChildHtml('currency_style_01') ?>
+					</div>
+					<div class="col-sm-12 cdz-col-right" id="cdz-pc-account">
+						<?php echo $this->getChildHtml('topLinks') ?>
+						<?php echo $this->getChildHtml('cdzTopLinks') ?>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="cdz-header-bottom no-padding sticky-menu">
+			<div class="cdz-header-bottom-content">
+				<div class="cdz-bottom-logo-cart">
+					<div class="container">
+					<div class="row">
+						<div class="col-sm-12 cdz-header-logo"><h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1></div>
+						<div class="col-sm-12 cdz-header-cart">
+							<?php echo $this->getChildHtml('cart_sidebar') ?>
+						</div>      
+					</div>
+					</div>
+				</div>
+				<div class="cdz-header-menu">
+					<div class="container">
+						<div class="cdz-header-menu-content">
+							<div class="row cdz-fix-left">
+								<div class="col-sm-18 cdz-content-megamenu">
+									<?php echo $this->getChildHtml('topMenu') ?>
+									<?php //echo $this->getChildHtml('topContainer'); ?>
+								</div>
+								<div class="col-sm-6 pull-right search-wrapper">
+									<div class="search-content block block-search">
+										<div class="search-form-container" id="cdz-pc-search-form">
+										<?php echo $this->getChildHtml('topSearch') ?>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="mobile-header visible-xs">
+        <div class="cdz-mobile-header-menu">
+            <div class="container">
+            	<div id="cdz-mobile-nav" class="offcanvas cdz-mobile-nav mobile-nav-container navmenu navmenu-default navmenu-fixed-left" role="navigation">
+					<ul class="nav nav-tabs">
+                    	<li class="active"><a data-toggle="tab" href="#cdz-mobile-menu"><?php echo $this->__('Menu') ?></a></li>
+                        <li><a data-toggle="tab" href="#cdz-mobile-account"><?php echo $this->__('Account') ?></a></li>
+                        <li><a data-toggle="tab" href="#cdz-mobile-stores"><?php echo $this->__('Settings') ?></a></li>
+                   	</ul>
+                   <div class="tab-content">
+						<div class="tab-pane fade in active cdz-mobile-menu" id="cdz-mobile-menu">
+							<?php echo $this->getChildHtml('mobileTopMenu') ?>
+                        </div>
+						<div class="tab-pane fade cdz-mobile-account" id="cdz-mobile-account">
+							<?php echo $this->getChildHtml('cdzTopLinks') ?>
+                        </div>
+                        <div class="tab-pane fade cdz-mobile-stores" id="cdz-mobile-stores">
+							<?php echo $this->getChildHtml('store_switcher_style_01') ?>
+                            <?php echo $this->getChildHtml('store_language_style_01') ?>
+                            <?php echo $this->getChildHtml('currency_style_01') ?>
+                        </div>
+                   </div>
+				</div>
+                
+				<div class="navbar navbar-default cdz-navbar">
+					<button type="button" class="cdz-navbar-toggle navbar-toggle cdz-menu-responsive" data-recalc="false" data-toggle="offcanvas" data-target="#cdz-mobile-nav" data-canvas="body">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                  	</button>
+					<div class="cdz-mobile-logo"><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></div>
+                  	
+                    <?php echo $this->getChildHtml('cart_sidebar.mobile') ?>
+					<div class="cdz-mobile-search">
+                  		<a href="#" class="cdz-search-trigger"></a>
+                        <div class="cdz-dropdown-content" id="cdz-mobile-search-form" style="display:none;"><?php echo $this->getChildHtml('topSearch') ?></div>
+                  	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php //echo $this->getChildHtml('topMenu') ?>
+
+<div class="mobile-menu-bg">
+</div>

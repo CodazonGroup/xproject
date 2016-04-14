@@ -1,0 +1,29 @@
+<?php
+$username = $this->getUserName();
+$limit = $this->getLimit();
+$tweets = $this->getLastestTweets();
+?>
+<?php if(count($tweets) > 0): ?>
+	<?php
+		$dateHelper = Mage::getModel('core/date');
+		$href = 'https://twitter.com/'.$username;
+	?>
+	<div class="twitter-wrapper">
+    	<p class="h2"><?php echo $this->getTitle() ?></p>
+        <ul class="twitter-list">
+		<?php foreach($tweets as $tweet): ?>
+        <li class="tweet-item">
+        	<div class="tweet-text">
+            	<?php echo $this->stripTags($tweet->text) ?>
+            </div>
+            <div class="tweet-time">
+            	<a target="_blank" href="<?php echo "https://twitter.com/{$tweet->user->id}/status/{$tweet->id_str}" ?>" ><?php echo $dateHelper->date('D m, Y',$tweet->created_at) ?></a>
+            </div>
+            <div class="tweet-user">
+            	<span>by</span> <a target="_blank" href="<?php echo $href ?>"><?php echo $this->stripTags($tweet->user->name) ?></a>
+            </div>
+        </li>
+		<?php endforeach ?>
+	    </ul>
+    </div>
+<?php endif ?>

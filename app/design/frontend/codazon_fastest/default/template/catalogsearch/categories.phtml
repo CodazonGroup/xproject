@@ -1,0 +1,35 @@
+<?php
+$html = '';
+$children = $menuTree->getChildren();
+if(!isset($options['lv'])){
+	$options['lv'] = 1;
+}else{
+	$options['lv']++;
+}
+if($hasWrap){
+	$curId = $this->getRequest()->getParam('cat');
+	$curId = (!empty($curId))?$curId:'';
+	if(!empty($curId)){
+		$curName = Mage::getModel('catalog/category')->load($curId)->getName();
+	}else{
+		$curName = $this->__('All Categories');
+	}
+	$html .= '<input type="hidden" name="cat" id="cdz-catsearch" value="'.$curId.'" />';
+	$html .= '<div class="cat-input hidden-xs">';
+	$html .= '<span class="current-cat cdz-trigger">'.$curName.'</span>';
+	$html .= '<ul class="cat-tree cdz-dropdown-content" style="display:none">';
+	$html .= '<li class="unselected" data-cat="0">'.$this->__('All Categories').'</li>';
+}
+foreach ($children as $child) {
+    $html .= '<li data-cat="'.$child->getId().'">';
+    $html .= str_repeat("&nbsp;&nbsp;&nbsp;",$options['lv']).$this->escapeHtml($this->__($child->getName()));
+    $html .= '</li>';
+	if ($child->hasChildren()) {
+		$html .=  $this->render($child, $childrenWrapClass, false, '',$options);
+    }
+}
+if($hasWrap){
+	$html .= '</ul>';	
+	$html .= '</div>';
+}
+return $html;

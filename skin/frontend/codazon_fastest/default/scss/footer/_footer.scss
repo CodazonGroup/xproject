@@ -1,0 +1,252 @@
+.footer-top-ads {
+	color:$main_text;
+	.ftop-ads-title {
+		font-size: 250%;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.ftop-ads-small {
+		font-size: 90%;
+		clear:left;
+		margin:0
+	}
+	.ftop-newsletter {
+		margin: 0;
+	}
+	.block.block-subscribe {
+		margin-bottom: 0;
+		.block-title{display:none}
+	}
+}
+
+.ftop-newsletter,.cdz-popup-newsletter {
+	.block.block-subscribe .block-content{float:none;width:50%;overflow:hidden;height:100%;margin:0 auto} 
+}
+.cdz-popup-newsletter{
+	.block.block-subscribe{
+		.input-box{float:left;padding:0;margin:0}
+		.block-content{
+			width:100%;
+			.input-box {
+				display: inline-block;
+				text-decoration: none;
+				display: block;
+				width:344px;
+			}
+		}
+	}
+}
+
+  
+.ftop-newsletter{
+	.block.block-subscribe{
+		.block-content{
+			.input-box {
+				display: inline-block;
+				text-decoration: none;
+				display: block;
+				width:78%;
+				float:left;
+				padding:0;
+				margin:0
+			}
+			
+		}
+		.actions {
+			margin:0;
+			float:left;
+			width:22%;
+			button {
+				padding: 6px 20px 7px;
+				margin:0
+			}
+		}
+	}
+}
+.block.block-subscribe{
+	margin-bottom: 20px;
+	.title {
+		display: none;
+	}
+	.form.subscribe {
+		display: table;
+		width: 100%;
+	}
+	.fieldset {
+		display: table-cell;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+	}
+	.block-content {
+		.input-box:before {
+			-webkit-font-smoothing: antialiased;
+			font-size: 16px;
+			line-height: 40px;
+			color: #c2c2c2;
+			content: '\f0e0';
+			font-family: FontAwesome;
+			margin: 0 0 0 8px;
+			vertical-align: middle;
+			display: inline-block;
+			font-weight: normal;
+			overflow: hidden;
+			speak: none;
+			text-align: center;
+			position: absolute;
+		}
+		input {
+			padding-left: 35px;
+			height: 40px!important;
+			border: 3px solid;
+			width:100%;
+			border-radius:0;
+			text-transform: uppercase;
+		}
+		input[type="email"] {
+			background: #ffffff;
+			color: #646464;
+		}
+	}
+	.field {
+		margin: 0 0 10px;
+	}
+	.actions button {
+		padding: 8px 20px;
+		float:none;
+		margin-top:10px;
+	}
+	.action.subscribe {
+  min-height: 41px;
+}
+}
+
+/* Codazon_Footer*/
+.page-footer {
+	ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none none;
+
+	}
+	.top-footer-wrapper {
+		padding:30px 0
+	}
+	.footer-container-wrapper {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.footer-content-top {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.block-static-block.widget {
+			margin-bottom: 0;
+		}
+	}
+	.footer-bottom {
+		padding: 30px 0;
+	}
+	p.h5 {
+		font-weight: 600;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+
+	}
+	.footer-link {
+		margin-top: -10px;
+		li{
+			a {
+				display: block;
+				padding: 10px 0;
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}	
+			&.last{
+				a{
+					 border-bottom: none;
+				}
+			}
+		}
+	}
+	.item_tag {
+		margin: 0 -5px;
+		li{
+			a{
+				float: left;
+				padding: 10px;
+				border: 1px solid ;				
+				margin: 5px;
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+		}
+	}
+	.footer-social {
+		overflow: hidden;
+		margin: 0 -5px;
+		padding-top: 50px;
+		a {
+			display: inline-block;
+			vertical-align: top;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			float: left;
+			margin:0 10px 0 0;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+			-moz-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			border: 1px solid;
+			span {
+				font-size: 0;
+				&:before {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.bottom-footer-wrapper {
+		padding: 30px 0 20px;
+		overflow: hidden;
+		border-top: 2px solid ;
+		.block-static-block.widget {
+			margin-bottom: 0;
+		}
+	}
+	.copyright {
+		float: left;
+	}
+	address {
+		margin-top: 5px;
+	}
+	.footer-custom-block {
+		float: right;
+	}
+	.footer-bottom-link {
+		margin: 0 -10px 10px;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			
+		}
+	}
+	.links{display:none}
+	.cdz-footer-bottom-payment{display:block;float:right}
+	.footer address{border:0;}
+}

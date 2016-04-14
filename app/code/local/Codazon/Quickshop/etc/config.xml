@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Codazon_Quickshop>
+			<version>0.1.0</version>
+		</Codazon_Quickshop>
+	</modules>
+	<global>
+		<helpers>
+			<quickshop>
+				<class>Codazon_Quickshop_Helper</class>
+			</quickshop>
+		</helpers>
+		<blocks>
+            <quickshop>
+                <class>Codazon_Quickshop_Block</class>
+            </quickshop>
+        </blocks>
+	</global>
+	<frontend>
+		<routers>
+            <quickshop>
+                <use>standard</use>
+                <args>
+                    <module>Codazon_Quickshop</module>
+                    <frontName>quickshop</frontName>
+                </args>
+            </quickshop>
+        </routers>
+		<translate>
+            <modules>
+                <Codazon_Quickshop>
+                    <files>
+                        <default>Codazon_Quickshop.csv</default>
+                    </files>
+                </Codazon_Quickshop>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <quickshop>
+                    <file>codazon_quickshop.xml</file>
+                </quickshop>
+            </updates>
+        </layout>
+	</frontend>
+	<default>
+		<codazon_quickshop>
+			<general>                
+				<quickshop_enabled>1</quickshop_enabled>
+				<quickshop_label>Quick shop</quickshop_label>
+				<quickshop_itemclass><![CDATA[.products-grid .item, .products-list .item]]></quickshop_itemclass>
+			</general>      
+		</codazon_quickshop>
+	</default>
+</config> 

@@ -1,0 +1,17 @@
+
+@import "../mixins/theme-custom";
+//@import "mixins/theme-drug-var";
+@import "../variable/drug-theme.scss";
+
+
+/*Drug Pharmacy Homepage*/
+@import "drugpharmacy_content";
+
+/*Drug Pharmacy Header*/
+@import "../header/header-02.scss";
+
+/*Drug Pharmacy Footer*/
+@import "../footer/footer-02.scss";
+
+/*Color Important*/
+@import "../global";

@@ -1,0 +1,170 @@
+
+/* ============================================ *
+ * Codazon_Slider
+ * ============================================ */
+.cdz-brand-slider .owl-theme.owl-carousel {
+
+}
+.cdz-brand-slider .owl-theme.owl-carousel  .owl-item {
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-item > [class*='cdz-sm-'] {
+  padding: 0;
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-item .item {
+  width: 100%;
+}
+.cdz-slider-banners {
+  padding-top: 0 !important;
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  margin-top: 0;
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-'] {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  font-size: 0;
+  margin: 0 5px;
+  padding: 0;
+  border: 2px solid;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: inline-block;
+}
+
+.cdz-brand-slider .owl-theme.owl-carousel .owl-controls {margin:0}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-']:before {
+  -webkit-font-smoothing: antialiased;
+  font-size: 30px;
+  line-height: 34px;
+  content: '\f104';
+  font-family: FontAwesome;
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: normal;
+  overflow: hidden;
+  speak: none;
+  text-align: center;
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-'].owl-next:before {
+  content: '\f105';
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-'].disabled {
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+}
+.cdz-brand-slider-wrap {
+  background-color: transparent;
+}
+.cdz-brand-slider-wrap .cdz-banners-item {
+  padding: 5px;
+  border: 1px solid;
+}
+.cdz-brand-slider-wrap .cdz-slider-banners.owl-carousel .owl-nav {
+  position: static;
+}
+.cdz-brand-slider-wrap .cdz-slider-banners.owl-carousel .owl-nav [class*='owl-'] {
+  left: 0;
+  top: 10px;
+  position: absolute;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+.cdz-brand-slider-wrap .cdz-slider-banners.owl-carousel .owl-nav [class*='owl-'].owl-next {
+  right: 0;
+  left: auto;
+}
+.cdz-brand-slider-wrap .cdz-slider-banners.owl-carousel:hover .owl-nav [class*='owl-'] {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  cursor:pointer;
+}
+
+.owl-nav [class*='owl-'],.owl-theme .owl-nav [class*=owl-] {
+	width: 50px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+	position: relative;
+	font-size: 0;
+	margin: 0 5px;
+	cursor:pointer;
+	padding: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	left: 20px;
+	top: 45%;
+	top: calc(50% - 15px);
+	-webkit-top: calc(50% - 15px);
+	-o-top: calc(50% - 15px);
+	-moz-top: calc(50% - 15px);
+	border: 2px solid;
+	color: #ffffff;
+	border-color: #ffffff;
+	cursor:pointer;
+	font-size:0!important;
+	margin:0;
+	padding:0;
+}
+
+.owl-nav [class*='owl-']:before {
+	-webkit-font-smoothing: antialiased;
+	font-size: 35px;
+	line-height: 45px;
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: normal;
+	overflow: hidden;
+	speak: none;
+	content: '\f104';
+	font-family: FontAwesome;
+	text-align: center;
+}
+.owl-nav [class*='owl-'].owl-next {
+	right: 20px;
+	left: auto;
+}
+.owl-nav [class*='owl-'].owl-next:before {
+  content: '\f105';
+}
+.owl-nav [class*='owl-'].disabled {
+	-webkit-opacity: 0.2;
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+/* ============================================ */

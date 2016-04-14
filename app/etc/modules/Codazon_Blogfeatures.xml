@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Codazon_Blogfeatures>
+      <active>true</active>
+      <codePool>local</codePool>            
+	        <depends>
+                <Mage_Cms />
+				<AW_Blog />
+            </depends>
+      <version>0.1.0</version>
+    </Codazon_Blogfeatures>
+  </modules>
+</config>

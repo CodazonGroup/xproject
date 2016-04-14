@@ -1,0 +1,12 @@
+/*Contact form*/
+.contacts-index-index{
+	.col-main-containter .col-main .col-wrapper-main {
+		width:70%;
+		margin:0 auto;
+		@include abs_none_main_background_shadow;
+		#contactForm{
+			@include abs_main_background_shadow;
+			textarea.input-text{min-height:300px}
+		}
+	}
+}

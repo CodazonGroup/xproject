@@ -1,0 +1,268 @@
+.product-view {
+	.product-shop-stock-avai {
+		margin-bottom:$indent__base * 1.5
+	}
+	.product-shop-wrap {
+		margin-bottom:$indent__base * 1.5;
+		clear:left;
+		float:left;
+		width:100%
+	}
+	.old-price{margin:0}
+	.product-shop{width:auto;float:none}
+	.product-shop-title {margin-bottom:5px}
+	.product-name {margin:0 0 10px}
+	.product-img-box{width:inherit;min-width:100%}
+	.product-name h1{border:0;margin:0px;padding:0;line-height:28px;text-transform: inherit;}
+	.product-shop-sku {
+		clear:left;
+		font-weight:400;margin:0;
+		strong{font-weight:400}
+	
+	}
+	.grouped-items-table{
+		margin:20px 0 0;
+		 tr td{padding:4px 5px;vertical-align:middle;}
+	}
+	.availability label{display:none}
+	.availability.in-stock{font-weight:400;
+	}
+	.product-options p.note{padding-top:5px;}
+	#downloadable-links-list{
+		margin:0;
+		.label{
+			display:inline-block;
+			
+		}
+	}
+	.availability.in-stock strong{font-weight:400;}
+	.product-shop .ratings{text-align:right;margin:0}
+	.ratings .rating-links{clear:none;float:none;display:inline-block;text-transform:uppercase;margin:0}
+	.ratings .rating-links a{font-weight:400;}
+	.no-rating {margin:0;text-align:right;text-transform:uppercase;font-weight:400}
+	.price-box{margin:0}
+	.product-shop-button,.product-shop-option{margin-bottom:0;
+		.or{display:none}
+	}
+	.qty_cart input.qty{width:100%;margin:0;border-right:0;border-left:0}
+	.add-to-cart{padding:0;margin:0;border:0;
+		
+	}
+	.button.btn-cart{width:100%;}
+	.cdz-social-listing 	{
+		float:left;
+		li{float:left;margin-right:20px;
+		}
+	}
+	p.required, .validation-advice{display:none}
+	.product-button-top{margin-bottom:20px;float: left;}
+	.product-options dl.last dd.last{margin-bottom:0;}
+	.product-options dl{margin-bottom:30px}
+	.product-options dl dt label {font-size:12px;font-weight:500;text-transform:uppercase}
+	.action.primary, button.button{line-height:28px;}
+	button.button:hover{}
+	.add-to-links {	
+		margin-top:20px;
+		float:left;display:block;width:100%;
+		li{
+			float:left;width:50%;
+			a{
+			padding:10px;
+			display:block;
+			margin:0 5px 0 0;
+			text-align:center;
+			text-transform:uppercase;
+			font-size:11px;
+			}
+		}
+		li.compare a{margin:0 0 0 10px;}
+		li a:hover{}
+	}
+	.product-shop-social{margin-top:15px;}
+	.size-chart-btn{
+		background:transparent;
+		border:0;
+		text-decoration:underline;
+	}
+	.short-description h2{}
+	.nav-tab-content{padding:15px 0 0}
+	.product-options .swatch-attr .select-label {}
+}
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price{}
+.product-view .product-shop, .product-view .add-to-cart-wrapper, .product-view .block-related{padding:0}
+/**/
+/*Start Product media*/
+.product-view-media{
+	.more-views{
+		h2{display:none}
+		li{margin-bottom:10px;}
+		li a:hover img{}
+	}
+	.product-img-box .product-image{padding:0 30px;
+		#image{width:100%;}
+	}
+	
+}
+
+.catalog-product-view .product-essential,
+.catalog-product-view .product-detail-tab,
+.catalog-product-view .box-reviews,
+.catalog-product-view .block-related,
+.catalog-product-view .block-upsell {
+	margin-bottom:20px;
+	padding:20px;
+}
+
+/*End Product media*/
+.product-view  .box-collateral h2,.block-related .block-title{
+	display:block;
+	padding-bottom:0px;
+	margin-bottom: 20px;
+	float:left;
+	width:100%;
+}
+.product-view .product-shop, .product-collateral, .product-view .block-related, .product-view.block-related {margin-bottom:60px;}
+.product-view  .box-collateral h2 strong,.product-view .block-related .block-title strong{
+    
+    left: 0;
+    transition: all 250ms ease 0s;
+	font-weight:500;
+	display:block;
+	float:left;
+	padding-bottom: 5px;
+}
+.product-collateral .product-tabs li a::before, .product-collateral .product-tabs li a::after{
+	content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: all 250ms ease 0s;
+	width:50%;
+}
+
+.product-button-top label{display:none}
+.qty-ctl {
+  float: left;
+  height: auto;
+  line-height: normal;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.qty-ctl button {
+  font-size: 0;
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: left;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 0px;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid;
+  text-indent: 0;
+  width: 40px;
+  height: 40px;
+  padding: 0 13px;
+  position: relative;
+  z-index: 1;
+}
+.qty-ctl button.decrease {
+
+}
+.qty-ctl button.decrease:before {
+  content: "-";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  padding-left: 4px;
+}
+.qty-ctl button.increase {
+
+}
+.qty-ctl button.increase:before {
+  content: "+";
+  font-size: 20px;
+  line-height: 0.5;
+}
+
+.qty_cart input.qty {
+  float: left;
+  height: 40px;
+  width: 120px !important;
+  text-align: center;
+  margin: 0 -1px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/*More view images and Slider ---*/
+.rsThumbsArrow{
+background-color: rgba(0, 0, 0, 0.6);
+}
+.rsUni .rsThumbsArrowIcn {
+    width: 16px;
+    height: 16px;
+    top: 20%!important;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -8px;
+    position: absolute;
+    cursor: pointer;
+    background:none!important;
+	 display: inline-block;
+	 text-align:center;
+	 font-size:0px;
+}
+.rsUni .rsThumbsArrowLeft .rsThumbsArrowIcn {
+	top:60%!important
+}
+.rsUni .rsThumbsArrowRight .rsThumbsArrowIcn:before {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f0dd";
+	font-size: 21px;
+	color:#fff;
+
+}
+.rsUni .rsThumbsArrowLeft .rsThumbsArrowIcn:before {
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f0de";
+	font-size: 21px;
+	color:#fff;
+
+}
+.rsMainSlideImage{float:right}
+.magnify {
+	width: 250px; height: 250px;
+	position: absolute;
+	border-radius: 100%;
+	
+	/*Multiple box shadows to achieve the glass effect*/
+	box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 
+	0 0 7px 7px rgba(0, 0, 0, 0.25), 
+	inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+	
+	/*hide the glass by default*/
+	display: none;
+}
+.more-views .rsUni .rsThumbsVer{
+z-index:1
+}
+/*--More view images and Slider*/

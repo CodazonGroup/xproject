@@ -1,0 +1,33 @@
+<?php if($this->getChildHtml()): ?>
+<div class="modal fade cdz-popup-wrapper" id="cdz-popup-content" role="dialog">
+<div class="modal-popup _show">
+	<div class="modal-dialog modal-inner-wrap">
+    	<header class="modal-header">
+            <button type="button" class="action-close close" data-dismiss="modal"></button>
+        </header>
+
+    	<div class="modal-content">
+            <div class="cdz-popup-content">
+				<div class="block-popup-content">
+				<?php echo $this->getChildHtml() ?>
+				</div>
+            </div>
+        </div>
+	</div>
+	</div>
+</div>
+<script>
+(function( $ ) {
+	$(document).ready(function(e) {
+		var now = new Date();
+		var time = now.getTime();
+		var expireTime = time + 3600000;
+		now.setTime(expireTime);
+		if(!Mage.Cookies.get("cdz_popup")){
+			document.cookie = 'cdz_popup=true; expires='+now.toGMTString();
+			$('#cdz-popup-content').modal('show');
+		} 
+    });
+})( jQuery );
+</script>
+<?php endif ?>

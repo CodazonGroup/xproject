@@ -1,0 +1,160 @@
+.menu-vertical-title{
+	border-radius: 5px 5px 0 0;
+	padding: 8px 20px 8px 20px;
+	margin-bottom: -2px;
+	position: relative;
+	z-index: 3;
+	h3{margin:0;padding:0;
+		&:before{
+			@include font-awesome(\f03a,17px);
+			margin-right:10px;
+		}	
+	}
+}
+.menu-vertical{
+	position:relative;
+	z-index:2;	
+	.cdz-nav-wrap{
+		@include border-radius(5px);
+		
+		li.vertical-level1:first-child a.vertical-level1{
+			border-radius:5px 5px 0px 0;
+		}
+		li.vertical-level1:last-child a.vertical-level1{
+			border-radius:0 0 5px 5px;
+		}
+		li.vertical-level1:first-child:hover a.vertical-level1{
+			border-radius:0 0 0 0;
+		}
+		.parent{position:relative;}
+		li.vertical-level1{
+			a.vertical-level1{
+				padding: 12px 17px;
+				line-height: 17px;
+				display:block;
+			}
+			&:hover{
+				a.vertical-level1{
+				}
+			}
+			
+			.cdz-sub-cat{
+				right: 0;
+				min-width: 100%;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				margin: 0;
+				display:none;
+				padding:5px 0;
+				border-radius:0px 5px 5px 0;
+				border-bottom:0;
+				.menu-vertical-right &{
+					right:auto;
+					left:-100%;
+					border-radius:0px;
+				}
+				li{
+					padding: 5px 17px;
+					line-height: 17px;
+					display:block;
+					position:relative;
+					a{display:block;}
+					&.parent:after{
+						top:7px;
+					}
+				}
+			}
+		}
+		.parent{
+			&:hover{			
+				> .cdz-sub-cat{
+					display:block;
+					@include transition1();
+				}
+			}
+			&:after{
+				@include font-awesome(\f054,12px);
+				text-align:right;
+				position:absolute;
+				right:10px;
+				top:15px;
+				.menu-vertical-right &{
+					content:"\f053";
+				}
+			}
+			.parent .cdz-sub-cat{top:-5px;}
+		}
+		.view-all{
+			a{
+				padding: 12px 17px;
+				line-height: 17px;
+				display:block;
+				&:before{
+					@include font-awesome(\f196,17px);
+					float:right;
+					
+				}
+			}
+		}
+	}
+}
+
+ @media (max-width: 991px){
+	.menu-vertical-title{
+		h3{
+			font:$f_note;
+		}
+		h3:before{
+			display:none
+		}
+	}
+	.menu-vertical{
+		.cdz-nav-wrap{
+			li.vertical-level1{
+				a.vertical-level1{
+					font:$f_note;
+					padding:7px 17px
+				}
+			}
+			li.view-all{
+				a{
+					font:$f_note;
+					&:before{
+						@include font-awesome(\f196,12px);
+					}
+				}
+			}
+		}
+	} 
+	
+	
+}	 
+
+/*menu vertical style home Sportwear*/
+.menu-vertical-style02{
+	.nav.nav-tabs{
+		border:none;
+		.nav-tab-item{
+			margin:0;
+			float:left;
+			width:50%;
+			.switch{
+				padding: 15px 10px!important;
+				height: auto;
+				margin: 0;
+				border: none!important;
+				text-transform:uppercase;
+				border-radius:0;
+				font-weight:700;
+			}
+		}
+	}
+	.nav-tab-content{
+		padding:9px 0 0;
+		.cdz-nav-wrap li.vertical-level1 a.vertical-level1{
+			padding:10px 17px;
+		}
+	}
+}
+/*update 04/14*/

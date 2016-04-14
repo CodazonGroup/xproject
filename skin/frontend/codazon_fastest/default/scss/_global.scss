@@ -1,0 +1,2311 @@
+body{font:$f_default;color:$main_text;background:$page_background}
+body a{color:$main_alink_text;text-decoration: none;  vertical-align: middle;}
+a:hover{text-decoration: none; vertical-align: middle;}
+a:hover, a:focus{color:$main_alink_text}
+.wrapper{font:$f_default;color:$main_text;background:$page_background}
+.pages{background:$page_background}
+
+.page-title h1,
+.page-title h2
+{
+  text-transform: uppercase;
+  font: $f_h3;
+  font-weight: 600;
+   color: $main_text;
+  padding-bottom: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.cdz-dropdown-content{
+	background:$menu_drop_background;
+	border-color:$menu_drop_border;
+}
+
+
+
+.cdz-best-seller-wra .nav-tabs .nav-tab-item .switch:hover {
+    color: $main_hover_text;
+    text-decoration: none;
+  }
+  .cdz-best-seller-wra .nav-tabs .nav-tab-item .switch:active {
+    color: $main_hover_text;
+    text-decoration: none;
+  }
+  .cdz-best-seller-wra .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
+  .cdz-best-seller-wra .nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
+    background: transparent;
+  }
+
+  
+/* ============================================ *
+ * Content
+ * ============================================ */
+
+/*three block*/
+/*Background parallax*/
+.bg-wrapper-ads{
+	background-image: url(../images/bg-parallax.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	.bg-parallax{
+		background-size: cover !important;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		padding: 5rem 0;
+	}
+}
+.groupbanner-text{
+	.groupinfo{
+		.groupinfo-inner{
+			.groupinfo-desc{
+				color:$main_hover_text_box;
+				.text-link{
+					:hover{ text-decoration:underline;color:$main_hover_text_box}
+					:after{
+						@include abs-iconfont('\f105', 14px);
+					}
+				}
+				.action.primary{
+					color: $btn_productitem_text;
+					border-color: $btn_productitem_border;
+					background: $btn_productitem_background;
+					:hover{
+						color: $btn_primary_text;
+						border-color: $btn_primary_border;
+						background: $btn_primary_background;
+					}
+				}
+			}
+		
+		}
+	}
+}
+
+/* ============================================ *
+ * Codazon_Footer style 1
+ * ============================================ */
+
+.footer-top-ads {
+	color:$main_text;
+	
+	.ftop-ads-small {
+		color: $main_text;
+	}
+	.block.block-subscribe {
+		.actions{
+			.button {
+				color: $btn_default_text;
+				background-color: $btn_default_background;
+				border-color: $btn_default_border;
+				font:$f_h4;
+			}
+			.button:hover {
+				background:$btn_primary_background;
+				color:$btn_primary_text;
+				border-color:$btn_primary_border;
+			}
+		}
+	}
+}
+
+.block.block-subscribe{
+	.block-content {
+		input {
+			border-color:$footer_border;
+		}
+	}
+}
+
+.page-footer {
+	background: $footer_background;
+	color: $footer_text;
+	.top-footer-wrapper {
+		background-color:$footer_top_background;
+	}
+	.footer-bottom {
+		background:$footer_bottom_background;
+	}
+	a {
+		color: $footer_text;
+	}
+	a:hover {
+		color: $footer_hover_text;
+	}
+	p.h5 {
+		color:$footer_text;
+		font:$f_h5;
+	}
+	.item_tag {
+		li{
+			a{
+				color: $footer_text;
+				background-color: $footer_bottom_background;
+				border-color: $footer_border;
+			}
+			a:hover {
+				color: $btn_default_text;
+				background-color: $btn_default_background;
+				border-color: $btn_default_border;
+			}
+		}
+	}
+	.footer-social {
+		a {
+			border: 1px solid;
+			border-color: $footer_border;
+			&:hover{
+				color: $footer_bottom_background;
+				background-color: $footer_text;
+				border-color: $footer_border;
+			}
+		}
+	}
+	.bottom-footer-wrapper {
+		background: $footer_bottom_background;
+		border-top-color: $footer_border;
+	}
+	.copyright {
+		font: $f_h5;
+	}
+	.footer-bottom-link {
+		li {
+			a {
+			  font: $f_h5;
+			}
+		}
+	}
+}
+/* ============================================ *
+ * End Codazon_Footer Style 1
+ * ============================================ */
+ 
+/* ============================================ *
+ * End Codazon_Footer Style 2
+ * ============================================ */
+ .footer-newsletter-02{
+	.ftop-newsletter{
+		.block.block-subscribe{
+			.block-content{
+				.input-box{
+					input{
+						border-color:$footer_border;
+					}
+				}
+			}
+		}
+	}
+	.social{
+		a{
+			color: $btn_default_text;
+			background-color: $btn_default_background;
+			border-color: $btn_default_border;
+			&:hover {
+				color: $btn_default_background;
+				background-color: $btn_default_text;
+				border-color: $btn_default_background;
+				
+			}
+		}
+	}
+	
+}
+.footer-style-02{
+	.footer-link{
+		li{
+			border-bottom:1px solid $main_border;
+		}
+	}
+}
+/* ============================================ *
+ * End Codazon_Footer Style 2
+ * ============================================ */
+ 
+ 
+/* ============================================ *
+ * Codazon_Slider
+ * ============================================ */
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-'] {
+	color: $btn_slider_text;
+	background-color: $btn_slider_background;
+	border-color: $btn_slider_border;
+}
+.cdz-brand-slider .owl-theme.owl-carousel .owl-nav [class*='owl-']:hover {
+	color: $btn_default_text;
+	background-color: $btn_default_background;
+	border-color: $btn_default_border;
+}
+.cdz-brand-slider-wrap .cdz-banners-item {
+	background-color: $btn_primary_background;
+	border-color: $main_border;
+}
+.owl-nav [class*='owl-']:hover {
+	color: $btn_default_text;
+	background-color: $btn_default_background;
+	border-color: $btn_default_border;
+}
+/* ============================================ */
+
+
+/*Block Home Jewelry*/
+.wrapper-ads02{
+	color: $main_hover_text_box;
+}
+.wrapper-ads03{
+	.text-area{
+		i{
+			background:lighten($main_text,10%);
+		}
+		h5{
+			background:lighten($main_text,20%);
+		}
+	}
+}
+/*Default Input and Validate input --- */
+input.input-text{
+	font:$f_h6;
+	width:100%;
+	height:40px!important;
+	color:$input_text;
+	border: 1px solid $input_border;
+}
+textarea.input-text{
+	font:$f_h6;
+	width:100%;
+	color:$input_text;
+	border: 1px solid $input_border;
+	max-width:100%
+}
+.validate-select{
+	font:$f_h6;
+	width:100%;
+	height:40px!important;
+	color:$input_text;
+	border: 1px solid $input_border;
+	max-width:inherit
+}
+
+.input-text:focus {
+	border: 1px solid $input_border_focus;
+	outline-color:$input_border_focus
+}
+
+.input-text.validation-failed { border-color: #fc7070;}
+.validate-select.validation-failed { border-color: #fc7070;}
+.input-text.validation-failed:focus { outline-color: #ef9384;}
+/*---Default Input and Validate input */
+
+
+.popup-content-title.h3{color:$main_text}
+
+
+/*Slideshow and Caption area----*/
+.slide-caption {
+	.slide-title{
+		span {
+			
+			border: 2px solid #282828;
+			font-weight: 600;
+			color:#282828
+		}
+	}
+	
+}
+.slide-caption.cls-white .slide-title  span{color:#fff}
+/*Slideshow and Caption area----*/
+
+/* ============================================ *
+ * Codazon_Blog
+ * ============================================ */
+.cdz_wapper-blog01 {
+	.owl-theme.owl-carousel {
+		.owl-nav {
+			.owl-next,.owl-prev {
+				background:$btn_primary_background;
+				font-size:0px;
+				color:$btn_primary_text
+			}
+		}
+	}
+	.blog-text-link {
+		a{color:$main_text;}
+	}
+}
+
+/* ============================================ *
+ * Codazon_Blog
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Blog style 2 - Home Handbag
+ * ============================================ */
+ .cdz-wapper-blog-02{
+	 .owl-item{
+		 background:$blog_background;
+		 h5.blog-title {
+			 a{
+				font:$blog_title_font;
+				color:$blog_title_color
+			 }
+		 }
+		 .cdz-blog-right{
+			 font:$blog_text_font;
+		 }
+		.blog-author{
+			color:lighten($blog_text,20%);
+		}
+		.blog-desc{
+			font:$blog_text_font;
+			color:$blog_text;
+		}
+		.blog-date{
+			background: $btn_default_background;
+			color:$btn_default_text;
+		}
+		.blog-text-link{
+			a{
+				font:$f_h5;
+				color: $btn_secondary_text;
+				background-color: $btn_secondary_background;
+				border-color: $btn_secondary_border;
+				&:hover{
+					background: $btn_hover_background;
+					border-color:$btn_primary_border;
+					color: $btn_hover_text;
+				}
+			}
+		}
+	 }
+ }
+/* ============================================ *
+ * Codazon_Blog style 2 - Home Handbag
+ * ============================================ */
+/* ============================================ *
+ * Header style 2
+ * ============================================ */
+ .cdz-header-style-02{
+	.header{
+		.cdz-header-bottom{
+			background-color:$header_background;
+		}
+		
+		.cdz-bottom-logo-cart{
+			.cdz-main-menu {
+				.groupmenu{
+					li.level0{
+						a.menu-link	{
+							border-color:$menu_background;
+							&:hover{
+								border-color:$menu_border;
+							}
+						}
+					}
+					.parent:hover:after{
+						color:$menu_drop_background;
+					}
+				}
+			} 
+		}
+		.sticky-menu{
+			.cdz-top-cart{
+				background-color:lighten($header_top_background, 10%);
+				color:$header_text_cart;
+				font:$f_h6;
+				text-transform:uppercase;
+				.cart-icon {
+					color:$header_text_cart;
+					.cart-subtotal{
+						.price{
+							color:$header_text_cart;
+						}
+					}
+				}
+				.cart-label{
+					font:$f_note;
+				}
+				.cart-icon:before{
+					color:$header_text_cart;
+				}
+			}
+		}
+	}
+	.header{
+		.sticky-menu.active{
+			.block-search {
+				.button:before{
+					color:$header_text;
+				}
+				.form-search:hover {
+					input[type="text"]{
+						color:$header_search_text;
+					}
+					.button:before{
+						color:$header_search_text;
+					}
+				}
+			}
+			.cdz-top-cart{
+				color:$header_text_cart;
+				font:$f_h6;
+				.cart-icon {
+					color:$header_text_cart;
+					.cart-subtotal{
+						.price{
+							color:$header_text_cart;
+						}
+					}
+					.cart-qty{
+					}
+				}
+				.cart-label{
+					font:$f_note;
+				}
+				.cart-icon:before{
+					color:$header_text_cart;
+				}
+			}
+		}
+	}
+}
+
+
+/* ============================================ *
+ * Header style 4
+ * ============================================ */
+ 
+/* ============================================ *
+ * Header style 4
+ * ============================================ */
+ .cdz-header-style-04{
+	.header{
+		.cdz-bottom-logo-cart{
+			background-color:$header_background;
+		}		
+		.sticky-menu{
+			.cdz-header-cart{
+				.cdz-top-login{
+					.cdz-trigger:before{
+						color:$header_cart_background;
+						border-color:$header_cart_background;
+					}
+				}
+			}
+			.cdz-top-cart{
+				color:$header_text_cart;
+				.cart-icon {
+					color:$header_text_cart;
+					.cart-subtotal{
+						.price{
+							color:$header_cart_background;
+						}
+					}
+				}
+				.cart-qty{
+					color:$menu_text;
+					background-color:$menu_background;
+				}
+				.cart-icon:before{
+					color:$header_cart_background;
+					border-color:$header_cart_background;
+				}
+			}
+		}
+	}
+}
+
+
+/* ============================================ *
+ * End Header style 4
+ * ============================================ */
+ 
+ 
+/* ============================================ *
+ * Header
+ * ============================================ */
+.cdz-top-login .cdz-dropdown-content{color:$main_text}
+.cdz-top-login,#login-form {
+	.block-login .block-content{
+		button.button{
+			background:$btn_default_background;
+			color:$btn_default_text;
+		}
+		button.button:hover{
+			background:$btn_primary_background;
+			color:$btn_primary_text;
+		}
+	}
+	
+}
+.header .sticky-menu.active{
+	.form-search{
+		.button:hover{
+			background:none;
+			color:$btn_primary_text
+		}
+		&:hover{
+			
+		}
+	}
+}
+.header {
+	background-color:$header_background;
+	font: $f_note;
+	.cdz-header-top{
+		border-bottom: 1px solid $header_border;
+		background-color: $header_top_background;
+		 color: $header_text;
+		.cdz-top-link{
+			.link{
+				a{
+					font: $f_note;
+				}
+			}
+			li {
+				a {
+					color: $header_top_text;
+				}
+				a:visited,a:hover,a:active {
+					color: lignten($header_top_text,10%);
+				}
+				.forgot-password{
+					a{
+						color:$header_top_text
+					}
+				}
+			}
+		}
+	}
+	#cdz-pc-stores{
+		.cdz-dropdown-content{
+			a:hover{
+				background:$menu_drop_hover_background;
+				color:$main_text;
+			}
+		}
+		.cdz-trigger{
+			color:$header_top_text;
+			&:hover{
+				color: lignten($header_top_text,10%);
+			}
+		}
+	}
+	.cdz-col-left {
+		font: $f_note;
+	}
+}
+.header-bottom {
+  clear: both;
+}
+.cdz-content-search {
+  float: right;
+}  
+/*Search box area*/
+.cdz-header-menu{
+	background:$menu_background
+}
+.block-search {
+	.label:before {
+	}
+	.label:hover:before {
+		color: $main_text;
+	}
+	.label:active:before {
+		color: $main_text;
+	}
+	.control {
+		border-top: 1px solid $main_border;
+	}
+
+	input[type="text"] {
+		color: $header_search_text;
+		background-color: $header_search_background;
+		font:$f_note;
+	}
+	.button:hover:before {
+		color: $main_text;
+	}
+	.button.disabled,	
+	.button:focus:before {
+		color: $main_text;
+	}
+	.button:before {
+		color: $header_search_text;
+	}
+	.cat-search-enable{
+		border-color: darken($header_search_background,15%);
+		color: $header_search_text;
+		background-color:$header_search_background;
+		.current-cat{
+			border-color:darken($header_search_background,15%);
+		}
+		.button{
+			background-color:$btn_default_background;
+			&:before{color:$btn_default_text;}
+			&:hover{
+				background-color:$menu_background;
+				&:before{color:$menu_text;}
+			}
+		}
+	}
+}
+.block-search .button[disabled],
+fieldset[disabled] .block-search .button {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.block-search input ::-webkit-input-placeholder {
+  color: $header_text;
+}
+.block-search input :-moz-placeholder {
+  color: $header_text;
+}
+.block-search input ::-moz-placeholder {
+  color: $header_text;
+}
+.block-search input :-ms-input-placeholder {
+  color: $header_text;
+}
+
+
+/*----- Codazon Search box*/
+
+.search-autocomplete {
+	ul {
+		li {
+			border-top: 1px solid #e5e5e5;
+			.amount {
+				color: $header_text;
+			}
+		}	
+	}	
+}
+
+.mobile-search-wrapper .block-search .mobile-search-icon {
+  color: $header_text;
+}
+
+.mobile-search-wrapper .ui-dialog .minisearch {
+  border: 1px solid $header_text;
+}
+.mobile-search-wrapper .ui-dialog input[type="text"] {
+  color: $header_text;
+  border-color: $header_text;
+}
+
+.mobile-search-wrapper .ui-dialog .button:before {
+  color: $header_text;
+}
+.mobile-search-wrapper .ui-dialog .button:hover:before {
+  color: $main_text;
+}
+
+.mobile-search-wrapper .ui-dialog .button:focus:before {
+  color: $main_text;
+}
+.mobile-search-wrapper .ui-dialog .button:before {
+  color: $header_text;
+}
+
+/*------Search area*/
+
+.block-cart.cdz-dropdown-content{right:0;left:auto;min-width:350px}
+.block-cart.cdz-dropdown-content .empty{text-align:center}
+.block-cart.cdz-dropdown-content .block-title{display:none}
+.block-cart{
+	.button{
+		float:none;width:100%;
+		background:$btn_default_background;
+		color:$btn_default_text
+	}
+}
+.cdz-top-cart{
+	.block-cart.cdz-dropdown-content{
+		color:$main_text;
+	}
+}
+.header .block-cart,.header .block:not(.block-static-block){
+	.summary{
+		font:$f_h6;color:$main_text;
+		h4{font:$f_h6;color:$main_text;}
+		p{font:$f_h6;color:$main_text;}
+	}
+	.actions{
+		border-bottom:1px solid $main_border;
+	/*.button{
+		background:$btn_default_background;
+		color:$btn_default_text
+		}*/
+	}
+	/*.button:hover{
+		background:$btn_primary_background;
+		color:$btn_primary_text
+	}*/
+	.block-subtitle{display:none};
+	.mini-products-list{border-bottom:1px solid $main_border;
+	}
+	.cart-viewcart {
+		a{font:$f_h4;}
+	}
+	.btn-edit{font-size:0;}
+	.btn-edit:before{
+		color:$main_text;
+	}
+	.btn-remove{font-size:0;width:0;height:0;padding:0;margin:0}
+	.btn-remove:before{
+		color:$main_text;
+		border:1px solid $main_border;
+	}
+}
+/*Logo and Cart area*/
+/* ============================================ *
+ * Codazon_Header
+ * ============================================ */
+
+
+/* ============================================ *
+ * Codazon_Product grid & List
+ * ============================================ */
+ .codazon-filter-style-02,.codazon-filter-style-05{
+	.products-grid{
+		.product-item-info{
+			.product-name{
+				a{color:$main_text;}
+			}
+		} 
+	}
+}	
+.cdz-best-seller-wrap{
+	  .nav-tabs .nav-tab-item .switch,
+	   .nav.nav-tabs .nav-tab-item .switch {
+		font:$f_h5;
+		border: 1px solid $main_border;
+	  }
+	  .nav-tabs .active.nav-tab-item .switch,
+	   .nav.nav-tabs .active.nav-tab-item .switch {
+		border: 1px solid $main_border;
+	  }
+
+	  .nav-tabs .nav-tab-item .switch {
+		color: $main_tab_text;
+		background: transparent;
+		border: 1px solid $main_border;
+
+	  }
+	    .nav-tabs .nav-tab-item .switch:visited {
+		color: $main_tab_text;
+		text-decoration: none;
+		}
+		.nav-tabs .nav-tab-item .switch:hover {
+		color: $main_hover_text;
+		text-decoration: none;
+		}
+		.nav-tabs .nav-tab-item .switch:active {
+		color: $main_tab_hover_text;
+		text-decoration: none;
+		}
+		.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
+		.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
+		background: transparent;
+		}
+		.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
+		.nav-tabs .active.nav-tab-item .switch,
+		.nav-tabs .active.nav-tab-item .switch:focus,
+		.nav-tabs .active.nav-tab-item .switch:hover {
+		background: transparent;
+		color: $main_tab_hover_text;
+		}
+
+	  .nav-tabs .item.content {
+		background: transparent;
+		border: 1px solid $main_border;
+	  }
+
+	 .nav-tabs .nav-tab-item .switch {
+		font: $f_h5;
+	  }
+
+	.product-name a	 {color:$main_hover_text_box}
+}
+.isotope-wrap {
+	.products-grid {
+		.product-item-info {
+			.product-name{
+				font:$f_h6;
+				a{
+					color:$main_hover_text_box
+				}
+			}
+			.cdz-product-wishlist{
+				.action:before{
+					color:$btn_default_text
+				}
+			}
+			.cdz-buttons-container{
+				.cdz-buttons button.btn-cart,.qs-button,.action {
+					color: $btn_primary_text;
+					background-color: $btn_primary_background;
+					border-color: $btn_primary_border;
+				}
+				.cdz-buttons button.btn-cart:hover,.qs-button:hover,.action:hover {
+					color: $btn_default_text;
+					background-color: $btn_default_background;
+					border-color: $btn_default_border;
+				}
+			}
+			
+		}
+	}
+}
+
+
+.toolbar-bottom {
+	.pager {
+		li{
+			font:$f_h6;
+		}
+		li.current {
+			background:$btn_default_background;
+			color:$btn_default_text;
+			
+		}
+		a.next,a.previous {
+			border: 1px solid $main_border;
+		}
+	}
+}
+
+.product-name a	 {color:$main_text}
+.price {
+  color:$main_text;
+}
+.old-price {
+  margin-left: 10px;
+  color: $main_product_price_hover;
+}
+.old-price .price {
+  color: $main_product_price_hover;
+}
+.products-list .product-item {
+  background:$main_product_background;
+  border: 1px solid $main_border;
+}
+.products-grid .isotope .item.product-item .out-of-stock span{color: $main_hover_text_box;}
+.products-grid .isotope .item.product-item .price {
+	color: $main_hover_text_box;
+}
+.products-grid .product-item-info .product-item-details .product-item-description {
+	color: $main_note_text;
+	font: $f_h6;
+}
+.products-grid .product-item .product-item-info .cdz-product-bottom {
+	background: $main_product_background;
+}
+
+
+.products-grid .product-items:not(.owl-carousel) {
+	background:$main_product_background
+}
+.product-item .price {
+  font: $f_h5;
+  color:$main_text
+}
+
+.product-name a{color:$main_text}
+.product-item-info {
+	background: $main_product_background;
+}
+
+.products-list {
+	.product-item {
+		background:$main_product_background;
+		border: 1px solid $main_border;
+	}
+	
+}
+
+
+.products-grid {
+	.product-item-info {
+		.product-item-details {
+			.product-item-description {
+				color: $main_note_text;
+				font: $f_h6;
+			}
+		}
+		.product-name{
+			font:$f_h5;
+		}
+		.cdz-product-bottom {
+			background: $main_product_background;
+		}
+	}
+	
+	.isotope {
+		.iso-item.product-item {
+			color: $main_hover_text_box;
+			.product-item-link {
+				color: $main_hover_text_box;
+			}
+			.product-item-link:visited,
+			.product-item-link:hover,
+			.product-item-link:active{
+				color: $main_hover_text_box;
+			}
+			.price {
+				color: $main_hover_text_box;
+			}
+		}
+		.iso-item.product-item.width-1.width-2 .product-item-link {
+			font:$f_h4
+		}
+	}
+	
+}
+
+
+/* ============================================ *
+ * Codazon_Product grid & List
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Button style
+ * ============================================ */
+.action.primary,button.button,.btn {
+  background: $btn_primary_background;
+  border-color:$btn_primary_border;
+  color: $btn_primary_text;
+  font: $btn_primary_font;
+  outline:none;
+}
+.action.primary:focus,button.button:focus,.btn:focus,
+.action.primary:active ,button.button:active.btn:active,.btn:hover{
+  background: $btn_hover_background;
+  border-color:$btn_primary_border;
+  color: $btn_hover_text;
+  outline:none;
+}
+.action.primary:hover,button.button:hover {
+  background: $btn_hover_background;
+  border-color:$btn_primary_border;
+  color: $btn_hover_text;
+  border: 3px solid;
+}
+button {
+	color: $btn_hover_text;
+	background-color: $btn_primary_text;
+	border-color: $btn_primary_text;
+	font: $btn_primary_font;
+	outline:none;
+}
+button:hover {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_text;
+}
+.cdz-buttons-container button.btn-cart {
+  color: $btn_default_text;
+  background-color: $btn_default_background;
+  border-color: $btn_default_border;
+}
+.cdz-buttons-container button.btn-cart:hover {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_border;
+}
+.cdz-buttons-container .qs-button {
+  color: $btn_default_text;
+  background-color: $btn_default_background;
+  border-color: $btn_default_border;
+}
+.cdz-buttons-container .qs-button:hover {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_border;
+}
+.actions-secondary:not(.cdz-product-wishlist &) .action {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_text;
+}
+.actions-secondary:not(.cdz-product-wishlist &) .action:hover {
+  color: $btn_hover_text;
+  background-color: $btn_primary_text;
+  border-color: $btn_primary_text;
+}
+.cdz-buttons-container .action,
+.addto-hover-container .action {
+  color: $btn_default_text;
+  background-color: $btn_default_background;
+  border-color: $btn_default_border;
+}
+
+.cdz-buttons-container .action:hover,
+.addto-hover-container .action:hover {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_border;
+}
+.product-addto-links .action {
+  color: $btn_primary_text;
+  font: $f_note;
+}
+.product-addto-links .action:visited {
+  color: $btn_primary_text;
+}
+.product-addto-links .action:hover {
+  color: $btn_primary_text;
+}
+.product-addto-links .action:active {
+  color: $btn_primary_text;
+}
+.product-addto-links .action span {
+ border-color:$main_border;
+}
+.product-addto-links .action:hover span {
+  color: $btn_primary_text;
+  background-color: $btn_primary_background;
+  border-color: $btn_primary_text;
+}
+
+.cdz-product-wishlist a.link-wishlist {
+  color: $btn_primary_text;
+}
+.cdz-product-wishlist a.link-wishlist:visited {
+  color: $main_hover_text;
+}
+.cdz-product-wishlist a.link-wishlist:hover {
+  color: $main_hover_text;
+}
+.cdz-product-wishlist a.link-wishlist:active {
+  color: $main_hover_text;
+}
+.cdz-product-wishlist a.link-wishlist:hover:before {
+  color: $main_hover_text;
+}
+.product-item-info:hover .cdz-product-wishlist a.link-wishlist {
+  color: $main_hover_text;
+}
+
+.ajax-load-wrapper .ajax-load-button .ajax-loader:focus,
+.ajax-load-wrapper .ajax-load-button a:focus,
+.ajax-load-wrapper .ajax-load-button .ajax-loader:active,
+.ajax-load-wrapper .ajax-load-button a:active {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.ajax-load-wrapper .ajax-load-button .ajax-loader:hover,
+.ajax-load-wrapper .ajax-load-button a:hover {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.ajax-load-wrapper .ajax-load-button .ajax-loader:hover,
+.ajax-load-wrapper .ajax-load-button a:hover {
+	color: $btn_hover_text;
+	background-color: $btn_primary_text;
+	border-color: $btn_primary_text;
+}
+#back-top a {
+	background: $btn_primary_background;
+	border-color:$btn_primary_border;
+	color: $btn_primary_text;
+	font: $f_note;
+}
+#back-top a:focus,
+#back-top a:active {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+#back-top a:hover {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+
+
+.qs-button {
+	background: $btn_primary_background;
+	font:$f_h6;
+	color: $btn_primary_text;
+	background-color: $btn_primary_background;
+	border-color: $btn_primary_text;
+}
+.qs-button:focus,
+.qs-button:active {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.qs-button:hover {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.qs-button:hover {
+	color: $btn_hover_text;
+	background-color: $btn_primary_text;
+	border-color:$btn_primary_border;
+}
+.btn{border-radius:0}
+
+.btn-link{color:$btn_default_text}
+.btn-link:hover, .btn-link:focus{
+	color:$main_hover_text;
+	text-decoration: none;
+}
+
+.ajax-load-button .ajax-loader,
+.ajax-load-button a {
+	background: $btn_primary_background;
+	border: 3px solid $btn_primary_border;
+	font:$f_h5;
+	box-sizing: border-box;
+	vertical-align: middle;
+	color: $btn_primary_text;
+	background-color: $btn_primary_background;
+	border-color: $btn_primary_text;
+}
+/* ============================================ *
+ * Codazon_Button style
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Product detail
+ * ============================================ */
+ 
+.product-shop .qty-ctl button{border-color:$main_border;color:$btn_primary_text}
+.data-table .input-text.qty{min-width:40px;padding:0 8px;color: $btn_primary_text;}
+.qty-ctl{
+	.increase:before {
+		border-color:$main_border;
+		color: $btn_primary_text;
+	}	  
+	.decrease:before {
+		border-color:$main_border;
+		color: $btn_primary_text;
+	}
+}
+.product-name h1,
+.product-name .h1 {
+  text-transform: uppercase;
+  font: $f_h1;
+  font-weight: 600;
+  color: $main_text;
+  border-bottom: 1px solid $main_border;
+  padding-bottom: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.product-view {
+	
+	.product-name h1{font:$f_h1;}
+	.product-shop-sku {
+		clear:left;
+		color:$main_note_text;
+		font:$f_h6;margin:0;
+		strong{font:$f_h6;}
+	
+	}
+	#downloadable-links-list{
+		margin:0;
+		.label{
+			color:$main_text;
+			
+		}
+	}
+	.grouped-items-table{
+		.availability.out-of-stock span{font:$f_note}
+		.price-box .regular-price .price{font:$f_h6!important}
+	}
+	.availability label{display:none}
+	.availability.in-stock{
+		font-weight:400;
+		color:$main_alink_text;
+		font:$f_note;
+		span{color:$main_hover_text;font:$f_note;}
+		strong{font:$f_note;}
+	}
+	.availability.out-of-stock span{
+		color:$main_alink_text;
+	}
+	.availability.in-stock strong{font:$f_note;}
+	.ratings .rating-links{
+		font:$f_note;
+	}
+	.ratings .rating-links a{color:$main_note_text;}
+	.no-rating {font:$f_note}
+	.cdz-social-listing 	{
+		float:left;
+		li{
+			font:$f_h3;
+			.trasition-all{color:$main_text}
+		}
+	}
+	.action.primary, button.button{background: $btn_default_background;border: 3px solid $btn_default_border;color: $btn_default_text;line-height:28px;}
+	.button.btn-cart{
+		font:$f_h5;
+	}
+	button.button:hover{background: $btn_primary_background;border: 3px solid $btn_primary_border; color: $btn_primary_text;}
+	.add-to-links {
+		li{
+			a{
+				border:1px solid $main_border;
+				color:$main_text;
+			}
+		}
+		li.compare a{border-right:1px solid $main_border!important;}
+		li a:hover{border:1px solid $main_border_dark!important}
+	}
+	.size-chart-btn{
+		color:$main_text;
+		font:$f_note;
+	}
+	.short-description h2{color:$main_text;font:$f_h6}
+	.product-options .swatch-attr .select-label {color:$main_hover_text}
+}
+.product-view .product-shop .price-box .regular-price .price, .product-view .product-shop .price-box .special-price .price, .product-view .product-shop .price-box .full-product-price .price{color:$main_hover_text;font:$f_h2}
+/**/
+/*Start Product media*/
+.product-view-media{
+	.more-views{
+		li a:hover img{border:2px solid $main_border_dark}
+	}
+}
+
+.catalog-product-view .product-essential,
+.catalog-product-view .product-detail-tab,
+.catalog-product-view .box-reviews,
+.catalog-product-view .block-related,
+.catalog-product-view .block-upsell {
+	background:$main_block_background;
+}
+
+/*End Product media*/
+.product-view  .box-collateral h2,.block-related .block-title{font:$f_h4;border-bottom:1px solid $menu_border;}
+
+.product-view  .box-collateral h2 strong,.product-view .block-related .block-title strong{
+    border-bottom: 3px solid $main_border_dark;
+}
+.product-collateral .product-tabs li a::before, .product-collateral .product-tabs li a::after{
+	background:$menu_border;
+}
+
+/* ============================================ *
+ * Codazon_Product detail
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Checkout
+ * ============================================ */
+
+.form-list .control label,
+.sp-methods dt label,
+#checkout-shipping-method-load .sp-methods dd label,
+#co-shipping-method-form .sp-methods dd label,
+.product-options ul.options-list label{font:$f_h6;}
+.cart  form fieldset{
+	background:$main_block_background;
+}
+.cart-collaterals{
+	#discount-coupon-form, .cart .giftcard,.shipping,.totals-content {
+		/* width: 100%; */
+		background:$main_block_background;
+		border-top: 3px solid $main_border;
+	}
+	tfoot strong{font: $f_h3;}
+}
+.cart-collaterals .totals .checkout-types .button{background:$btn_hover_background;color:$btn_hover_text;font:$f_h4;}
+.cart-collaterals .totals .checkout-types .button:hover{background:$btn_primary_background;color:$btn_primary_text}
+
+
+/*Custom Checkout form ------*/
+
+.cdz-onestepcheckout{
+	li.section{
+		.step{
+			@include abs_main_background_shadow;
+			
+		}
+	}
+	.section .step-title {
+		text-align:center!important;
+		font:$f_h2!important;
+		color:$main_text!important;
+	}
+	.buttons-set{
+		background: #f4f4f4;
+		p.required{font:$f_note;color:$main_note_text;}
+		button.button{
+			background:$btn_default_background;
+			color:$btn_default_text	
+		}
+		button.button:hover{
+			background:$btn_primary_background;
+			color:$btn_primary_text
+		}
+	}
+}
+.cart-empty{@include abs_main_background_shadow;padding:200px 20px;text-align:center}
+.form-list {
+	.field label {
+		color:$label_text;
+	}
+	.field.active label {
+		background: $label_background;
+		color:lighten($label_text,40%)
+	}
+	select{
+		color:$label_text;
+		border:1px solid $main_border;
+	}
+	.validation-advice{
+	}
+	.field.active .validation-advice{
+	}
+	.field-select-box{
+		label{
+			background: $label_background;
+		}
+	}
+}
+.opc h3,.opc h4{
+	font:$f_h6
+}
+.form-list {
+	.wide label {
+		color:$label_text;
+	}
+	.wide.active label {
+		background: $label_background;
+		color:lighten($label_text,40%)
+	}
+}
+
+.opc-block-progress{
+	.block-title {
+		strong {font:$f_h2!important;}
+	}
+	.block-content {
+		dt.complete:after {background:$main_hover_text}
+	}
+	.changelink a:before{
+		color:$main_text;
+	}
+}
+
+.opc-block-progress .block-content dt, .checkout-progress li span {
+	font:$f_h6;
+    color: $main_text;
+}
+#shipping-progress-opcheckout:before, #shipping_method-progress-opcheckout:before, #payment-progress-opcheckout:before, .checkout-progress li:before{
+	background:lighten($main_text,10%);
+}
+.opc-block-progress .block-content dt:before, .checkout-progress li span:before {
+	color:lighten($main_text,10%);
+}
+.opc-block-progress .block-content dt.complete:before, .checkout-progress li.active span:before{
+	background:$btn_default_background;
+	color:$btn_default_text;
+}
+
+/* ============================================ *
+ * Codazon_Checkout
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_My Account
+ * ============================================ */
+.manage-address,.change-pass {
+	background: $btn_primary_background;
+	border-color: $btn_primary_border;
+	color: $btn_primary_text;
+	font: $f_note;
+	a{color: $btn_primary_text;}
+}
+
+.manage-address:hover,.change-pass:hover {
+	background: $btn_default_background;
+	border-color: $btn_default_border;
+	color: $btn_default_text;
+	font: $f_note;
+	a{color: $btn_default_text;}
+}
+.dashboard{
+	.welcome-msg{
+		border:1px solid $main_border;
+	}
+
+	.head{
+		border-bottom: 1px solid $main_border;
+		font:$f_h4;	
+	}
+}
+.box-account-content{
+	border:1px solid $main_border;
+}
+.customer-address-info{
+	.box-title{
+		border-bottom: 1px solid $main_border;
+		font:$f_h4;
+		h3{font:$f_h4;}
+	}
+}
+/*Custom my account full width*/
+.my-account-logo{display:block}
+.customer-account-index,
+.customer-account-edit,
+.wishlist-index-index,
+.customer-address-form,
+.sales-order-history,
+.sales-billing-agreement-index,
+.sales-recurring-profile-index,
+.review-customer-index,
+.oauth-customer-token-index,
+.newsletter-manage-index,
+.downloadable-customer-products,
+.customer-address-index,
+.sales-order-view
+{
+	.wrapper{background:$page_background;}
+	.col-left.sidebar{
+
+		background:$menu_myaccount_background;
+		color:$menu_myaccount_text;
+	}
+	.sidebar .block:not(.block-static-block),.col-main-containter .col-main .col-wrapper-main{
+		@include abs_none_main_background_shadow;
+	}
+	.block-account{
+		.block-content{
+			li{
+				color:$menu_myaccount_text;
+				border-bottom: 1px solid lighten($menu_myaccount_background,20%);
+				a{
+					color:$menu_myaccount_text;
+					border-bottom: 1px solid darken($menu_myaccount_background,10%);
+					font:$f_h6;
+				}
+				a:hover{background:lighten($menu_myaccount_background,10%);}
+				strong{
+					color:$menu_myaccount_text;
+					border-bottom: 1px solid darken($menu_myaccount_background,10%);
+					background:lighten($menu_myaccount_background,10%);
+				}
+			}
+			li:first-child{
+				border-top: 1px solid darken($menu_myaccount_background,10%);
+				a{
+					color:$menu_myaccount_text;
+					border-top: 1px solid lighten($menu_myaccount_background,10%);
+				}
+				a:hover{background:lighten($menu_myaccount_background,10%);}
+				strong{
+					color:$menu_myaccount_text;
+					border-top: 1px solid lighten($menu_myaccount_background,10%);
+					background:lighten($menu_myaccount_background,10%);
+				}
+			}
+		}
+	}
+	.block:not(.block-static-block) .block-title{
+		color:$menu_myaccount_text;
+	}
+	.my-account-logo{
+		background:lighten($menu_myaccount_background,20%);
+		.logo-myaccount{
+			a:before{
+				background:lighten($menu_myaccount_background,10%);
+				color:$menu_myaccount_text;
+			}
+			a:hover{
+				color:$menu_myaccount_text
+			}
+		}
+		.logout-link{
+			color:$menu_text;
+			a:hover{
+				color:$main_hover_text
+			}
+			a{
+				color:$menu_myaccount_text
+			}
+		}
+		.logout-link a:before{
+			background:lighten($menu_myaccount_background,10%);
+		}
+	}
+	.col2-set .col-1 h2,
+	.col2-set .col-2 h2
+	{
+		font:$f_h4;
+		font-weight:600;
+		border-bottom:1px solid $main_border;
+	}
+	.col2-set .col-1 h3,
+	.col2-set .col-2 h3
+	{
+		font:$f_h6;font-weight:600
+	}
+	
+}
+/* ============================================ *
+ * Codazon_My Account
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Menu Megamenu
+ * ============================================ */
+  .cms-index-index .cdz-main-menu .groupmenu li.level0.nav-home > a.menu-link {
+    color: $menu_hover_text;
+    background-color: $menu_hover_background;
+    border-color: $menu_border;
+    font: $menu_font;
+  }
+.cdz-main-menu {
+	.groupmenu {
+		li.level0 {
+			a.menu-link {
+				color:$menu_text;
+				font: $f_h6;
+			}
+			a.menu-link:visited, a.menu-link:hover, a.menu-link:active {
+				color: $menu_hover_text;
+			}				
+		}
+		li.level0:hover > a.menu-link {
+			color: $menu_hover_text;
+			background-color: $menu_hover_background;
+			border-color:$menu_border;
+			font: $f_h6;
+		}
+		
+	}
+	.groupmenu-drop {
+		.groupmenu-drop-content {
+			color: $menu_drop_text;
+			font:$menu_drop_font;
+			.groupdrop-title {
+				color: $menu_drop_text_title;
+			}
+			a {
+				color: $menu_drop_text;
+			}
+			a:hover, a:active {
+				color: $menu_drop_hover_text;
+			}
+			.groupdrop-link{
+				li {
+					a:hover:before {
+						background-color: $menu_drop_hover_text;
+					}
+				}
+				
+			}
+		}
+		
+	}
+	
+}
+
+  
+/*Sticky menu------*/
+@media (min-width: 767px){
+	.header .sticky-menu.active{
+		@include abs-boxshadow(0 0 5px #bdbdbd);
+		background:$menu_background;
+		.cdz-header-cart{
+			.cdz-dropdown{position:initial;}
+			.cart-icon{
+				.cart-qty{
+					background-color:$menu_drop_hover_text;
+				}
+			}
+		}
+		.block-search{
+			.form-search{
+				input[type="text"]{
+					@include abs-transition;			
+				}
+				.button:before{color:$menu_text}
+				&:hover{
+					.button:before{color:$menu_text}
+				}
+			}
+		}	
+	}
+}
+
+.cdz-main-menu {
+	.groupmenu {
+		li.level0 {
+			a.menu-link {
+				color: $menu_text;
+				font: $menu_font;
+			}
+			a.menu-link:hover,
+			a.menu-link:active,
+			a.menu-link:visited{
+				color: $menu_text;
+			}
+			&.parent:hover:after {color: $menu_hover_background;}
+		}
+		li.level0:hover > a.menu-link {
+			color: $menu_text;
+			background-color: $menu_hover_background;
+			border-color: $menu_border;
+			font: $menu_font;
+		}
+	}
+	.groupmenu-drop {
+		background-color:$menu_drop_background;
+		.groupmenu-drop-content {
+			color: $menu_drop_text;
+			font: $f_h6;
+			.groupdrop-title {
+				text-transform: uppercase;
+				color: $menu_drop_text;
+			}
+			a {
+				font: $menu_drop_font;
+				color: $menu_drop_text;
+				
+			}
+			a:visited{
+				color: $menu_drop_text;
+			}
+			a:hover,
+			a:active{
+				color: $menu_drop_hover_text;
+			}
+			.groupdrop-link li {
+				
+				a:hover {
+
+				}
+				a:hover:before {
+
+					background-color: $menu_drop_hover_text;
+				}
+			}
+		}
+	}
+	
+}
+
+/* ============================================ *
+ * Codazon_Menu Megamenu
+ * ============================================ */
+
+/* ============================================ *
+ * Codazon_Menu Vertical
+ * ============================================ */
+ .menu-vertical-title{
+	background: $menu_vertical_hover_background ;
+	color:$menu_text;
+	h3{
+		&:before{
+			color:$menu_vertical_hover_text;
+		}	
+	}
+}
+ .menu-vertical{
+	.cdz-nav-wrap{
+		border:1px solid $menu_vertical_border;
+		li.vertical-level1{
+			a.vertical-level1{
+				color:$menu_vertical_text;
+				background-color:$menu_vertical_background;
+			}
+			&:hover{
+				a.vertical-level1{
+					background:$menu_vertical_hover_background;
+					color:$menu_vertical_hover_text	
+				} 
+				.cdz-sub-cat{
+				}
+			}
+			
+			.cdz-sub-cat{
+				background:$menu_vertical_drop_background;
+				border-color:$menu_vertical_drop_border;
+				a{
+					color:$menu_vertical_drop_text;
+					&:hover,&:active{
+						color:$menu_vertical_drop_hover_text;
+					}
+				}
+				li.level4{
+					border-bottom-color:$menu_vertical_border;
+					color:$menu_vertical_text;
+				}
+			}
+		}
+		.parent{
+			&:after{
+				color:$menu_vertical_text;
+			}
+			&:hover{
+				&:after{
+					color:$menu_vertical_hover_text;
+				}		
+			}
+		}
+		.cdz-sub-cat .parent{
+			&:after{
+				color:$menu_vertical_drop_text;
+			}
+			&:hover{
+				&:after{
+					color:$menu_vertical_drop_hover_text;
+				}		
+			}
+		}
+		.view-all{
+			a{
+				color:$main_hover_text;
+			}
+		}
+	}
+}
+@media (max-width: 991px){
+	.menu-vertical {
+		.cdz-nav-wrap{
+			li.vertical-level1{
+				.cdz-sub-cat{
+					border-color:$menu_vertical_hover_background;
+					li{
+						a.vertical-level2{
+							font:$f_note;
+							&:before{
+							}
+						}
+					}
+				}
+			}
+			
+		}
+		
+	}
+}
+
+/*menu vertical style home Sportwear*/
+.menu-vertical-style02{
+	.nav.nav-tabs{
+		.nav-tab-item{
+			.switch{
+				background:$menu_vertical_hover_background;
+				color:$menu_vertical_hover_text;
+				font:$menu_vertical_font;
+				font-weight:700;
+			}
+			&:hover,&.active{
+				.switch{					
+					background:$menu_vertical_background;
+					color:$menu_vertical_text;
+				}
+			}
+		}
+	}
+	.nav-tab-content{
+		background:$menu_vertical_background;
+		font:$menu_vertical_font;
+	}
+}
+/* ============================================ *
+ * Codazon_Menu Vertical
+ * ============================================ */
+ 
+ 
+ 
+ /* ============================================ *
+ * Codazon_BlockSidebar
+ * ============================================ */
+.cdz-block-title .b-title {
+  border-bottom-color:$main_block_text_background;
+  color: $main_block_text_background;
+  font:$f_h2;
+  
+}
+.cdz-block-title .b-title:before {
+  background: $main_background;
+}
+/*Block Sidebar*/
+.block:not(.block-static-block) {
+  border-color:$main_block_title_border;
+}
+.block:not(.block-static-block) .block-collapsible-nav-title,
+.block:not(.block-static-block) .block-title {
+  color: $main_block_title_color;
+  font: $f_h4;
+  border-bottom-color: $main_block_title_border;
+
+}
+.block:not(.block-static-block) .block-collapsible-nav-title strong,
+.block:not(.block-static-block) .block-title strong {
+  font: $f_h4;
+  border-bottom: 3px solid $main_block_text_background;
+}
+.block.review-add .block-content {
+  padding-top: 0 !important;
+}
+.sidebar .block:not(.block-static-block){
+	background:$main_block_background;
+	}
+.sidebar .block {
+	.actions .button {
+		font:$f_h6;
+		background:$btn_hover_background;
+		color:$btn_hover_text
+	}
+}
+.sidebar .product-name{font:$f_h6}
+ /* ============================================ *
+ * Codazon_BlockSidebar
+ * ============================================ */
+ 
+ 
+ /* ============================================ *
+ * Codazon_Product Filter Drug store
+ * ============================================ */ 
+.cdz-block-newproduct,.cdz-home-block{
+	.cdz-block-title{
+		p.b-title{
+			font:$f_h3;
+		}
+	}
+}
+.col1-layout {
+	.codazon-filter-style-04{
+		.products-grid {
+			border-left-color:$main_border;
+			.product-items:not(.owl-carousel){
+				margin:0;
+				.product-item{
+					border-right-color:$main_border;
+					border-bottom-color:$main_border;
+					.product-item-info{
+						border-color:$main_hover_text_box;
+					}
+					.product-name{
+						a{
+							color:$main_hover_text;
+							font:$f_h6;
+						}
+					}
+					&:hover{
+						.product-item-info{
+							border-color:$main_hover_text;
+						}
+					}
+					.cdz-buttons-inner{
+						.qs-button:hover{
+							color:$btn_hover_background;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*==============================
+================= Deals categories Home Drug
+*/
+
+.cdz-best-selling{
+	.products-grid{
+		.product-items {
+			.item{
+				.product-item-info{
+					border-color:$main_border;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.codazon-filter-style-05{
+		.products-grid{
+			.product-items {
+				.item{
+					.product-item-info{
+						.cdz-product-bottom{
+							.product-name{
+								a.product-item-link{color:$main_hover_text;}
+							}
+							.price{
+								color:$main_text;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
+@media (min-width: 767px){
+	.codazon-filter-style-05{
+		.products-grid{
+			.product-items {
+				
+				.item{
+					box-shadow: 
+					0 0 0 0px $main_border, 
+					0 1px 0 0 $main_border, 
+					1px 1px 0 0 $main_border,   /* Just to fix the corner */
+					1px 0 0 0 $main_border inset, 
+					0 1px 0 0 $main_border inset;
+					
+				}
+				.product-item-description{color:$main_note_text;font: $f_note;}
+				.item.product-item{
+					.product-name a{color:$main_hover_text}
+				.price{color:$main_price_text}
+				}
+			}
+		}
+		
+	}
+}
+@media (max-width: 991px){
+	.col1-layout {
+		.codazon-filter-style-04{
+			.products-grid {
+				border-left-color:$main_border;
+				.product-items:not(.owl-carousel){
+					.product-item{
+						border-right-color:$main_border!important;
+						border-bottom-color:$main_border!important;
+						.product-item-info{
+							border-color:$main_hover_text_box;
+						}
+						.product-name{
+							a{
+								color:$main_hover_text;
+								font:$f_h6;
+							}
+						}
+						&:hover{
+							.product-item-info{
+								border-color:transparent;
+							}
+						}
+						.cdz-buttons-inner{
+							.qs-button:hover{
+								color:$btn_hover_background;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+ /* ============================================ *
+ * Codazon_Product Filter Drug store
+ * ============================================ */ 
+ 
+ /* ============================================ *
+ * Codazon_Popup newsletter
+ * ============================================ */
+ 
+ 
+ /* ============================================ *
+ * Codazon_Login and Register
+ * ============================================ */ 
+ .account-create form .legend,
+.account-login form .legend,
+form .legend
+{
+	font:$f_h5;
+	color:$main_text;
+	border:0
+}
+ .account-login .page-title .field.note,
+.account-create .page-title .field.note {
+  font: $f_h6;
+}
+.account-login #login-form,
+.account-create  #form-validate,
+.customer-account-forgotpassword .col-main #form-validate ,
+.sales-guest-form .col-main-containter .search-form
+{
+  @include abs_main_background_shadow;
+}
+.control.signup-newsletter label,.control#remember-me-box label,.link-tip,.forgot-password-link{
+	font:$f_note;
+	text-transform:uppercase;
+	color:lighten($main_text,30%)
+}
+
+.account-create .buttons-set button.button{
+	
+	border-color:$btn_default_border;
+	background:$btn_default_background;
+	color:$btn_default_text;
+	font:$btn_default_font;
+}
+.account-create .buttons-set button.button:hover{
+	background:$btn_primary_background;
+	color:$btn_primary_text;
+	font:$btn_default_font;
+	border-color:$btn_primary_border;
+}
+.account-login .buttons-set button.button{
+	background:$btn_default_background;
+	color:$btn_default_text;
+	font:$btn_default_font;
+	border-color:$btn_default_border;
+}
+.account-login .buttons-set button.button:hover{
+	background:$btn_primary_background;
+	color:$btn_primary_text;
+	font:$btn_default_font;
+	border-color:$btn_primary_border;
+}
+.customer-account-forgotpassword .buttons-set button.button{
+	background:$btn_default_background;
+	color:$btn_default_text;
+	font:$btn_default_font;
+	border-color:$btn_default_border;
+}
+.customer-account-forgotpassword .buttons-set button.button:hover{
+	background:$btn_primary_background;
+	color:$btn_primary_text;
+	font:$btn_default_font;
+	border-color:$btn_primary_border;
+}
+
+ /* ============================================ *
+ * Codazon_Login and Register
+ * ============================================ */
+ .cdz-popup-wrapper .cdz-popup-newsletter .popup-content .popup-content-ads .block.block-subscribe 
+{
+
+	.actions .button{
+		background:$btn_default_background;
+		color:$btn_default_text
+	}
+	.actions .button:hover{
+		background:$btn_primary_background;
+		color:$btn_primary_text
+	}
+}
+ /* ============================================ *
+ * Codazon_Login and Register
+ * ============================================ */
+ 
+  /* ============================================ *
+ * Codazon_Categories default
+ * ============================================ */
+ /*Product list type*/
+.rating-links {
+	font:$f_note;
+	a{font:$f_note;}
+	span{font:$f_note;}
+}
+.products-list{
+	.add-to-links{
+		li{
+			background: $btn_primary_background;
+			border-color:$btn_primary_border;
+			color: $btn_primary_text;
+		}
+	}
+	.btn-cart{
+		background: $btn_hover_background;
+		border-color:$btn_primary_border;
+		color: $btn_hover_text;
+	}
+}
+
+/* Filter navigation ------------*/
+ /* ============================================ *
+ * Codazon_Categories default
+ * ============================================ */
+.block-layered-nav {
+	dd ol li{
+		a{color:$main_text;}
+		label{
+			border-color: darken($main_border,30%);
+			
+		}
+		a:hover{color:$main_hover_text}
+	}
+	.price-btn{
+		font:$f_note;
+	}
+	.configurable-swatch-list{
+		.swatch-link{
+			.count{
+			}
+		}
+	}
+	.price-btn{
+	}
+	.block-content > dl > dd{
+		border-bottom-color:$main_border;
+	}
+}
+#cdz-filter-bar {
+	
+	.block-title{
+		strong{
+			background:$btn_default_background;
+			color:$btn_default_text;
+			border-color: $btn_default_border;
+			font:$f_h6;
+			
+		}
+		strong:hover{
+			background:$btn_primary_background;
+			color:$btn_primary_text;
+			border-color: $btn_primary_border;
+		}
+	}
+	.block-content{
+		@include abs_main_background_shadow;
+		#narrow-by-list{
+			dt{
+				color: $main_text;
+				font:$f_h6;
+				font-weight:700;
+			}
+			.slider.slider-horizontal{width:160px;}
+			.price-btn{
+				font:$f_note;
+			}
+			
+		}
+		
+	}
+	dd ol li{
+		a{color:$main_text;font:$f_h6;}
+		label{
+			border-color: darken($main_border,30%);
+			color: $main_alink_text;
+			
+		}
+		a:hover{color:$main_hover_text}
+	}
+	.configurable-swatch-list{
+		.swatch-link{
+			.count{
+				border-color: darken($main_border,20%);
+				color: $main_text;
+			}
+		}
+	}
+	.block-content > dl > dd{
+		border-bottom-color: $main_border;
+	}
+	
+}
+/* ------------Grid product for PC and Mobile */
+
+ /* ============================================ *
+ * Codazon_Categories default
+ * ============================================ */
+ 
+  /* ============================================ *
+ * Codazon_Set layout for Col-main
+ * ============================================ */
+.col-main-containter .col-main .col-wrapper-main,
+.catalog-product-view .product-essential,
+.catalog-product-view .product-detail-tab,
+.catalog-product-view .box-reviews,
+.catalog-product-view .block-related,
+.catalog-product-view .block-upsell 
+{
+	@include abs_main_background_shadow;
+}
+
+.catalog-product-view .col-main-containter ,
+.cms-index-index .col-main-containter,
+.catalog-product-view .col-main-containter,
+.checkout-cart-index .col-main-containter,
+.catalog-category-view .col-main-containter,
+.customer-account-create .col-main-containter,
+.customer-account-login .col-main-containter,
+.customer-account-forgotpassword .col-main-containter,
+.sales-guest-form .col-main-containter
+{
+	.col-wrapper-main{
+		@include abs_none_main_background_shadow;
+	}
+}
+
+ 
+ .contacts-index-index,.catalog-product-view{
+	.col-main-containter .col-main .col-wrapper-main {
+		@include abs_none_main_background_shadow;
+		#contactForm{
+			@include abs_main_background_shadow;
+		}
+	}
+}
+ 
+ /* ============================================ *
+ * Codazon_Set layout for Col-main
+ * ============================================ */ 
+
+ 
+ /* ============================================ *
+ * Codazon_Tab style
+ * ============================================ */ 
+.nav-tabs,
+.nav.nav-tabs {
+	border-bottom-color: $main_block_title_border;
+}
+.nav-tabs {
+	.nav-tab-item.active .switch {
+		color:$main_tab_hover_text;
+	}
+	.nav-tab-item {
+		.switch {
+			font: $f_h5;
+			color: $main_tab_text;
+		}
+		h2{
+			font: $f_h5;
+		}
+		.switch:visited {
+			color: $main_tab_hover_text;
+		}	
+		.switch:hover {
+			color: $main_tab_hover_text;
+		}	
+		.switch:active {
+			color: $main_tab_hover_text;
+		}
+	}	
+}
+
+.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
+.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+	background: transparent;
+	border-bottom-color:$main_border_dark;
+	color:$main_tab_hover_text;
+}
+
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
+.nav-tabs .active.nav-tab-item .switch,
+.nav-tabs .active.nav-tab-item .switch:focus,
+.nav-tabs .active.nav-tab-item .switch:hover {
+	color: $main_tab_hover_text;
+	background: transparent;
+	border-bottom-color:$main_title_border;
+}
+ /* ============================================ *
+ * Codazon_Tab style
+ * ============================================ */ 
+ /*update 04/14*/

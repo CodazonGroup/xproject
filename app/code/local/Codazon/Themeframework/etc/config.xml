@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Codazon_Themeframework>
+			<version>0.1.0</version>
+		</Codazon_Themeframework>
+	</modules>
+	<global>
+		<helpers>
+			<themeframework>
+				<class>Codazon_Themeframework_Helper</class>
+			</themeframework>
+		</helpers>
+		<blocks>
+			<themeframework>
+				<class>Codazon_Themeframework_Block</class>
+			</themeframework>
+		</blocks>
+		<models>
+			<themeframework>
+				<class>Codazon_Themeframework_Model</class>
+			</themeframework>
+		</models>
+	</global>
+	<frontend>
+		<routers>
+			<themeframework>
+                <use>standard</use>
+                <args>
+                    <module>Codazon_Themeframework</module>
+                    <frontName>themeframework</frontName>
+                </args>
+            </themeframework>
+		</routers>
+		<layout>
+            <updates>
+                <themeframework module="Codazon_Themeframework">
+                    <file>codazon_themeframework.xml</file>
+                </themeframework>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Codazon_Themeframework>
+                    <files>
+                        <default>Codazon_Themeframework.csv</default>
+                    </files>
+                </Codazon_Themeframework>
+            </modules>
+        </translate>
+	</frontend>
+</config>

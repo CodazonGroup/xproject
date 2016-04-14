@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<widgets>    
+	<filterproducts_codazonfilterproducts type="filterproducts/codazonfilterproducts" translate="name description" module="filterproducts">
+        <name>Codazon Filter Products</name>
+        <description type="desc">Filter products</description>
+        <parameters>
+			<categories>
+                <label>Filter by categories</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>multiselect</type>
+                <source_model>filterproducts/categoriestree</source_model>
+            </categories>
+			<filtertype>
+                <label>Filter by</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>filterproducts/filtertype</source_model>
+            </filtertype>
+		    <attribute>
+				<label>Attribue</label>
+                <visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+				<values>
+                    <cdz_featured translate="label">
+                        <value>cdz_featured</value>
+                        <label>Featured</label>
+                    </cdz_featured>
+					<cdz_hot translate="label">
+                        <value>cdz_hot</value>
+                        <label>Hot</label>
+                    </cdz_hot>
+                </values>
+				<depends>
+					<filtertype>
+						<value>4</value>
+					</filtertype>
+				</depends>
+			</attribute>
+			<orderby>
+				<label>Order by</label>
+                <visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+				<values>
+                    <cdz_namesort translate="label">
+                        <value>name</value>
+                        <label>Name</label>
+                    </cdz_namesort>
+					<cdz_pricesort translate="label">
+                        <value>price</value>
+                        <label>Price</label>
+                    </cdz_pricesort>
+                </values>
+			</orderby>
+			<order>
+				<label>Order</label>
+                <visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+				<values>
+					<asc translate="label">
+						<value>asc</value>
+						<label>ASC</label>
+					</asc>
+					<desc translate="label">
+						<value>desc</value>
+						<label>DESC</label>
+					</desc>
+				</values>
+			</order>
+			<limit>
+				<label>Limit</label>
+                <visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<value>20</value>
+				<description>Default is 20</description>
+			</limit>
+			<columns_count>
+				<label>Items per row</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<description>Leave empty if you don't want to slipt columns</description>
+			</columns_count>
+			<thumb_width>
+				<label>Thumbnail width</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<value>250</value>
+			</thumb_width>
+			<thumb_height>
+				<label>Thumbnail height</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<value>250</value>
+			</thumb_height>
+			<use_ajax>
+				<label>Use ajax</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<description>Use ajax to load widget content after page loaded.</description>
+			</use_ajax>
+			<template>
+				<label>Template</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+				<values>
+					<grid translate="label">
+						<value>codazon_filterproducts/grid.phtml</value>
+						<label>Grid</label>
+					</grid>
+					<list translate="label">
+						<value>codazon_filterproducts/list.phtml</value>
+						<label>List</label>
+					</list>
+					<custom translate="label">
+						<value>custom</value>
+						<label>Custom Template</label>
+					</custom>
+				</values>
+			</template>
+			<custom_template>
+				<label>Custom template</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends>
+					<template><value>custom</value></template>
+				</depends>
+				<description>
+					<![CDATA[Please input template file if you choose <strong>Custom Template</strong>. Default: codazon_filterproducts/custom.phtml]]>
+				</description>
+			</custom_template>
+			<custom_class>
+				<label>Custom class</label>
+				<visible>1</visible>
+				<required>0</required>
+				<type>text</type>
+			</custom_class>
+			<display>
+                <label>Display</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>multiselect</type>
+				<source_model>filterproducts/display</source_model>	
+			</display>
+			<use_slider>
+				<label>Use slider</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+			</use_slider>
+			<auto_width>
+				<label>Auto width</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</auto_width>
+			<margin>
+				<label>Space between items</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</margin>
+			<items_1280>
+				<label>Window width ≥ 1280</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>If not setting "Yes" for "Auto width", you can choose number of items per slide page. Default: 4</description>
+			</items_1280>
+			<items_1024>
+				<label>1024 ≤  Window width &lt; 1280</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 3</description>
+			</items_1024>
+			<items_768>
+				<label>768 ≤ Window width &lt; 1024</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 3</description>
+			</items_768>
+			<items_480>
+				<label>480 ≤ Window width &lt; 768</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 2</description>
+			</items_480>
+			<items_320>
+				<label>320 ≤ Window width &lt; 480</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 2</description>
+			</items_320>
+			<items_0>
+				<label>Window width &lt; 320</label>
+				<visible>1</visible>
+                <required>0</required>
+				<type>text</type>
+				<depends><use_slider><value>1</value></use_slider></depends>
+				<description>Default: 1</description>
+			</items_0>
+			<auto_play>
+				<label>Auto play</label>
+				<visible>0</visible>
+                <required>0</required>
+				<type>select</type>
+				<value>0</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</auto_play>
+			<show_dots>
+				<label>Show dots</label>
+				<visible>0</visible>
+                <required>0</required>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</show_dots>
+			<show_nav>
+				<label>Show navigation</label>
+				<visible>0</visible>
+                <required>0</required>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<value>1</value>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</show_nav>
+			<lazy_load>
+				<label>Use lazy load</label>
+				<visible>0</visible>
+                <required>0</required>
+				<type>select</type>
+				<value>0</value>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</lazy_load>
+			<loop>
+				<label>Inifnity loop</label>
+				<visible>0</visible>
+                <required>0</required>
+				<value>0</value>
+				<type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+				<depends><use_slider><value>1</value></use_slider></depends>
+			</loop>
+        </parameters>
+    </filterproducts_codazonfilterproducts>
+</widgets>

@@ -1,0 +1,195 @@
+.customer-account-forgotpassword .page-main,
+  .customer-account-create  .account-create,.customer-account-login .account-login {
+    width: 520px;
+  }
+  .login-container .block.login .actions-toolbar > .primary {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .login-container .block.login .actions-toolbar > .secondary {
+    float: left;
+  }
+  .login-container .fieldset > .field > .control {
+    width: 100%;
+  }
+  .form-create-account .fieldset-fullname .fields .field {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  .form-create-account .fieldset-fullname .field-name-prefix,
+  .form-create-account .fieldset-fullname .field-name-suffix {
+    width: 50px;
+  }
+  .form.password.reset,
+  .form.send.confirmation,
+  .form.password.forget,
+  .form.create.account {
+    min-width: 500px;
+  }
+  .account.page-layout-2columns-left .sidebar-main,
+  .account.page-layout-2columns-left .sidebar-additional {
+    width: 22.3%;
+  }
+  .account.page-layout-2columns-left .column.main {
+    width: 77.7%;
+  }
+  .account .data.table {
+    margin-bottom: 0;
+  }
+  .account .data.table .col.actions {
+    white-space: nowrap;
+  }
+  
+  .customer-account-login .cdz-header-menu,
+.customer-account-create .cdz-header-menu {
+  display: none;
+}
+.customer-account-login .page-title-wrapper,
+.customer-account-create .page-title-wrapper {
+  display: none;
+}
+.customer-account-login .sticky-menu.active,
+.customer-account-create .sticky-menu.active {
+  display: none;
+}
+.account-login,
+.account-create {
+  width: 100%;
+  margin: 40px auto;
+}
+.login-container .block-customer-login,
+#register-form-now .block-customer-login,
+.login-container .block-register-account,
+#register-form-now .block-register-account {
+  margin: 0 0 30px!important;
+}
+.account-login .page-title h1,
+.account-create .page-title h1
+{
+  display: block;
+  text-align: center;
+  padding: 0;
+  border-width: 0;
+  margin-bottom:5px;
+}
+.account-login .page-title,
+.account-create .page-title{
+  text-align: center;
+  padding-bottom: 35px;
+}
+.account-create form .legend,
+.account-login form .legend
+{
+	border:0;padding:0	
+}
+.account-login .page-title strong,
+.account-create .page-title strong {
+  padding: 0;
+  border-width: 0;
+}
+.account-login .page-title .field.note,
+.account-create .page-title .field.note {
+  text-transform: initial;
+}
+.account-login #login-form,
+.account-create  #form-validate,
+.customer-account-forgotpassword .col-main #form-validate,
+.sales-guest-form .search-form
+{
+  padding: 20px!important;
+  max-width: 520px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius:2px;
+  overflow:hidden;
+  margin:0 auto;
+}
+.sales-guest-form .page-title{
+	text-align:center
+}
+.account-create{
+	.form-list li#remember-me-box label{display:inline-block;min-width:inherit}
+}
+.account-login #login-form{
+	.new-users{display:none}
+	.registered-users{float:none;width:100%;padding:0;border:0;margin:0;
+
+		.buttons-set .button{float:none;width:100%;margin-bottom:10px;}
+		.forgot-password-link{text-align:center}
+		.form-list li#remember-me-box{}
+		.form-list li#remember-me-box label{display:inline-block;min-width:inherit}
+		p.required{display:none}
+	}
+	
+}
+
+
+.account-login .fieldset .fields,
+.account-create .fieldset .fields,
+.customer-account-forgotpassword .col-main .form-list li 
+{margin-bottom:10px}
+.account-login .buttons-set ,
+.account-create .buttons-set ,
+.customer-account-forgotpassword .col-main .fieldset .buttons-set {
+	text-align:center;border:0
+}
+.account-login #login-form .registered-users .forgot-password-link{
+	text-transform:uppercase
+}
+.account-login .buttons-set .required,
+.account-create .buttons-set .required,
+.account-login .buttons-set .back-link,
+.account-create .buttons-set .back-link
+ {display:none}
+ .customer-account-forgotpassword .fieldset, .customer-account-forgotpassword .buttons-set{max-width:inherit;margin:0;}
+ .customer-account-forgotpassword .col-main{
+		padding:40px 0 60px;
+		.page-title{
+			padding: 30px !important;
+			max-width: 520px;
+			margin:0 auto;
+			h1{
+			text-align: center;
+			padding-bottom: 0px;
+			border:0;margin:0
+			}
+		}
+		#form-validate{
+		margin:0 auto 40px auto;
+		.buttons-set {
+			 .required{display:none }
+			 .back-link{display:none }
+			button.button{float:none;min-width:100%;margin:0}
+			max-width:inherit;
+			margin:0;
+			text-align:center
+		}
+	 }
+}	 
+
+.account-create .buttons-set button.button{
+	float:none;min-width:100%;margin:0;
+}
+.account-create .buttons-set button.button:hover{
+	float:none;min-width:100%;margin:0;
+}
+.account-login .buttons-set button.button{
+	float:none;min-width:100%;margin:0;
+}
+.account-login .buttons-set button.button:hover{
+	float:none;min-width:100%;margin:0;
+}
+.customer-account-forgotpassword .buttons-set button.button{
+	float:none;min-width:100%;margin:0;
+}
+.customer-account-forgotpassword .buttons-set button.button:hover{
+	float:none;min-width:100%;margin:0;
+}
+.customer-account-create .fieldset, .customer-account-create .buttons-set{
+	margin:0;
+	
+}
+
+.account-create .buttons-set button.button{float:none;min-width:100%}
+.customer-account-create .fieldset, .customer-account-create .buttons-set{margin:0;max-width:inherit;}
+
