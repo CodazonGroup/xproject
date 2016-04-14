@@ -99,9 +99,9 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\f007";
   font-size: 22px;
-  width: 37px;
-  height: 37px;
-  line-height: 37px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
   border-style: solid;
   border-width: 1px;
 }
@@ -158,6 +158,33 @@
 .cdz-header-style-04 .header .sticky-menu:not(.active) .block-search {
   width: 100%;
   margin-top: 15px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .block-search {
+  right: 89px;
+  top: 12px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .block-search .form-search .button:hover {
+  background-color: white;
+}
+.cdz-header-style-04 .header .sticky-menu.active .block-search .form-search .button:hover:before {
+  color: black;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart {
+  right: 0;
+  top: 13px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cdz-dropdown {
+  float: right;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon {
+  padding: 0;
+  float: right;
+  width: 38px;
+  height: 38px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon:before {
+  width: 38px;
+  height: 38px;
 }
 
 /*update 04/14*/
@@ -1021,6 +1048,9 @@ fieldset[disabled] .block-search .button {
 .product-item-info {
   background: white;
 }
+.product-item-info .product-name {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
 
 .products-list .product-item {
   background: white;
@@ -1030,9 +1060,6 @@ fieldset[disabled] .block-search .button {
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #999999;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.products-grid .product-item-info .product-name {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .products-grid .product-item-info .cdz-product-bottom {
   background: white;
@@ -1245,7 +1272,6 @@ button:hover {
 
 .qs-button {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #282828;
   background-color: white;
   border-color: #282828;
@@ -2688,9 +2714,29 @@ form .legend {
 }
 .box-style01 .cdz-block-title {
   color: black;
+  border-color: #e1e1e1;
 }
 .box-style01 .cdz-block-title .lastcolor {
   color: #f64400;
 }
+.box-style01 .products-grid {
+  border-left: 1px solid #e1e1e1;
+}
+.box-style01 .products-grid .product-item .product-item-info {
+  border: 1px solid #e1e1e1;
+  border-left: none;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
+  display: none;
+}
 
-/*# sourceMappingURL=style_sport.css.map */
+/*button show01 Home Sport*/
+.cdz-button-show01 .products-grid .product-item-info:hover {
+  background: #dce2d8;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
+  background: #dce2d8;
+}

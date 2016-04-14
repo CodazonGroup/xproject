@@ -1772,6 +1772,9 @@ fieldset[disabled] .block-search .button {
 .product-item-info {
   background: white;
 }
+.product-item-info .product-name {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
 
 .products-list .product-item {
   background: white;
@@ -1781,9 +1784,6 @@ fieldset[disabled] .block-search .button {
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #999999;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.products-grid .product-item-info .product-name {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .products-grid .product-item-info .cdz-product-bottom {
   background: white;
@@ -1996,7 +1996,6 @@ button:hover {
 
 .qs-button {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #b0d235;
   background-color: white;
   border-color: #b0d235;
@@ -3451,7 +3450,29 @@ form .legend {
 }
 .box-style01 .cdz-block-title {
   color: #121212;
+  border-color: #ebebeb;
 }
 .box-style01 .cdz-block-title .lastcolor {
   color: #b0d235;
+}
+.box-style01 .products-grid {
+  border-left: 1px solid #ebebeb;
+}
+.box-style01 .products-grid .product-item .product-item-info {
+  border: 1px solid #ebebeb;
+  border-left: none;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
+  display: none;
+}
+
+/*button show01 Home Sport*/
+.cdz-button-show01 .products-grid .product-item-info:hover {
+  background: white;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
+  background: white;
 }

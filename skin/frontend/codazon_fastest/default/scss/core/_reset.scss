@@ -3486,6 +3486,9 @@ body.catalogsearch-result-index .page-title h1 {
   .products-list .product-name a {
     font-size: 18px;
   }
+  .cdz-product-wrapper .products-list .product-name a {
+    font-size: 100%;
+  }
 }
 @media only screen and (max-width: 1279px) {
   .products-list .product-shop .product-primary,

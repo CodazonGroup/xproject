@@ -408,39 +408,41 @@
 		color: $header_search_text;
 	}
 	.cat-search-enable{
-		border-style: solid;
-		border-width: 3px;
-		display: inline-block;
-		width: 100%;
-		border-radius:5px;
-		position:relative;
-		.cat-input{
-			float:left;
-			width:35%;
-			.current-cat{
-				display:block;
-				padding: 9px 10px 8px;
-				min-height:35px;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				white-space: nowrap;
-				border-right-style: solid;
-				border-right-width: 2px;
+		.sticky-menu:not(.active) &{
+			border-style: solid;
+			border-width: 3px;
+			display: inline-block;
+			width: 100%;
+			border-radius:5px;
+			position:relative;
+			.cat-input{
+				float:left;
+				width:35%;
+				.current-cat{
+					display:block;
+					padding: 9px 10px 8px;
+					min-height:35px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					border-right-style: solid;
+					border-right-width: 2px;
+				}
 			}
-		}
-		input[type="text"]{
-			float:right;
-			width:65%;
-			border:none;
-			border-radius:0;
-			height:35px!important;
-			line-height:36px;
-			text-transform: none;
-		}
-		.button{
-			width:35px;
-			height:35px;
-			&:before{line-height:35px;}
+			input[type="text"]{
+				float:right;
+				width:65%;
+				border:none;
+				border-radius:0;
+				height:35px!important;
+				line-height:36px;
+				text-transform: none;
+			}
+			.button{
+				width:35px;
+				height:35px;
+				&:before{line-height:35px;}
+			}
 		}
 	}
 }

@@ -3715,6 +3715,10 @@ body.catalogsearch-result-index .page-title h1 {
   .products-list .product-name a {
     font-size: 18px;
   }
+
+  .cdz-product-wrapper .products-list .product-name a {
+    font-size: 100%;
+  }
 }
 @media only screen and (max-width: 1279px) {
   .products-list .product-shop .product-primary,
@@ -10952,6 +10956,51 @@ table colgroup, .data-table colgroup {
   border-bottom-width: 1px;
 }
 
+/*button show01 Home Sport*/
+.cdz-button-show01 .products-grid .product-item-info .product-item-details {
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cdz-button-show01 .products-grid .product-item-info .product-item-details .cdz-buttons-container {
+  height: 0;
+  margin-top: 0;
+  display: block;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cdz-button-show01 .products-grid .product-item-info .product-item-details .cdz-buttons-container .cdz-buttons-inner {
+  display: inline-block;
+}
+.cdz-button-show01 .products-grid .product-item-info .product-item-details .cdz-buttons-container .action,
+.cdz-button-show01 .products-grid .product-item-info .product-item-details .cdz-buttons-container button.btn-cart,
+.cdz-button-show01 .products-grid .product-item-info .product-item-details .cdz-buttons-container .qs-button {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
+  margin-top: -80px;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details .cdz-buttons-container {
+  height: 44px;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
 /*Default Header*/
 /* ============================================ *
  * Header
@@ -11381,7 +11430,7 @@ table colgroup, .data-table colgroup {
 .block-search .button:before {
   color: #999999;
 }
-.block-search .cat-search-enable {
+.sticky-menu:not(.active) .block-search .cat-search-enable {
   border-style: solid;
   border-width: 3px;
   display: inline-block;
@@ -11389,11 +11438,11 @@ table colgroup, .data-table colgroup {
   border-radius: 5px;
   position: relative;
 }
-.block-search .cat-search-enable .cat-input {
+.sticky-menu:not(.active) .block-search .cat-search-enable .cat-input {
   float: left;
   width: 35%;
 }
-.block-search .cat-search-enable .cat-input .current-cat {
+.sticky-menu:not(.active) .block-search .cat-search-enable .cat-input .current-cat {
   display: block;
   padding: 9px 10px 8px;
   min-height: 35px;
@@ -11403,7 +11452,7 @@ table colgroup, .data-table colgroup {
   border-right-style: solid;
   border-right-width: 2px;
 }
-.block-search .cat-search-enable input[type="text"] {
+.sticky-menu:not(.active) .block-search .cat-search-enable input[type="text"] {
   float: right;
   width: 65%;
   border: none;
@@ -11412,11 +11461,11 @@ table colgroup, .data-table colgroup {
   line-height: 36px;
   text-transform: none;
 }
-.block-search .cat-search-enable .button {
+.sticky-menu:not(.active) .block-search .cat-search-enable .button {
   width: 35px;
   height: 35px;
 }
-.block-search .cat-search-enable .button:before {
+.sticky-menu:not(.active) .block-search .cat-search-enable .button:before {
   line-height: 35px;
 }
 
@@ -15947,8 +15996,15 @@ body {
     z-index: 5;
     display: none;
   }
-  .header .sticky-menu.active .search-wrapper {
-    padding-right: 60px;
+  .header .sticky-menu.active .search-wrapper,
+  .header .sticky-menu.active .cart-wrapper {
+    position: static;
+    padding: 0;
+    width: auto;
+    min-height: 0;
+  }
+  .header .sticky-menu.active .cdz-header-menu-content {
+    position: relative;
   }
   .header .sticky-menu.active .cdz-header-cart {
     margin: 0;
@@ -15973,6 +16029,9 @@ body {
     width: 42px;
     background-position: 9px -34px;
   }
+  .header .sticky-menu.active .cdz-header-cart .cart-icon .cart-label {
+    display: none !important;
+  }
   .header .sticky-menu.active .cdz-header-cart .cart-icon .cart-qty {
     top: 0;
     right: 0;
@@ -15986,6 +16045,14 @@ body {
   .header .sticky-menu.active .cdz-header-cart .cdz-dropdown-content {
     margin: 0;
   }
+  .header .sticky-menu.active .block-search {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  .header .sticky-menu.active .block-search .form-search .cat-input {
+    display: none;
+  }
   .header .sticky-menu.active .block-search .form-search input[type="text"] {
     width: 0;
     -moz-transition: all 500ms ease;
@@ -15997,6 +16064,8 @@ body {
     backface-visibility: hidden;
     border-width: 0;
     float: right;
+    padding: 0 10px;
+    margin: 0;
   }
   .header .sticky-menu.active .block-search .form-search .button:before {
     color: white;
@@ -16917,8 +16986,10 @@ body {
   margin-bottom: 20px;
 }
 .box-style01 .cdz-block-title {
-  padding: 20px 20px 0;
-  margin-bottom: 15px;
+  padding: 20px 20px 7px;
+  margin-bottom: -1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
   text-align: inherit;
 }
 .box-style01 .cdz-block-title .h2 {
@@ -16960,18 +17031,33 @@ body {
   border: 1px solid;
   border-left: none;
 }
+.box-style01 .products-list .product-item-info {
+  padding: 0 10px;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart {
+  width: auto;
+  height: auto;
+  padding: 7px 10px 4px;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
+  display: none;
+}
 
 /*Product style 02*/
 .product-style02 .products-grid .product-item-info {
   text-align: inherit;
 }
-.product-style02 .products-grid .product-item-info .product-name {
+.product-style02 .products-grid .product-item-info .product-name-price {
+  position: relative;
+}
+.product-style02 .products-grid .product-item-info .product-name-price .product-name {
   padding-right: 100px;
 }
-.product-style02 .products-grid .product-item-info .price-box {
+.product-style02 .products-grid .product-item-info .product-name-price .price-box {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 0px;
+  top: 0px;
+  margin: 0;
 }
 
 /* ============================================ *
@@ -17155,7 +17241,7 @@ body {
   opacity: 0.2;
 }
 
-.owl-theme .owl-nav {
+.slideshow-content .owl-theme .owl-nav {
   margin: 0;
 }
 
@@ -20564,6 +20650,9 @@ fieldset[disabled] .block-search .button {
 .product-item-info {
   background: white;
 }
+.product-item-info .product-name {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
 
 .products-list .product-item {
   background: white;
@@ -20573,9 +20662,6 @@ fieldset[disabled] .block-search .button {
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #999999;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.products-grid .product-item-info .product-name {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .products-grid .product-item-info .cdz-product-bottom {
   background: white;
@@ -20788,7 +20874,6 @@ button:hover {
 
 .qs-button {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #282828;
   background-color: white;
   border-color: #282828;
@@ -22231,9 +22316,31 @@ form .legend {
 }
 .box-style01 .cdz-block-title {
   color: #121212;
+  border-color: #e1e1e1;
 }
 .box-style01 .cdz-block-title .lastcolor {
   color: #fc7070;
+}
+.box-style01 .products-grid {
+  border-left: 1px solid #e1e1e1;
+}
+.box-style01 .products-grid .product-item .product-item-info {
+  border: 1px solid #e1e1e1;
+  border-left: none;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
+  display: none;
+}
+
+/*button show01 Home Sport*/
+.cdz-button-show01 .products-grid .product-item-info:hover {
+  background: white;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
+  background: white;
 }
 
 /* ============================================ *

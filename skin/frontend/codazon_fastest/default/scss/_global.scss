@@ -921,6 +921,9 @@ fieldset[disabled] .block-search .button {
 }
 .product-item-info {
 	background: $main_block_background;
+	.product-name{
+		font:$f_h5;
+	}
 }
 
 .products-list {
@@ -939,9 +942,6 @@ fieldset[disabled] .block-search .button {
 				color: $main_note_text;
 				font: $f_h6;
 			}
-		}
-		.product-name{
-			font:$f_h5;
 		}
 		.cdz-product-bottom {
 			background: $main_block_background;
@@ -1136,7 +1136,6 @@ button:hover {
 
 .qs-button {
 	background: $btn_primary_background;
-	font:$f_h6;
 	color: $btn_primary_text;
 	background-color: $btn_primary_background;
 	border-color: $btn_primary_text;
@@ -2333,8 +2332,38 @@ form .legend
 	background: $main_block_background;
 	.cdz-block-title{
 		color: $main_title_text;
+		border-color:$main_border;
 		.lastcolor{
 			color:$main_hover_text;
+		}
+	}
+	.products-grid{
+		border-left:1px solid $main_border;
+		.product-item{
+			.product-item-info{
+				border:1px solid $main_border;
+				border-left:none;
+			}
+		}
+	}
+	.products-list{
+		.cdz-buttons-container button.btn-cart{
+			font:$f_h6;
+			&:before{display:none;}
+		}
+	}
+}
+
+/*button show01 Home Sport*/
+.cdz-button-show01{
+	.products-grid .product-item-info {
+		.product-item-details{
+		}
+		&:hover{	
+			background: $main_product_hover_background;
+			.product-item-details{				
+				background: $main_product_hover_background;
+			}
 		}
 	}
 }
