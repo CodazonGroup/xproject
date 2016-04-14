@@ -167,4 +167,13 @@
 	-moz-opacity: 0.2;
 	opacity: 0.2;
 }
+.owl-theme .owl-nav{margin:0;}
+.owl-carousel{
+	width:auto!important;
+	margin:0 -10px;
+	.item{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 /* ============================================ */
