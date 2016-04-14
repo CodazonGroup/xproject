@@ -65,7 +65,7 @@
 @media (min-width: 991px) {
   .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {
     width: 20%;
-    min-height: inherit;
+    min-height: 350px;
   }
 }
 .block-related .product-items .product {
@@ -92,6 +92,7 @@
 }
 
 /*------Block style*/
+/*update 04/14*/
 /*Handbag Header*/
 /*Header 03*/
 .cdz-header-style-03 {
@@ -2800,3 +2801,7 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: #f0f1f2;
+}
