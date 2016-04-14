@@ -13575,7 +13575,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
   color: #282828;
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
-.postTitle blog-date {
+.postTitle .blog-date {
   color: #999999;
 }
 
