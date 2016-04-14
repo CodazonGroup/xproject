@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>HardikAjaxCart</name>
+    <version>2.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://creativecommons.org/licenses/by-nc/4.0/">Attribution-NonCommercial 4.0 International</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>provides ajax cart functionality. It is highly customizable.</summary>
+    <description>Now, it provides ajax add to cart functionality for configurable and group products too.</description>
+    <notes>Support for Magento 1.9</notes>
+    <authors><author><name>Hardik Gajjar</name><user>hardik_krishinc</user><email>hardik.gajjar@krishinc.com</email></author></authors>
+    <date>2014-07-31</date>
+    <time>06:48:23</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Hardik_Ajaxcart.xml" hash="81451d4f81af3650b8151344bbc1e865"/></dir></target><target name="magelocal"><dir name="Hardik"><dir name="Ajaxcart"><dir name="Block"><dir name="Adminhtml"><file name="Info.php" hash="8fab3b7d0b1390dcc80a037c66b1ba7f"/><file name="Url.php" hash="ed7b1ff4b0f4ad33d45cfd301dba4227"/></dir></dir><dir name="Helper"><file name="Data.php" hash="773174c4f49cccc57be68acb1e0027e5"/></dir><dir name="Model"><file name="Observer.php" hash="13e2cb8fea9e79dc84593b1174d7ec5a"/><file name="Response.php" hash="b4508819058f7fd656a4e65fab9fe4c9"/></dir><dir name="controllers"><dir name="Checkout"><file name="CartController.php" hash="8e0e56d6627539bb6a342df80a80af9f"/></dir></dir><dir name="etc"><file name="config.xml" hash="8722eb8a94bb093e231fb253633171ca"/><file name="system.xml" hash="70e92e5d3c03d7b462e72ba3a8eaca1f"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ajaxcart.xml" hash="14885283aa1764dc7aba659ac16d73a3"/></dir><dir name="template"><dir name="ajaxcart"><file name="configurable_options.phtml" hash="c1d55b5cea9ba6fc2568251d99c3b789"/><file name="grouped_options.phtml" hash="7409b93efccff6dbabd5c4c8a19b0cda"/></dir></dir></dir></dir><dir name="rwd"><dir name="default"><dir name="layout"><file name="ajaxcart.xml" hash="655561905b6d02a15c5dca6cba15992e"/></dir><dir name="template"><dir name="ajaxcart"><dir name="catalog"><dir name="product"><file name="list.phtml" hash="b5673ebd5800779150b29517821e0b18"/></dir></dir></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="ajaxcart"><file name="ajaxcart.js" hash="781d0b4f81243ecf541840cb7329570c"/><file name="growler.css" hash="c13a01e28cb4eb98b1fbc4a419d906cf"/><file name="growler.js" hash="816d275972bbe9c048033643755fb194"/><file name="modalbox.css" hash="9dfad4d258cbfe5af951f1bc7f7f82c7"/><file name="modalbox.js" hash="7aa6bdceed4379c80f47788ae21f1464"/><file name="spinner.gif" hash="58625c045f515052999e13aed5059b07"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

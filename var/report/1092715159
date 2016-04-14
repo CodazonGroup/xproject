@@ -1,0 +1,27 @@
+a:5:{i:0;s:1337:"SELECT `e`.*, `price_index`.`price`, `price_index`.`tax_class_id`, `price_index`.`final_price`, IF(price_index.tier_price IS NOT NULL, LEAST(price_index.min_price, price_index.tier_price), price_index.min_price) AS `minimal_price`, `price_index`.`min_price`, `price_index`.`max_price`, `price_index`.`tier_price`, SUM(aggregation.qty_ordered) AS `sold_quantity`, `cat_index`.`position` AS `cat_index_position`, `at_category_id`.`category_id` FROM `catalog_product_entity` AS `e`
+ INNER JOIN `catalog_product_index_price` AS `price_index` ON price_index.entity_id = e.entity_id AND price_index.website_id = '1' AND price_index.customer_group_id = 0
+ LEFT JOIN `sales_bestsellers_aggregated_monthly` AS `aggregation` ON e.entity_id = aggregation.product_id AND aggregation.store_id=6 AND aggregation.period BETWEEN '2016-02-01' AND '2016-03-01' AND sold_quantity != NULL
+ INNER JOIN `catalog_category_product_index` AS `cat_index` ON cat_index.product_id=e.entity_id AND cat_index.store_id='6' AND cat_index.visibility IN(2, 4) AND cat_index.category_id = '2'
+ LEFT JOIN `catalog_category_product` AS `at_category_id` ON (at_category_id.`product_id`=e.entity_id) WHERE (at_category_id.category_id IN('4', '10', '43', '5', '14', '15')) GROUP BY `e`.`entity_id`,
+	`e`.`entity_id` ORDER BY `sold_quantity` DESC, `e`.`created_at` ASC LIMIT 6
+
+";i:1;s:2849:"#0 D:\xampp\htdocs\xproject\fastest_magento1\lib\Varien\Db\Statement\Pdo\Mysql.php(110): Zend_Db_Statement_Pdo->_execute(Array)
+#1 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Zend\Db\Statement.php(291): Varien_Db_Statement_Pdo_Mysql->_execute(Array)
+#2 D:\xampp\htdocs\xproject\fastest_magento1\lib\Zend\Db\Adapter\Abstract.php(480): Zend_Db_Statement->execute(Array)
+#3 D:\xampp\htdocs\xproject\fastest_magento1\lib\Zend\Db\Adapter\Pdo\Abstract.php(238): Zend_Db_Adapter_Abstract->query('SELECT `e`.*, `...', Array)
+#4 D:\xampp\htdocs\xproject\fastest_magento1\lib\Varien\Db\Adapter\Pdo\Mysql.php(504): Zend_Db_Adapter_Pdo_Abstract->query('SELECT `e`.*, `...', Array)
+#5 D:\xampp\htdocs\xproject\fastest_magento1\lib\Zend\Db\Adapter\Abstract.php(737): Varien_Db_Adapter_Pdo_Mysql->query('SELECT `e`.*, `...', Array)
+#6 D:\xampp\htdocs\xproject\fastest_magento1\lib\Varien\Data\Collection\Db.php(740): Zend_Db_Adapter_Abstract->fetchAll('SELECT `e`.*, `...', Array)
+#7 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Eav\Model\Entity\Collection\Abstract.php(1045): Varien_Data_Collection_Db->_fetchAll('SELECT `e`.*, `...')
+#8 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Eav\Model\Entity\Collection\Abstract.php(871): Mage_Eav_Model_Entity_Collection_Abstract->_loadEntities(false, false)
+#9 D:\xampp\htdocs\xproject\fastest_magento1\lib\Varien\Data\Collection.php(752): Mage_Eav_Model_Entity_Collection_Abstract->load()
+#10 D:\xampp\htdocs\xproject\fastest_magento1\app\design\frontend\codazon_fastest\default\template\codazon_filterproducts\home_grid_style03.phtml(10): Varien_Data_Collection->count()
+#11 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Core\Block\Template.php(241): include('D:\\xampp\\htdocs...')
+#12 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Core\Block\Template.php(272): Mage_Core_Block_Template->fetchView('frontend\\codazo...')
+#13 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Core\Block\Template.php(286): Mage_Core_Block_Template->renderView()
+#14 D:\xampp\htdocs\xproject\fastest_magento1\app\code\local\Codazon\Filterproducts\Block\Codazonfilterproducts.php(101): Mage_Core_Block_Template->_toHtml()
+#15 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Core\Block\Abstract.php(919): Codazon_Filterproducts_Block_Codazonfilterproducts->_toHtml()
+#16 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Widget\Model\Template\Filter.php(76): Mage_Core_Block_Abstract->toHtml()
+#17 [internal function]: Mage_Widget_Model_Template_Filter->widgetDirective(Array)
+#18 D:\xampp\htdocs\xproject\fastest_magento1\lib\Varien\Filter\Template.php(163): call_user_func(Array, Array)
+#19 D:\xampp\htdocs\xproject\fastest_magento1\app\code\core\Mage\Core\Model\Email\Template\Filter.php(560): Varien_Filter_Template->filter('";s:3:"url";s:27:"/xproject/fastest_magento1/";s:11:"script_name";s:36:"/xproject/fastest_magento1/index.php";s:4:"skin";s:17:"sportwear_english";}

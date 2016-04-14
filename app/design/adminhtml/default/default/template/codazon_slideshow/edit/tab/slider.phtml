@@ -1,0 +1,336 @@
+<div class="entry-edit">
+<?php
+  $count = count($this->getSlider());
+?>
+<h2 class="slider-title"><?php echo $this->__("Slider List") ?></h2>
+<div class="buttons add-new-banner">
+  <button id="addNewImageSlider" type="button" class="add" onclick="return addNewSlider()">
+    <span>
+      <span><?php echo $this->__('Add New Banner Images')?></span>
+    </span>
+  </button>     
+</div>
+<div id="slider-container">
+  <?php if($count == 0): ?>
+  <div class="group" id="slider_1" >
+    <h3><?php echo $this->__('Slider 1') ?></h3>
+    <div>
+      <div class="slider-container">
+        <table cellspacing="0" cellpadding="0" class="form-list option-header">              
+          <tbody>
+            <tr>
+              <td class="label"><label for="title"><?php echo $this->__("Title") ?></label></td>
+              <td class="value">
+                <input name="slider[1][title]" value="" type="text" class=" input-text">
+                
+              </td>
+			  <td class="scope-label"><?php echo $this->__("[Slider Title]"); ?></td>
+            </tr>
+            <tr>
+              <td class="label"><label for="image"><?php echo $this->__("Image") ?></label></td>
+              <td class="value">
+                <input type="file" class="input-file" value="" name="slider_1" />
+                
+              </td>
+			  <td class="scope-label"><?php echo $this->__("[Slider Image. Allowed file types: PNG, GIF, JPG, JPEG.] ") ?></td>
+            </tr>      
+          
+
+            <tr>
+              <td class="label"><label for="link"><?php echo $this->__('URL of Banner') ?></label></td>
+              <td class="value">
+                <input name="slider[1][link]" value="" type="text" class=" input-text">
+                
+              </td>
+			  <td class="scope-label"><?php echo $this->__('[A link on the whole slide pic]') ?></td>
+            </tr>   
+          </tbody>
+        </table>
+        <div class="bottom-slider-container">
+			<table class="form-list">
+				<tr>
+					<td class="label"><label for="image"></label></td>
+					<td class="value">
+					<button onclick="return addLayer(1);" class="scalable add" type="button" title="Add Description">
+					<span><span><?php echo $this->__('Add Description/Caption') ?></span></span>
+				  </button>
+					</td>
+					<td class="scope-label"><?php echo $this->__('[Supporting HTML to add the description/caption]') ?></td>
+				</tr>	
+			</table>
+        </div>
+      </div>
+    <div class="layer_container_1">
+    </div>
+    <button class="removeSlider" type="button" onclick="return removeSlider(this);">
+      <span>
+        <span><?php echo $this->__('Remove Slider')?></span>
+      </span>
+    </button>
+  </div>
+</div>
+<?php else: ?>
+<?php $i = 1; foreach ($this->getSlider() as $index => $slider): ?>  
+<div class="group" id="slider_<?php echo $index ?>">
+
+    <h3><?php echo $slider['title'] ? $slider['title'] : Mage::helper("slideshow")->__('Slider ').$index ?></h3>    
+    <div>
+    <div class="slider-container">
+      <table cellspacing="0" cellpadding="0" class="form-list option-header">              
+        <tbody>
+          <tr>
+            <td class="label"><label for="title"><?php echo $this->__("Banner Title") ?></label></td>
+            <td class="value">
+              <input name="slider[<?php echo $index ?>][title]" value="<?php echo $slider['title'] ?>" type="text" class=" input-text">
+              
+            </td>
+			 <td class="scope-label"><?php echo $this->__('[Slider Title]') ?></td>
+          </tr>
+          <tr>
+            <td class="label"><label for="image"><?php echo $this->__("Upload Image") ?></label></td>
+            <td class="value">
+            <?php if($slider['image']): ?>
+              <a href="<?php echo Mage::helper('slideshow')->getImageUrl($slider['image']) ?>" onclick="imagePreview('preview_<?php echo $slider['image'] ?>'); return false;">
+              <img id="preview_<?php echo $slider['image'] ?>" src="<?php echo Mage::helper('slideshow')->getImageUrl($slider['image']) ?>" title="slider_<?php echo $index ?>" alt="slider_<?php echo $index ?>" height="50" width="50" class="small-image-preview v-middle" />
+              </a>     
+              <input type="hidden" value="<?php echo $slider['image'] ?>" name="slider[<?php echo $index ?>][image]" />
+              <?php endif; ?>               
+              <input type="file" class="input-file" value="<?php echo $slider['image'] ?>" name="slider_<?php echo $index ?>" />
+              
+            </td>
+			<td class="scope-label"><?php echo $this->__('[Slider Image. Allowed file types: PNG, GIF, JPG, JPEG.]') ?></td>
+          </tr>     
+                     
+          <tr>
+            <td class="label"><label for="link"><?php echo $this->__('URL of Banners') ?></label></td>
+            <td class="value">
+              <input name="slider[<?php echo $index ?>][link]" value="<?php echo $slider['link'] ?>" type="text" class=" input-text">
+              
+            </td>
+			<td class="scope-label"><?php echo $this->__('[A link on the whole slide pic]') ?></td>
+          </tr>      
+        </tbody>
+      </table>
+		<div class="bottom-slider-container">
+			<table class="form-list">
+				<tr>
+					<td class="label"><label for="image"></label></td>
+					<td class="value">
+					<button onclick="return addLayer(<?php echo $index ?>);" class="scalable add" type="button" title="Add Description">
+					  <span><span><?php echo $this->__('Add Description/Caption') ?></span></span>
+					</button>
+					</td>
+					<td class="scope-label"><?php echo $this->__('[Supporting HTML to add the description/caption]') ?></td>
+				</tr>	
+			</table>		
+		</div>
+    </div>
+    
+    <div class="layer_container_<?php echo $index ?>" id="text_layer_<?php echo $index ?>">
+    <?php if(isset($slider['layer'])): ?>
+      <?php foreach ($slider['layer'] as $index_layer => $layer): ?>
+          <?php $idLayer = "layer_".$index."_".$index_layer ?>
+        <div class="item option-box expand slider_<?php echo $index ?>" id="<?php echo $idLayer ?>">
+       
+        <div class="col_first">
+          <div class="right">        
+            <button onclick="return deleteLayer('<?php echo $idLayer ?>');" class="btn_del scalable delete" type="button" title="Delete Description/Caption">
+              <span><span><?php echo $this->__("Delete Description/Caption") ?></span></span>
+            </button>
+          </div>
+        </div>
+        
+        <table cellspacing="0" cellpadding="0" class="option-header form-list">                                 
+          <tbody>
+            <tr>
+              <td class="label"><label for="image"><?php echo $this->__("Input your Text or HTML") ?></label></td>
+              <td class="value">
+                <textarea name="slider[<?php echo $index ?>][layer][<?php echo $index_layer ?>][text]" value=""  class=" input-text textarea" style="width:700px"><?php echo $layer['text'] ?></textarea>
+              </td>
+            </tr>               
+          </tbody>   
+        </table>  
+      </div>
+      <?php endforeach ?>
+     <?php endif; ?>
+    </div>
+ 
+    <button class="removeSlider" type="button" onclick="return removeSlider(this);">
+    <span>
+      <span><?php echo $this->__('Remove Slider')?></span>
+    </span>
+  </button>
+<!--   <button class="duplicateSlider" type="button" onclick="return duplicateSlider(this);">
+    <span>
+      <span><?php echo $this->__('Duplicate Slider')?></span>
+    </span>
+  </button> -->
+</div>
+</div>
+<?php endforeach; ?>
+<?php endif; ?>
+</div>
+<script type="text/javascript">
+  
+  jQuery(function($) {
+    $( "#slider-container" )
+    .accordion({
+      header: "> div > h3",
+      collapsible: true,
+      heightStyle: "content",
+      active: false,
+    })
+    .sortable({
+      axis: "y",
+      handle: "h3",
+      stop: function( event, ui ) {        
+        ui.item.children( "h3" ).triggerHandler( "focusout" );
+        $( this ).accordion( "refresh" );
+      }
+    });    
+  });
+  function duplicateSlider(button){      
+      var count = jQuery('.group').length;
+      var i = parseInt(count)+1;
+      var sliderHtml = "<div class='group' id='"+"slider_"+i+"'><h3><?php echo $this->__('Slider ')?>"+" "+i+"</h3><div>";
+      sliderHtml += '<div class="slider-container">';
+      sliderHtml += jQuery(button).parentsUntil('#slider-container').last().find("div.slider-container").html();
+      sliderHtml +=  "</div></button></div></div>";
+      jQuery('#slider-container').append(sliderHtml);
+      jQuery('#slider-container').accordion("refresh");
+    return false;
+    
+    
+  }
+  function addNewSlider(){      
+      var count = jQuery('.group').length;
+      var i = parseInt(count)+1;
+      var sliderHtml = "<div class='group' id='"+"slider_"+i+"'><h3><?php echo $this->__('Slider')?>"+" "+i+"</h3><div>";
+      sliderHtml += '<div class="slider-container">';
+      sliderHtml += '<input type="hidden" value="image" name="slider['+i+'][type_slider]" />';
+      sliderHtml += '<input type="hidden" value="image" name="slider['+i+'][type_slider]" />';
+      sliderHtml += '<table cellspacing="0" cellpadding="0" class="form-list option-header">';
+      sliderHtml += ' <tbody>';
+      sliderHtml += ' <tr>';
+      sliderHtml += ' <td class="label"><label for="title"><?php echo ("Banner Title") ?></label></td>';
+      sliderHtml += ' <td class="value">';
+      sliderHtml += ' <input id="title" name="slider['+i+'][title]" value="" type="text" class=" input-text">       ';
+      sliderHtml += '</td>';
+      sliderHtml += '<td class="scope-label"><span><?php echo $this->__("[Slider Title]") ?></span></td>';
+      sliderHtml += '</tr>';
+      sliderHtml += '<tr>';
+      sliderHtml += '<td class="label"><label for="image"><?php echo $this->__("Upload your Image") ?></label></td>';
+      sliderHtml += '<td class="value">';
+      sliderHtml += '<input type="file" class="input-file" value="" name="slider_'+i+'" />';
+      
+      sliderHtml += '</td>';
+      sliderHtml += '<td class="scope-label"><span><?php echo $this->__("[Slider Image. Allowed file types: PNG, GIF, JPG, JPEG. ]") ?></span></td>';
+      sliderHtml += '</tr>';     
+
+      sliderHtml += '<tr>';
+      sliderHtml += '<td class="label"><label for="link"><?php echo $this->__("URL for your banner") ?></label></td>';
+      sliderHtml += '<td class="value">';
+      sliderHtml += '<input name="slider['+i+'][link]" value="" type="text" class=" input-text">';
+      
+      sliderHtml += '</td>';
+      sliderHtml += '<td class="scope-label"><span><?php echo $this->__("[A link on the whole slide pic]") ?></span></td>';
+      sliderHtml += '</tr>';
+           
+      sliderHtml += '</tbody>';
+      sliderHtml += '</table>';
+      sliderHtml += '<div class="bottom-slider-container">';
+	  	 
+      sliderHtml += '<table class="form-list">';
+	  sliderHtml += '<tbody>';
+	  sliderHtml += '<tr>'; 
+	  sliderHtml += '<td class="label"><label for="image"></label></td>'; 
+	  sliderHtml += '<td class="value">';
+	  sliderHtml += '<button onclick="return addLayer('+i+');" class="scalable add" type="button" title="Add Description/Caption">';
+      sliderHtml += '<span><span><?php echo $this->__("Add Description/Caption") ?></span></span>';
+      sliderHtml += '</button>';
+	  sliderHtml += '</td>';
+	  sliderHtml += '<td class="scope-label"><?php echo $this->__('[Supporting HTML to add the description/caption]') ?></td>';	  
+	  sliderHtml += '</tr>'; 
+	  
+	  sliderHtml += '<tr>'; 
+	  sliderHtml += '<td class="label"><label for="image"></label></td>'; 
+	  sliderHtml += '<td class="value">';
+	  sliderHtml += "<button class='removeSlider' type='button' onclick='removeSlider(this)'>";
+      sliderHtml +=  "  <span>";
+      sliderHtml +=  "         <span>Remove Slider</span>";
+      sliderHtml +=  " </span>";
+	  sliderHtml +=  " </button> ";
+	  sliderHtml += '</td>';
+	  sliderHtml += '<td class="scope-label"></td>';	  
+	  sliderHtml += '</tr>'; 
+	  
+	  sliderHtml += '</tbody>';
+      sliderHtml += '</table>';
+	  
+      sliderHtml +=  "</div>";
+	  sliderHtml +=  " <div class='layer_container_"+i+"' id='text_layer_"+i+"'></div>";
+	  
+      jQuery('#slider-container').append(sliderHtml);
+      jQuery('#slider-container').accordion("refresh");    
+      return false;    
+  }
+  
+  function removeSlider(button){  
+    var r=confirm("Are you sure to delete ?");    
+    if (r==true){
+      jQuery(button).parentsUntil('#slider-container').last().fadeOut('fast', function(){
+        jQuery(this).remove();
+      });
+    }
+    return false;
+    
+    
+  }
+  
+  function em_expand(element){
+    var div = jQuery(element);
+    div.toggleClass("expand");    
+  }
+
+  function addLayer(idSlider){
+    console.log("Aaa");
+    console.log(jQuery('.layer_container_'+idSlider+ " .item"));
+    var count = jQuery('.layer_container_'+idSlider+ " .item").length;
+    var i = parseInt(count)+1;
+    var id = "layer_"+idSlider+"_"+i;    
+    var layerHtml = "";
+    layerHtml +="<div class='item option-box expand slider_"+idSlider+"' id='"+id+"'>";
+	layerHtml +="<div class='col_first'>";
+	layerHtml +="<div class='right'>";
+	 layerHtml += '<button onclick="return deleteLayer('+"'"+id+"'"+');" class="btn_del scalable delete" type="button" title="Delete Description/Caption">';
+	layerHtml +="<span><span><?php echo $this->__('Delete Description/Caption') ?></span></span>";
+	layerHtml +="</button>";
+	layerHtml +="</div>";
+	layerHtml +="</div>";
+	layerHtml +="<table cellspacing='0' cellpadding='0' class='option-header form-list'>";                                 
+	layerHtml +="<tbody>";
+	layerHtml +="<tr>";
+	layerHtml +="<td class='label'><label for='image'><?php echo $this->__('Input your Text or HTML') ?></label></td>";
+	layerHtml +="<td class='value'>";
+	layerHtml +="<textarea name='slider["+idSlider+"][layer]["+i+"][text]' value='' class='input-text textarea'style='width:700px' > </textarea>"; 
+	layerHtml +="</td>";
+	layerHtml +="</tr>";           
+	layerHtml +="</tbody>   ";
+	layerHtml +=" </table>  ";
+	layerHtml +="</div>";
+    jQuery('.layer_container_'+idSlider).append(layerHtml);    
+    return false;        
+  }
+  
+  function deleteLayer(element){
+    var r=confirm("Are you sure to delete ?");    
+    if (r==true){
+      jQuery("#"+element).remove();
+    }
+  }
+
+
+
+  </script>   
+</div>
+<?php echo $this->getChildHtml('form_after');?> 

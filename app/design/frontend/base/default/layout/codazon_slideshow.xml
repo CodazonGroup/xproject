@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="head">
+					
+			<action method="addCss"><stylesheet>cdz/owlslider/css/owl.carousel.min.css</stylesheet></action>
+			<action method="addCss"><stylesheet>cdz/owlslider/css/owl.theme.default.min.css</stylesheet></action>
+			<action method="addCss"><stylesheet>cdz/owlslider/css/animate.css</stylesheet></action>			
+
+			<action method="addJs"><script>cdz/jquery-1.11.3.min.js</script></action>
+			<action method="addJs"><script>cdz/owlslider/owl.carousel.min.js</script></action>			
+        </reference>
+    </default>
+</layout> 

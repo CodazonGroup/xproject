@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <slideshow_adminhtml_slideshow_index>
+  	<reference name="content">
+  	  <block type="slideshow/adminhtml_slideshow" name="cdzslideshow" />
+  	</reference>
+  </slideshow_adminhtml_slideshow_index>
+  <slideshow_adminhtml_slideshow_new>
+      <update handle="editor" />
+        <reference name="head">            
+            <action method="addCss"><stylesheet>cdz/jquery-ui.css</stylesheet></action>            
+            <action method="addCss"><stylesheet>cdz/jquery-ui.structure.min.css</stylesheet></action> 
+            <action method="addCss"><stylesheet>cdz/jquery-ui.theme.css</stylesheet></action>   
+            <action method="addCss"><stylesheet>cdz/slideshow.css</stylesheet></action>            
+            <action method="addJs"><script>cdz/jquery-1.11.3.min.js</script></action>               
+            <action method="addJs"><script>cdz/jquery-ui.min.js</script></action>
+                    
+        </reference>      
+    </slideshow_adminhtml_slideshow_new>
+  <slideshow_adminhtml_slideshow_edit>
+        <update handle="editor" />
+        <reference name="head">            
+            <action method="addCss"><stylesheet>cdz/jquery-ui.css</stylesheet></action>            
+            <action method="addCss"><stylesheet>cdz/jquery-ui.structure.min.css</stylesheet></action> 
+            <action method="addCss"><stylesheet>cdz/jquery-ui.theme.css</stylesheet></action>            
+            <action method="addCss"><stylesheet>cdz/slideshow.css</stylesheet></action>            
+            <action method="addJs"><script>cdz/jquery-1.11.3.min.js</script></action>               
+            <action method="addJs"><script>cdz/jquery-ui.min.js</script></action>
+                    
+        </reference>
+    </slideshow_adminhtml_slideshow_edit>
+</layout>
