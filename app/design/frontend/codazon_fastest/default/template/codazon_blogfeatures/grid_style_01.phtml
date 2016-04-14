@@ -23,7 +23,7 @@ $placeholder = $helper->getPlaceholderUrl($size);
             </div>
         </div>
     </div>
-    <div class="post-items <?php echo $useSlider?'cdz-post-slider':''; ?>">
+    <div class="post-items same-height <?php echo $useSlider?'cdz-post-slider':''; ?>">
     	<?php foreach($posts as $item): ?>
         <?php
 			$url = $this->getUrl("blog/{$item->getIdentifier()}");

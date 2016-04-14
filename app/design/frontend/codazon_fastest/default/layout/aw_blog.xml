@@ -37,9 +37,6 @@
     </default>
 
     <blog_index_index>
-    	<reference name="root">
-    		<block class="core/template" name="page_title" template="page/html/page_title.phtml" />
-    	</reference>
         <reference name="footer" >
             <block type="blog/blog" name="copyright.blog.footer" template="aw_blog/copyright.phtml"/>
         </reference>
@@ -49,9 +46,6 @@
     </blog_index_index>
 
     <blog_index_list>
-    	<reference name="root">
-    		<block class="core/template" name="page_title" template="page/html/page_title.phtml" />
-    	</reference>
         <reference name="footer" >
             <block type="blog/blog" name="copyright.blog.footer" template="aw_blog/copyright.phtml"/>
         </reference>
@@ -64,9 +58,6 @@
         </reference>
     </blog_index_list>
     <blog_post_view>
-    	<reference name="root">
-    		<block class="core/template" name="page_title" template="page/html/page_title.phtml" />
-    	</reference>
         <reference name="footer" >
             <block type="blog/blog" name="copyright.blog.footer" template="aw_blog/copyright.phtml"/>
         </reference>
@@ -79,9 +70,6 @@
         </reference>
     </blog_post_view>
     <blog_cat_view>
-    	<reference name="root">
-    		<block class="core/template" name="page_title" template="page/html/page_title.phtml" />
-    	</reference>
         <reference name="footer" >
             <block type="blog/blog" name="copyright.blog.footer" template="aw_blog/copyright.phtml"/>
         </reference>

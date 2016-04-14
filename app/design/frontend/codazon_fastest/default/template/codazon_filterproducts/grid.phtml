@@ -1,26 +1,25 @@
 <?php
     $_productCollection = $this->getProductCollection();
-    $_helper = $this->helper('catalog/output');
+?>
+<?php if(!$_productCollection->count()): ?>
+<p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+<?php else: ?>
+<?php
+	$_collectionSize = $_productCollection->count();
+	$_helper = $this->helper('catalog/output');
 	$_uniqId = uniqid('grid');
 	$options = $this->getDataArray();
 	$curPage = (int)$this->getCurPage();
 	$_limit = (int)$this->getLimit();
 	$beginItemNum = ($curPage - 1)*$_limit;
-?>
-<?php if(!$_productCollection->count()): ?>
-<p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
-<?php else: ?>
-
-
-<?php $_collectionSize = $_productCollection->count() ?>
-<?php
+	$_qsHelper = $this->helper('quickshop');
 	$_columnCount = 4;
-	$_width = 260; $_height = 320;
+	$_width = $options['thumb_height']; $_height = $options['thumb_height'];
 ?>
 
 <div class="category-products codazon-filter <?php echo $options['custom_class'] ?>" id="<?php echo $_uniqId ?>">
 	<div class="products-grid"> 
-    	<ul class="product-items">
+    	<ul class="product-items same-height">
     	<?php $i=0; foreach ($_productCollection as $_product): ?>
             <li class="item product-item item-<?php echo (string)($beginItemNum + $i + 1) ?> cdz-col-<?php echo (string)($i%$_columnCount + 1) ?>">
 				<div class="product-item-info">
@@ -64,7 +63,7 @@
                                     <button data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Cart') ?>" type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
                                 <?php endif; ?>
                             <?php endif ?>
-                            <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Quick Shop') ?>" class="qs-button" href="javascript:void(0)" data-href="#"><span><span><?php echo $this->__('Quick Shop') ?></span></span></a>
+                            <?php echo $_qsHelper->getQuickshopHtml($_product) ?>
                             <?php if( $this->display('compare_btn') ):?>
 							<?php if($_compareUrl = $this->getAddToCompareUrl($_product)): ?>
                             <a data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Compare') ?>" href="<?php echo $_compareUrl ?>" class="action link-compare"><?php echo $this->__('Add to Compare') ?></a>

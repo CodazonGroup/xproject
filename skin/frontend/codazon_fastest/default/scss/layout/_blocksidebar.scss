@@ -110,8 +110,54 @@
 
 /*Box Style Home Sport*/
 .box-style01{
+	margin-bottom:20px;
 	.cdz-block-title{
 		padding:20px 20px 0;
+		margin-bottom:15px;
 		text-align:inherit;
+		.h2{
+			font:$f_h3;
+		}
+		a.view-all{
+			text-transform:lowercase;
+			font-style: italic;
+			font-size:70%;
+			float:right;
+			margin-top:3px;
+			&:after{
+				@include font-awesome(\f178,14px);
+				margin:0 15px;
+			}
+		}
+	}
+	.codazon-filter{padding:0;}
+	.products-grid{
+		border-left:1px solid;
+		.owl-carousel{margin:0;}
+		.product-item{
+			padding:0!important;
+			margin:0 0 -1px;
+			.product-item-info{
+				border:1px solid;
+				border-left:none;
+			}
+		}
+	}
+}
+
+/*Product style 02*/
+.product-style02{
+	.products-grid{
+		.product-item-info{
+			text-align:inherit;
+			.product-name{
+				padding-right:100px;
+			}
+			.price-box{
+				position:absolute;
+				right:10px;
+				top:10px;
+			}
+		}
 	}
 }

@@ -277,7 +277,7 @@
 		$(this).each(function(){
 			var $wrap = $(this);
 			if($wrap.find('.same-height').length > 0){
-				var item = '.product-item, .ft-item';
+				var item = '.product-item, .ft-item, .cdz-post';
 				$wrap.find('.same-height').each(function(){
 					var $ul = $(this);
 					var maxHeight = 0;

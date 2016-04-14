@@ -58,7 +58,7 @@ input.input-text,
 {
 	@include abs_none_main_background_shadow;
 	border:1px solid $main_border;
-	background:$main_product_background;
+	background:$main_block_background;
 	border-radius:5px;
 	
 }
@@ -94,7 +94,7 @@ input.input-text,
 	@include abs_none_main_background_shadow;
 	border:1px solid $main_border;
 	padding:20px;
-	background:$main_product_background;
+	background:$main_block_background;
 	border-radius:5px;
 } */
 /* .catalog-category-view,
@@ -153,7 +153,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -170,7 +170,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -190,7 +190,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -206,7 +206,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -227,7 +227,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -243,7 +243,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -262,7 +262,7 @@ input.input-text,
 					border:1px solid $main_border;
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -277,7 +277,7 @@ input.input-text,
 				.product-item-info{
 					@include abs_none_main_background_shadow;
 					border:1px solid $main_border;
-					background:$main_product_background;
+					background:$main_block_background;
 					border-radius:5px;
 				}
 			}
@@ -293,7 +293,7 @@ input.input-text,
 		.product-item-info{
 			@include abs_none_main_background_shadow;
 			border:1px solid $main_border;
-			background:$main_product_background;
+			background:$main_block_background;
 			border-radius:5px;
 		}
 		.product-image img{
@@ -310,7 +310,7 @@ input.input-text,
 			@include abs_none_main_background_shadow;
 			padding:10px;
 			border:1px solid $main_border;
-			background:$main_product_background;
+			background:$main_block_background;
 			border-radius:5px;
 		}
 	}
@@ -326,7 +326,7 @@ input.input-text,
 				
 				@include abs_none_main_background_shadow;
 				border:1px solid $main_border;
-				background:$main_product_background;
+				background:$main_block_background;
 				border-radius:5px;
 			}
 		}
@@ -341,7 +341,7 @@ input.input-text,
 			.product-item-info{
 				@include abs_none_main_background_shadow;
 				border:1px solid $main_border;
-				background:$main_product_background;
+				background:$main_block_background;
 				border-radius:5px;
 			}
 		}
@@ -361,7 +361,7 @@ input.input-text,
 	.block.block-up-sell,.block-related,.block-crossell{
 		@include abs_none_main_background_shadow;
 		border:1px solid $main_border;
-		background:$main_product_background;
+		background:$main_block_background;
 		border-radius:5px;
 		.block-content{
 			padding:20px;

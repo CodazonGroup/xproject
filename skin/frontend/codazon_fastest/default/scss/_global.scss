@@ -1,7 +1,7 @@
 body{font:$f_default;color:$main_text;background:$page_background}
 body a{color:$main_alink_text;text-decoration: none;  vertical-align: middle;}
 a:hover{text-decoration: none; vertical-align: middle;}
-a:hover, a:focus{color:$main_alink_text}
+a:hover, a:focus{color:$main_hover_text}
 .wrapper{font:$f_default;color:$main_text;background:$page_background}
 .pages{background:$page_background}
 
@@ -883,13 +883,13 @@ fieldset[disabled] .block-search .button {
 }
 .old-price {
   margin-left: 10px;
-  color: $main_product_price_hover;
+  color: $main_old_price_text;
 }
 .old-price .price {
-  color: $main_product_price_hover;
+  color: $main_old_price_text;
 }
 .products-list .product-item {
-  background:$main_product_background;
+  background:$main_block_background;
   border: 1px solid $main_border;
 }
 .products-grid .isotope .item.product-item .out-of-stock span{color: $main_hover_text_box;}
@@ -901,26 +901,31 @@ fieldset[disabled] .block-search .button {
 	font: $f_h6;
 }
 .products-grid .product-item .product-item-info .cdz-product-bottom {
-	background: $main_product_background;
+	background: $main_block_background;
 }
 
 
 .products-grid .product-items:not(.owl-carousel) {
-	background:$main_product_background
+	background:$main_block_background
 }
 .product-item .price {
   font: $f_h5;
-  color:$main_text
+  color:$main_price_text
 }
 
-.product-name a{color:$main_text}
+.product-name a{
+	color:$main_productname_text;
+	&:hover{
+		color:$main_hover_text;
+	}
+}
 .product-item-info {
-	background: $main_product_background;
+	background: $main_block_background;
 }
 
 .products-list {
 	.product-item {
-		background:$main_product_background;
+		background:$main_block_background;
 		border: 1px solid $main_border;
 	}
 	
@@ -939,7 +944,7 @@ fieldset[disabled] .block-search .button {
 			font:$f_h5;
 		}
 		.cdz-product-bottom {
-			background: $main_product_background;
+			background: $main_block_background;
 		}
 	}
 	
@@ -1114,6 +1119,7 @@ button:hover {
 	border-color:$btn_primary_border;
 	color: $btn_primary_text;
 	font: $f_note;
+	font-size:0;
 }
 #back-top a:focus,
 #back-top a:active {
@@ -1141,7 +1147,20 @@ button:hover {
 	border-color:$btn_primary_border;
 	color: $btn_hover_text;
 }
-.qs-button:hover {
+.btn-link {
+	background: $btn_primary_background;
+	font:$f_h6;
+	color: $btn_primary_text;
+	background-color: $btn_primary_background;
+	border-color: $btn_primary_text;
+}
+.btn-link:focus,
+.btn-link:active {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.btn-link:hover {
 	background: $btn_hover_background;
 	border-color:$btn_primary_border;
 	color: $btn_hover_text;
@@ -2313,6 +2332,9 @@ form .legend
 .box-style01{
 	background: $main_block_background;
 	.cdz-block-title{
-		
+		color: $main_title_text;
+		.lastcolor{
+			color:$main_hover_text;
+		}
 	}
 }

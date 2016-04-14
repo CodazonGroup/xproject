@@ -126,7 +126,7 @@ input.input-text,
 	@include abs_none_main_background_shadow;
 	border:1px solid $main_border;
 	padding:20px;
-	background:$main_product_background;
+	background:$main_block_background;
 	border-radius:5px;
 } */
 /* .catalog-category-view,
@@ -932,7 +932,7 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #999999;
+  color: #b0d235;
 }
 
 .wrapper {
@@ -1724,11 +1724,11 @@ fieldset[disabled] .block-search .button {
 
 .old-price {
   margin-left: 10px;
-  color: #b0d235;
+  color: #999999;
 }
 
 .old-price .price {
-  color: #b0d235;
+  color: #999999;
 }
 
 .products-list .product-item {
@@ -1764,6 +1764,9 @@ fieldset[disabled] .block-search .button {
 
 .product-name a {
   color: #282828;
+}
+.product-name a:hover {
+  color: #b0d235;
 }
 
 .product-item-info {
@@ -1975,6 +1978,7 @@ button:hover {
   border-color: #b0d235;
   color: #b0d235;
   font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-size: 0;
 }
 
 #back-top a:focus,
@@ -2005,7 +2009,22 @@ button:hover {
   color: white;
 }
 
-.qs-button:hover {
+.btn-link {
+  background: white;
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #b0d235;
+  background-color: white;
+  border-color: #b0d235;
+}
+
+.btn-link:focus,
+.btn-link:active {
+  background: #b0d235;
+  border-color: #b0d235;
+  color: white;
+}
+
+.btn-link:hover {
   background: #b0d235;
   border-color: #b0d235;
   color: white;
@@ -3429,4 +3448,10 @@ form .legend {
 /*Box Style Home Sport*/
 .box-style01 {
   background: white;
+}
+.box-style01 .cdz-block-title {
+  color: #121212;
+}
+.box-style01 .cdz-block-title .lastcolor {
+  color: #b0d235;
 }

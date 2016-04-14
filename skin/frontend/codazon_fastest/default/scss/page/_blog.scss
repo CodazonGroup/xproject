@@ -172,12 +172,20 @@
 /*AW Blog List and Post detail*/
 .postTitle{
 	border:0!important;	
+	overflow:hidden;
 	h2{
-		text-transform: inherit;
+		text-transform:uppercase;
 		a{
 		color:$main_text;
 		font:$f_h3;
 		}
+	}
+	.postTitle-blog{
+		float:left;
+		width:80%;
+	}
+	.addthis_toolbox{
+		float:right;
 	}
 	.blog-date{
 		color:$main_note_text
@@ -185,16 +193,19 @@
 	
 }
 .post-image{
+	position:relative;
 	.blog-date {
 		position: absolute;
 		bottom: 10px;
-		left: 10px;
+		left: 20px;
 		background: #fff;
 		color: #333333;
 		padding: 7px 10px;
 		color: #999999;
 		font: 400 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 		float: left;
+		width:55px;
+		text-align:center
 	}
 }
 .postContent{
@@ -211,10 +222,75 @@
 	color:$main_text;
 	font:$f_note;
 	text-transform:uppercase;
-	color:$main_note_text
+	color:$main_note_text;
+	clear:left;
 }
 .postContent {
 	.separator img{}
+}
+.block-blog  .block-content .menu-recent UL LI,
+.block-blog  .block-content .menu-categories UL LI{
+	margin-left:0
+}
+.block-blog .block-title strong{
+	background:none!important;
+	padding-left:0!important;
+}
+.block-blog{
+	.block-content{
+		.menu-categories,.menu-recent{
+			ul{
+				li{
+					border-top: 1px dashed $main_border;
+					padding-top: 10px;
+					margin-top: 10px;
+					a{
+						font:$f_h6;
+					}
+					
+				}
+				li:first-child{
+					padding-top:0;
+					border:0;
+					margin-top:0;
+				}
+			}
+		}
+	}
+	
+}
+.postContent img {
+	max-width: 100%;
+	height: auto;
+}
+.menu-tags, .menu-categories, .menu-recent{
+	padding:0;
+	margin:0!important
+}
+.blog-post-view{
+	.post-image{
+		margin-bottom:20px;
+		img{
+			width:100%;
+		}
+		.blog-date {
+			position: absolute;
+			bottom: auto;
+			top:10px;
+			left: 10px;
+		}		
+	}
+	.postDetails{
+		font:$f_note;
+		h4{font:$f_note;color:$main_hover_text}
+		a{line-height:normal}
+	}
+	.postContent{
+		clear:left;
+	}
+	.postTitle{
+		overflow:hidden
+	}
 }
 .blog-index-list .toolbar{display:none}
 .postWrapper:last-child{padding-bottom:0}
@@ -231,6 +307,7 @@
 			 }
 		 }
 		 .cdz-blog-right{
+			 text-align:left;
 		 }
 		.blog-author{
 			font-size:80%;

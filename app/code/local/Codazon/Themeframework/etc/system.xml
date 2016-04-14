@@ -35,7 +35,7 @@
 							<label>RTL Support</label>
 							<frontend_type>select</frontend_type>
 							<source_model>adminhtml/system_config_source_yesno</source_model>
-							<sort_order>0</sort_order>
+							<sort_order>10</sort_order>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
@@ -56,6 +56,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
 						</enable_ajaxcart>
 						<use_default_menu>
 							<label>Default Menu</label>
@@ -64,6 +65,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
+							<sort_order>20</sort_order>
 						</use_default_menu>
 						<enable_sticky>
 							<label>Sticky header</label>
@@ -72,6 +74,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
+							<sort_order>30</sort_order>
 						</enable_sticky>
 					</fields>
 				</header>
@@ -163,7 +166,7 @@
 							<sort_order>45</sort_order>
 						</template_one_column>
 						<products_per_row_desktop_1>
-							<label>Products Per Row (Desktop view)</label>
+							<label>Products Per Row (Desktop)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
@@ -171,23 +174,32 @@
 							<show_in_store>1</show_in_store>
 							<sort_order>50</sort_order>
 						</products_per_row_desktop_1>
-						<products_per_row_tablet_1>
-							<label>Products Per Row (Tablet view)</label>
+						<products_per_row_tablet_landscape_1>
+							<label>Products Per Row (Tablet Landscape)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>50</sort_order>
-						</products_per_row_tablet_1>
+							<sort_order>51</sort_order>
+						</products_per_row_tablet_landscape_1>
+						<products_per_row_tablet_portrait_1>
+							<label>Products Per Row (Tablet Portrait)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>52</sort_order>
+						</products_per_row_tablet_portrait_1>
 						<products_per_row_mobile_1>
-							<label>Products Per Row (Mobile view)</label>
+							<label>Products Per Row (Mobile)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>50</sort_order>
+							<sort_order>53</sort_order>
 						</products_per_row_mobile_1>
 						<template_two_columns>
 							<label>Template Two Columns</label>
@@ -198,7 +210,7 @@
 							<sort_order>55</sort_order>
 						</template_two_columns>
 						<products_per_row_desktop_2>
-							<label>Products Per Row (Desktop view)</label>
+							<label>Products Per Row (Desktop)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
@@ -206,23 +218,32 @@
 							<show_in_store>1</show_in_store>
 							<sort_order>60</sort_order>
 						</products_per_row_desktop_2>
-						<products_per_row_tablet_2>
-							<label>Products Per Row (Tablet view)</label>
+						<products_per_row_tablet_landscape_2>
+							<label>Products Per Row (Tablet Landscape)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>60</sort_order>
-						</products_per_row_tablet_2>
+							<sort_order>61</sort_order>
+						</products_per_row_tablet_landscape_2>
+						<products_per_row_tablet_portrait_2>
+							<label>Products Per Row (Tablet Portrait)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>62</sort_order>
+						</products_per_row_tablet_portrait_2>
 						<products_per_row_mobile_2>
-							<label>Products Per Row (Mobile view)</label>
+							<label>Products Per Row (Mobile)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>60</sort_order>
+							<sort_order>63</sort_order>
 						</products_per_row_mobile_2>
 						<template_three_columns>
 							<label>Template Three Columns</label>
@@ -233,7 +254,7 @@
 							<sort_order>65</sort_order>
 						</template_three_columns>
 						<products_per_row_desktop_3>
-							<label>Products Per Row (Desktop view)</label>
+							<label>Products Per Row (Desktop)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
@@ -241,23 +262,32 @@
 							<show_in_store>1</show_in_store>
 							<sort_order>70</sort_order>
 						</products_per_row_desktop_3>
-						<products_per_row_tablet_3>
-							<label>Products Per Row (Tablet view)</label>
+						<products_per_row_tablet_landscape_3>
+							<label>Products Per Row (Tablet Landscape)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>70</sort_order>
-						</products_per_row_tablet_3>
+							<sort_order>71</sort_order>
+						</products_per_row_tablet_landscape_3>
+						<products_per_row_tablet_portrait_3>
+							<label>Products Per Row (Tablet Portrait)</label>
+							<frontend_type>select</frontend_type>
+							<source_model>themeframework/system_config_source_columnsperrow</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>72</sort_order>
+						</products_per_row_tablet_portrait_3>
 						<products_per_row_mobile_3>
-							<label>Products Per Row (Mobile view)</label>
+							<label>Products Per Row (Mobile)</label>
 							<frontend_type>select</frontend_type>
 							<source_model>themeframework/system_config_source_columnsperrow</source_model>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>70</sort_order>
+							<sort_order>73</sort_order>
 						</products_per_row_mobile_3>
 					</fields>
 				</category_view>
@@ -291,7 +321,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>20</sort_order>
+							<sort_order>21</sort_order>
 						</base_image_height>
 						<more_view_image_width>
 							<label>More View Image Width</label>
@@ -307,7 +337,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>30</sort_order>
+							<sort_order>31</sort_order>
 						</more_view_image_height>
 						<more_view_thumb_style translate="label">
 							<label>More View Thumbnail Style</label>
@@ -329,6 +359,123 @@
 						</disable_zoom>
 					</fields>
 				</product_view>
+				<custom_tabs translate="label">
+					<label>Custom Tabs on Product View</label>
+					<sort_order>40</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<show_custom_tabs>
+							<label>Show Custom Tabs</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>10</sort_order>
+						</show_custom_tabs>
+						<cms_block_tab_heading_1>
+							<label>CMS Block Tab 1</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>11</sort_order>
+						</cms_block_tab_heading_1>
+						<show_block_tab_1>
+							<label>Enable</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>12</sort_order>
+						</show_block_tab_1>
+						<custom_tab_title_1>
+							<label>Custom Tabs Title</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>13</sort_order>
+						</custom_tab_title_1>
+						<cms_block_tab_1>
+							<label>Static Block ID</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>14</sort_order>
+						</cms_block_tab_1>
+						<cms_block_tab_heading_2>
+							<label>CMS Block Tab 2</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>21</sort_order>
+						</cms_block_tab_heading_2>
+						<show_block_tab_2>
+							<label>Enable</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>22</sort_order>
+						</show_block_tab_2>
+						<custom_tab_title_2>
+							<label>Custom Tabs Title</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>23</sort_order>
+						</custom_tab_title_2>
+						<cms_block_tab_2>
+							<label>Static Block ID</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>24</sort_order>
+						</cms_block_tab_2>
+						<cms_block_tab_heading_3>
+							<label>CMS Block Tab 3</label>
+							<frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>31</sort_order>
+						</cms_block_tab_heading_3>
+						<show_block_tab_3>
+							<label>Enable</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>32</sort_order>
+						</show_block_tab_3>
+						<custom_tab_title_3>
+							<label>Custom Tabs Title</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>33</sort_order>
+						</custom_tab_title_3>
+						<cms_block_tab_3>
+							<label>Static Block ID</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>34</sort_order>
+						</cms_block_tab_3>
+					</fields>
+				</custom_tabs>
 				<product_compare translate="label">
 					<label>Product Compare</label>
 					<sort_order>40</sort_order>

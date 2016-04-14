@@ -80,13 +80,13 @@ $main_block_title_color: #282828;
 $main_block_text_background:#121212;
 $main_block_title_border:#e1e1e1;
 
-$main_text:#282828;
+$main_text:#a1a1a1;
 $main_hover_text:#f64400;
-$main_title_text:#121212;
+$main_title_text:#000000;
 $main_alink_text:#999;
 $main_note_text:#999;
-$main_productname_text:#282828;
-$main_price_text:#282828;
+$main_productname_text:#000000;
+$main_price_text:#f64400;
 $main_old_price_text:#999;
 $main_hover_text_box:#ffffff;
 $main_border:#e1e1e1;
@@ -94,9 +94,9 @@ $main_border_dark:#282828;
 $main_title_border:#000000;
 
 //Block Product
-$main_product_background:#ffffff;
-$main_product_price:#282828;
-$main_product_price_hover:#fc7070;
+$main_product_hover_background:#ffffff;
+$main_product_hover_price:#282828;
+
 
 $main_tab_background:#fbfbfb;
 $main_tab_hover_background:#fbfbfb;

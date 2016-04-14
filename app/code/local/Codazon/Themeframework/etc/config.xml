@@ -58,4 +58,69 @@
             </updates>
         </layout>
 	</adminhtml>
+	<default>
+		<codazon_settings>
+			<general>
+				<boxedwide>1</boxedwide>
+				<enable_rtl>0</enable_rtl>
+			</general>
+			<header>
+				<enable_ajaxcart>1</enable_ajaxcart>
+				<use_default_menu>0</use_default_menu>
+				<enable_sticky>1</enable_sticky>
+			</header>
+			<category_view>
+				<alternative_image>1</alternative_image>
+				<keep_image_aspect_ratio>0</keep_image_aspect_ratio>
+				<image_width>300</image_width>
+				<image_height>375</image_height>
+				<show_compare_wishlist>1</show_compare_wishlist>
+				<show_rating>1</show_rating>
+				<show_description>1</show_description>
+				<enable_hover_effect>1</enable_hover_effect>
+				
+				<products_per_row_desktop_1>5</products_per_row_desktop_1>
+				<products_per_row_tablet_landscape_1>4</products_per_row_tablet_landscape_1>
+				<products_per_row_tablet_portrait_1>3</products_per_row_tablet_portrait_1>
+				<products_per_row_mobile_1>2</products_per_row_mobile_1>
+				
+				<products_per_row_desktop_2>4</products_per_row_desktop_2>
+				<products_per_row_tablet_landscape_2>3</products_per_row_tablet_landscape_2>
+				<products_per_row_tablet_portrait_2>2</products_per_row_tablet_portrait_2>
+				<products_per_row_mobile_2>2</products_per_row_mobile_2>
+				
+				<products_per_row_desktop_3>3</products_per_row_desktop_3>
+				<products_per_row_tablet_landscape_3>2</products_per_row_tablet_landscape_3>
+				<products_per_row_tablet_portrait_3>2</products_per_row_tablet_portrait_3>
+				<products_per_row_mobile_3>2</products_per_row_mobile_3>
+			</category_view>
+			<product_view>
+				<keep_image_aspect_ratio>0</keep_image_aspect_ratio>
+				<base_image_width>450</base_image_width>
+				<base_image_height>563</base_image_height>
+				<more_view_image_width>95</more_view_image_width>
+				<more_view_image_height>119</more_view_image_height>
+				<more_view_thumb_style>1</more_view_thumb_style>
+				<disable_zoom>0</disable_zoom>
+			</product_view>
+			<custom_tabs>
+				<show_custom_tabs>1</show_custom_tabs>
+				<show_block_tab_1>1</show_block_tab_1>
+				<show_block_tab_2>1</show_block_tab_2>
+				<show_block_tab_3>1</show_block_tab_3>
+				<custom_tab_title_1>Custom Tab 1</custom_tab_title_1>
+				<custom_tab_title_2>Custom Tab 2</custom_tab_title_2>
+				<custom_tab_title_3>Custom Tab 3</custom_tab_title_3>
+			</custom_tabs>
+			<newsletter_popup>
+				<enable_newsletter_popup>1</enable_newsletter_popup>
+				<newsletter_static_block_id></newsletter_static_block_id>
+				<popup_width></popup_width>
+				<popup_height></popup_height>
+			</newsletter_popup>
+			<contact_us>
+				<show_google_map>1</show_google_map>
+			</contact_us>
+		</codazon_settings>
+	</default>
 </config>

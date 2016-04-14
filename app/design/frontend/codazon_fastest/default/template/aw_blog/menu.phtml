@@ -23,25 +23,33 @@
  * @copyright  Copyright (c) 2010-2012 aheadWorks Co. (http://www.aheadworks.com)
  * @license    http://ecommerce.aheadworks.com/AW-LICENSE.txt
  */
-?><div class="block block-blog">
+?>
+ <?php if ($posts = $this->getRecent()): ?>
+<div class="block block-blog block-blog-recents">
     <div class="block-title">
-        <strong><span><?php echo Mage::getStoreConfig('blog/blog/title'); ?></span></strong>
+        <strong><span><?php echo Mage::helper('blog')->__('Recent Posts'); ?></span></strong>
     </div>
     <div class="block-content">
-        <?php if ($posts = $this->getRecent()): ?>
+       
             <div class="menu-recent">
-                <h5><?php echo Mage::helper('blog')->__('Recent Posts'); ?></h5>
                 <ul>
                     <?php foreach ($posts as $post): ?>
                         <li><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
-        <?php endif; ?>
-
-        <?php if ($this->getCategories()->count() && Mage::getStoreConfig('blog/menu/category')): ?>
+        <?php echo $this->getChildHtml('blog_tags'); ?>
+    </div>
+</div>
+<?php endif; ?>
+<?php if ($this->getCategories()->count() && Mage::getStoreConfig('blog/menu/category')): ?>
+<div class="block block-blog block-blog-categories">
+    <div class="block-title">
+        <strong><span><?php echo Mage::helper('blog')->__('Categories'); ?></span></strong>
+    </div>
+    <div class="block-content">
+        
             <div class="menu-categories">
-                <h5><?php echo Mage::helper('blog')->__('Categories'); ?></h5>
                 <ul>
                     <?php $cats = $this->getCategories(); ?>
                     <?php foreach ($cats as $cat): ?>
@@ -49,8 +57,7 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
-        <?php endif; ?>
-
-        <?php echo $this->getChildHtml('blog_tags'); ?>
     </div>
 </div>
+ <?php endif; ?>
+

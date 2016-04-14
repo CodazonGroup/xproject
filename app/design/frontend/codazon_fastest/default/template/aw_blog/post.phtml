@@ -26,38 +26,53 @@
 ?><?php 
 	$post = $this->getPost();
 	$helper = Mage::helper('blogfeatures');
-	$width = 800;
-	$height = 500;
+	$width = 840;
+	$height = 619;
 ?>
 <div id="messages_product_view"><?php echo $this->getMessagesBlock()->getGroupedHtml() ?></div>
 <div class="postWrapper">
-    <div class="post-image cdz-left">
+	<div class="post-image">
 	    <a href="<?php echo $post->getAddress() ?>">                
 	         <img class="img-responsive" width="<?php echo $width ?>" height="<?php echo $height ?>" src="<?php echo $helper->getImage($post,array('width' => $width,'height' => $height)) ?>" />
 	    </a>
-	    <div class="blog-date"><?php echo $post->getCreatedTime(); ?></span></div>
+		 <div class="blog-date"><span><?php echo $post->getCreatedTime(); ?></span></div>
 	</div>
-    <div class="postDetails">
-        <?php $postCats = $post->getCats(); ?>
-        <?php if (!empty($postCats)): ?>
-            <?php echo Mage::helper('blog')->__('Categories'); ?>:
-            <?php foreach ($postCats as $title => $url): ?>
-                <a href="<?php echo $url; ?>"><?php echo $title; ?></a>; 
-            <?php endforeach; ?>
-        <?php else: ?>
-            <?php echo Mage::helper('blog')->__('Posted'); ?>
-        <?php endif; ?><?php echo $this->__("By"); ?> <h4 class="poster"><?php echo $post->getUser(); ?></h4>
+	<div class="postTitle">
+		<div class="postTitle-blog">
+			<h2><?php echo $post->getTitle(); ?></h2>
+			<div class="postDetails">
+				<?php $postCats = $post->getCats(); ?>
+				<?php if (!empty($postCats)): ?>
+				<?php echo Mage::helper('blog')->__('Categories'); ?>:
+				<?php foreach ($postCats as $title => $url): ?>
+				<a href="<?php echo $url; ?>"><?php echo $title; ?></a> - 
+				<?php endforeach; ?>
+				<?php else: ?>
+				<?php echo Mage::helper('blog')->__('Posted'); ?>
+				<?php endif; ?><?php echo $this->__("By"); ?> <h4 class="poster"><?php echo $post->getUser(); ?></h4>
+			</div>
+        </div>
+		<div class="addthis_toolbox addthis_default_style" addthis:url="<?php echo $post->getAddress() ?>">
+			<a class="addthis_button_facebook"></a>
+			<a class="addthis_button_twitter"></a>
+			<a class="addthis_button_email"></a>
+			<a class="addthis_button_compact"></a>
+		</div>
     </div>
+    <!--
+	<div class="post-image">
+	    <a href="<?php echo $post->getAddress() ?>">                
+	         <img class="img-responsive" width="<?php echo $width ?>" height="<?php echo $height ?>" src="<?php echo $helper->getImage($post,array('width' => $width,'height' => $height)) ?>" />
+	    </a>
+	    
+	</div>
+	-->
+    
     <div class="postContent std"><?php echo $post->getPostContent(); ?></div>
     <?php echo $this->getBookmarkHtml($post) ?>
     <div class="tags"><?php echo Mage::getBlockSingleton('blog/blog')->getTagsHtml($post) ?></div>
     
-    <div class="addthis_toolbox addthis_default_style" addthis:url="<?php echo $post->getAddress() ?>">
-        <a class="addthis_button_facebook"></a>
-        <a class="addthis_button_twitter"></a>
-        <a class="addthis_button_email"></a>
-        <a class="addthis_button_compact"></a>
-    </div>
+    
 </div>
 <script type="text/javascript">var addthis_config = {"data_track_clickback":false};</script>
 <script type="text/javascript" async src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4def63cd3cf37569"></script>

@@ -6,7 +6,7 @@
 	$width1Class = 'width-1';
 	$width2Class = 'width-1 width-2';
 	$layoutClass = array($width2Class,$width1Class,$width1Class,$width1Class,$width1Class,$width1Class,$width1Class);
-	$qsHelper = $this->helper('quickshop');
+	$_qsHelper = $this->helper('quickshop');
 ?>
 <?php if(!$_productCollection->count()): ?>
 <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
@@ -77,7 +77,7 @@
                                     <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                                 <?php endif; ?>
                             <?php endif ?>
-                            <?php echo $qsHelper->getQuickshopHtml($_product) ?>
+                            <?php echo $_qsHelper->getQuickshopHtml($_product) ?>
                             
                             <?php if( $this->display('compare_btn') ):?>
 							<?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>

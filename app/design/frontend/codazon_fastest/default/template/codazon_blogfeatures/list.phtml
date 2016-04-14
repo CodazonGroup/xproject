@@ -16,13 +16,9 @@ $uniqId = uniqid();
 $placeholder = $helper->getPlaceholderUrl($size);
 ?>
 <div class="cdz_wapper-bloglist text-center space-lg" id="<?php echo 'post-'.$uniqId ?>">
-	<div class="row">
-        <div class="col-sm-24">
-            <div class="cdz-block-title">
-	            <p class="b-title h1"><span><?php echo $this->getBlogTitle() ?></span></p>
-            </div>
-        </div>
-    </div>
+	<div class="cdz-block-title">
+		<p class="b-title h1"><span><?php echo $this->getBlogTitle() ?></span></p>
+	</div>
     <div class="post-items <?php echo $useSlider?'cdz-post-slider':''; ?>">
     	<?php foreach($posts as $item): ?>
         <?php
