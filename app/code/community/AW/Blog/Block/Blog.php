@@ -79,7 +79,7 @@ class AW_Blog_Block_Blog extends AW_Blog_Block_Abstract
             ;
             $collection->setOrder($collection->getConnection()->quote($sortOrder), $sortDirection);
             $collection->setPageSize((int)self::$_helper->postsPerPage());
-			$collection->getSelect()->group('main_table.post_id');
+			//$collection->getSelect()->group('main_table.post_id');
 			
             $this->setData('cached_collection', $collection);
         }

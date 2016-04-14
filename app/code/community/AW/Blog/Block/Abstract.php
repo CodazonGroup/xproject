@@ -293,7 +293,6 @@ abstract class AW_Blog_Block_Abstract extends Mage_Core_Block_Template
                 ->setOrder($sortOrder, $sortDirection);
 
             $collection->setPageSize((int)self::$_helper->postsPerPage());
-			$collection->getSelect()->group('main_table.post_id');
             $this->setData('cached_collection', $collection);
         }
         return $this->getData('cached_collection');
