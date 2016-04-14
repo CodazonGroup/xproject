@@ -46,7 +46,9 @@
 					<div class="col-sm-6 menu-vertical-area">
 						<?php echo $this->getChildHtml('menu-vertical-content') ?>
 					</div>
+					<?php if($this->getChildHtml('slideshow-content')): ?>
 					<div class="col-sm-18 slideshow-content"><?php echo $this->getChildHtml('slideshow-content') ?></div>
+					<?php endif ?>
 				</div>
 			</div>			
 		</div>

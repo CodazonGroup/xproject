@@ -70,6 +70,7 @@ Default layout, loads most of the pages
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
 				<action method="addItem"><type>skin_js</type><name>codazon/jasny-bootstrap/jasny-bootstrap.min.js</name></action>
 				<action method="addItem"><type>skin_css</type><name>codazon/jasny-bootstrap/jasny-bootstrap.min.css</name></action>
+				<action method="addItem"><type>skin_js</type><name>js/bootstrap-hover-dropdown.min.js</name></action>
 				<action method="addItem"><type>skin_js</type><name>js/lib/modernizr.custom.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/enquire.js</name></action>
 				<action method="addItem"><type>skin_js</type><name>js/app.js</name></action>
@@ -117,6 +118,9 @@ Default layout, loads most of the pages
             </block>
 			<block type="core/text_list" name="menu-vertical-content" as="menu-vertical-content" translate="label">
                 <label>Menu Vertical Content Area</label>
+            </block>
+            <block type="core/template" name="menu-vertical-shopby" as="menu-vertical-shopby" translate="label" template="page/html/menu_vertical_shopby.phtml">
+                <label>Menu Vertical Shopby Area</label>
             </block>
             <block type="core/text_list" name="content" as="content" translate="label">
                 <label>Main Content Area</label>

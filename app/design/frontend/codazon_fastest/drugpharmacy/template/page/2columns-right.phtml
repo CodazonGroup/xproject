@@ -50,13 +50,18 @@
 				</div>
 			</div>			
 		</div>
+		<?php if($this->getChildHtml('slideshow-content')): ?>
 		<div class="slideshow-content"><?php echo $this->getChildHtml('slideshow-content') ?></div>
+		<?php endif ?>
         <div class="main-container col2-right-layout">
             <div class="main">
                 <div class="content-breadcrums">
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-24">
+							<div class="col-sm-6 menu-vertical-area">
+								<?php echo $this->getChildHtml('menu-vertical-shopby') ?>
+							</div>
 							<?php echo $this->getChildHtml('breadcrumbs') ?>
 							</div>
 						</div>
