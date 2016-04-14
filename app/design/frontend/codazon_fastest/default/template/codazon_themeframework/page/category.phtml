@@ -1,7 +1,7 @@
 <?php
 $children = $this->getChildren();
 $_helper    = $this->helper('catalog/output');
-$_imgHelper = $this->helper('themeframework');
+$_imgHelper = $this->helper('themeframework/image');
 $_width = 250; $_height =250;
 $size = array('width' => $_width, 'height' => $_height);
 $_placeHolder = $this->helper('catalog/image')->init(Mage::getModel('catalog/product'), 'small_image')->resize($_width, $_height);

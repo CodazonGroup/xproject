@@ -27,7 +27,7 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-
+<?php $headerConfig = Mage::registry('theme_config')->header; ?>
 <div class="header-container cdz-header-style-02">
 	<div class="container">
 	<div class="row">
@@ -47,7 +47,7 @@
 				</div>
 			</div>
         </div>
-        <div class="cdz-header-bottom col-sm-24 sticky-menu">
+        <div class="cdz-header-bottom col-sm-24 <?php echo ($headerConfig['enable_sticky'] == 1)?'sticky-menu':'' ?>">
 			<div class="cdz-header-bottom-content cdz-fix-left">
 				<div class="row cdz-bottom-logo-cart ">
 					<div class="col-sm-5 cdz-header-logo">

@@ -28,10 +28,15 @@
 $catalogSearchHelper =  $this->helper('catalogsearch');
 ?>
 <form id="search_mini_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
-    <div class="form-search cat-search-enable">
+    <div class="form-search <?php echo $this->getHasCategorySearch()?'cat-search-enable':'' ?>">
         <label for="search"><?php echo $this->__('Search:') ?></label>
         <div class="search-input-wrap">
-			<?php echo $this->getChildHtml('top.search.category'); ?>
+        	<?php if($this->getHasCategorySearch()): ?>
+				<?php echo $this->getChildHtml('top.search.category'); ?>
+                <script>
+                    jQuery('#search_mini_form').cdzCatSearch();
+                </script>
+            <?php endif ?>
             <input placeholder="<?php echo Mage::helper('core')->quoteEscape($this->__('Search entire store here...')) ?>" id="search" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
         </div>
         <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Search')) ?>" class="button"><span><span><?php echo $this->__('Search') ?></span></span></button>
@@ -44,6 +49,3 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
         </script>
     </div>
 </form>
-<script>
-jQuery('#search_mini_form').cdzCatSearch();
-</script>

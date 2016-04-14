@@ -36,9 +36,14 @@
 	$_imgHelper = $this->helper('catalog/image');
 	$gallery = 	$this->getGalleryImages();
 	$_baseImg = $_imgHelper->init($_product, 'image');
+	$config = Mage::registry('theme_config')->product_view;
 	$minWidth = 450;
-	$w = 450 ; //max($minWidth,600);
-	$h = round(($w/$_baseImg->getOriginalWidth())*$_baseImg->getOriginalHeight());
+	$w = $config['base_image_width'] ; //max($minWidth,600);
+	if($config['keep_image_aspect_ratio']){
+		$h = round(($w/$_baseImg->getOriginalWidth())*$_baseImg->getOriginalHeight());
+	}else{
+		$h = $config['base_image_height'];	
+	}
 ?>
 <div class="row">
 <div class="product-image-moreview col-sm-24" >

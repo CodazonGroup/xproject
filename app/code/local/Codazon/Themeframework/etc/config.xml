@@ -6,6 +6,15 @@
 		</Codazon_Themeframework>
 	</modules>
 	<global>
+		<cache>
+			<types>
+				<codazon_themeframework>
+					<label>Codazon Theme</label>
+					<description>Themeframework Cache</description>
+					<tags>codazon_themeframework</tags>
+				</codazon_themeframework>
+			</types>
+		</cache>
 		<helpers>
 			<themeframework>
 				<class>Codazon_Themeframework_Helper</class>
@@ -21,6 +30,17 @@
 				<class>Codazon_Themeframework_Model</class>
 			</themeframework>
 		</models>
+		<events>
+			<controller_front_init_before>
+				<observers>
+					<codazon_themeframework_controller_front_init_before_observer>
+						<type>singleton</type>
+						<class>themeframework/observer</class>
+						<method>loadConfig</method>
+					</codazon_themeframework_controller_front_init_before_observer>
+				</observers>
+			</controller_front_init_before>
+		</events>
 	</global>
 	<frontend>
 		<routers>
