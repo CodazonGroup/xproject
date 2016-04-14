@@ -33,9 +33,10 @@ cdzQuickshop.prototype = {
 				dataType: "html",
 				success: function(res){
 					$loader.hide();
-					$iframe.find('.modal-dialog').html(res);
-					$iframe.find('.modal-dialog').show();
-					$iframe.find('.modal-dialog').trigger('animated');
+					var $dialog = $iframe.find('.modal-dialog');
+					$dialog.html(res);
+					$dialog.show();
+					$dialog.trigger('animated');
 					qs.afterLoad();
 				},
 				error: function(XMLHttpRequest, textStatus, errorThrown){
