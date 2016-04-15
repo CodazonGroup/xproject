@@ -4,6 +4,8 @@ a:hover{text-decoration: none; vertical-align: middle;}
 a:hover, a:focus{color:$main_hover_text}
 .wrapper{font:$f_default;color:$main_text;background:$page_background}
 .pages{background:$page_background}
+.space-base{margin-bottom:$cdz_space_area ;}
+.space-small-base{margin-bottom:$cdz_space_small_area;}
 
 .page-title h1,
 .page-title h2
@@ -329,7 +331,12 @@ textarea.input-text{
 		}
 	}
 	.blog-text-link {
-		a{color:$main_text;}
+		a{
+			color:$main_text;
+			&:hover{
+				color:$main_hover_text;
+			}
+		}
 	}
 }
 
@@ -1148,7 +1155,6 @@ button:hover {
 }
 .btn-link {
 	background: $btn_primary_background;
-	font:$f_h6;
 	color: $btn_primary_text;
 	background-color: $btn_primary_background;
 	border-color: $btn_primary_text;
@@ -1164,18 +1170,29 @@ button:hover {
 	border-color:$btn_primary_border;
 	color: $btn_hover_text;
 }
+.btn-link-readmore {
+	background: $btn_primary_background;
+	color: $btn_primary_text;
+	background-color: $btn_primary_background;
+	border-color: $btn_primary_text;
+}
+.btn-link-readmore:focus,
+.btn-link-readmore:active {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
+.btn-link-readmore:hover {
+	background: $btn_hover_background;
+	border-color:$btn_primary_border;
+	color: $btn_hover_text;
+}
 .qs-button:hover {
 	color: $btn_hover_text;
 	background-color: $btn_primary_text;
 	border-color:$btn_primary_border;
 }
 .btn{border-radius:0}
-
-.btn-link{color:$btn_default_text}
-.btn-link:hover, .btn-link:focus{
-	color:$main_hover_text;
-	text-decoration: none;
-}
 
 .ajax-load-button .ajax-loader,
 .ajax-load-button a {
@@ -2291,18 +2308,14 @@ form .legend
 		.switch {
 			font: $f_h5;
 			color: $main_tab_text;
+			background:$main_tab_background;
+			&:visited,&:hover,&:active{
+				color: $main_tab_hover_text;
+				background:$main_tab_hover_background;
+			}
 		}
 		h2{
 			font: $f_h5;
-		}
-		.switch:visited {
-			color: $main_tab_hover_text;
-		}	
-		.switch:hover {
-			color: $main_tab_hover_text;
-		}	
-		.switch:active {
-			color: $main_tab_hover_text;
 		}
 	}	
 }
@@ -2350,6 +2363,33 @@ form .legend
 		.cdz-buttons-container button.btn-cart{
 			font:$f_h6;
 			&:before{display:none;}
+		}
+	}
+	.nav.nav-tabs{		
+		.nav-tab-item .switch{
+			font:$f_h3;
+		}
+	}
+	.owl-nav [class*='owl-'], 
+	.owl-theme .owl-nav [class*=owl-]{
+		border:1px solid $main_title_border;
+		background: $main_block_background;
+		color: $main_title_border;
+		&:hover{
+			border-color:$main_hover_text;
+			color: $main_hover_text;
+		}
+	}
+	&.cdz-wapper-blog-01 .cdz_wapper-blog-content{
+		.owl-nav [class*='owl-'], 
+		.owl-theme .owl-nav [class*=owl-]{
+			border:1px solid $main_title_border;
+			background: $main_block_background;
+			color: $main_title_border;
+			&:hover{
+				border-color:$main_hover_text;
+				color: $main_hover_text;
+			}
 		}
 	}
 }

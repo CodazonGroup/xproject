@@ -164,7 +164,34 @@
 
 /*Product list type*/
 .products-list{
-	li.item{padding:0;border:0}
+	li.item{
+		padding:0;
+		border:0;
+		.widget.widget-static-block &{ 
+			.cdz-product-left{
+				position:relative;
+				.qs-button{
+					position:absolute;
+					right:10px;
+					top:0;
+					display:none;
+					border:none;
+					width:20px;
+					height:20px;
+					line-height:1;
+					color:#000;
+					background:none;
+					&:before{
+						content:"\f0b2";
+						line-height:1;
+					}					
+				}
+			}
+			&:hover{
+				.cdz-product-left .qs-button{display:block;}
+			}
+		}
+	}
 	.product-item-info{float:left;width:100%;padding:10px}
 	.product-shop .desc{float:none;width:100%;margin:20px 0}
 	.add-to-links{

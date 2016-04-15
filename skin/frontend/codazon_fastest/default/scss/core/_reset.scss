@@ -1090,7 +1090,7 @@ a.button:hover {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 4 / 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .icon-sprite, .btn-remove2, .ratings .rating-box, .ratings .rating-box .rating, .sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
+  .icon-sprite, .btn-remove2,.sorter > .sort-by .sort-by-switcher, .sorter > .view-mode .grid,
   .sorter > .view-mode .list, .skip-nav .icon, .skip-search .icon, #search_mini_form .search-button:before, .skip-account .icon, .skip-cart .icon, .product-view .sharing-links a, .review-summary-table .rating-box .rating-number:after, .ratings-table .rating-box, .ratings-table .rating-box .rating {
     background-image: url(../images/icon_sprite@2x.png);
     background-size: 100px 1000px;

@@ -140,6 +140,15 @@
 			</newsletter_popup>
 			<contact_us>
 				<show_google_map>1</show_google_map>
+				<latitude><![CDATA[45.6107667]]></latitude>
+				<longtitude><![CDATA[-73.6108024]]></longtitude>
+				<map_height>300</map_height>
+				<zoom>10</zoom>
+				<address><![CDATA[6505 boulevard Henri-Bourassa, Montréal, Quebec, H1G2V5]]></address>
+				<contact_info><![CDATA[
+					<p><strong>Adress:</strong> 6505 boulevard Henri-Bourassa, Montréal, Quebec, H1G2V5</p>
+					<p><strong>Phone Number:</strong> (514) 955-9337</p>
+				]]></contact_info>
 			</contact_us>
 		</codazon_settings>
 	</default>

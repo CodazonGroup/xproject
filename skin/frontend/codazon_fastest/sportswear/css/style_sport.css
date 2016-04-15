@@ -221,6 +221,14 @@ a:hover, a:focus {
   background: #1d2c35;
 }
 
+.space-base {
+  margin-bottom: 20px;
+}
+
+.space-small-base {
+  margin-bottom: 20px;
+}
+
 .page-title h1,
 .page-title h2 {
   text-transform: uppercase;
@@ -511,6 +519,9 @@ textarea.input-text {
 }
 .cdz_wapper-blog01 .blog-text-link a {
   color: #a1a1a1;
+}
+.cdz_wapper-blog01 .blog-text-link a:hover {
+  color: #f64400;
 }
 
 /* ============================================ *
@@ -921,12 +932,12 @@ fieldset[disabled] .block-search .button {
   border: 1px solid #e1e1e1;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch {
-  color: #999999;
+  color: #778591;
   background: transparent;
   border: 1px solid #e1e1e1;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:visited {
-  color: #999999;
+  color: #778591;
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:hover {
@@ -934,7 +945,7 @@ fieldset[disabled] .block-search .button {
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:active {
-  color: #282828;
+  color: #f64400;
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
@@ -946,7 +957,7 @@ fieldset[disabled] .block-search .button {
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch:focus,
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch:hover {
   background: transparent;
-  color: #282828;
+  color: #f64400;
 }
 .cdz-best-seller-wrap .nav-tabs .item.content {
   background: transparent;
@@ -1286,7 +1297,6 @@ button:hover {
 
 .btn-link {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #282828;
   background-color: white;
   border-color: #282828;
@@ -1305,6 +1315,26 @@ button:hover {
   color: white;
 }
 
+.btn-link-readmore {
+  background: white;
+  color: #282828;
+  background-color: white;
+  border-color: #282828;
+}
+
+.btn-link-readmore:focus,
+.btn-link-readmore:active {
+  background: #282828;
+  border-color: #282828;
+  color: white;
+}
+
+.btn-link-readmore:hover {
+  background: #282828;
+  border-color: #282828;
+  color: white;
+}
+
 .qs-button:hover {
   color: white;
   background-color: #282828;
@@ -1313,15 +1343,6 @@ button:hover {
 
 .btn {
   border-radius: 0;
-}
-
-.btn-link {
-  color: white;
-}
-
-.btn-link:hover, .btn-link:focus {
-  color: #f64400;
-  text-decoration: none;
 }
 
 .ajax-load-button .ajax-loader,
@@ -2669,23 +2690,19 @@ form .legend {
 }
 
 .nav-tabs .nav-tab-item.active .switch {
-  color: #282828;
+  color: #f64400;
 }
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #999999;
+  color: #778591;
+  background: white;
+}
+.nav-tabs .nav-tab-item .switch:visited, .nav-tabs .nav-tab-item .switch:hover, .nav-tabs .nav-tab-item .switch:active {
+  color: #f64400;
+  background: white;
 }
 .nav-tabs .nav-tab-item h2 {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.nav-tabs .nav-tab-item .switch:visited {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:hover {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:active {
-  color: #282828;
 }
 
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
@@ -2693,14 +2710,14 @@ form .legend {
 .nav-tabs active.nav-tab-item:not(.disabled) .switch {
   background: transparent;
   border-bottom-color: #282828;
-  color: #282828;
+  color: #f64400;
 }
 
 .nav-tabs .nav-tab-item:not(.disabled) .switch:active,
 .nav-tabs .active.nav-tab-item .switch,
 .nav-tabs .active.nav-tab-item .switch:focus,
 .nav-tabs .active.nav-tab-item .switch:hover {
-  color: #282828;
+  color: #f64400;
   background: transparent;
   border-bottom-color: black;
 }
@@ -2732,6 +2749,31 @@ form .legend {
 .box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
   display: none;
 }
+.box-style01 .nav.nav-tabs .nav-tab-item .switch {
+  font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .owl-nav [class*='owl-'],
+.box-style01 .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01 .owl-nav [class*='owl-']:hover,
+.box-style01 .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-'],
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-']:hover,
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
+}
 
 /*button show01 Home Sport*/
 .cdz-button-show01 .products-grid .product-item-info:hover {
@@ -2740,3 +2782,5 @@ form .legend {
 .cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
   background: #dce2d8;
 }
+
+/*# sourceMappingURL=style_sport.css.map */

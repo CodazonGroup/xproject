@@ -46,8 +46,8 @@ overflow:inherit;
 }
 .products-grid .product-items.owl-carousel .product-item {
 	width: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
 
 }
 
@@ -87,7 +87,7 @@ overflow:inherit;
 }
 .product-name {
   display: block;
-  margin: 5px 0;
+  margin: 0 0 5px;
   word-wrap: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;

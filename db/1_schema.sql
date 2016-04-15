@@ -97,7 +97,7 @@ CREATE TABLE `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB AUTO_INCREMENT=520 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
+) ENGINE=InnoDB AUTO_INCREMENT=525 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `api2_acl_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2482,7 +2482,7 @@ CREATE TABLE `cms_block` (
   `update_time` timestamp NULL DEFAULT NULL COMMENT 'Block Modification Time',
   `is_active` smallint(6) NOT NULL DEFAULT '1' COMMENT 'Is Block Active',
   PRIMARY KEY (`block_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8 COMMENT='CMS Block Table';
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8 COMMENT='CMS Block Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `cms_block_store`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2665,7 +2665,7 @@ CREATE TABLE `core_layout_link` (
   KEY `IDX_CORE_LAYOUT_LINK_LAYOUT_UPDATE_ID` (`layout_update_id`),
   CONSTRAINT `FK_CORE_LAYOUT_LINK_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CORE_LYT_LNK_LYT_UPDATE_ID_CORE_LYT_UPDATE_LYT_UPDATE_ID` FOREIGN KEY (`layout_update_id`) REFERENCES `core_layout_update` (`layout_update_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=123 DEFAULT CHARSET=utf8 COMMENT='Layout Link';
+) ENGINE=InnoDB AUTO_INCREMENT=126 DEFAULT CHARSET=utf8 COMMENT='Layout Link';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_layout_update`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2677,7 +2677,7 @@ CREATE TABLE `core_layout_update` (
   `sort_order` smallint(6) NOT NULL DEFAULT '0' COMMENT 'Sort Order',
   PRIMARY KEY (`layout_update_id`),
   KEY `IDX_CORE_LAYOUT_UPDATE_HANDLE` (`handle`)
-) ENGINE=InnoDB AUTO_INCREMENT=162 DEFAULT CHARSET=utf8 COMMENT='Layout Updates';
+) ENGINE=InnoDB AUTO_INCREMENT=165 DEFAULT CHARSET=utf8 COMMENT='Layout Updates';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_resource`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4148,7 +4148,7 @@ CREATE TABLE `log_visitor` (
   `last_url_id` bigint(20) unsigned NOT NULL DEFAULT '0' COMMENT 'Last URL ID',
   `store_id` smallint(5) unsigned NOT NULL COMMENT 'Store ID',
   PRIMARY KEY (`visitor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=234 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
+) ENGINE=InnoDB AUTO_INCREMENT=250 DEFAULT CHARSET=utf8 COMMENT='Log Visitors Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `log_visitor_info`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4727,7 +4727,7 @@ CREATE TABLE `report_event` (
   KEY `IDX_REPORT_EVENT_STORE_ID` (`store_id`),
   CONSTRAINT `FK_REPORT_EVENT_EVENT_TYPE_ID_REPORT_EVENT_TYPES_EVENT_TYPE_ID` FOREIGN KEY (`event_type_id`) REFERENCES `report_event_types` (`event_type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_EVENT_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=8249 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
+) ENGINE=InnoDB AUTO_INCREMENT=8274 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `report_event_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4818,7 +4818,7 @@ CREATE TABLE `report_viewed_product_index` (
   CONSTRAINT `FK_REPORT_VIEWED_PRD_IDX_CSTR_ID_CSTR_ENTT_ENTT_ID` FOREIGN KEY (`customer_id`) REFERENCES `customer_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_VIEWED_PRD_IDX_PRD_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`product_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_VIEWED_PRODUCT_INDEX_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6262 DEFAULT CHARSET=utf8 COMMENT='Reports Viewed Product Index Table';
+) ENGINE=InnoDB AUTO_INCREMENT=6287 DEFAULT CHARSET=utf8 COMMENT='Reports Viewed Product Index Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `review`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -7124,7 +7124,7 @@ CREATE TABLE `widget_instance` (
   `widget_parameters` text COMMENT 'Widget parameters',
   `sort_order` smallint(5) unsigned NOT NULL DEFAULT '0' COMMENT 'Sort order',
   PRIMARY KEY (`instance_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8 COMMENT='Instances of Widget for Package Theme';
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COMMENT='Instances of Widget for Package Theme';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `widget_instance_page`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -7141,7 +7141,7 @@ CREATE TABLE `widget_instance_page` (
   PRIMARY KEY (`page_id`),
   KEY `IDX_WIDGET_INSTANCE_PAGE_INSTANCE_ID` (`instance_id`),
   CONSTRAINT `FK_WIDGET_INSTANCE_PAGE_INSTANCE_ID_WIDGET_INSTANCE_INSTANCE_ID` FOREIGN KEY (`instance_id`) REFERENCES `widget_instance` (`instance_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8 COMMENT='Instance of Widget on Page';
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8 COMMENT='Instance of Widget on Page';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `widget_instance_page_layout`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

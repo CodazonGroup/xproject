@@ -432,8 +432,32 @@ button {
   box-sizing: border-box;
   vertical-align: middle;
   height: 40px;
-  padding: 0;
-  margin: 0;
+  margin: 0;  
+	font:$f_h6;
+  line-height: 40px;
+  font-size: 0;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  min-width: 0;
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid;
+}
+.btn-link {
+  background-image: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  height: 40px;
+  margin: 0;  
+	font:$f_h6;
   line-height: 40px;
   font-size: 0;
   text-align: center;

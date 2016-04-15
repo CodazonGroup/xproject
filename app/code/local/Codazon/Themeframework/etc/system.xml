@@ -558,7 +558,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>5</sort_order>
+							<sort_order>10</sort_order>
 						</show_google_map>
 						<address>
 							<label>Address</label>
@@ -566,7 +566,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>10</sort_order>
+							<sort_order>15</sort_order>
 						</address>
 						<latitude>
 							<label>Latitude</label>
@@ -574,7 +574,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>10</sort_order>
+							<sort_order>20</sort_order>
 						</latitude>
 						<longtitude>
 							<label>Longtitude</label>
@@ -582,15 +582,23 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>10</sort_order>
+							<sort_order>25</sort_order>
 						</longtitude>
+						<map_height>
+							<label>Map Height</label>
+							<frontend_type>text</frontend_type>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<sort_order>26</sort_order>
+						</map_height>
 						<zoom>
 							<label>Zoom</label>
 							<frontend_type>text</frontend_type>
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>10</sort_order>
+							<sort_order>30</sort_order>
 						</zoom>
 						<contact_info_heading>
 							<label>Contact Information</label>
@@ -598,7 +606,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>15</sort_order>
+							<sort_order>35</sort_order>
 						</contact_info_heading>
 						<contact_info>
 							<frontend_type>editor</frontend_type>
@@ -606,7 +614,7 @@
 							<show_in_default>1</show_in_default>
 							<show_in_website>1</show_in_website>
 							<show_in_store>1</show_in_store>
-							<sort_order>20</sort_order>
+							<sort_order>40</sort_order>
 						</contact_info>
 					</fields>
 				</contact_us>

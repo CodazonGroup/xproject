@@ -129,9 +129,9 @@
     <?php $_collectionSize = $_productCollection->count() ?>
     <?php $_columnCount = $this->getColumnCount(); ?>
     <div class="products-grid">
-        <ul class="same-height row">
+        <ul class="same-height row <?php echo implode(' ', $itemClass); ?>">
         <?php $i=0; foreach ($_productCollection as $_product): ?>
-                <li class="item <?php echo implode(' ', $itemClass); ?> product-item">
+                <li class="item product-item">
                     <div class="product-item-info">
                     <div class="cdz-hover-section">
                         <div class="cdz-product-top">

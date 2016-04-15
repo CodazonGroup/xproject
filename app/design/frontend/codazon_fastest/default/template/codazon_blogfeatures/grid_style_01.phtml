@@ -15,14 +15,11 @@ $dateHelper = Mage::getModel('core/date');
 $uniqId = uniqid();
 $placeholder = $helper->getPlaceholderUrl($size);
 ?>
-<div class="cdz_wapper-blog01 text-center space-lg" id="<?php echo 'post-'.$uniqId ?>">
-	<div class="row">
-        <div class="col-sm-24">
-            <div class="cdz-block-title">
-	            <p class="b-title h1"><span><?php echo $this->getBlogTitle() ?></span></p>
-            </div>
-        </div>
+<div class="cdz_wapper-blog01" id="<?php echo 'post-'.$uniqId ?>">
+    <div class="cdz-block-title">
+	    <p class="h2"><span><?php echo $this->getBlogTitle() ?></span></p>
     </div>
+    <div class="cdz_wapper-blog-content">
     <div class="post-items same-height <?php echo $useSlider?'cdz-post-slider':''; ?>">
     	<?php foreach($posts as $item): ?>
         <?php
@@ -64,10 +61,11 @@ $placeholder = $helper->getPlaceholderUrl($size);
                 <?php endif ?>
                 
 
-                <p class="blog-text-link"><a class="btn-link" href="<?php echo $url ?>"><span><?php echo __('Read more') ?></span></a></p>
+                <p class="blog-text-link"><a class="btn-link-readmore h6" href="<?php echo $url ?>"><span><?php echo __('Read more') ?></span></a></p>
             </div>
         </div>
         <?php endforeach ?>
+    </div>
     </div>
 </div>
 <?php if($useSlider): ?>

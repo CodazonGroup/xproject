@@ -145,6 +145,7 @@
 			}
 		}
 	}
+	.box-content{overflow:hidden;}
 	.products-list{
 		.product-item-info{padding:0 10px}
 		.cdz-buttons-container button.btn-cart{
@@ -152,6 +153,81 @@
 			height:auto;
 			padding: 7px 10px 4px;
 			&:before{display:none;}
+		}
+	}
+	.nav.nav-tabs{
+		text-align: inherit;
+		margin-bottom:-1px;
+		.nav-tab-item .switch{
+			height:60px;
+			padding: 19px 20px;
+			text-transform:uppercase;
+			border:none;
+		}
+	}	
+	.nav-tab-content{padding:0;}
+	.owl-nav [class*='owl-'], 
+	.owl-theme .owl-nav [class*=owl-]{
+		width:30px;
+		height:30px;
+		top:-50px;
+		@include border-radius(0);
+		&.owl-next{
+			right:10px;
+			&:before{
+				content:"\f178";
+				line-height: 21px;
+				font-size: 14px;
+			}
+		}
+		&.owl-prev{
+			right:50px;
+			left:auto;
+			&:before{
+				content:"\f177";
+				line-height: 21px;
+				font-size: 14px;
+			}
+		}
+	}
+	&.cdz-wapper-blog-01{
+		.cdz_wapper-blog-content{
+			padding:20px;
+			.cdz-blog-bottom{
+				padding:20px 0;
+			}
+			.owl-carousel .owl-stage-outer{
+				padding:0;
+			}
+			.owl-theme {
+				&.owl-carousel .owl-nav{position:static; left:auto; width:auto; top:auto;}
+				.owl-nav [class*=owl-]{
+					width:30px;
+					height:30px;
+					top:-65px;
+					position:absolute;
+					@include border-radius(0);
+					padding:4px 7px;
+					margin:0;
+					&.owl-next{
+						right:0px;
+						&:before{
+							content:"\f178";
+							line-height: 21px;
+							font-size: 14px;
+						}
+					}
+					&.owl-prev{
+						right:40px;
+						left:auto;
+						&:before{
+							content:"\f177";
+							line-height: 21px;
+							font-size: 14px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -171,6 +247,8 @@
 					right:0px;
 					top:0px;
 					margin:0;
+					width:95px;
+					text-align:right;
 				}
 			}
 		}

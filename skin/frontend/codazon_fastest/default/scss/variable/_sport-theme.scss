@@ -15,7 +15,6 @@ $f_note: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 // Border Radius
 $border_radius: 5px;
 
-
 //Page
 $page_background:#1d2c35;
 
@@ -98,10 +97,10 @@ $main_product_hover_background:#dce2d8;
 $main_product_hover_price:#282828;
 
 
-$main_tab_background:#fbfbfb;
-$main_tab_hover_background:#fbfbfb;
-$main_tab_text:#999;
-$main_tab_hover_text:#282828;
+$main_tab_background:#ffffff;
+$main_tab_hover_background:#ffffff;
+$main_tab_text:#778591;
+$main_tab_hover_text:#f64400;
 $main_tab_border:#999;
 
 //Footer
@@ -188,6 +187,7 @@ $indent__xs: $indent__base / 4; // 5px
 
 /*Spacing for each area*/
 $cdz_space_area: 20px;
+$cdz_space_small_area: 20px;
 
 @mixin transition1{
 	-moz-transition: all 400ms ease;

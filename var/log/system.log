@@ -191,3 +191,51 @@
 2016-04-06T08:32:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2016-04-06T08:32:28+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
 2016-04-06T08:33:06+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-15T08:50:25+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>
+2016-04-15T08:50:25+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>
+2016-04-15T08:50:25+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>
+2016-04-15T08:50:26+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>
+2016-04-15T08:50:30+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>
+2016-04-15T08:50:30+00:00 DEBUG (7): HEADERS ALREADY SENT: <pre>[0] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:52
+[1] D:\xampp\htdocs\xproject-magento1\xproject\lib\Zend\Controller\Response\Abstract.php:768
+[2] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Response\Http.php:84
+[3] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Controller\Varien\Front.php:184
+[4] D:\xampp\htdocs\xproject-magento1\xproject\app\code\core\Mage\Core\Model\App.php:365
+[5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
+[6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
+</pre>

@@ -300,6 +300,20 @@
  * Codazon_Blog style 2 - Home Handbag
  * ============================================ */
  .cdz-wapper-blog-02{
+	 .post-items{
+		.owl-nav{
+			 margin:0;
+			 display:none;
+			 @include transition1();
+		 }
+		 &:hover{
+			 .owl-nav{
+				 margin:0;
+				 display:block
+			 }
+		 }
+	 }
+	 
 	 .owl-item{
 		 h5.blog-title {
 			 padding:20px 10px 0;

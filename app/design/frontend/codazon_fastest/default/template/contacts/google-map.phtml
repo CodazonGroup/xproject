@@ -1,0 +1,41 @@
+<?php
+	$config = Mage::registry('theme_config')->contact_us;
+	$zoom = $config['zoom']?$config['zoom']:10;
+	$address = $config['address']?$config['address']:"6505 boulevard Henri-Bourassa, Montréal, Quebec, H1G2V5";
+	$storeName = nl2br(Mage::getStoreConfig('general/store_information/name'));
+	$mapJson = file_get_contents('http://maps.google.com/maps/api/geocode/json?address='.urlencode($address).'&sensor=false');
+	$mapObject = json_decode($mapJson);
+	$lat = $mapObject->results[0]->geometry->location->lat;
+	$lng = $mapObject->results[0]->geometry->location->lng; 
+	$mapHeight = $config['map_height']? $config['map_height']:300;
+	
+?>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.17&signed_in=true"></script>
+<script type="text/javascript"> function initialize() {
+	var myLatlng = new google.maps.LatLng(<?php echo $lat?>, <?php echo $lng ?>);
+	var mapOptions = {
+		zoom: <?php echo $zoom ?>,
+		center: myLatlng
+	};
+	var map = new google.maps.Map(document.getElementById('cdz-google-map'), mapOptions);
+	var contentString = '<?php echo $address ?>';
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	});
+	var image = '<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'codazon_themeframework/images/gmap_icon.png' ?>';
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		icon: image,
+		title: '<?php echo $address ?>'
+	});
+	google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map, marker);
+	});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<div id="cdz-google-map" style="width: 100%; height: <?php echo $mapHeight ?>px"></div>
+<div class="contact-adress">
+	<?php echo nl2br($config['contact_info']) ?>
+</div>

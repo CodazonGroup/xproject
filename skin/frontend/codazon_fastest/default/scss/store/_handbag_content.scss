@@ -11,6 +11,23 @@
 .cdz-slideshow .owl-carousel.owl-theme .owl-dots .owl-dot:hover span{
 	color:#fff;
 }
+.btn-link-readmore{
+	border: 1px solid;
+	box-sizing: border-box;
+	vertical-align: middle;
+	display: inline-block;
+	padding: 10px 20px;
+	font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    color: #666972!important;
+    border-color: #666972!important;
+	span{
+		text-transform: uppercase;
+		font-size: 80%;
+	}
+	&hover{
+		color:#fff
+	}
+}
 .smallbanner-row.first{
 	margin:0 -10px 20px;
 }

@@ -227,7 +227,12 @@
 	}
 	function lazyImages(){
 		if(typeof $.fn.unveil !== 'undefined'){
-			$('.cdz-lazy').unveil();
+			$('.cdz-lazy').addClass('lazy-loading');
+			$('.cdz-lazy').unveil(200,function(){
+				$(this).load(function() {
+					$(this).removeClass('lazy-loading');
+				});	
+			});
 		}
 	}
 	
@@ -236,18 +241,19 @@
 			var $owl = $(this);
 			$owl.addClass('owl-carousel owl-theme');
 			$owl.owlCarousel({
-				loop: $owl.data('loop'),
+				loop: $owl.data('loop')?$owl.data('loop'):false,
 				margin: $owl.data('margin')?$owl.data('margin'):10,
 				responsiveClass: true,
-				nav: $owl.data('nav'),
-				dots: $owl.data('dots'),
+				nav: $owl.data('nav')?$owl.data('nav'):true,
+				dots: $owl.data('dots')?$owl.data('dots'):false,
+				autoplay: $owl.data('autoplay')?$owl.data('autoplay'):false,
 				responsive:{
-					0:{items: 	$owl.data('items-0')},
-					320:{items:	$owl.data('items-320')},
-					480:{items:	$owl.data('items-480')},
-					768:{items:	$owl.data('items-768')},
-					1024:{items: $owl.data('items-1024')},
-					1280:{items: $owl.data('items-1280')}
+					0:{items: 	$owl.data('items-0')?$owl.data('items-0'):1},
+					320:{items:	$owl.data('items-320')?$owl.data('items-320'):3},
+					480:{items:	$owl.data('items-480')?$owl.data('items-480'):4},
+					768:{items:	$owl.data('items-768')?$owl.data('items-768'):5},
+					1024:{items: $owl.data('items-1024')?$owl.data('items-1024'):7},
+					1280:{items: $owl.data('items-1280')?$owl.data('items-1280'):7}
 				}	
 			})
 		});
@@ -280,14 +286,21 @@
 				var item = '.product-item, .ft-item, .cdz-post';
 				$wrap.find('.same-height').each(function(){
 					var $ul = $(this);
-					var maxHeight = 0;
-					$ul.find(item).css('height','');		
-					$ul.find(item).each(function(){
-						if($(this).height() > maxHeight){
-							maxHeight = $(this).height();	
-						}
+					var setMaxHeight = function(){
+						var maxHeight = 0;
+						$ul.find(item).css('height','');
+						$ul.find(item).each(function(){
+							if($(this).height() > maxHeight){
+								maxHeight = $(this).height();	
+							}
+						});
+						$ul.find(item).height(maxHeight);
+					};
+					setMaxHeight();
+					$ul.find('.product-image:first img, .product-image:last img').first().bind('load.setMaxHeight',function(){
+						setMaxHeight();
+						$(this).unbind('load.setMaxHeight');
 					});
-					$ul.find(item).height(maxHeight);
 				});
 			}
 		});
@@ -462,13 +475,11 @@
 		});
 		$('.codazon-ajax-wrap').bind('contentUpdated',function(){
 			var $this = $(this);
-			setTimeout(function(){
-				$this.find('[data-toggle="tooltip"],.cdz-tooltip').tooltip();
-				if(typeof $.fn.unveil !== 'undefined'){
-					$this.find('.cdz-lazy').unveil();
-				}
-				$this.sameHeightItems();
-			},100);
+			$this.find('[data-toggle="tooltip"],.cdz-tooltip').tooltip();
+			if(typeof $.fn.unveil !== 'undefined'){
+				$this.find('.cdz-lazy').unveil();
+			}
+			$this.sameHeightItems();
 		});
 		$('[data-toggle="tab"]').click(function(){
 			var tab = $(this).attr('href');

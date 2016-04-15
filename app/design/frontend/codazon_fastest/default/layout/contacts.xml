@@ -42,7 +42,9 @@
             <action method="setHeaderTitle" translate="title" module="contacts"><title>Contact Us</title></action>
         </reference>
         <reference name="content">
-            <block type="core/template" name="contactForm" template="contacts/form.phtml"/>
+            <block type="core/template" name="contactForm" template="contacts/form.phtml">
+				<block type="core/template" name="googleMap" template="contacts/google-map.phtml" />
+			</block>
         </reference>
     </contacts_index_index>
 </layout>

@@ -42,10 +42,6 @@ input.input-text,
   color: white;
 }
 
-.cdz-home-block, .two-banner {
-  margin-bottom: 60px;
-}
-
 .two-banner img {
   display: block;
   max-width: 100%;
@@ -147,14 +143,6 @@ input.input-text,
 .cdz-slideshow .slider-item img,
 .manage-address, .change-pass {
   border-radius: 5px;
-}
-
-.cms-index-index .slideshow-content {
-  margin-bottom: 40px;
-}
-
-.cms-index-index .menu-vertical-area {
-  margin-bottom: 40px;
 }
 
 @media (max-width: 767px) {
@@ -945,6 +933,14 @@ a:hover, a:focus {
   background: white;
 }
 
+.space-base {
+  margin-bottom: 60px;
+}
+
+.space-small-base {
+  margin-bottom: 20px;
+}
+
 .page-title h1,
 .page-title h2 {
   text-transform: uppercase;
@@ -1235,6 +1231,9 @@ textarea.input-text {
 }
 .cdz_wapper-blog01 .blog-text-link a {
   color: #282828;
+}
+.cdz_wapper-blog01 .blog-text-link a:hover {
+  color: #b0d235;
 }
 
 /* ============================================ *
@@ -2010,7 +2009,6 @@ button:hover {
 
 .btn-link {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #b0d235;
   background-color: white;
   border-color: #b0d235;
@@ -2029,6 +2027,26 @@ button:hover {
   color: white;
 }
 
+.btn-link-readmore {
+  background: white;
+  color: #b0d235;
+  background-color: white;
+  border-color: #b0d235;
+}
+
+.btn-link-readmore:focus,
+.btn-link-readmore:active {
+  background: #b0d235;
+  border-color: #b0d235;
+  color: white;
+}
+
+.btn-link-readmore:hover {
+  background: #b0d235;
+  border-color: #b0d235;
+  color: white;
+}
+
 .qs-button:hover {
   color: white;
   background-color: #b0d235;
@@ -2037,15 +2055,6 @@ button:hover {
 
 .btn {
   border-radius: 0;
-}
-
-.btn-link {
-  color: white;
-}
-
-.btn-link:hover, .btn-link:focus {
-  color: #b0d235;
-  text-decoration: none;
 }
 
 .ajax-load-button .ajax-loader,
@@ -3410,18 +3419,14 @@ form .legend {
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #999999;
+  background: #fbfbfb;
+}
+.nav-tabs .nav-tab-item .switch:visited, .nav-tabs .nav-tab-item .switch:hover, .nav-tabs .nav-tab-item .switch:active {
+  color: #282828;
+  background: #fbfbfb;
 }
 .nav-tabs .nav-tab-item h2 {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.nav-tabs .nav-tab-item .switch:visited {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:hover {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:active {
-  color: #282828;
 }
 
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
@@ -3467,6 +3472,31 @@ form .legend {
 }
 .box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
   display: none;
+}
+.box-style01 .nav.nav-tabs .nav-tab-item .switch {
+  font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .owl-nav [class*='owl-'],
+.box-style01 .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01 .owl-nav [class*='owl-']:hover,
+.box-style01 .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #b0d235;
+  color: #b0d235;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-'],
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-']:hover,
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #b0d235;
+  color: #b0d235;
 }
 
 /*button show01 Home Sport*/
