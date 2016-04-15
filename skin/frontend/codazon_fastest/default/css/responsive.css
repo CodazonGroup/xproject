@@ -618,7 +618,7 @@
 @media (max-width: 767px) {
   /*Block bestseller product*/
   .cdz-best-seller-wrap {
-    min-height: 1px;
+    min-height: auto;
   }
   .cdz-best-seller-wrap .nav-tab-content {
     margin: 20px 0 0;

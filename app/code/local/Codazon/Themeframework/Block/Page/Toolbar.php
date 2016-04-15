@@ -9,7 +9,7 @@ class Codazon_Themeframework_Block_Page_Toolbar extends Mage_Catalog_Block_Produ
 	public function isExpanded(){
 		return false;	
 	}
-	public function getPagerHtml()
+	/*public function getPagerHtml()
     {
         $pagerBlock = $this->getLayout()
                     ->createBlock('catalog/product_widget_html_pager', 'category_list_toolbar');
@@ -22,10 +22,10 @@ class Codazon_Themeframework_Block_Page_Toolbar extends Mage_Catalog_Block_Produ
 				->setLimit($this->getLimit())
 				->setTotalLimit($this->getTotalNum())
 				->setCollection($this->getCollection());
-            return $pagerBlock->toHtml();
+            //return $pagerBlock->toHtml();
         }
 
         return '';
-    }
+    }*/
 }
 ?>
