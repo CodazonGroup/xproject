@@ -173,6 +173,7 @@
 		background: $main_block_background;
 		padding:20px;
 		.grifo-title{ 
+			margin-bottom:30px;
 			a{
 				color: $main_title_text;
 				&:hover{
@@ -241,7 +242,9 @@
 		}
 	}
 }
-
+.lazy-loading{
+	min-height:150px;
+}
 .wrapper-ads06{
 	padding:20px;
 	&.bg-wrapper-ads{
