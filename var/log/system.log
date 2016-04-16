@@ -239,3 +239,21 @@
 [5] D:\xampp\htdocs\xproject-magento1\xproject\app\Mage.php:684
 [6] D:\xampp\htdocs\xproject-magento1\xproject\index.php:87
 </pre>
+2016-04-16T10:09:39+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:09:39+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:09:50+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:09:50+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:09:53+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:09:53+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:09:54+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:09:54+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:10:07+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:10:07+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:10:18+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:10:18+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:10:21+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:10:21+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:10:22+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:10:22+00:00 DEBUG (7): Security problem: core/template has not been whitelisted.
+2016-04-16T10:11:37+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
+2016-04-16T10:11:55+00:00 DEBUG (7): Security problem: newsletter/subscribe has not been whitelisted.
