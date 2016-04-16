@@ -6,23 +6,7 @@
                 <action method="addBlogLink" ifconfig="blog/menu/footer"><param>footer</param></action>
             </block>
         </reference>
-        <reference name="right">
-            <block type="blog/menu_sidebar" name="right.blog.menu" before="-">
-                <action method="setTemplate" ifconfig="blog/menu/right" ifvalue="1">
-                    <template>aw_blog/menu.phtml</template>
-                </action>
-                <block type="blog/tags" name="blog_tags" />
-            </block>
-        </reference>
-        <reference name="left">
-            <block type="blog/menu_sidebar" name="left.blog.menu"  before="-">
-                <action method="setTemplate" ifconfig="blog/menu/left">
-                    <template>aw_blog/menu.phtml</template>
-                </action>
-                <block type="blog/tags" name="blog_tags" />
-            </block>
-        </reference>
-
+        
         <reference name="top.links">
             <block type="blog/blog" name="add.blog.link">
                 <action method="addBlogLink" ifconfig="blog/menu/top"><param>top</param></action>
@@ -37,6 +21,14 @@
     </default>
 
     <blog_index_index>
+		<reference name="left">
+            <block type="blog/menu_sidebar" name="left.blog.menu"  before="-">
+                <action method="setTemplate" ifconfig="blog/menu/left">
+                    <template>aw_blog/menu.phtml</template>
+                </action>
+                <block type="blog/tags" name="blog_tags" />
+            </block>
+        </reference>
         <reference name="footer" >
             <block type="blog/blog" name="copyright.blog.footer" template="aw_blog/copyright.phtml"/>
         </reference>

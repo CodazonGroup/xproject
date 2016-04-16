@@ -157,4 +157,50 @@
 		}
 	}
 }
-/*update 04/14*/
+/*Sub page*/
+.menu-vertical-subpage{
+	.menu-vertical-title{
+		border-radius:5px;
+		cursor:pointer;
+		h3:after{
+			@include font-awesome(\f107,17px);
+			float:right;
+			@include transition1();
+			font-size:23px;
+		}
+	}
+	.space-base{
+		margin:0
+	}
+	.menu-vertical-dropdown{
+		.menu-vertical-content{
+			position:absolute;
+			display:none;
+			@include transition1();
+			width:100%;
+		}
+		&.dd-open{
+			.menu-vertical-content{
+				position:absolute;
+				display:block;
+				@include transition1();
+			}
+			.menu-vertical-title{
+				h3:after{
+					@include font-awesome(\f105,17px);
+				}
+			}
+		}
+	}
+}
+.menu-breadcrumbs{
+	.breadcrumbs{
+		background:#f9f9f9;
+		display:block;
+		border:0;
+		padding:10px 10px 0 30px;
+		height:40px;
+		border-radius: 0 5px 5px 0px;
+		margin:0 0 0 -30px;
+	}
+}

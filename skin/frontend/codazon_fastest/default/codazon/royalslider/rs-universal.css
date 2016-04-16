@@ -1,4 +1,4 @@
-/******************************
+3/******************************
 *
 *  RoyalSlider Universal Skin
 *
@@ -132,13 +132,7 @@
 	width: 100%;
 	height: auto;
 }
-.rsUni .rsThumbsVer {
-	width: 92px;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
+
 .rsUni.rsWithThumbsHor .rsThumbsContainer {
 	position: relative;
 	height: 100%;
@@ -479,5 +473,12 @@
 .rsUni, .rsUni .rsOverflow, .rsUni .rsSlide, .rsUni .rsVideoFrameHolder, .rsUni .rsThumbs{background: transparent; color:inherit;}
 .rsUni.rsFullscreen{background:#FFF;}
 .product-view-media .product-img-box .rsSlide.product-image{padding:0 0;}
-.rsMainSlideImage {float: right; margin-top: 0 !important;}
-.rsFullscreen .rsMainSlideImage{float:none; margin-top: auto !important;}
+
+.rsFullscreen .rsOverflow{max-width:none;}
+.rsUni .rsThumbsVer {
+	width: 92px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

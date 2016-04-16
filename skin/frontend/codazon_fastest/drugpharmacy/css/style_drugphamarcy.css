@@ -2933,6 +2933,9 @@ button:hover {
   background: #b0d235;
   color: white;
 }
+.menu-vertical-title h3 a {
+  color: white;
+}
 .menu-vertical-title h3:before {
   color: white;
 }
@@ -2941,6 +2944,10 @@ button:hover {
   border: 1px solid #ebebeb;
 }
 .menu-vertical .cdz-nav-wrap li.vertical-level1 a.vertical-level1 {
+  color: #282828;
+  background-color: #fafafa;
+}
+.menu-vertical .cdz-nav-wrap li.vertical-level1.view-all a {
   color: #282828;
   background-color: #fafafa;
 }
@@ -3116,6 +3123,10 @@ button:hover {
   }
   .codazon-filter-style-05 .products-grid .product-items .item.product-item .price {
     color: #282828;
+  }
+  .codazon-filter-style-05 .products-grid .product-items .item.product-item .old-price .price {
+    color: #999999;
+    font-weight: 400;
   }
 }
 @media (max-width: 991px) {

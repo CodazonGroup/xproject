@@ -143,7 +143,7 @@ Default layout, loads most of the pages
 			<block type="core/template" name="codazon_popup_area" as="codazon_popup_area" translate="label" template="page/html/popup.phtml">
                 <label>Codazon Popup Area</label>
             </block>
-            <block type="page/html_footer" name="footer" as="footer" template="page/html/codazon_footer/footer_style_02.phtml">
+            <block type="page/html_footer" name="footer" as="footer" template="page/html/codazon_footer/footer_style_04.phtml">
                 <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
                     <label>Page Footer</label>
                     <action method="setElementClass"><value>bottom-container</value></action>

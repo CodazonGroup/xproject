@@ -24,22 +24,18 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 ?>
-<div class="page-footer footer-container">
+<div class="page-footer footer-container cdz-footer-style-02">
     <div class="footer">
+		<?php echo $this->getChildHtml() ?>
         <p class="bugs"><?php echo $this->__('Help Us to Keep Magento Healthy') ?> - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong><?php echo $this->__('Report All Bugs') ?></strong></a> <?php echo $this->__('(ver. %s)', Mage::getVersion()) ?></p>
-        <div class="top-footer-wrapper">
-        	<div class="container footer01-wrapper">
-            	<?php echo $this->getChildHtml('codazon_footer01'); ?>
-            </div>
-            <div class="container footer02-wrapper">
-            	<?php echo $this->getChildHtml('codazon_footer02'); ?>
-            </div>
-        </div>
 		<div class="bottom-footer-wrapper">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-24 text-center">
+					<div class="col-sm-12">
 						<address><?php echo $this->getCopyright() ?></address>
+					</div>	
+					<div class="col-sm-12 pull-right footer-payment-logo">
+						<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('fastest-fashion-footer-payment')->toHtml() ?>
 					</div>
 				</div>	
 			</div>

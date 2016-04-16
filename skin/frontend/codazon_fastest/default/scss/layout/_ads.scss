@@ -245,14 +245,15 @@
 .wrapper-ads06{
 	padding:20px;
 	&.bg-wrapper-ads{
-		padding:200px 0;
+		padding:180px 0;
 	}
 	color:#fff;
 	.ads-title{
-		@include abs-csscf (#282828, 36px);
+		font-size:30px;
+		color:#fff
 	}
 	.ads-desc{ font-size:14px; margin-bottom:3rem}
-	.ads-img img{ width:auto !important; display:inline-block !important}
+	.ads-img img{ width:auto !important; display:inline-block !important;@include abs-borderradius(100%);}
 	a{}
 	.ads-author{ text-transform:uppercase; margin-bottom:0;}
 	.ads-major{ color:#f8b5ad}

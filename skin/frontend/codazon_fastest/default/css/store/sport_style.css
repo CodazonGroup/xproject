@@ -10,6 +10,7 @@
  * ============================================ */
 /*Setting padding for template*/
 /*Spacing for each area*/
+/*update 04/14*/
 /*Sport Homepage*/
 .page {
   max-width: 1200px;
@@ -17,6 +18,9 @@
 }
 
 /*header logo color*/
+.cdz-header-style-04.header-container {
+  margin-bottom: 20px;
+}
 .cdz-header-style-04.header-container .header h1.logo {
   background: #ef6c25;
 }
@@ -28,6 +32,10 @@
   border: 70px solid white;
   border-left-color: #f19967;
   border-bottom-color: #f19967;
+}
+
+.cdz-slideshow {
+  margin: 0;
 }
 
 /*Sport Header*/
@@ -91,9 +99,9 @@
   -moz-osx-font-smoothing: grayscale;
   content: "\f007";
   font-size: 22px;
-  width: 37px;
-  height: 37px;
-  line-height: 37px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
   border-style: solid;
   border-width: 1px;
 }
@@ -151,12 +159,40 @@
   width: 100%;
   margin-top: 15px;
 }
+.cdz-header-style-04 .header .sticky-menu.active .block-search {
+  right: 89px;
+  top: 12px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .block-search .form-search .button:hover {
+  background-color: white;
+}
+.cdz-header-style-04 .header .sticky-menu.active .block-search .form-search .button:hover:before {
+  color: black;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart {
+  right: 0;
+  top: 13px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cdz-dropdown {
+  float: right;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon {
+  padding: 0;
+  float: right;
+  width: 38px;
+  height: 38px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon:before {
+  width: 38px;
+  height: 38px;
+}
 
+/*update 04/14*/
 /*Sport Footer*/
 /*Color Important*/
 body {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
   background: #1d2c35;
 }
 
@@ -172,12 +208,12 @@ a:hover {
 }
 
 a:hover, a:focus {
-  color: #999999;
+  color: #f64400;
 }
 
 .wrapper {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
   background: #1d2c35;
 }
 
@@ -185,12 +221,20 @@ a:hover, a:focus {
   background: #1d2c35;
 }
 
+.space-base {
+  margin-bottom: 20px;
+}
+
+.space-small-base {
+  margin-bottom: 20px;
+}
+
 .page-title h1,
 .page-title h2 {
   text-transform: uppercase;
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   font-weight: 600;
-  color: #282828;
+  color: #a1a1a1;
   padding-bottom: 3px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -268,10 +312,10 @@ a:hover, a:focus {
  * Codazon_Footer style 1
  * ============================================ */
 .footer-top-ads {
-  color: #282828;
+  color: #a1a1a1;
 }
 .footer-top-ads .ftop-ads-small {
-  color: #282828;
+  color: #a1a1a1;
 }
 .footer-top-ads .block.block-subscribe .actions .button {
   color: white;
@@ -399,10 +443,10 @@ a:hover, a:focus {
 }
 
 .wrapper-ads03 .text-area i {
-  background: #424242;
+  background: #bababa;
 }
 .wrapper-ads03 .text-area h5 {
-  background: #5b5b5b;
+  background: #d4d4d4;
 }
 
 /*Default Input and Validate input --- */
@@ -450,7 +494,7 @@ textarea.input-text {
 
 /*---Default Input and Validate input */
 .popup-content-title.h3 {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 /*Slideshow and Caption area----*/
@@ -474,7 +518,10 @@ textarea.input-text {
   color: #282828;
 }
 .cdz_wapper-blog01 .blog-text-link a {
-  color: #282828;
+  color: #a1a1a1;
+}
+.cdz_wapper-blog01 .blog-text-link a:hover {
+  color: #f64400;
 }
 
 /* ============================================ *
@@ -616,7 +663,7 @@ textarea.input-text {
  * Header
  * ============================================ */
 .cdz-top-login .cdz-dropdown-content {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .cdz-top-login .block-login .block-content button.button, #login-form .block-login .block-content button.button {
@@ -656,7 +703,7 @@ textarea.input-text {
 }
 .header #cdz-pc-stores .cdz-dropdown-content a:hover {
   background: #f8f8f8;
-  color: #282828;
+  color: #a1a1a1;
 }
 .header #cdz-pc-stores .cdz-trigger {
   color: #999999;
@@ -682,10 +729,10 @@ textarea.input-text {
 }
 
 .block-search .label:hover:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 .block-search .label:active:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 .block-search .control {
   border-top: 1px solid #e1e1e1;
@@ -696,11 +743,11 @@ textarea.input-text {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .block-search .button:hover:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 .block-search .button.disabled,
 .block-search .button:focus:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 .block-search .button:before {
   color: #999999;
@@ -775,11 +822,11 @@ fieldset[disabled] .block-search .button {
 }
 
 .mobile-search-wrapper .ui-dialog .button:hover:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .mobile-search-wrapper .ui-dialog .button:focus:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .mobile-search-wrapper .ui-dialog .button:before {
@@ -809,31 +856,33 @@ fieldset[disabled] .block-search .button {
 }
 
 .cdz-top-cart .block-cart.cdz-dropdown-content {
-  color: #282828;
+  color: #a1a1a1;
 }
 
+.header .block-cart, .header .block:not(.block-static-block) {
+  /*.button:hover{
+  	background:$btn_primary_background;
+  	color:$btn_primary_text
+  }*/
+}
 .header .block-cart .summary, .header .block:not(.block-static-block) .summary {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
 }
 .header .block-cart .summary h4, .header .block:not(.block-static-block) .summary h4 {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
 }
 .header .block-cart .summary p, .header .block:not(.block-static-block) .summary p {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
 }
 .header .block-cart .actions, .header .block:not(.block-static-block) .actions {
   border-bottom: 1px solid #e1e1e1;
-}
-.header .block-cart .actions .button, .header .block:not(.block-static-block) .actions .button {
-  background: #f14b00;
-  color: white;
-}
-.header .block-cart .button:hover, .header .block:not(.block-static-block) .button:hover {
-  background: white;
-  color: #282828;
+  /*.button{
+  	background:$btn_default_background;
+  	color:$btn_default_text
+  	}*/
 }
 .header .block-cart .block-subtitle, .header .block:not(.block-static-block) .block-subtitle {
   display: none;
@@ -848,7 +897,7 @@ fieldset[disabled] .block-search .button {
   font-size: 0;
 }
 .header .block-cart .btn-edit:before, .header .block:not(.block-static-block) .btn-edit:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 .header .block-cart .btn-remove, .header .block:not(.block-static-block) .btn-remove {
   font-size: 0;
@@ -858,7 +907,7 @@ fieldset[disabled] .block-search .button {
   margin: 0;
 }
 .header .block-cart .btn-remove:before, .header .block:not(.block-static-block) .btn-remove:before {
-  color: #282828;
+  color: #a1a1a1;
   border: 1px solid #e1e1e1;
 }
 
@@ -870,7 +919,7 @@ fieldset[disabled] .block-search .button {
  * Codazon_Product grid & List
  * ============================================ */
 .codazon-filter-style-02 .products-grid .product-item-info .product-name a, .codazon-filter-style-05 .products-grid .product-item-info .product-name a {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch,
@@ -883,12 +932,12 @@ fieldset[disabled] .block-search .button {
   border: 1px solid #e1e1e1;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch {
-  color: #999999;
+  color: #778591;
   background: transparent;
   border: 1px solid #e1e1e1;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:visited {
-  color: #999999;
+  color: #778591;
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:hover {
@@ -896,7 +945,7 @@ fieldset[disabled] .block-search .button {
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item .switch:active {
-  color: #282828;
+  color: #f64400;
   text-decoration: none;
 }
 .cdz-best-seller-wrap .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
@@ -908,7 +957,7 @@ fieldset[disabled] .block-search .button {
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch:focus,
 .cdz-best-seller-wrap .nav-tabs .active.nav-tab-item .switch:hover {
   background: transparent;
-  color: #282828;
+  color: #f64400;
 }
 .cdz-best-seller-wrap .nav-tabs .item.content {
   background: transparent;
@@ -953,20 +1002,20 @@ fieldset[disabled] .block-search .button {
 }
 
 .product-name a {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .price {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .old-price {
   margin-left: 10px;
-  color: #fc7070;
+  color: #999999;
 }
 
 .old-price .price {
-  color: #fc7070;
+  color: #999999;
 }
 
 .products-list .product-item {
@@ -997,15 +1046,21 @@ fieldset[disabled] .block-search .button {
 
 .product-item .price {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #f64400;
 }
 
 .product-name a {
-  color: #282828;
+  color: black;
+}
+.product-name a:hover {
+  color: #f64400;
 }
 
 .product-item-info {
   background: white;
+}
+.product-item-info .product-name {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 .products-list .product-item {
@@ -1016,9 +1071,6 @@ fieldset[disabled] .block-search .button {
 .products-grid .product-item-info .product-item-details .product-item-description {
   color: #999999;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.products-grid .product-item-info .product-name {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .products-grid .product-item-info .cdz-product-bottom {
   background: white;
@@ -1213,6 +1265,7 @@ button:hover {
   border-color: #282828;
   color: #282828;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-size: 0;
 }
 
 #back-top a:focus,
@@ -1230,7 +1283,6 @@ button:hover {
 
 .qs-button {
   background: white;
-  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #282828;
   background-color: white;
   border-color: #282828;
@@ -1243,7 +1295,41 @@ button:hover {
   color: white;
 }
 
-.qs-button:hover {
+.btn-link {
+  background: white;
+  color: #282828;
+  background-color: white;
+  border-color: #282828;
+}
+
+.btn-link:focus,
+.btn-link:active {
+  background: #282828;
+  border-color: #282828;
+  color: white;
+}
+
+.btn-link:hover {
+  background: #282828;
+  border-color: #282828;
+  color: white;
+}
+
+.btn-link-readmore {
+  background: white;
+  color: #282828;
+  background-color: white;
+  border-color: #282828;
+}
+
+.btn-link-readmore:focus,
+.btn-link-readmore:active {
+  background: #282828;
+  border-color: #282828;
+  color: white;
+}
+
+.btn-link-readmore:hover {
   background: #282828;
   border-color: #282828;
   color: white;
@@ -1257,15 +1343,6 @@ button:hover {
 
 .btn {
   border-radius: 0;
-}
-
-.btn-link {
-  color: white;
-}
-
-.btn-link:hover, .btn-link:focus {
-  color: #f64400;
-  text-decoration: none;
 }
 
 .ajax-load-button .ajax-loader,
@@ -1311,7 +1388,7 @@ button:hover {
   text-transform: uppercase;
   font: 500 22px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   font-weight: 600;
-  color: #282828;
+  color: #a1a1a1;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 3px;
   margin-bottom: 15px;
@@ -1334,7 +1411,7 @@ button:hover {
   margin: 0;
 }
 .product-view #downloadable-links-list .label {
-  color: #282828;
+  color: #a1a1a1;
 }
 .product-view .grouped-items-table .availability.out-of-stock span {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
@@ -1379,7 +1456,7 @@ button:hover {
   font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .product-view .cdz-social-listing li .trasition-all {
-  color: #282828;
+  color: #a1a1a1;
 }
 .product-view .action.primary, .product-view button.button {
   background: #f14b00;
@@ -1397,7 +1474,7 @@ button:hover {
 }
 .product-view .add-to-links li a {
   border: 1px solid #e1e1e1;
-  color: #282828;
+  color: #a1a1a1;
 }
 .product-view .add-to-links li.compare a {
   border-right: 1px solid #e1e1e1 !important;
@@ -1406,11 +1483,11 @@ button:hover {
   border: 1px solid #282828 !important;
 }
 .product-view .size-chart-btn {
-  color: #282828;
+  color: #a1a1a1;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .product-view .short-description h2 {
-  color: #282828;
+  color: #a1a1a1;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .product-view .product-options .swatch-attr .select-label {
@@ -1501,7 +1578,7 @@ button:hover {
 .cdz-onestepcheckout .section .step-title {
   text-align: center !important;
   font: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif !important;
-  color: #282828 !important;
+  color: #a1a1a1 !important;
 }
 .cdz-onestepcheckout .buttons-set {
   background: #f4f4f4;
@@ -1565,20 +1642,20 @@ button:hover {
   background: #f64400;
 }
 .opc-block-progress .changelink a:before {
-  color: #282828;
+  color: #a1a1a1;
 }
 
 .opc-block-progress .block-content dt, .checkout-progress li span {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
 }
 
 #shipping-progress-opcheckout:before, #shipping_method-progress-opcheckout:before, #payment-progress-opcheckout:before, .checkout-progress li:before {
-  background: #424242;
+  background: #bababa;
 }
 
 .opc-block-progress .block-content dt:before, .checkout-progress li span:before {
-  color: #424242;
+  color: #bababa;
 }
 
 .opc-block-progress .block-content dt.complete:before, .checkout-progress li.active span:before {
@@ -2095,6 +2172,9 @@ button:hover {
 .cdz-main-menu .groupmenu li.level0 a.menu-link:visited {
   color: white;
 }
+.cdz-main-menu .groupmenu li.level0.parent:hover:after {
+  color: #f64400;
+}
 .cdz-main-menu .groupmenu li.level0:hover > a.menu-link {
   color: white;
   background-color: #f64400;
@@ -2134,7 +2214,7 @@ button:hover {
  * Codazon_Menu Vertical
  * ============================================ */
 .menu-vertical-title {
-  background: #b0d235;
+  background: #fc6e00;
   color: white;
 }
 .menu-vertical-title h3:before {
@@ -2142,31 +2222,41 @@ button:hover {
 }
 
 .menu-vertical .cdz-nav-wrap {
-  border: 1px solid #ebebeb;
-}
-.menu-vertical .cdz-nav-wrap li.vertical-level1:first-child a.vertical-level1 {
-  background: lighten #fafafa, 10%;
-}
-.menu-vertical .cdz-nav-wrap li.vertical-level1:nth-child(2n) a.vertical-level1 {
-  background-color: #fafafa;
+  border: 1px solid #f64400;
 }
 .menu-vertical .cdz-nav-wrap li.vertical-level1 a.vertical-level1 {
-  color: #282828;
+  color: white;
+  background-color: #f64400;
 }
 .menu-vertical .cdz-nav-wrap li.vertical-level1:hover a.vertical-level1 {
-  background: #b0d235;
+  background: #fc6e00;
   color: white;
 }
 .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat {
   background: white;
   border-color: #ebebeb;
 }
+.menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a {
+  color: #999999;
+}
+.menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a:hover, .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat a:active {
+  color: #fc6e00;
+}
 .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat li.level4 {
-  border-bottom-color: #ebebeb;
-  color: #282828;
+  border-bottom-color: #f64400;
+  color: white;
+}
+.menu-vertical .cdz-nav-wrap .parent:after {
+  color: white;
 }
 .menu-vertical .cdz-nav-wrap .parent:hover:after {
   color: white;
+}
+.menu-vertical .cdz-nav-wrap .cdz-sub-cat .parent:after {
+  color: #999999;
+}
+.menu-vertical .cdz-nav-wrap .cdz-sub-cat .parent:hover:after {
+  color: #fc6e00;
 }
 .menu-vertical .cdz-nav-wrap .view-all a {
   color: #f64400;
@@ -2174,12 +2264,28 @@ button:hover {
 
 @media (max-width: 991px) {
   .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat {
-    border-color: #b0d235;
+    border-color: #fc6e00;
   }
   .menu-vertical .cdz-nav-wrap li.vertical-level1 .cdz-sub-cat li a.vertical-level2 {
     font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   }
 }
+/*menu vertical style home Sportwear*/
+.menu-vertical-style02 .nav.nav-tabs .nav-tab-item .switch {
+  background: #fc6e00;
+  color: white;
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 700;
+}
+.menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
+  background: #f64400;
+  color: white;
+}
+.menu-vertical-style02 .nav-tab-content {
+  background: #f64400;
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
 /* ============================================ *
  * Codazon_Menu Vertical
  * ============================================ */
@@ -2278,7 +2384,7 @@ button:hover {
     color: #f64400;
   }
   .codazon-filter-style-05 .products-grid .product-items .item .product-item-info .cdz-product-bottom .price {
-    color: #282828;
+    color: #a1a1a1;
   }
 }
 @media (min-width: 767px) {
@@ -2293,7 +2399,7 @@ button:hover {
     color: #f64400;
   }
   .codazon-filter-style-05 .products-grid .product-items .item.product-item .price {
-    color: #282828;
+    color: #f64400;
   }
 }
 @media (max-width: 991px) {
@@ -2331,7 +2437,7 @@ button:hover {
 .account-login form .legend,
 form .legend {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #282828;
+  color: #a1a1a1;
   border: 0;
 }
 
@@ -2356,7 +2462,7 @@ form .legend {
 .control.signup-newsletter label, .control#remember-me-box label, .link-tip, .forgot-password-link {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   text-transform: uppercase;
-  color: #757575;
+  color: #ededed;
 }
 
 .account-create .buttons-set button.button {
@@ -2446,7 +2552,7 @@ form .legend {
 * Codazon_Categories default
 * ============================================ */
 .block-layered-nav dd ol li a {
-  color: #282828;
+  color: #a1a1a1;
 }
 .block-layered-nav dd ol li label {
   border-color: #959595;
@@ -2482,7 +2588,7 @@ form .legend {
   -moz-border-radius: 0px;
 }
 #cdz-filter-bar .block-content #narrow-by-list dt {
-  color: #282828;
+  color: #a1a1a1;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   font-weight: 700;
 }
@@ -2493,7 +2599,7 @@ form .legend {
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 #cdz-filter-bar dd ol li a {
-  color: #282828;
+  color: #a1a1a1;
   font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 #cdz-filter-bar dd ol li label {
@@ -2505,7 +2611,7 @@ form .legend {
 }
 #cdz-filter-bar .configurable-swatch-list .swatch-link .count {
   border-color: #aeaeae;
-  color: #282828;
+  color: #a1a1a1;
 }
 #cdz-filter-bar .block-content > dl > dd {
   border-bottom-color: #e1e1e1;
@@ -2584,23 +2690,19 @@ form .legend {
 }
 
 .nav-tabs .nav-tab-item.active .switch {
-  color: #282828;
+  color: #f64400;
 }
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  color: #999999;
+  color: #778591;
+  background: white;
+}
+.nav-tabs .nav-tab-item .switch:visited, .nav-tabs .nav-tab-item .switch:hover, .nav-tabs .nav-tab-item .switch:active {
+  color: #f64400;
+  background: white;
 }
 .nav-tabs .nav-tab-item h2 {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-.nav-tabs .nav-tab-item .switch:visited {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:hover {
-  color: #282828;
-}
-.nav-tabs .nav-tab-item .switch:active {
-  color: #282828;
 }
 
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
@@ -2608,14 +2710,14 @@ form .legend {
 .nav-tabs active.nav-tab-item:not(.disabled) .switch {
   background: transparent;
   border-bottom-color: #282828;
-  color: #282828;
+  color: #f64400;
 }
 
 .nav-tabs .nav-tab-item:not(.disabled) .switch:active,
 .nav-tabs .active.nav-tab-item .switch,
 .nav-tabs .active.nav-tab-item .switch:focus,
 .nav-tabs .active.nav-tab-item .switch:hover {
-  color: #282828;
+  color: #f64400;
   background: transparent;
   border-bottom-color: black;
 }
@@ -2623,5 +2725,62 @@ form .legend {
 /* ============================================ *
 * Codazon_Tab style
 * ============================================ */
+/*Box Style Home Sport*/
+.box-style01 {
+  background: white;
+}
+.box-style01 .cdz-block-title {
+  color: black;
+  border-color: #e1e1e1;
+}
+.box-style01 .cdz-block-title .lastcolor {
+  color: #f64400;
+}
+.box-style01 .products-grid {
+  border-left: 1px solid #e1e1e1;
+}
+.box-style01 .products-grid .product-item .product-item-info {
+  border: 1px solid #e1e1e1;
+  border-left: none;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .products-list .cdz-buttons-container button.btn-cart:before {
+  display: none;
+}
+.box-style01 .nav.nav-tabs .nav-tab-item .switch {
+  font: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.box-style01 .owl-nav [class*='owl-'],
+.box-style01 .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01 .owl-nav [class*='owl-']:hover,
+.box-style01 .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-'],
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-nav [class*='owl-']:hover,
+.box-style01.cdz-wapper-blog-01 .cdz_wapper-blog-content .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
+}
+
+/*button show01 Home Sport*/
+.cdz-button-show01 .products-grid .product-item-info:hover {
+  background: #dce2d8;
+}
+.cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
+  background: #dce2d8;
+}
 
 /*# sourceMappingURL=sport_style.css.map */

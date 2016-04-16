@@ -1,6 +1,12 @@
 /*=========Breadcrumbs==========*/
+.cms-index-index .content-breadcrums {
+	display:none
+}
+.content-breadcrums{
+	padding: 20px 0 0;
+}
 .breadcrumbs {
-  padding: 20px 0 0;
+  padding: 0px 0 0;
   overflow: hidden;
   font:$f_h6
 }

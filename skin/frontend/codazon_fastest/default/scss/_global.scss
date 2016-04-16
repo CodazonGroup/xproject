@@ -1743,6 +1743,9 @@ button:hover {
 	background: $menu_vertical_hover_background ;
 	color:$menu_text;
 	h3{
+		a{
+			color:$menu_text;
+		}
 		&:before{
 			color:$menu_vertical_hover_text;
 		}	
@@ -1755,6 +1758,12 @@ button:hover {
 			a.vertical-level1{
 				color:$menu_vertical_text;
 				background-color:$menu_vertical_background;
+			}
+			&.view-all{
+				a{
+					color:$menu_vertical_text;
+					background-color:$menu_vertical_background;
+				}
 			}
 			&:hover{
 				a.vertical-level1{
@@ -2003,7 +2012,11 @@ button:hover {
 				.product-item-description{color:$main_note_text;font: $f_note;}
 				.item.product-item{
 					.product-name a{color:$main_hover_text}
-				.price{color:$main_price_text}
+					.price{color:$main_price_text}
+					.old-price .price{
+						color:$main_old_price_text;
+						font-weight:400
+					}
 				}
 			}
 		}

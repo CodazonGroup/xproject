@@ -38,23 +38,25 @@
 	$_baseImg = $_imgHelper->init($_product, 'image');
 	$config = Mage::registry('theme_config')->product_view;
 	$minWidth = 450;
-	$w = $config['base_image_width'] ; //max($minWidth,600);
+	$w = max($minWidth,$config['base_image_width']);
 	if($config['keep_image_aspect_ratio']){
 		$h = round(($w/$_baseImg->getOriginalWidth())*$_baseImg->getOriginalHeight());
 	}else{
 		$h = $config['base_image_height'];	
 	}
+	$wSmall = $config['more_view_image_width'];
+	$hSmall = $config['more_view_image_height'];
 ?>
 <div class="row">
 <div class="product-image-moreview col-sm-24" >
     <div class="more-views">
         <h2><?php echo $this->__('More Views') ?></h2>
         <div class="fwImage">
-            <div id="viewmore-slider" class="royalSlider rsUni product-image-thumbs cdz-zoom">
+            <div id="viewmore-slider" class="royalSlider rsUni product-image-thumbs cdz-zoom no-fullscreen">
             	<?php
 					$_baseBigImg = (string)$_imgHelper->init($_product, 'image')->resize(null);
 					$_baseMainImg = (string)$_imgHelper->init($_product, 'image')->resize($w, $h);
-					$_baseSmallImg = (string)$_imgHelper->init($_product, 'image')->resize(88,110);
+					$_baseSmallImg = (string)$_imgHelper->init($_product, 'image')->resize($wSmall,$hSmall);
 				?>
 	            <div class="rsContent">
                 	<a class="rsImg"  href="<?php echo $_baseMainImg ?>"
@@ -89,6 +91,14 @@
     </div>
 </div>
 </div>
+
+
+<style>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px !important; }
+.no-fullscreen .rsOverflow {max-width: <?php echo $minWidth ?>px !important; float: right;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; border:1px solid #000; margin-left:0px !important;}
+.rsFullscreen .rsContent{text-align:center;}
+</style>
 <script>
 (function( $ ) {
 	var $slider = $('#viewmore-slider');
@@ -108,17 +118,16 @@
 			  autoCenter : false,
 			  spacing: 10,
 			},  	
-
+			imageScaleMode: 'none',
 			usePreloader: true,
 			transitionType:'move',
-			imageAlignCenter: true, 
-			autoScaleSlider: true, 
-			autoScaleSliderWidth: <?php echo $minWidth ?>,
-			autoScaleSliderHeight: <?php echo ceil(($minWidth/$w)*$h) - 120 ?>,
-			//imageScalePadding: 0,
+			imageAlignCenter: false, 
+			autoScaleSlider: false, 
+			imageScalePadding: 0,
 			autoHeight: false,
 			loop: true,
 			arrowsNav: true,
+			margin: '0px auto',
 			keyboardNavEnabled: true,
 			addActiveClass: true
 		});
@@ -162,13 +171,16 @@
 			$slider.find('.rsThumbs').returnImageSrc();
 		});
 		slider.ev.on('rsExitFullscreen', function() {
+			$slider.addClass('no-fullscreen');
 			$slider.find('.rsContent').cdzZoom();
 			$slider.find('.rsThumbs').returnImageSrc();
 		});
 		slider.ev.on('rsAfterInit', function() {
 			$slider.find('.rsContent').cdzZoom();
 		});
-		slider.ev.on('rsEnterFullscreen', function(){});
+		slider.ev.on('rsEnterFullscreen', function(){
+			$slider.removeClass('no-fullscreen');
+		});
 		
 		$(window).on('swatchUpdateImage',function(event,swatchImageUrl){
 			if(!$slider.hasClass('rsFullscreen')){

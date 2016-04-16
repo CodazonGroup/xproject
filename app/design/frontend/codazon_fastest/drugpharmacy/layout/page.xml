@@ -106,7 +106,11 @@ Default layout, loads most of the pages
                 <block type="page/html_welcome" name="welcome" as="welcome"/>
             </block>
 
-            <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+            <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs">
+				 <block type="core/template" name="menu-vertical-shopby" as="menu-vertical-shopby" translate="label" template="page/html/menu_vertical_shopby.phtml">
+					<label>Menu Vertical Shopby Area</label>
+				</block>
+			</block>
 
             <block type="core/text_list" name="left" as="left" translate="label">
                 <label>Left Column</label>
@@ -120,9 +124,7 @@ Default layout, loads most of the pages
 			<block type="core/text_list" name="menu-vertical-content" as="menu-vertical-content" translate="label">
                 <label>Menu Vertical Content Area</label>
             </block>
-            <block type="core/template" name="menu-vertical-shopby" as="menu-vertical-shopby" translate="label" template="page/html/menu_vertical_shopby.phtml">
-                <label>Menu Vertical Shopby Area</label>
-            </block>
+           
             <block type="core/text_list" name="content" as="content" translate="label">
                 <label>Main Content Area</label>
             </block>
@@ -139,7 +141,7 @@ Default layout, loads most of the pages
 			<block type="core/template" name="codazon_popup_area" as="codazon_popup_area" translate="label" template="page/html/popup.phtml">
                 <label>Codazon Popup Area</label>
             </block>
-            <block type="page/html_footer" name="footer" as="footer" template="page/html/codazon_footer/footer_style_01.phtml">
+            <block type="page/html_footer" name="footer" as="footer" template="page/html/codazon_footer/footer_style_02.phtml">
                 <block type="page/html_wrapper" name="bottom.container" as="bottomContainer" translate="label">
                     <label>Page Footer</label>
                     <action method="setElementClass"><value>bottom-container</value></action>
