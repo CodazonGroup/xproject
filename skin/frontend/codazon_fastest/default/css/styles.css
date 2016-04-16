@@ -11017,9 +11017,12 @@ table colgroup, .data-table colgroup {
 }
 .cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
   margin-top: -80px;
+  /*.product-name{
+      margin-bottom: 12px;
+  }*/
 }
 .cdz-button-show01 .products-grid .product-item-info:hover .product-item-details .cdz-buttons-container {
-  height: 50px;
+  height: 55px;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
@@ -17191,7 +17194,7 @@ body {
   height: 60px;
   padding: 19px 20px;
   text-transform: uppercase;
-  border: none;
+  border: none !important;
 }
 .box-style01 .nav-tab-content {
   padding: 0;
@@ -20258,6 +20261,39 @@ a:hover, a:focus {
 
 /* ============================================ *
  * End Codazon_Footer Style 2
+ * ============================================ */
+/* ============================================ *
+* Codazon_Footer style 4
+* ============================================ */
+.page-footer.cdz-footer-style-04 .top-footer-wrapper {
+  background-color: #fce0dd;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-aboutus .box-content {
+  background-color: white;
+  color: #282828;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-facebook .box-content {
+  background-color: #4f70c2;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets {
+  color: #fc7070;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets a {
+  color: #fc7070;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets a:hover {
+  color: #0ba5c9;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content .actions button.button {
+  font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 400;
+  background: #282828;
+  color: white;
+  border-color: #282828;
+}
+
+/* ============================================ *
+ * End Codazon_Footer style 4
  * ============================================ */
 /* ============================================ *
  * Codazon_Slider

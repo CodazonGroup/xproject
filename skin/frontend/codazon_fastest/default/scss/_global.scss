@@ -224,6 +224,53 @@ a:hover, a:focus{color:$main_hover_text}
  * End Codazon_Footer Style 2
  * ============================================ */
  
+  
+ 
+ /* ============================================ *
+ * Codazon_Footer style 4
+ * ============================================ */
+.page-footer.cdz-footer-style-04{
+	.top-footer-wrapper{
+		background-color:$footer_top_background;
+		.box-aboutus .box-content{
+			background-color:$footer_background;
+			color:$footer_title_text;
+		}
+		.box-facebook .box-content{
+			background-color:#4f70c2;
+		}
+		.box-tweets{
+			color:$footer_hover_text;
+			a{
+				color:$footer_hover_text;
+				&:hover{
+					color: #0ba5c9;
+				}
+			}
+		}
+	}
+	.bottom-footer-wrapper{
+		.block-subscribe{
+			.block-content{
+				.actions{				
+					button.button{
+						font:$f_note;
+						font-weight:400;
+						background:$btn_default_background;
+						color:$btn_default_text;
+						border-color:$footer_border;
+					}
+				}
+			}
+		}
+	}
+}
+ 
+/* ============================================ *
+ * End Codazon_Footer style 4
+ * ============================================ */
+
+ 
  
 /* ============================================ *
  * Codazon_Slider

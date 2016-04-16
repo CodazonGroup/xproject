@@ -34,9 +34,12 @@
 			.product-item-details{				
 				margin-top:-80px;
 				.cdz-buttons-container{
-					height:50px;
+					height:55px;
 					@include abs-opacity(1);				
 				}
+				/*.product-name{
+				    margin-bottom: 12px;
+				}*/
 			}
 		}
 	}
