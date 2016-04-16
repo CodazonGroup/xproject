@@ -138,7 +138,7 @@
 						$magnify.fadeOut(100);
 					}
 					if($magnify.is(':visible')){
-						var margin = parseInt(($this.width() - $mainImg.width())); //parseInt($mainImg.css('margin-left'))*2;
+						var margin = 0;//parseInt(($this.width() - $mainImg.width())); //parseInt($mainImg.css('margin-left'))*2;
 						var rx = Math.round(mx/$mainImg.width()*nativeWidth - $magnify.width()/2)*(-1) + margin;
 						var ry = Math.round(my/$mainImg.height()*nativeHeight - $magnify.height()/2)*(-1);
 						var bgp = rx + "px " + ry + "px";
@@ -217,10 +217,12 @@
 				$dropdown.slideToggle();
 			});
 			$('html,body').click(function(e){
+				e.stopPropagation();
 				var $target = $(e.target);
 				if( ($target.parents('.dd-open').first().length == 0) || conf.hideAffterClick){
 					$cont.find(conf.dropdown).slideUp();
 					$cont.find(conf.trigger).removeClass('active');
+					$cont.removeClass('dd-open');
 				}
 			});
 		});

@@ -24,8 +24,9 @@
 		text-transform: uppercase;
 		font-size: 80%;
 	}
-	&hover{
-		color:#fff
+	&:hover{
+		color:#fff!important;
+		border-color:#f8b5ad!important;
 	}
 }
 .smallbanner-row.first{
@@ -79,6 +80,14 @@
 		width:20%;
 		min-height:350px;
 	}	
+}
+.cdz-brand-slider-wrap{
+	background:#fff;
+	padding:20px;
+	.cdz-banners-item{
+		border:0;
+		padding:0;
+	}
 }
 .block-related {
 	.product-items{

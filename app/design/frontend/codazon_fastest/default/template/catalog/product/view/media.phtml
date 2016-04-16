@@ -46,6 +46,8 @@
 	}
 	$wSmall = $config['more_view_image_width'];
 	$hSmall = $config['more_view_image_height'];
+	$thumbStyle = ($config['more_view_thumb_style'])?'vertical':'horizontal';
+	$thumbStyle = 'horizontal';
 ?>
 <div class="row">
 <div class="product-image-moreview col-sm-24" >
@@ -75,7 +77,7 @@
 					$_img = $_imgHelper->init($_product, 'thumbnail', $_image->getFile());
 					$_bigImg = (string)$_img->resize(null);
 					$_mainImg = (string)$_img->resize($w, $h);
-					$_smallImg = (string)$_img->resize(88,110);
+					$_smallImg = (string)$_img->resize($wSmall,$hSmall);
                 ?>
                 <div class="rsContent">
                     <a class="rsImg"  href="<?php echo $_mainImg ?>"
@@ -94,11 +96,21 @@
 
 
 <style>
+<?php if($thumbStyle == 'vertical'): ?>
 .royalSlider {height: <?php echo $minWidth*$h/$w ?>px !important; }
 .no-fullscreen .rsOverflow {max-width: <?php echo $minWidth ?>px !important; float: right;}
 .no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; border:1px solid #000; margin-left:0px !important;}
-.rsFullscreen .rsContent{text-align:center;}
-.rsFullscreen .rsImg{display: inline;}
+.rsFullscreen .rsSlide{display:table !important; width:100%;}
+.rsFullscreen .rsContent{display:table-cell; vertical-align:middle; text-align:center;  height:100vh;}
+.rsFullscreen .rsImg{display: inline; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+<?php else: ?>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px !important; }
+.no-fullscreen .rsOverflow {height: <?php echo $minWidth*$h/$w ?>px !important;}
+.rsSlide{display:table !important; width:100%;}
+.rsContent{display:table-cell; vertical-align:middle; text-align:center;}
+.rsImg{display: inline; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; border:1px solid #000; margin-left:0px !important;}
+<?php endif ?>
 </style>
 <script>
 (function( $ ) {
@@ -112,18 +124,19 @@
 			
 			controlNavigation: 'thumbnails',
 			thumbs: {
-			  orientation: 'vertical',
+			  orientation: '<?php echo $thumbStyle ?>',
 			  paddingBottom: 0,
 			  firstMargin: false,
 			  appendSpan: true,
 			  autoCenter : false,
 			  spacing: 10,
-			},  	
+			},
+			
 			imageScaleMode: 'none',
+			imageAlignCenter: false,
+			autoScaleSlider: false,
 			usePreloader: true,
 			transitionType:'move',
-			imageAlignCenter: false, 
-			autoScaleSlider: false, 
 			imageScalePadding: 0,
 			autoHeight: false,
 			loop: true,

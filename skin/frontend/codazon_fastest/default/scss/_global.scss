@@ -247,6 +247,13 @@ a:hover, a:focus{color:$main_hover_text}
 	background-color: $btn_default_background;
 	border-color: $btn_default_border;
 }
+.cdz-slideshow .owl-carousel{
+	.owl-nav [class*='owl-']:hover {
+		color: $btn_default_text;
+		background-color: $btn_default_background;
+		border-color: $btn_default_border;
+	}
+}
 /* ============================================ */
 
 
