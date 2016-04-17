@@ -118,7 +118,7 @@
 			var nativeWidth = 0;
 			var nativeHeight = 0;
 			
-			$this.mousemove(
+			$this.on('mousemove.cdzZoom',
 				function(e){
 					if(!nativeWidth && !nativeHeight){
 						var imgObject = new Image();
@@ -130,7 +130,6 @@
 						var mx = e.pageX - magnifyOffset.left;
 						var my = e.pageY - magnifyOffset.top;
 					}
-					
 					if(mx < $this.width() && my < $this.height() && mx > 0 && my > 0){
 						$magnify.fadeIn(100);
 					}
@@ -138,8 +137,7 @@
 						$magnify.fadeOut(100);
 					}
 					if($magnify.is(':visible')){
-						var margin = 0;//parseInt(($this.width() - $mainImg.width())); //parseInt($mainImg.css('margin-left'))*2;
-						var rx = Math.round(mx/$mainImg.width()*nativeWidth - $magnify.width()/2)*(-1) + margin;
+						var rx = Math.round(mx/$mainImg.width()*nativeWidth - $magnify.width()/2)*(-1);
 						var ry = Math.round(my/$mainImg.height()*nativeHeight - $magnify.height()/2)*(-1);
 						var bgp = rx + "px " + ry + "px";
 						var px = mx - $magnify.width()/2;
@@ -148,7 +146,7 @@
 					}
 				}
 			);
-			$this.mouseleave(function(e){
+			$this.on('mouseleave.cdzZoom',function(e){
 				$magnify.fadeOut(100);
 			}); 
         }); 

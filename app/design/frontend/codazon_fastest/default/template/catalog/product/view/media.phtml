@@ -47,7 +47,6 @@
 	$wSmall = $config['more_view_image_width'];
 	$hSmall = $config['more_view_image_height'];
 	$thumbStyle = ($config['more_view_thumb_style'])?'vertical':'horizontal';
-	$thumbStyle = 'horizontal';
 ?>
 <div class="row">
 <div class="product-image-moreview col-sm-24" >
@@ -97,31 +96,35 @@
 
 <style>
 <?php if($thumbStyle == 'vertical'): ?>
-.royalSlider {height: <?php echo $minWidth*$h/$w ?>px !important; }
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px; }
 .no-fullscreen .rsOverflow {max-width: <?php echo $minWidth ?>px !important; float: right;}
-.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; border:1px solid #000; margin-left:0px !important;}
-.rsFullscreen .rsSlide{display:table !important; width:100%;}
-.rsFullscreen .rsContent{display:table-cell; vertical-align:middle; text-align:center;  height:100vh;}
-.rsFullscreen .rsImg{display: inline; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; margin-left:0px !important;}
 <?php else: ?>
-.royalSlider {height: <?php echo $minWidth*$h/$w ?>px !important; }
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px }
 .no-fullscreen .rsOverflow {height: <?php echo $minWidth*$h/$w ?>px !important;}
 .rsSlide{display:table !important; width:100%;}
 .rsContent{display:table-cell; vertical-align:middle; text-align:center;}
-.rsImg{display: inline; height:auto; width:auto; max-height: 100%; max-width: 100%;}
-.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; border:1px solid #000; margin-left:0px !important;}
+.rsImg{display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; max-height: <?php echo $minWidth*$h/$w ?>px; height: auto !important; margin-left:0px !important;}
 <?php endif ?>
+.rsFullscreen .rsSlide{display:table !important; width:100%;}
+.rsFullscreen .rsContent{display:table-cell; vertical-align:middle; text-align:center;  height:100vh;}
+.rsFullscreen .rsImg{display: inline; height:auto; width:auto; max-height: 100vh; max-width: 100%;}
+.rs-inner {display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%; position: relative;}
 </style>
 <script>
 (function( $ ) {
 	var $slider = $('#viewmore-slider');
+	var totalSlides = $slider.find('.rsImg').length;
 	$(document).ready(function() {	
 		 $slider.royalSlider({
 			fullscreen: {
 			  enabled: true,
 			  nativeFS: false,
 			},
-			
+			deeplinking: {
+				enabled: true
+			},
 			controlNavigation: 'thumbnails',
 			thumbs: {
 			  orientation: '<?php echo $thumbStyle ?>',
@@ -136,6 +139,7 @@
 			imageAlignCenter: false,
 			autoScaleSlider: false,
 			usePreloader: true,
+			numImagesToPreload: 100,
 			transitionType:'move',
 			imageScalePadding: 0,
 			autoHeight: false,
@@ -157,9 +161,15 @@
 			$(this).each(function(){
 				var $this = $(this);
 				$this.click(function(){
-					var src = $this.find('.rsNavSelected img').data('rsmainimg');
-					$slider.find('.rsActiveSlide .rsMainSlideImage').attr('src',src);
-					$slider.find('.rsActiveSlide .magnify').css({background: 'url('+src+') no-repeat'});
+					if(!$slider.hasClass('rsFullscreen')){
+						var src = $this.find('.rsNavSelected img').data('rsmainimg');
+						$slider.find('.rsActiveSlide .rsMainSlideImage').attr('src',src);
+						$slider.find('.rsActiveSlide .magnify').css({background: 'url('+src+') no-repeat'});
+						var $rsInner = $slider.find('.rsActiveSlide .rs-inner');
+						$rsInner.off('mousemove.cdzZoom');
+						$rsInner.off('mouseleave.cdzZoom');
+						$rsInner.cdzZoom();
+					}
 				});
 			});
 		};
@@ -169,11 +179,28 @@
 			var $newImg = $curMainSlide.find('.rsMainSlideImage');
 			$curMainSlide.addClass('product-image');
 			var $curThumb = $slider.find('.rsNavSelected img.rsTmb');
-			if( ($curThumb.data('rsmainimg') != '')){
+			if( ($curThumb.data('rsmainimg') != '') && (!$slider.hasClass('rsFullscreen')) ){
 				$newImg.attr('src',$curThumb.data('rsmainimg'));
 			}
 		};
-		
+		var zoomImage = function(){
+			$slider.find('.rsSlide .rsContent').each(function(index, element) {
+                var $this = $(this);
+				if($this.find('.rs-inner').length == 0){
+					$this.append('<div class="rs-inner"></div>');
+				}
+				var $rsInner = $this.find('.rs-inner');
+				$this.find('.rsImg').appendTo($rsInner);
+				$this.find('.magnify').appendTo($rsInner);
+				$rsInner.cdzZoom();
+            });	
+		}
+		var setSliderHeight = function(){
+			var $mainImg = $slider.find('.rsActiveSlide .rsMainSlideImage');
+			var height = $mainImg.height();
+			$slider.height(height);
+			$slider.find('.rsOverflow').height(height);
+		}
 		slider.ev.on('rsAfterSlideChange', function(event) {
 			builSlider();
 		});
@@ -186,11 +213,17 @@
 		});
 		slider.ev.on('rsExitFullscreen', function() {
 			$slider.addClass('no-fullscreen');
-			$slider.find('.rsContent').cdzZoom();
 			$slider.find('.rsThumbs').returnImageSrc();
+			var src = $slider.find('.rsNavSelected img').data('rsmainimg');
+			$slider.find('.rsActiveSlide .magnify').css({background: 'url('+src+') no-repeat'});
+			zoomImage();
 		});
 		slider.ev.on('rsAfterInit', function() {
-			$slider.find('.rsContent').cdzZoom();
+
+		});
+		slider.slides[totalSlides-1].holder.on('rsAfterContentSet', function() {
+			zoomImage();
+			setSliderHeight();
 		});
 		slider.ev.on('rsEnterFullscreen', function(){
 			$slider.removeClass('no-fullscreen');
@@ -201,8 +234,18 @@
 				var $productImg = $curMainSlide.find('img.rsMainSlideImage');
 				$productImg.attr('src',swatchImageUrl);
 				$curMainSlide.find('.magnify').css({background:'url('+swatchImageUrl+') no-repeat'});
+				var $rsInner = $productImg.parents('.rs-inner');
+				$rsInner.off('mousemove.cdzZoom');
+				$rsInner.off('mouseleave.cdzZoom');
+				$rsInner.cdzZoom();
 			}
 		});
+		
+		$(window).on('resize',function(){
+			setTimeout(function(){
+				setSliderHeight();
+			},200);
+		})
 	});
 })( jQuery );
 </script>
