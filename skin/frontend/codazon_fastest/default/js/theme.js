@@ -217,7 +217,6 @@
 				$dropdown.slideToggle();
 			});
 			$('html,body').click(function(e){
-				e.stopPropagation();
 				var $target = $(e.target);
 				if( ($target.parents('.dd-open').first().length == 0) || conf.hideAffterClick){
 					$cont.find(conf.dropdown).slideUp();
