@@ -285,6 +285,14 @@ button {
   vertical-align: top;
   text-align: center;
   clear: both;
+  position:absolute;
+  left:0;
+  right:0;
+  top: 45%;
+  top: -moz-calc((100% - 45px)/2);
+  top: -webkit-calc((100% - 45px)/2);
+  top: -o-calc((100% - 45px)/2);
+  top: calc((100% - 45px)/2);
 }
 .ajax-load-wrapper .ajax-load-button .ajax-loader,
 .ajax-load-wrapper .ajax-load-button a {

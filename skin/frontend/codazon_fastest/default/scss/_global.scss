@@ -2371,6 +2371,16 @@ form .legend
 	.nav-tab-item.active .switch {
 		color:$main_tab_hover_text;
 	}
+	li a{
+		font: $f_h5;
+		color: $main_tab_text;
+		border-color:$main_tab_border;
+		background:$main_tab_background;
+		&:hover{
+			color: $main_tab_hover_text;
+			background:$main_tab_hover_background;
+		}
+	}
 	.nav-tab-item {
 		.switch {
 			font: $f_h5;
@@ -2381,27 +2391,31 @@ form .legend
 				background:$main_tab_hover_background;
 			}
 		}
+		&:not(.disabled){
+			&.active .switch,
+			.switch:focus,
+			.switch:hover{
+				background: transparent;
+				border-bottom-color:$main_border_dark;
+				color:$main_tab_hover_text;
+			}
+			.switch:active{
+				color: $main_tab_hover_text;
+				background: transparent;
+				border-bottom-color:$main_title_border;
+			}
+		}
+		&.active{
+			.switch,.switch:focus,.switch:hover {
+				color: $main_tab_hover_text;
+				background: transparent;
+				border-bottom-color:$main_title_border;
+			}
+		}
 		h2{
 			font: $f_h5;
 		}
 	}	
-}
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
-	background: transparent;
-	border-bottom-color:$main_border_dark;
-	color:$main_tab_hover_text;
-}
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
-	color: $main_tab_hover_text;
-	background: transparent;
-	border-bottom-color:$main_title_border;
 }
  /* ============================================ *
  * Codazon_Tab style

@@ -2817,6 +2817,16 @@ form .legend {
 .nav-tabs .nav-tab-item.active .switch {
   color: #666972;
 }
+.nav-tabs li a {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #d5d5d5;
+  border-color: #eeeeee;
+  background: transparent;
+}
+.nav-tabs li a:hover {
+  color: #666972;
+  background: transparent;
+}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #d5d5d5;
@@ -2826,25 +2836,25 @@ form .legend {
   color: #666972;
   background: transparent;
 }
+.nav-tabs .nav-tab-item:not(.disabled).active .switch,
+.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
+  background: transparent;
+  border-bottom-color: #666972;
+  color: #666972;
+}
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active {
+  color: #666972;
+  background: transparent;
+  border-bottom-color: #666972;
+}
+.nav-tabs .nav-tab-item.active .switch, .nav-tabs .nav-tab-item.active .switch:focus, .nav-tabs .nav-tab-item.active .switch:hover {
+  color: #666972;
+  background: transparent;
+  border-bottom-color: #666972;
+}
 .nav-tabs .nav-tab-item h2 {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
-  background: transparent;
-  border-bottom-color: #666972;
-  color: #666972;
-}
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
-  color: #666972;
-  background: transparent;
-  border-bottom-color: #666972;
 }
 
 /* ============================================ *

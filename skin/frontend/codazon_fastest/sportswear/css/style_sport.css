@@ -38,6 +38,10 @@
   margin: 0;
 }
 
+.product-view .product-shop, .product-collateral, .product-view .block-related, .product-view.block-related {
+  margin-bottom: 0;
+}
+
 /*Sport Header*/
 /*Header 04*/
 .cdz-header-style-04 {
@@ -251,6 +255,9 @@
 .page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-logo-wrapper img {
   max-width: 100%;
   margin: 0 auto;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper address {
+  font-size: 93%;
 }
 .page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe {
   margin-left: 20px;
@@ -2862,6 +2869,16 @@ form .legend {
 .nav-tabs .nav-tab-item.active .switch {
   color: #f64400;
 }
+.nav-tabs li a {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #778591;
+  border-color: #dddddd;
+  background: white;
+}
+.nav-tabs li a:hover {
+  color: #f64400;
+  background: white;
+}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #778591;
@@ -2871,25 +2888,25 @@ form .legend {
   color: #f64400;
   background: white;
 }
-.nav-tabs .nav-tab-item h2 {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-
+.nav-tabs .nav-tab-item:not(.disabled).active .switch,
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
   border-bottom-color: #282828;
   color: #f64400;
 }
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active {
   color: #f64400;
   background: transparent;
   border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item.active .switch, .nav-tabs .nav-tab-item.active .switch:focus, .nav-tabs .nav-tab-item.active .switch:hover {
+  color: #f64400;
+  background: transparent;
+  border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item h2 {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *

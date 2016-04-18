@@ -10539,6 +10539,14 @@ button {
   vertical-align: top;
   text-align: center;
   clear: both;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  top: -moz-calc((100% - 45px)/2);
+  top: -webkit-calc((100% - 45px)/2);
+  top: -o-calc((100% - 45px)/2);
+  top: calc((100% - 45px)/2);
 }
 
 .ajax-load-wrapper .ajax-load-button .ajax-loader,
@@ -18634,6 +18642,29 @@ body._has-modal {
   float: none;
 }
 
+.qs-modal .modal-body {
+  padding-left: 0;
+}
+.qs-modal .tab-content {
+  padding: 15px 0;
+}
+.qs-modal .tab-content .std {
+  margin-bottom: 1rem;
+}
+.qs-modal .tab-content .product-shop .email-friend {
+  float: left;
+  margin-bottom: 5px;
+}
+.qs-modal .tab-content .product-shop .no-rating {
+  float: right;
+  clear: none;
+  margin-bottom: 2rem;
+}
+.qs-modal .tab-content .product-shop .short-description {
+  clear: both;
+  margin-bottom: 2rem;
+}
+
 /*=========Breadcrumbs==========*/
 .cms-index-index .content-breadcrums {
   display: none;
@@ -22594,6 +22625,16 @@ form .legend {
 .nav-tabs .nav-tab-item.active .switch {
   color: #282828;
 }
+.nav-tabs li a {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #999999;
+  border-color: #999999;
+  background: #fbfbfb;
+}
+.nav-tabs li a:hover {
+  color: #282828;
+  background: #fbfbfb;
+}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #999999;
@@ -22603,25 +22644,25 @@ form .legend {
   color: #282828;
   background: #fbfbfb;
 }
-.nav-tabs .nav-tab-item h2 {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-
+.nav-tabs .nav-tab-item:not(.disabled).active .switch,
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
   border-bottom-color: #282828;
   color: #282828;
 }
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active {
   color: #282828;
   background: transparent;
   border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item.active .switch, .nav-tabs .nav-tab-item.active .switch:focus, .nav-tabs .nav-tab-item.active .switch:hover {
+  color: #282828;
+  background: transparent;
+  border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item h2 {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *

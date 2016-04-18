@@ -3473,6 +3473,16 @@ form .legend {
 .nav-tabs .nav-tab-item.active .switch {
   color: #282828;
 }
+.nav-tabs li a {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #999999;
+  border-color: #ebebeb;
+  background: #fbfbfb;
+}
+.nav-tabs li a:hover {
+  color: #282828;
+  background: #fbfbfb;
+}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #999999;
@@ -3482,25 +3492,25 @@ form .legend {
   color: #282828;
   background: #fbfbfb;
 }
-.nav-tabs .nav-tab-item h2 {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-
+.nav-tabs .nav-tab-item:not(.disabled).active .switch,
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
   border-bottom-color: #282828;
   color: #282828;
 }
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active {
   color: #282828;
   background: transparent;
   border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item.active .switch, .nav-tabs .nav-tab-item.active .switch:focus, .nav-tabs .nav-tab-item.active .switch:hover {
+  color: #282828;
+  background: transparent;
+  border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item h2 {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *
