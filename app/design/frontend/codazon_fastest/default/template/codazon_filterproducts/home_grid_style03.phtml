@@ -5,6 +5,19 @@
 <p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
 <?php else: ?>
 <?php
+	if (!($_productCollection instanceof Mage_ConfigurableSwatches_Model_Resource_Catalog_Product_Type_Configurable_Product_Collection)) {
+		$helper = Mage::helper('themeframework/configurableswatches_mediafallback');
+		$products = $_productCollection->getItems();
+		$helper->attachChildrenProducts($products, $_productCollection->getStoreId());
+		$helper->attachConfigurableProductChildrenAttributeMapping($products, $_productCollection->getStoreId());		
+		$helper->attachGallerySetToCollection($products, $_productCollection->getStoreId());
+		foreach ($products as $product) {
+			$helper->groupMediaGalleryImages($product);
+			Mage::helper('configurableswatches/productimg')
+				->indexProductImages($product, $product->getListSwatchAttrValues());
+		}
+	}
+
 	$_collectionSize = $_productCollection->count();
 	$_columnsCount = $this->getColumnsCount();
 	$_qsHelper = $this->helper('quickshop');
@@ -29,7 +42,7 @@
 				<div class="cdz-hover-section">
 					<div class="cdz-product-top">
                     <?php if( $this->display('image') ):?>
-                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img class="img-responsive" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img class="img-responsive" src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($_width,$_height); ?>" id="product-collection-image-<?php echo $_product->getId(); ?>"  alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
                     <?php endif ?>
                     </div>                    
                 </div>
@@ -72,14 +85,12 @@
 					?>
 					<div class="desc product-item-description"><?php echo $desc; ?></div>
                     <?php endif ;?>
-                    
-                    
-                    
 					<?php if( $this->display('rating') ):?>
 						<?php if($_product->getRatingSummary()): ?>
                             <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                         <?php endif; ?>
                     <?php endif; ?>
+                    <?php echo $this->getLayout()->createBlock('core/template')->setProduct($_product)->setTemplate('codazon_filterproducts/list/swatches.phtml')->toHtml() ?>
                 </div>
 				</div>
             </li>
@@ -91,7 +102,9 @@
 		</div>
 	</div>
 </div>
-
+<?php
+echo $this->getLayout()->createBlock('themeframework/configurableswatches_catalog_media_js_list')->setTemplate('codazon_filterproducts/list/js.phtml')->setImageSize(array($_width,$_height))->setProductCollection($_productCollection)->toHtml()
+?>
 <?php if(  $options['use_slider'] == 1 ): ?>
 <script type="text/javascript">
 	(function($){

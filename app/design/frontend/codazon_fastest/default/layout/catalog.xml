@@ -43,7 +43,10 @@ Default layout, loads most of the pages
 -->
 
     <default>
-
+		<reference name="head">
+			<action method="addItem"><type>skin_js</type><name>js/lib/imagesloaded.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/configurableswatches/swatches-product.js</name></action>
+		</reference>
         <!-- Mage_Catalog -->
         <reference name="left">
             <block type="core/template" name="left.permanent.callout" template="callouts/left_col.phtml">
@@ -78,6 +81,8 @@ Category default layout
         <reference name="content">
             <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
                 <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
+					<block type="core/text_list" name="product_list.name.after" as="name.after" />
+					<block type="core/text_list" name="product_list.after" as="after" />
                     <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
                         <block type="page/html_pager" name="product_list_toolbar_pager"/>
                         <!-- The following code shows how to set your own pager increments -->
@@ -121,6 +126,8 @@ Category layered navigation layout
         <reference name="content">
             <block type="catalog/category_view" name="category.products" template="catalog/category/view.phtml">
                 <block type="catalog/product_list" name="product_list" template="catalog/product/list.phtml">
+					<block type="core/text_list" name="product_list.name.after" as="name.after" />
+					<block type="core/text_list" name="product_list.after" as="after" />
                     <!-- <action method="addReviewSummaryTemplate"><type>default</type><template>review/helper/su.phtml</template></action> -->
                     <block type="catalog/product_list_toolbar" name="product_list_toolbar" template="catalog/product/list/toolbar.phtml">
                         <block type="page/html_pager" name="product_list_toolbar_pager"/>

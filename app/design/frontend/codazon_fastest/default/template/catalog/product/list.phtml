@@ -135,7 +135,7 @@
                     <div class="product-item-info">
                     <div class="cdz-hover-section">
                         <div class="cdz-product-top">
-                            <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w, $h); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="img-responsive" /></a>
+                            <a class="product-image" href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w, $h); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="img-responsive" id="product-collection-image-<?php echo $_product->getId(); ?>" /></a>
                         </div>
                         <div class="cdz-product-wishlist">
                             <?php if ($this->helper('wishlist')->isAllow()) : ?>
@@ -176,6 +176,16 @@
                                     <?php endif; ?>
                                 </div>
                             </div>
+                            <?php
+							if ($this->getChild('name.after')) {
+								$_nameAfterChildren = $this->getChild('name.after')->getSortedChildren();
+								foreach ($_nameAfterChildren as $_nameAfterChildName) {
+									$_nameAfterChild = $this->getChild('name.after')->getChild($_nameAfterChildName);
+									$_nameAfterChild->setProduct($_product);
+									echo $_nameAfterChild->toHtml();
+								}
+							}
+							?>
                         </div>
                     </div>
                 </li>
@@ -190,3 +200,16 @@
     </div>
 </div>
 <?php endif; ?>
+<?php
+// Provides a block where additional page components may be attached, primarily good for in-page JavaScript
+if ($this->getChild('after')) {
+    $_afterChildren = $this->getChild('after')->getSortedChildren();
+    foreach ($_afterChildren as $_afterChildName) {
+        $_afterChild = $this->getChild('after')->getChild($_afterChildName);
+        //set product collection on after blocks
+        $_afterChild->setProductCollection($_productCollection);
+        echo $_afterChild->toHtml();
+    }
+}
+?>
+

@@ -1,0 +1,27 @@
+<?php
+    $_product = $this->getProduct();
+	$_product->load('media_gallery');
+    $_helper = $this->helper('catalog/output');
+	$_imgHelper = $this->helper('catalog/image');
+	$_gallery = $this->getGalleryImages();
+?>
+<?php if (count($_gallery) > 0): ?>
+<div class="cdz-media-wrap">
+<ul class="cdz-media">
+<?php foreach ($_gallery as $_image): ?>
+	<?php
+		$_smallImg = $_imgHelper->init($_product, 'thumbnail', $_image->getFile())->resize(80,80);
+	?>
+	<li class="img-item">
+    	<img src="<?php echo $_smallImg ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
+    </li>
+<?php endforeach ?>
+</ul>
+</div>
+<?php endif ?>
+
+<style>
+.cdz-media-wrap {width: 100%; text-align: center; display: inline-block;}
+.cdz-media-wrap .cdz-media {display: inline-block;}
+.cdz-media-wrap .cdz-media .img-item{float:left;}
+</style>

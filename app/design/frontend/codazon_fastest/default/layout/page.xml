@@ -80,7 +80,7 @@ Default layout, loads most of the pages
                 <!--action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.swipe.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/slideshow.js</name></action-->
-                <!--action method="addItem"><type>skin_js</type><name>js/lib/imagesloaded.js</name></action-->
+                
 				
 				
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>

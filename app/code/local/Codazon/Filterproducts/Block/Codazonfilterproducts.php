@@ -178,4 +178,7 @@ class Codazon_Filterproducts_Block_Codazonfilterproducts
             ->load();
 		return $collection;
 	}
+	public function getProductGalleryHtml($product, $template = 'codazon_filterproducts/view/media.phtml'){
+		return $this->getLayout()->createBlock('catalog/product_view_media')->setProduct($product)->setTemplate($template)->toHtml();
+	}
 }

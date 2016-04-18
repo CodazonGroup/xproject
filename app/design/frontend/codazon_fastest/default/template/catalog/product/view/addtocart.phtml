@@ -49,7 +49,7 @@
 		</div>
     </div>
 	<script type="text/javascript">
-		function changeQty(increase) {
+		var changeQty = function(increase) {
 			var qty = parseInt($('qty').value);
 			if ( !isNaN(qty) ) {
 				qty = increase ? qty+1 : (qty>1 ? qty-1 : 1);
