@@ -789,6 +789,12 @@ input.input-text,
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.cdz-header-style-02 .header .sticky-menu.active .cdz-header-logo {
+  display: none;
+}
+.cdz-header-style-02 .header .sticky-menu.active .cdz-header-menusearch {
+  width: 100%;
+}
 .cdz-header-style-02 .header .sticky-menu.active .cdz-top-cart {
   position: absolute;
   top: -3px;
@@ -799,10 +805,6 @@ input.input-text,
 }
 .cdz-header-style-02 .header .sticky-menu.active .logo {
   width: 100%;
-}
-.cdz-header-style-02 .header .sticky-menu.active .cdz-header-logo {
-  display: block;
-  height: auto;
 }
 .cdz-header-style-02 .header .sticky-menu.active .block-search input[type="text"] {
   padding: 0;
@@ -1100,6 +1102,23 @@ a:hover, a:focus {
 }
 .page-footer .footer-bottom-link li a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
+.cdz-footer-style-03 .bottom-footer-wrapper address {
+  font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.cdz-footer-style-03 .footer-social a:hover {
+  background: none;
+  border-color: none;
+}
+.cdz-footer-style-03 .footer-social a:hover:before {
+  border-color: #b0d235;
+}
+.cdz-footer-style-03 .footer-social a:hover span {
+  color: #b0d235;
+}
+.cdz-footer-style-03 .footer-social a:before {
+  border-color: #282828;
 }
 
 /* ============================================ *
@@ -3044,7 +3063,7 @@ button:hover {
   background: #b0d235;
   color: white;
   font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
   background: #fafafa;

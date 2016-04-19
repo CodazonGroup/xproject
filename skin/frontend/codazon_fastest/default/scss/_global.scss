@@ -164,10 +164,12 @@ a:hover, a:focus{color:$main_hover_text}
 			}
 		}
 	}
+	
 	.bottom-footer-wrapper {
 		background: $footer_bottom_background;
 		border-top-color: $footer_border;
 	}
+	
 	.copyright {
 		font: $f_h5;
 	}
@@ -175,6 +177,32 @@ a:hover, a:focus{color:$main_hover_text}
 		li {
 			a {
 			  font: $f_h5;
+			}
+		}
+	}
+}
+.cdz-footer-style-03{
+	.top-footer-wrapper{
+	}
+	.bottom-footer-wrapper{
+		address{
+			font:$f_note;
+		}
+	}
+	.footer-social{
+		a{
+			&:hover{
+				background:none;
+				border-color:none;
+				&:before{
+					border-color:$footer_hover_text;
+				}
+				span{
+					color:$footer_hover_text
+				}
+			}
+			&:before {
+				border-color:$footer_text;
 			}
 		}
 	}
@@ -1899,7 +1927,7 @@ button:hover {
 				background:$menu_vertical_hover_background;
 				color:$menu_vertical_hover_text;
 				font:$menu_vertical_font;
-				font-weight:700;
+				font-weight:600;
 			}
 			&:hover,&.active{
 				.switch{					

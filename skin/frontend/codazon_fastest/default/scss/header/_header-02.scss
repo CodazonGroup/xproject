@@ -96,6 +96,7 @@
 			} 
 		}
 		.sticky-menu{
+			
 			.cdz-top-cart{
 				position:absolute;
 				top:-68px;
@@ -139,6 +140,12 @@
 		.sticky-menu.active{
 			padding-top:10px;
 			padding-bottom:10px;
+			.cdz-header-logo{
+				display:none;
+			}
+			.cdz-header-menusearch{
+				width:100%;
+			}
 			.cdz-top-cart{
 				position:absolute;
 				top:-3px;
@@ -158,10 +165,6 @@
 			
 			.logo{
 				width:100%;
-			}
-			.cdz-header-logo{
-				display:block;
-				height:auto;
 			}
 			.block-search {
 				input[type="text"]{

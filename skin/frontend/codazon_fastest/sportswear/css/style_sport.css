@@ -17,6 +17,10 @@
   margin: 0 auto;
 }
 
+.cms-index-index .col-main-containter .col-main .col-wrapper-main {
+  margin: 0;
+}
+
 /*header logo color*/
 .cdz-header-style-04.header-container {
   margin-bottom: 20px;
@@ -40,6 +44,13 @@
 
 .product-view .product-shop, .product-collateral, .product-view .block-related, .product-view.block-related {
   margin-bottom: 0;
+}
+
+.swatch-link, .swatch-label {
+  border-radius: 100%;
+}
+.swatch-link img, .swatch-label img {
+  border-radius: 100%;
 }
 
 /*Sport Header*/
@@ -148,7 +159,8 @@
   left: 11px;
 }
 .cdz-header-style-04 .header .cdz-main-menu .groupmenu li.level0 a.menu-link {
-  padding: 24px 20px;
+  padding: 24px 27px;
+  letter-spacing: 1px;
 }
 .cdz-header-style-04 .header .sticky-menu:not(.active) .cdz-top-cart {
   margin-top: 18px;
@@ -162,6 +174,9 @@
 .cdz-header-style-04 .header .sticky-menu:not(.active) .block-search {
   width: 100%;
   margin-top: 15px;
+}
+.cdz-header-style-04 .header .sticky-menu:not(.active) .cdz-main-menu .groupmenu li.level0.last {
+  float: right;
 }
 .cdz-header-style-04 .header .sticky-menu.active .block-search {
   right: 89px;
@@ -189,6 +204,10 @@
 .cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon:before {
   width: 38px;
   height: 38px;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon .cart-qty {
+  top: -7px;
+  right: -7px;
 }
 
 /*update 04/14*/
@@ -508,6 +527,23 @@ a:hover, a:focus {
 }
 .page-footer .footer-bottom-link li a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
+.cdz-footer-style-03 .bottom-footer-wrapper address {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.cdz-footer-style-03 .footer-social a:hover {
+  background: none;
+  border-color: none;
+}
+.cdz-footer-style-03 .footer-social a:hover:before {
+  border-color: white;
+}
+.cdz-footer-style-03 .footer-social a:hover span {
+  color: white;
+}
+.cdz-footer-style-03 .footer-social a:before {
+  border-color: #999999;
 }
 
 /* ============================================ *
@@ -2264,7 +2300,7 @@ button:hover {
   color: white;
   background-color: #f64400;
   border-color: #282828;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
@@ -2331,7 +2367,7 @@ button:hover {
 }
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
   color: white;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .cdz-main-menu .groupmenu li.level0 a.menu-link:hover,
 .cdz-main-menu .groupmenu li.level0 a.menu-link:active,
@@ -2345,7 +2381,7 @@ button:hover {
   color: white;
   background-color: #f64400;
   border-color: #282828;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .cdz-main-menu .groupmenu-drop {
   background-color: white;
@@ -2447,8 +2483,8 @@ button:hover {
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item .switch {
   background: #fc6e00;
   color: white;
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  font-weight: 700;
+  font: 400 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 600;
 }
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
   background: #f64400;
@@ -2456,7 +2492,7 @@ button:hover {
 }
 .menu-vertical-style02 .nav-tab-content {
   background: #f64400;
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *

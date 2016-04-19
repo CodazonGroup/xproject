@@ -85,7 +85,8 @@
 		.cdz-main-menu{
 			.groupmenu li.level0{
 				a.menu-link{
-					padding: 24px 20px;
+					padding: 24px 27px;
+					letter-spacing: 1px;
 				}
 			}
 		} 
@@ -105,7 +106,8 @@
 					margin-top:15px;
 					input[type="text"]{						
 					}
-				} 
+				}
+				.cdz-main-menu .groupmenu li.level0.last{float:right;}	
 			}
 			&.active{
 				.block-search{
@@ -128,6 +130,10 @@
 						&:before{
 							width:38px;
 							height:38px;
+						}
+						.cart-qty{
+							top: -7px;
+							right: -7px;
 						}
 					}
 				}

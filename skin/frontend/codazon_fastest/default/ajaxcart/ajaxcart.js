@@ -29,6 +29,7 @@ var ajaxcart = {
                         });
                     },
                     onSuccess	: function(response) {
+						$('body').trigger('ajaxCartCompleted');	
                         // Handle the response content...
                         try{
                             var res = response.responseText.evalJSON();

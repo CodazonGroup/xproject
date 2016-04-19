@@ -478,6 +478,7 @@
 			if(typeof $.fn.unveil !== 'undefined'){
 				$this.find('.cdz-lazy').unveil();
 			}
+			$this.find('.btn-cart').ajaxCartEffect();
 			$this.sameHeightItems();
 		});
 		$('[data-toggle="tab"]').click(function(){

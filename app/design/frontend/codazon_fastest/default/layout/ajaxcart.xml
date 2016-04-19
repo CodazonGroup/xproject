@@ -31,6 +31,10 @@
                 <type>skin_js</type>
                 <name>ajaxcart/ajaxcart.js</name>
             </action>
+			<action method="addItem">
+                <type>skin_js</type>
+                <name>ajaxcart/ajaxcart_effect.js</name>
+            </action>
             <!--ajaxcart assets end-->
 
             <!-- product type assets start -->

@@ -87,7 +87,7 @@ overflow:inherit;
 }
 .product-name {
   display: block;
-  margin: 0 0 5px;
+  margin: 0 0 0.7rem;
   word-wrap: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -136,7 +136,7 @@ overflow:inherit;
   display: none;
 }
 .product-item .price-box {
-  margin: 5px 0 5px;
+  margin: 0 0 0.7rem;
 }
 .product-item .price-box .price {
   font-weight: bold;
@@ -227,14 +227,14 @@ overflow:inherit;
 		backface-visibility: hidden;
 		border: 0px solid transparent;
 		.product-item-details {
-			padding: 10px 20px 20px;
+			padding: 10px 20px 10px;
 			position: relative;
 			.product-item-description {
 				overflow: hidden;
 				white-space: nowrap;
 				/* Don't forget this one */
 				text-overflow: ellipsis;
-				padding: 0 0px 10px;
+				padding: 0 0px 0.7rem;
 				color: $main_note_text;
 				font: $f_h6;
 				font-weight:400

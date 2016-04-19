@@ -181,4 +181,8 @@ class Codazon_Filterproducts_Block_Codazonfilterproducts
 	public function getProductGalleryHtml($product, $template = 'codazon_filterproducts/view/media.phtml'){
 		return $this->getLayout()->createBlock('catalog/product_view_media')->setProduct($product)->setTemplate($template)->toHtml();
 	}
+	
+	public function getAddToCartUrl($product, $additional = array()){
+		return parent::getAddToCartUrl($product,$additional)."?options=cart";
+	}
 }

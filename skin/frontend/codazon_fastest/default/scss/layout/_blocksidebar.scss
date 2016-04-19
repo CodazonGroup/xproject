@@ -126,6 +126,7 @@
 			font-size:70%;
 			float:right;
 			margin-top:3px;
+			margin-right:-15px;
 			&:after{
 				@include font-awesome(\f178,14px);
 				margin:0 15px;
@@ -144,6 +145,7 @@
 				border-left:none;
 			}
 		}
+		&:after{display:none;}
 	}
 	.box-content{overflow:hidden;}
 	.products-list{

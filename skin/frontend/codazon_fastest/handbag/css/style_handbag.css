@@ -267,6 +267,64 @@
 }
 
 /*Handbag  Footer*/
+.cdz-footer-style-03 {
+  text-align: center;
+}
+.cdz-footer-style-03 .footer-logo-wrapper {
+  margin: 50px 0;
+}
+.cdz-footer-style-03 .footer-logo-wrapper .footer-logo {
+  margin: 0 auto;
+}
+.cdz-footer-style-03 .footer-links-wrapper .footer-links .item {
+  display: inline-block;
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.cdz-footer-style-03 .top-footer-wrapper {
+  text-align: center;
+  padding: 0px 0 0;
+}
+.cdz-footer-style-03 .bottom-footer-wrapper {
+  text-align: center;
+  padding: 0 0 40px;
+}
+.cdz-footer-style-03 .bottom-footer-wrapper address {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.cdz-footer-style-03 .footer-social {
+  padding: 0;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+.cdz-footer-style-03 .footer-social a {
+  float: none;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin: 0 15px 0;
+}
+.cdz-footer-style-03 .footer-social a:hover {
+  background: none;
+}
+.cdz-footer-style-03 .footer-social a:before {
+  content: '';
+  border: 1px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /*Color Important*/
 body {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
@@ -408,33 +466,33 @@ a:hover, a:focus {
 }
 
 .block.block-subscribe .block-content input {
-  border-color: #666972;
+  border-color: #212121;
 }
 
 .page-footer {
-  background: white;
-  color: #666972;
+  background: #212121;
+  color: #cfcfcf;
 }
 .page-footer .top-footer-wrapper {
-  background-color: #f8f8f8;
+  background-color: #212121;
 }
 .page-footer .footer-bottom {
-  background: white;
+  background: #212121;
 }
 .page-footer a {
-  color: #666972;
+  color: #cfcfcf;
 }
 .page-footer a:hover {
   color: #f8b5ad;
 }
 .page-footer p.h5 {
-  color: #666972;
+  color: #cfcfcf;
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .page-footer .item_tag li a {
-  color: #666972;
-  background-color: white;
-  border-color: #666972;
+  color: #cfcfcf;
+  background-color: #212121;
+  border-color: #212121;
 }
 .page-footer .item_tag li a:hover {
   color: white;
@@ -443,22 +501,39 @@ a:hover, a:focus {
 }
 .page-footer .footer-social a {
   border: 1px solid;
-  border-color: #666972;
+  border-color: #212121;
 }
 .page-footer .footer-social a:hover {
-  color: white;
-  background-color: #666972;
-  border-color: #666972;
+  color: #212121;
+  background-color: #cfcfcf;
+  border-color: #212121;
 }
 .page-footer .bottom-footer-wrapper {
-  background: white;
-  border-top-color: #666972;
+  background: #212121;
+  border-top-color: #212121;
 }
 .page-footer .copyright {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .page-footer .footer-bottom-link li a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
+.cdz-footer-style-03 .bottom-footer-wrapper address {
+  font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.cdz-footer-style-03 .footer-social a:hover {
+  background: none;
+  border-color: none;
+}
+.cdz-footer-style-03 .footer-social a:hover:before {
+  border-color: #f8b5ad;
+}
+.cdz-footer-style-03 .footer-social a:hover span {
+  color: #f8b5ad;
+}
+.cdz-footer-style-03 .footer-social a:before {
+  border-color: #cfcfcf;
 }
 
 /* ============================================ *
@@ -468,7 +543,7 @@ a:hover, a:focus {
  * End Codazon_Footer Style 2
  * ============================================ */
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .input-box input {
-  border-color: #666972;
+  border-color: #212121;
 }
 .footer-newsletter-02 .social a {
   color: white;
@@ -492,11 +567,11 @@ a:hover, a:focus {
 * Codazon_Footer style 4
 * ============================================ */
 .page-footer.cdz-footer-style-04 .top-footer-wrapper {
-  background-color: #f8f8f8;
+  background-color: #212121;
 }
 .page-footer.cdz-footer-style-04 .top-footer-wrapper .box-aboutus .box-content {
-  background-color: white;
-  color: #666972;
+  background-color: #212121;
+  color: #cfcfcf;
 }
 .page-footer.cdz-footer-style-04 .top-footer-wrapper .box-facebook .box-content {
   background-color: #4f70c2;
@@ -515,7 +590,7 @@ a:hover, a:focus {
   font-weight: 400;
   background: #f8b5ad;
   color: white;
-  border-color: #666972;
+  border-color: #212121;
 }
 
 /* ============================================ *
@@ -2398,7 +2473,7 @@ button:hover {
   background: #f8b5ad;
   color: white;
   font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
   background: #fafafa;

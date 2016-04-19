@@ -72,7 +72,7 @@
                         	<div class="cdz-buttons">
                         	<?php if( $this->display('addtocart_btn') ):?>
 								<?php if($_product->isSaleable()): ?>
-                                    <button  data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Cart') ?>"  type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>?options=cart')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                                    <button  data-toggle="tooltip" data-original-title="<?php echo $this->__('Add to Cart') ?>"  type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
                                 <?php else: ?>
                                     <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                                 <?php endif; ?>
