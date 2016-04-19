@@ -110,6 +110,9 @@
 				.cdz-main-menu .groupmenu li.level0.last{float:right;}	
 			}
 			&.active{
+				.cdz-header-menu{
+					padding-right:130px;
+				}
 				.block-search{
 					right:89px;
 					top:12px;

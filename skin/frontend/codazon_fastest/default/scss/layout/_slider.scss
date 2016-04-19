@@ -129,16 +129,16 @@
 	position: absolute;
 	left: 20px;
 	top: 45%;
-	top: calc(50% - 15px);
-	-webkit-top: calc(50% - 15px);
-	-o-top: calc(50% - 15px);
-	-moz-top: calc(50% - 15px);
+	top: calc((100% - 50px)/2);
+	-webkit-top: calc((100% - 50px)/2);
+	-o-top: calc((100% - 50px)/2);
+	-moz-top: calc((100% - 50px)/2);
 	border: 2px solid;
 	color: #ffffff;
 	border-color: #ffffff;
 	cursor:pointer;
 	font-size:0!important;
-	margin:0;
+	margin:0!important;
 	padding:0;
 }
 

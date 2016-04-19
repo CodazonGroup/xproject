@@ -147,7 +147,7 @@
 		}
 		&:after{display:none;}
 	}
-	.box-content{overflow:hidden;}
+	/*.box-content{overflow:hidden;}*/
 	.products-list{
 		.product-item-info{padding:0 10px}
 		.cdz-buttons-container button.btn-cart{
@@ -157,9 +157,12 @@
 			&:before{display:none;}
 		}
 	}
+	.mobile-nav-tab-dropdown{
+		margin:0 0 -1px;
+	}
 	.nav.nav-tabs{
 		text-align: inherit;
-		margin-bottom:-1px;
+		margin:0 0 -1px;
 		.nav-tab-item .switch{
 			height:60px;
 			padding: 19px 20px;
@@ -168,30 +171,6 @@
 		}
 	}	
 	.nav-tab-content{padding:0;}
-	.owl-nav [class*='owl-'], 
-	.owl-theme .owl-nav [class*=owl-]{
-		width:30px;
-		height:30px;
-		top:-50px;
-		@include border-radius(0);
-		&.owl-next{
-			right:10px;
-			&:before{
-				content:"\f178";
-				line-height: 21px;
-				font-size: 14px;
-			}
-		}
-		&.owl-prev{
-			right:50px;
-			left:auto;
-			&:before{
-				content:"\f177";
-				line-height: 21px;
-				font-size: 14px;
-			}
-		}
-	}
 	&.cdz-wapper-blog-01{
 		.cdz_wapper-blog-content{
 			padding:20px;
@@ -233,6 +212,35 @@
 		}
 	}
 }
+@media (min-width: 767px){
+	.box-style01:not(.product-style02){
+		.owl-nav [class*='owl-'], 
+		.owl-theme .owl-nav [class*=owl-]{
+			width:30px;
+			height:30px;
+			top:-45px;
+			@include border-radius(0);
+			&.owl-next{
+				right:10px;
+				&:before{
+					content:"\f178";
+					line-height: 21px;
+					font-size: 14px;
+				}
+			}
+			&.owl-prev{
+				right:50px;
+				left:auto;
+				&:before{
+					content:"\f177";
+					line-height: 21px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
 
 /*Product style 02*/
 .product-style02{

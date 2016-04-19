@@ -2,13 +2,11 @@
 	background:transparent;
 	.top-footer-wrapper{
 		padding:0;
-		.row{display:flex;}
 		.box-content{
 			padding:27px 20px;
 			width:100%;
 			.h2{margin-bottom:22px;}
 		}
-		.box-facebook {display:flex;}
 		.box-aboutus .box-content{
 			.h1{
 				text-transform:none;
@@ -39,6 +37,7 @@
 		.footer-logo-wrapper{
 			padding:0 10px;
 			margin-top:8px;
+			margin-bottom:20px;
 			img{max-width:100%; margin:0 auto;}
 		}
 		address{
@@ -86,5 +85,16 @@
 		text-transform:uppercase;
 		font-size:92%;
 		a{padding:4px 0;}
+	}
+}
+
+@media (min-width: 767px){
+	.page-footer.cdz-footer-style-04{
+		.top-footer-wrapper{
+			.row{display:flex;}
+			.box-aboutus,
+			.box-tweets,
+			.box-facebook {display:flex;}
+		}
 	}
 }
