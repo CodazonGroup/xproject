@@ -1,0 +1,234 @@
+/* ============================================ *
+ * Content
+ * ============================================ */
+
+/*three block*/
+/*Background parallax*/
+.groupbanner-text {
+  position: relative;
+}
+.groupbanner-text .banner-border img {
+  width: 100%;
+}
+.groupbanner-text .groupinfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 2;
+  
+}
+.groupbanner-text .groupinfo .groupinfo-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .grifo-title {
+  padding: 10px 0;
+  color:#fff;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link:hover {
+  text-decoration: underline;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .text-link span:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f105';
+  font-size: 14px;
+  padding-left: 5px;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .action.primary {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+.groupbanner-text .groupinfo .groupinfo-inner .groupinfo-desc .action.primary:hover {
+  color: #282828;
+  background-color: #ffffff;
+  border-color: #282828;
+}
+
+.wrapper-ads02 {
+  color: #ffffff;
+  border-top: 3px solid #e1e1e1;
+  padding: 60px 0;
+}
+.wrapper-ads02 .cdz-item-types {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.wrapper-ads02 ul.items {
+  padding-bottom: 30px;
+  display: inline-block;
+}
+.wrapper-ads02 ul.items li {
+  float: left;
+  margin: 0 5px;
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.wrapper-ads02 ul.items li:hover {
+  -webkit-transform: scale(0.9, 0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -o-transform: scale(0.9, 0.9);
+}
+.wrapper-ads02 .statement {
+  padding-bottom: 30px;
+}
+.wrapper-ads02 .statement p {
+  margin-bottom: 0;
+}
+.wrapper-ads02 .newsletter-style02 .block.newsletter input[type="email"] {
+  background-color: transparent;
+}
+.wrapper-ads02 .newsletter-style02 .block.newsletter .action.subscribe {
+  width: auto;
+  min-width: 200px;
+}
+.wrapper-ads02 .action.primary {
+  padding: 10px 30px;
+}
+
+/* ============================================ *
+ * Codazon_Banner_Effect
+ * ============================================ */
+/*Zoom Banner*/
+.eff-zoombanner {
+  overflow: hidden;
+  position: relative;
+}
+.eff-zoombanner .banner-zoom img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -moz-transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.eff-zoombanner:hover .banner-zoom img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+}
+/*Banner Border*/
+.banner-border {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.banner-border:before,
+.banner-border:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  z-index: 1;
+}
+.banner-border:before {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: scale(1, 0);
+  -ms-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+  top: 30px;
+  right: 15px;
+  bottom: 30px;
+  left: 15px;
+}
+.banner-border:after {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  -o-transform: scale(0, 1);
+  transform: scale(0, 1);
+  top: 15px;
+  right: 30px;
+  bottom: 15px;
+  left: 30px;
+}
+.banner-border:hover:before,
+.banner-border:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.banner-border img {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.banner-border:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+.banner-border.style2:after {
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+}
+.banner-border.style2:before {
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+}

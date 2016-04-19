@@ -1,0 +1,100 @@
+<?php
+$posts = $this->getPostCollection();
+?>
+<?php if(count($posts) > 0): ?>
+
+<?php
+$descLength = $this->getDescLength();
+$useSlider = $this->getUseSlider();
+$itemClass = $useSlider?'col-sm-24':'col-sm-8';
+$width = $this->getThumbWidth();
+$height = $this->getThumbHeight();
+$helper = Mage::helper('blogfeatures');
+$dateHelper = Mage::getModel('core/date');
+$uniqId = uniqid();
+?>
+<div class="cdz_wapper-blog01 text-center space-lg" id="<?php echo 'post-'.$uniqId ?>">
+	<div class="row">
+        <div class="col-sm-24">
+            <div class="cdz-block-title">
+	            <p class="b-title h1"><span><?php echo $this->getBlogTitle() ?></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="post-items same-height <?php echo $useSlider?'cdz-post-slider':''; ?>">
+    	<?php foreach($posts as $item): ?>
+        <?php
+			$url = $this->getUrl("blog/{$item->getIdentifier()}");
+			$title = $this->stripTags($item->getTitle());
+		?>
+        <div class="cdz-post">
+        	<div class="cdz-blog-top">
+            	<?php if($this->show('post_image')): ?>
+            	<a href="<?php echo $url ?>">
+                	<img class="img-responsive" alt="<?php echo $item->getTitle() ?>" src="<?php echo $helper->getImage($item,array('width'=>$width,'height'=>$height)) ?>" />
+                </a>
+                <?php endif ?>
+                <?php if($this->show('created_time')): ?>
+                <?php $date = $dateHelper->date('D m, Y',$item->getCreatedTime()); ?>
+                <div class="blog-date"><?php echo $date ?></div>
+                <?php endif ?>
+            </div>
+            
+            <div class="cdz-blog-bottom">
+            	<?php if($this->show('title')): ?>
+            	<h5 class="blog-title"><a title="<?php echo $title ?>" href="<?php echo $url ?>"><?php echo $title ?></a></h5>
+                <?php endif ?>
+                
+                <?php if($this->show('user')): ?>
+                <div class="blog-author"><?php echo $this->__('Post by').' '.$item->getUser() ?></div>
+                <?php endif ?>
+                
+                <?php if($this->show('short_content')): ?>
+                <?php
+					$desc = $item->getShortContent();
+					if(strlen($desc)> $descLength ) { 
+						$strCutDesc = substr($desc, 0, $descLength);
+						$desc = substr($strCutDesc, 0, strrpos($strCutDesc, ' ')).'&hellip;';
+					}
+					$desc = $this->stripTags($desc,null,true);
+				?>
+                <div class="blog-desc"><?php echo $desc ?></div>
+                <?php endif ?>
+                
+
+                <p class="blog-text-link"><a class="btn-link-readmore" href="<?php echo $url ?>"><span><?php echo __('Read more') ?></span></a></p>
+            </div>
+        </div>
+        <?php endforeach ?>
+    </div>
+</div>
+<?php if($useSlider): ?>
+<script>
+	(function( $ ) {
+		$(document).ready(function(e) {
+			var $owl = $('#<?php echo 'post-'.$uniqId ?> .cdz-post-slider');
+			$owl.addClass('owl-carousel owl-theme');
+			$owl.owlCarousel({
+				loop: false,
+				margin: 20,
+				responsiveClass: true,
+				nav: true,
+				dots: false,
+				responsive:{
+					0:{items: 	1},
+					320:{items:	1},
+					360:{items:	1},
+					480:{items:	2},
+					768:{items: 2},
+					980:{items:	3},
+					1200:{items: 3}	
+				}
+			});
+        });
+	})( jQuery );
+</script>
+<?php endif ?>
+<?php else: ?>
+
+
+<?php endif ?>

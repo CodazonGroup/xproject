@@ -1,0 +1,10 @@
+<layout version="0.1.0">
+	 <default>
+		<reference name="head">
+			<action method="addItem"><type>skin_css</type><name>codazon/filterproducts/filterproducts.css</name></action>
+			<action method="addItem"><type>skin_js</type><name>codazon/filterproducts/filterproducts.js</name></action>
+	        <action method="addItem"><type>skin_js</type><name>js/configurableswatches/product-media.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/configurableswatches/swatches-list.js</name></action>
+		</reference>
+	 </default>
+</layout>

@@ -1,0 +1,19 @@
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+		
+		</reference>
+	</default>
+	<themeframework_category_index>
+		<reference name="root">
+			<action method="setTemplate"><template>page/1column.phtml</template></action>
+		</reference>
+		<reference name="content">
+			<block type="themeframework/page_category" name="catagory_view" template="codazon_themeframework/page/category.phtml">
+				<block type="themeframework/page_toolbar" name="category_list_toolbar" template="catalog/product/list/toolbar.phtml">
+                    <block type="page/html_pager" name="category_list_toolbar_pager"/>
+                </block>
+			</block>
+		</reference>
+	</themeframework_category_index>
+</layout>

@@ -1,0 +1,49 @@
+<?php
+$_cartQty = $this->getSummaryCount();
+?>
+<div class="footer-cart" id="footer-cart">
+	<div class="col-sm-2">
+    	<div class="cart-icon"></div>
+    </div>
+    <div class="cart-items col-sm-14">
+    	<?php $_items = $this->getRecentItems() ?>
+        <?php if(count($_items)): ?>
+            <ul class="cart-products-list row">
+            <?php foreach($_items as $_item): ?>
+                <?php echo $this->getItemHtml($_item) ?>
+            <?php endforeach; ?>
+            </ul>
+        <?php endif ?>
+    </div>
+    <div class="check-out col-sm-8">
+    	<div class="summary">
+        	 <?php if ($_cartQty==1): ?>
+                <div class="cart-total-title">
+                    <h4> <?php echo $this->__('Total item') ?></h4>	
+                    <p class="amount"><?php echo $this->__('<a href="%s">1</a>', $this->getUrl('checkout/cart')) ?></p>
+                </div>
+            <?php else: ?>
+                <div class="cart-total-title">
+                    <h4> <?php echo $this->__('Total item') ?></h4>	
+                    <p class="amount"><?php echo $this->__('<a href="%s">%s</a> ', $this->getUrl('checkout/cart'), $_cartQty) ?></p>
+                </div>
+            <?php endif ?>
+            <div class="subtotal">
+				<?php if ($this->canApplyMsrp()): ?>
+                    <div class="map-cart-sidebar-total"><?php echo $this->__('ORDER TOTAL WILL BE DISPLAYED BEFORE YOU SUBMIT THE ORDER'); ?></div>
+                <?php else: ?>
+                    <div class="sub-total-label"><?php echo $this->__('Cart Subtotal') ?></div> <?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()) ?>
+                    <?php if ($_subtotalInclTax = $this->getSubtotalInclTax()): ?>
+                       (<?php echo Mage::helper('checkout')->formatPrice($_subtotalInclTax) ?> <?php echo Mage::helper('tax')->getIncExcText(true) ?>)
+                    <?php endif; ?>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+        <div class="actions">
+            <?php echo $this->getChildHtml('extra_actions') ?>
+            <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Checkout')) ?>" class="button" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
+        </div>
+        <?php endif ?>
+    </div>
+</div>

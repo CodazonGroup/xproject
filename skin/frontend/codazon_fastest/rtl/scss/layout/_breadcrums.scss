@@ -1,0 +1,43 @@
+/*=========Breadcrumbs==========*/
+.cms-index-index .content-breadcrums {
+	display:none
+}
+.content-breadcrums{
+	padding: 20px 0 0;
+}
+.breadcrumbs {
+  padding: 0px 0 0;
+  overflow: hidden;
+  font:$f_h6
+}
+.breadcrumbs ul {
+  margin-bottom: 0;
+}
+.breadcrumbs ul li {
+  display: inline;
+}
+.breadcrumbs ul li strong {
+  font-weight: 600;
+}
+.breadcrumbs ul li span {
+  position: relative;
+  font-size: 0;
+  margin: 0 12px;
+}
+.breadcrumbs ul li span:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f178";
+  font-size: 11px;
+}
+
+.content-breadcrums {
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+

@@ -1,0 +1,6 @@
+.cdz-quickshop{background-color: #FFF; }
+.cdz-quickshop a{text-decoration:none; display:block;  padding: 5px 10px;}
+.cdz-qs-tabs-wrap{width: 65%; float: left;}
+.cdz-qs-image{width:35%; float:left; }
+.product-view.cdz-qs-view{display: inline-block; border:none;}
+.product-view.cdz-qs-view .product-img-box {width:100%;}

@@ -1,0 +1,115 @@
+	.nav-tabs,
+	.nav.nav-tabs {
+		margin-left: 0;
+		margin-right: 0;
+		border: 0;
+		border-bottom: 1px solid;
+	}
+
+	.nav-tabs .item.content,
+	.nav.nav-tabs .item.content {
+		margin-top: -6px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.nav-tabs {
+	position: relative;
+	z-index: 1;
+	border-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	text-align:center;
+	.nav-tab-item {
+		float: none;
+		width: auto;
+		display:inline-block;
+	}
+	.item.content {
+		margin-top: 20px;
+		box-sizing: border-box;
+		float: right;
+		margin-left: -100%;
+		width: 100%;
+	}
+	.item.content:before,
+	.item.content:after {
+		content: '';
+		display: table;
+	}
+	.item.content:after {
+		clear: both;
+	}
+	.item.content.active {
+		display: block;
+	}
+	.nav-tab-item {
+		margin: 0 5px 0 0;
+	}
+	.nav-tab-item.active .switch {
+		border: 0;
+		border-bottom: 2px solid;
+	}
+	.nav-tab-item {
+		.switch {
+			display: block;
+			position: relative;
+			z-index: 2;	
+			text-decoration: none;
+			background: transparent;
+			border: 0;
+			height: 40px;
+			padding: 10px 10px 10px 10px;
+			@include abs-scale(1);
+		}
+		h2{
+			font: $f_h5;
+		}
+		.switch:visited {
+			text-decoration: none;
+		}	
+		.switch:hover {
+			text-decoration: none;
+		}	
+		.switch:active {
+			text-decoration: none;
+		}
+	}	
+}
+.nav-tab-content {padding:15px 0 0;}  
+.nav-tabs:before,
+.nav-tabs:after {
+	content: '';
+	display: table;
+}
+.nav-tabs:after {
+	clear: both;
+}
+
+.nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
+.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+	background: transparent;
+	border-bottom: 2px solid;
+	@include abs-scale(1);
+}
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
+.nav-tabs .active.nav-tab-item .switch,
+.nav-tabs .active.nav-tab-item .switch:focus,
+.nav-tabs .active.nav-tab-item .switch:hover {
+	background: transparent;
+}
+.nav-tabs .active.nav-tab-item .switch,
+.nav-tabs .active.nav-tab-item .switch:focus,
+.nav-tabs .active.nav-tab-item .switch:hover {
+	padding-bottom: 11px;
+}
+.nav-tabs .item.content {
+	background: transparent;
+	margin-top: 39px;
+	padding: 10px 0 10px 0;
+}
+.nav-tabs .nav-tab-item a:after {
+	display: none;
+}
+

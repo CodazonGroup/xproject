@@ -1,0 +1,316 @@
+.cdz-block-newproduct,.cdz-home-block{
+	.codazon-filter{
+		padding:0
+	}
+	.cdz-block-title{
+		text-align:left;
+		margin-bottom:0;
+		p.b-title{
+			background:#e8e8e8;
+			display:block;
+			display:block;
+			border:0;
+			padding:0;
+			height:40px;
+			border-radius: 0 5px 0px 0px;
+			margin:0;
+			&:before{display:none;}
+			span{
+				display:inline-block;
+				background:#b0d235;
+				line-height:42px;
+				margin-top:-7px;
+				padding:5px 20px 0 20px;
+				border-radius:0px 5px 0 0;
+				color:#fff;
+				&:before,&:after{
+					content:"";
+					position:absolute;
+					width:0;
+					height:0;
+					top:-13px;
+					left:3px;
+					border:6px solid transparent;
+					border-bottom:6px solid darken(#b0d235,20%);
+					-moz-transform:rotate(135deg);
+					-o-transform:rotate(135deg);
+					-webkit-transform:rotate(135deg);
+					-ms-transform:rotate(135deg);
+					transform:rotate(135deg);
+					
+				}
+			}
+			.view-all{
+				
+				float:right;
+				font:$f_note;
+				line-height: 40px;
+				margin-right: 20px;
+				
+				label{
+					font:$f_note;
+				}
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}
+.col1-layout {
+	.codazon-filter-style-04{
+		.products-grid {
+			border-left:1px solid;
+			.product-items:not(.owl-carousel){
+				margin:0;
+				.product-item{
+					border-bottom:1px solid;
+					.product-item-info{
+						border:2px solid;
+						border-radius:0;
+					}
+					.cdz-hover-section{
+						padding:10px 10px 0 10px;
+					}
+					.product-name{
+						a{
+							color:$main_hover_text;
+							font:$f_h6;
+							display:block
+						}
+					}
+					.product-item-details {
+						padding:10px;
+						button.btn-cart,.action,.qs-button{
+							border-radius:3px;
+						}
+					}
+					&:hover{
+						.product-item-info{
+							border:2px solid ;
+							border-color:$main_hover_text;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.cdz-block-orange{
+	.cdz-block-title{
+		text-align:left;
+		p.b-title{
+			span{
+				background:#f86532;
+				&:before,&:after{
+					border-bottom:6px solid darken(#f86532,20%);
+				}
+			}
+			
+		}
+	}		
+}	
+
+
+@media (min-width: 991px){
+	.col1-layout {
+		.codazon-filter-style-04{
+			.products-grid {
+				border-left:1px solid;
+				.product-items:not(.owl-carousel){
+					margin:0;
+					.product-item{
+						width: 16.6666%;
+						padding:0;
+						margin:0;
+						min-height:inherit;
+						border-right:1px solid;
+						border-bottom:1px solid;
+					}
+				}
+			}
+		}
+	}	
+	.col1-layout .codazon-filter-style-05{
+		padding:0;
+		.products-grid{
+			padding:0 1px;
+			.product-items.isotope{
+				.item.product-item.width-1{
+					width:22%
+				}
+				.product-item-description{
+					text-overflow: ellipsis;
+					overflow:hidden;
+				    white-space: nowrap;
+					padding:0 20px;	
+				}
+				.product-name{
+					padding:0 20px;
+					text-overflow: ellipsis;
+					overflow:hidden;
+				    white-space: nowrap;
+				}
+				.item.product-item.width-2{
+					width:34%;
+					min-height:490px;
+					.product-item-info{
+						min-height:487px;
+					}
+				}
+				.product-item-info{
+					
+					&:hover{
+						.cdz-product-bottom{
+							.cdz-button-bot{
+								a{color:#fff;}
+								.price{
+									color:#fff;
+								}
+								.old-price .price{
+									color:#ddd;
+								}
+							}
+						}
+						.cdz-product-info{
+							min-height:65px;
+							@include transition1();
+							a.product-item-link,.product-item-description{
+								font-size:0!important
+							}
+							.price{
+								font-size:0!important
+							}
+							
+						}
+						
+					}
+				}
+				
+			}
+		}
+	}
+
+	.codazon-filter-style-05{
+		.products-grid{
+			.isotope{
+				
+				.width-1{
+					.cdz-product-top{
+						.product-image{
+							width:155px;
+							margin:0 auto;
+							padding:10px 10px 11px ;
+						}
+					}
+				}
+				.width-2{
+					.cdz-product-top{
+						.product-image{width:auto;margin:0 auto}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 767px) and (max-width: 991px){
+	.col1-layout {
+		.codazon-filter-style-04{
+			.products-grid {
+				border-left:1px solid;
+				.product-items:not(.owl-carousel){
+					margin:0;
+					.product-item{
+						width: 25%;
+						padding:0;
+						margin:0;
+						min-height:385px;
+						border-right:1px solid;
+						border-bottom:1px solid;
+					}
+				}
+			}
+		}
+	}	
+	.col1-layout .codazon-filter-style-05{
+		padding:0;
+		.products-grid{
+			padding:0 1px;
+			.product-items.isotope{
+				.item.product-item.width-1{
+					width:22%
+				}
+				.product-item-description{
+					text-overflow: ellipsis;
+					overflow:hidden;
+				    white-space: nowrap;
+					padding:0 20px;	
+				}
+				.product-name{
+					padding:0 20px;
+					text-overflow: ellipsis;
+					overflow:hidden;
+				    white-space: nowrap;
+				}
+				.item.product-item.width-2{
+					width:34%;
+					min-height:490px;
+					.product-item-info{
+						min-height:490px;
+					}
+				}
+				.product-item-info{
+					
+					&:hover{
+						.cdz-product-bottom{
+							.cdz-button-bot{
+								a{color:#fff;}
+								.price{
+									color:#fff;
+								}
+								.old-price .price{
+									color:#ddd;
+								}
+							}
+						}
+						.cdz-product-info{
+							min-height:65px;
+							@include transition1();
+							a.product-item-link,.product-item-description{
+								font-size:0!important
+							}
+							.price{
+								font-size:0!important
+							}
+							
+						}
+						
+					}
+				}
+				
+			}
+		}
+	}
+
+	.codazon-filter-style-05{
+		.products-grid{
+			.isotope{
+				
+				.width-1{
+					.cdz-product-top{
+						.product-image{
+							width:155px;
+							margin:0 auto;
+							padding:10px 10px 11px ;
+						}
+					}
+				}
+				.width-2{
+					.cdz-product-top{
+						.product-image{width:auto;margin:0 auto}
+					}
+				}
+			}
+		}
+	}
+}

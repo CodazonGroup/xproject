@@ -1,0 +1,13 @@
+<?php
+$_product = $this->getProduct();
+$_id = $_product->getId();
+$_url = $this->getUrl( 'quickshop/index/view', array('id' => $_id) );
+/*$_categoryId = Mage::registry('current_category');
+if(!empty( $_categoryId )){
+	$_url = $_url."/category/".$_categoryId->getId();
+}*/
+?>
+    
+		<a href="javascript:void(0)" class="qs-button cdz-tooltip" data-original-title="<?php echo $this->__('Quick Shop') ?>" data-url="<?php echo $_url ?>" data-toggle="modal" data-target="#cdz-qsiframe"><?php echo $this->getQuickShopLabel() ?></a>
+    
+    

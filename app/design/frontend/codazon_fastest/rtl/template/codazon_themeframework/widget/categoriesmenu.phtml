@@ -1,0 +1,65 @@
+<?php
+$html = '';
+
+$children = $menuTree->getChildren();
+$parentLevel = $menuTree->getLevel();
+$childLevel = is_null($parentLevel) ? 0 : $parentLevel + 1;
+
+$counter = 1;
+$childrenCount = $children->count();
+
+$parentPositionClass = $menuTree->getPositionClass();
+$itemPositionClassPrefix = $parentPositionClass ? $parentPositionClass . '-' : 'nav-';
+
+if($hasWrap){
+	$html .= '<div class="menu-vertical">';
+	$html .= '<ul class="'.$parentWrapClass.'">';
+}
+if(!isset($options['lv'])){
+	$options['lv'] = 1;
+}else{
+	$options['lv']++;
+}
+
+foreach ($children as $child) {
+	if($hasWrap){
+		$child->setClass('vertical-level'.$options['lv']);
+	}
+    $child->setLevel($childLevel);
+    $child->setIsFirst($counter == 1);
+    $child->setIsLast($counter == $childrenCount);
+    $child->setPositionClass($itemPositionClassPrefix . $counter);
+
+    $outermostClassCode = 'level'. $childLevel;
+    $_hasChildren = ($child->hasChildren()) ? 'has-children' : '';
+
+    $html .= '<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
+
+    $html .= '<a href="'. $this->getCategoryUrlById($child->getId()) .'" class="vertical-level'.$options['lv'].' '.$outermostClassCode .' '. $_hasChildren .'">'. $this->escapeHtml($this->__($child->getName())) .'</a>';
+
+    $nextChildLevel = $childLevel + 1;
+
+    if (!empty($_hasChildren)) {
+        $html .= '<ul class="level'. $childLevel .' '.$childrenWrapClass.'">';
+        $html .=     $this->render($child, $childrenWrapClass,false,'',$options);
+        $html .= '</ul>';
+    }
+
+
+    $html .= '</li>';
+
+    $counter++;
+	if($hasWrap&&$limit = $this->getLimit()){
+		if($counter > $limit){
+			$url = $this->getUrl('themeframework/category/index',array('id' => $menuTree->getId() ));
+			$html .= '<li class="last view-all vertical-level1"><a href="'.$url.'"><span>'.$this->__('More categories').'</span></a></li>';
+			break;
+		}
+	}
+}
+if($hasWrap){
+	$html .= '</ul>';	
+	$html .= '</div>';
+}
+
+return $html;
