@@ -29,6 +29,7 @@ var ajaxcart = {
                         });
                     },
                     onSuccess	: function(response) {
+						jQuery('body').trigger('ajaxCartCompleted');
                         // Handle the response content...
                         try{
                             var res = response.responseText.evalJSON();
@@ -194,6 +195,7 @@ var ajaxcart = {
                 });
             },
             onSuccess	: function(response) {
+				jQuery('body').trigger('ajaxCartCompleted');
                 // Handle the response content...
                 try{
                     var res = response.responseText.evalJSON();
