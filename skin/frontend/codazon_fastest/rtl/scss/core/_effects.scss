@@ -1,0 +1,58 @@
+/*button show01 Home Sport*/
+.cdz-button-show01{
+	.products-grid .product-item-info {
+		.product-item-details{
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+			-moz-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			.configurable-swatch-list{
+				height: 0; 
+				@include abs-opacity(0);
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+			}
+			.cdz-buttons-container{
+				height:0;
+				margin-top:0;
+				display:block;
+				@include abs-opacity(0);
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				.cdz-buttons-inner{display:inline-block;}
+				.action,
+				button.btn-cart,
+				.qs-button{
+					@include border-radius(100%);
+				}
+			}
+			
+		}
+		&:hover{	
+			.product-item-details{				
+				margin-top:-85px;
+				.cdz-buttons-container{
+					height:55px;
+					@include abs-opacity(1);				
+				}
+				.configurable-swatch-list{height: 100%;@include abs-opacity(1);}
+				/*.product-name{
+				    margin-bottom: 12px;
+				}*/
+			}
+		}
+	}
+}

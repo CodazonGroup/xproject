@@ -1,0 +1,67 @@
+.newsletter-style02 {
+	.block.block-subscribe {
+		margin-bottom: 20px;
+	}
+	
+}
+.footer-newsletter-02{
+	.ftop-newsletter{
+		.block.block-subscribe{
+			.block-content{
+				margin:0;
+				width:auto;
+				.input-box{
+					width:74%;
+					input{
+						border:1px solid;
+						border-radius:3px;
+					}
+				}
+				.actions{
+					width:24%;	
+					float:right;
+					.button{border-radius:5px;}
+				}
+			}
+		}
+	}
+	.social{
+		text-align:right;
+		margin:20px 0 0;
+		a{
+			display:inline-block;
+			border:2px solid;
+			min-width:34px;
+			min-height:30px;
+			border-radius:6px;
+			line-height:30px;
+			padding:0;
+			margin:0px 5px 0 0;
+			text-align:center;
+			&:hover {
+				
+			}
+		}
+	}
+	
+}
+.page-footer .footer-newsletter-02.top-footer-wrapper{
+	padding:20px 0;
+}
+.fototer-contact{
+	span.fa{
+		padding-right:10px
+	}
+}
+.footer-style-02{
+	.bottom-footer-wrapper{
+		border-top:1px solid;
+	}
+	.footer-link{
+		li{
+			&.last{
+				border:0;
+			}
+		}
+	}
+}

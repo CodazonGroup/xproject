@@ -1,0 +1,597 @@
+body{
+
+}
+.col-main .widget-static-block .cdz-block-title .b-title{
+	font-family:"Poppins"
+}
+ /* ============================================ *
+ * Codazon_Drug Setting Radius for style 
+ * ============================================ */
+input.input-text,
+.cdz-dropdown-content,
+.block-cart.cdz-dropdown-content,.add-to-links li a
+{
+	border-radius:5px;
+}
+.bellow-header{margin-bottom:0px;}
+.content-breadcrums{
+	padding:0;
+	.menu-vertical-subpage,.menu-breadcrumbs{
+		padding-top:20px;
+	}
+}
+
+
+ /* ============================================ *
+ * Codazon_Drug Main content
+ * ============================================ */
+.menu-vertical-content .menu-vertical{
+	.cdz-nav-wrap{
+		li.vertical-level1 a.vertical-level1{
+			background:lighten($menu_vertical_background,10%);
+		}
+		li.vertical-level1:nth-child(2n) a.vertical-level1{background-color:$menu_vertical_background;}
+		li.vertical-level1:hover{
+			a.vertical-level1{
+				background:$menu_vertical_hover_background;
+				color:$menu_vertical_hover_text	
+			}
+		}
+	}
+}
+ 
+.cdz-home-block,.two-banner{
+}
+.two-banner img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+.cdz-slideshow{margin:0;}
+.cms-index-index {
+	.main-container{
+		background:#fff;
+	}
+}
+
+.main-container{
+	background:#fff;
+}
+.account-login #login-form,
+.account-create  #form-validate,
+.customer-account-forgotpassword .col-main #form-validate
+{
+	@include abs_none_main_background_shadow;
+	border:1px solid $main_border;
+	background:$main_block_background;
+	border-radius:5px;
+	
+}
+.cart form fieldset,
+.customer-account-index .block
+{
+	@include abs_none_main_background_shadow;
+	border:0px solid $main_border;
+	background:transparent;
+	border-radius:0px;
+	margin:0;
+	border:0!important;
+}
+.customer-account-index .sidebar.block{
+	margin-bottom:10px;
+}
+.cart-collaterals{
+	@include abs_none_main_background_shadow;
+	border:0px solid $main_border;
+	background:transparent;
+	border-radius:0px;
+	margin:20px 0;
+}
+
+
+/* Home Drug None border for Col-main*/
+/* 
+.catalog-product-view .product-essential, .catalog-product-view .product-detail-tab, .catalog-product-view .box-reviews, .catalog-product-view .block-related, .catalog-product-view .block-upsell,
+.cart form fieldset table.cart-table,.cart-collaterals #discount-coupon-form, .cart-collaterals .cart .giftcard, .cart-collaterals .shipping, .cart-collaterals .totals-content,.cdz-onestepcheckout li.section .step,
+.cms-page-view .col-main-containter .col-main .col-wrapper-main,
+.blog-index-list .col-main-containter .col-main .col-wrapper-main
+{
+	@include abs_none_main_background_shadow;
+	border:1px solid $main_border;
+	padding:20px;
+	background:$main_block_background;
+	border-radius:5px;
+} */
+/* .catalog-category-view,
+.checkout-cart-index,
+.catalog-product-view,
+.checkout-onepage-index,
+.customer-account-index
+{
+	.col-main-containter .col-main .col-wrapper-main{
+		@include abs_none_main_background_shadow;
+		border:0px solid $main_border;
+		background:transparent;
+		border-radius:0px;	
+	}
+} */
+/* Home Drug None border for Col-main*/
+
+.cart-collaterals .totals .checkout-types .button{
+	
+}
+.action.primary, button.button,.qs-button,.link-compare,
+.cdz-slideshow .slider-item img,
+.manage-address,.change-pass
+{
+	border-radius:5px;
+}
+@media (max-width: 767px) {
+	.cms-index-index .menu-vertical-area{
+		margin-bottom:20px!important;
+	}
+}
+.cdz-block-categories-deals{
+	margin-bottom:50px;
+}
+.breadcrumbs{
+}
+.owl-nav [class*='owl-'], .owl-theme .owl-nav [class*=owl-]{
+	border-radius:5px;
+}
+
+@media (max-width: 767px){
+	.cdz-best-selling{
+		margin-bottom:30px
+	}
+}
+@media (max-width: 767px){
+	.col2-left-layout,.col2-right-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:50%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+	
+	.col3-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:100%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.col2-left-layout,.col2-right-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:33.3333%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+	.col3-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:100%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.col2-left-layout,.col2-right-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:33.333333%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+	.col3-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:50%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+
+}
+@media(min-width:1200px){
+	.col2-left-layout,.col2-right-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:25%;
+				}
+				.product-item-info{
+					border:1px solid $main_border;
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+	.col3-layout{
+		.category-products{
+			.products-grid{
+				.item{
+					width:50%;
+				}
+				.product-item-info{
+					@include abs_none_main_background_shadow;
+					border:1px solid $main_border;
+					background:$main_block_background;
+					border-radius:5px;
+				}
+			}
+		}
+	}
+
+}
+.category-products{
+	.products-grid{
+		.item{
+			
+		}
+		.product-item-info{
+			@include abs_none_main_background_shadow;
+			border:1px solid $main_border;
+			background:$main_block_background;
+			border-radius:5px;
+		}
+		.product-image img{
+			border-radius:5px;
+		}
+	}
+}
+.cat-list{
+	.cat-item{
+		
+		margin-bottom:0px;
+		padding:10px;
+		.product-item-info{
+			@include abs_none_main_background_shadow;
+			padding:10px;
+			border:1px solid $main_border;
+			background:$main_block_background;
+			border-radius:5px;
+		}
+	}
+}
+
+.col2-left-layout,.col2-right-layout{
+	.category-products{
+		.products-grid{
+			.item{
+				width:25%;
+			}
+			.product-item-info{
+				
+				@include abs_none_main_background_shadow;
+				border:1px solid $main_border;
+				background:$main_block_background;
+				border-radius:5px;
+			}
+		}
+	}
+}
+.col3-layout{
+	.category-products{
+		.products-grid{
+			.item{
+				width:50%;
+			}
+			.product-item-info{
+				@include abs_none_main_background_shadow;
+				border:1px solid $main_border;
+				background:$main_block_background;
+				border-radius:5px;
+			}
+		}
+	}
+}
+.toolbar{
+	@include abs_none_main_background_shadow;
+	background:#f9f9f9;
+	border-radius:5px;
+	padding:0 17px;
+}
+
+ .col-main{
+	.block:not(.block-static-block) .block-collapsible-nav-title strong, .block:not(.block-static-block) .block-title strong{
+		border-bottom-width:0!important;
+	}
+	.block.block-up-sell,.block-related,.block-crossell{
+		@include abs_none_main_background_shadow;
+		border:1px solid $main_border;
+		background:$main_block_background;
+		border-radius:5px;
+		.block-content{
+			padding:20px;
+		}
+	}
+	#cdz-filter-bar .block:not(.block-static-block) .block-title strong{
+		border-bottom-width:3px!important;
+		border-radius:5px;
+	}
+}
+#cdz-filter-bar{
+	.view-more{
+		border-radius:5px;
+	}
+}
+.sidebar .block:not(.block-static-block){
+	@include abs_none_main_background_shadow;
+	padding:20px;
+	border:1px solid $main_border;
+	background:$main_block_background;
+	border-radius:5px;
+}
+#cdz-filter-bar .block-content{
+	border:1px solid $main_border;
+	@include abs_none_main_background_shadow;
+	padding:20px
+}
+ /* ============================================ *
+ * Codazon_Drug Main content
+ * ============================================ */
+/*Block style ------*/
+.cdz-block-title{
+}
+/*------Block style*/
+
+ /* ============================================ *
+ * Codazon_Drug Footer
+ * ============================================ */
+.cdz-brand-slider-wrap {
+	.cdz-brand-slider{
+		border:1px solid $main_border;
+		border-radius:5px;
+		padding:20px;
+		.cdz-banners-item{
+			border:0;
+			padding:0;
+		}
+	}
+}
+ /* ============================================ *
+ * Codazon_Drug Footer
+ * ============================================ */
+
+
+
+ /* ============================================ *
+ * Codazon_Drug homepages Responsive
+ * ============================================ */
+ @media (max-width: 991px){
+	 .cdz-header-style-02 {
+		.header {
+			.cdz-header-top{
+				.cdz-top-link{
+					margin-right:150px!important
+				}
+			}
+		}
+	 }
+	 .header {
+		border: 0;
+		margin-bottom: 0;
+		background-color:$header_background;
+		font: $f_note;
+		.logo{
+			margin: 0;
+			max-width:inherit;
+			min-height:inherit;
+			width:100%;
+			img {
+				max-height: inherit;
+			}
+		}
+
+		.cdz-header-top{
+			.cdz-top-link{
+				margin:0;
+				padding:0;
+				display: inline-block;
+				list-style: none none;
+				float: right;
+				margin-left: auto;
+				.link{
+					display: inline-block;
+					vertical-align: top;
+					margin-left:20px;
+					a{
+						font-size:0!important;
+					}
+				}
+				.compare{display:none}
+				li {
+					display: inline-block;
+					vertical-align: top;
+					margin: 0 0 0 20px;
+					a {
+						display: inline-block;
+						vertical-align: middle;
+						color: $header_text;
+						text-decoration: none;
+					}
+					a:visited,a:hover,a:active {
+						color: $header_text;
+						text-decoration: none;
+					}
+				}
+				li.welcome {
+					display: none;
+					a {
+						color: #ffffff;
+						padding-left: 5px;
+					}
+				}
+				.authorization-link:after {
+					content: attr(data-label);
+					display: inline-block;
+					margin: 0 -5px 0 5px;
+				}
+				.customer-welcome + .authorization-link {
+					display: none;
+				}
+			}
+			.cdz-top-link {
+				margin: 0;
+				padding: 0;
+				list-style: none none;
+				li{
+					display: inline-block;
+					vertical-align: top;
+					a {
+						position: relative;
+					}
+					a:before {
+						display: inline-block;
+						font-family: FontAwesome;
+						font-style: normal;
+						font-weight: normal;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						content: "\f007";
+						font-size: 12px;
+						margin-right: 5px;
+					}
+				}
+				
+				.cdz-top-login .cdz-trigger:before{content: "\f090";}
+				.cdz-top-login .cdz-trigger:after{padding-left:5px;}
+				li.greet.welcome {
+					display: none;
+				}
+				li.wishlist a:before {
+				  content: "\f08a";
+				}
+				li.compare a:before {
+				  content: "\f012";
+				}
+				li #authorization-trigger:before {
+					display: inline-block;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					content: "\f090";
+					font-size: 12px;
+					margin-right: 5px;
+				}
+				li.compare .qty {
+				  display: inline-block;
+				}
+				li.logout a:before{
+					content:"\f08b"
+				}
+			}
+		}
+		#cdz-pc-stores{
+			.cdz-dropdown-content{
+				padding:0;
+				a{
+					padding:10px 10px;
+					display:block;
+				}
+				a:hover{
+					background:$menu_drop_hover_background;
+					color:$main_text;
+				}
+			}
+			.cdz-trigger{color:$header_text}
+		}
+		.form-language{
+			.cdz-trigger {
+				.lang-flag{
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
+			#select-language {
+				li {
+					float:left;width:100%;line-height:15px;
+					a{overflow:hidden;height:100%;}
+					a span{float:left;margin-right:5px;line-height:12px;}
+				}
+			}
+			
+		}
+		.cdz-col-left {
+			font: $f_note;
+			text-transform: uppercase;
+		}
+	}
+} 
+.customer-account-login .cdz-header-menu, .customer-account-create .cdz-header-menu{
+	display:block
+}
+ /* ============================================ *
+ * Codazon_Drug homepages Responsive
+ * ============================================ */
+ /*update 04/14*/

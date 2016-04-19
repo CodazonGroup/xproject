@@ -1,0 +1,51 @@
+@import "variable/default-theme";
+@import "mixins/_theme-custom";
+
+
+/*Core*/
+@import "core/reset";
+@import "core/button";
+@import "core/table";
+@import "core/effects";
+
+/*Default Header*/
+@import "header/header.scss";
+@import "header/header-02.scss";
+
+/*Default Footer*/
+@import "footer/footer.scss";
+@import "footer/footer-02.scss";
+
+/*Page*/
+@import "page/catalog-grid-list";
+@import "page/product-detail";
+@import "page/blog";
+@import "page/checkout";
+@import "page/signinsignup";
+@import "page/myaccount";
+@import "page/contact-about";
+
+/*Layout*/
+@import "layout/widget";
+@import "layout/layout";
+@import "layout/menu";
+@import "layout/menu-vertical";
+@import "layout/content";
+@import "layout/blocksidebar";
+@import "layout/slider";
+@import "layout/slideshow";
+@import "layout/popup-newsletter";
+@import "layout/popup-quickshop";
+@import "layout/breadcrums";
+@import "layout/tab";
+@import "layout/ads";
+
+/*Product grid style*/
+@import "productgrid/wrapper-product"; //Home Fashion Default
+@import "productgrid/wrapper-product-2"; //Home Drug
+@import "productgrid/grid-bestseller"; //Home Fashion Default & HandBag
+
+
+/*Color Important*/
+@import "global";
+@import "responsive";

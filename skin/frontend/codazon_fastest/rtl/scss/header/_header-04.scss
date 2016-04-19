@@ -1,0 +1,138 @@
+/*Header 04*/
+.cdz-header-style-04{
+	position:relative;
+	.header {
+		background:transparent;
+		.cdz-col-left,
+		.cdz-header-top .cdz-top-link .link a{text-transform:none;}
+		.cdz-header-top{
+			padding-top:7px;
+			padding-bottom:7px;
+		}
+		h1.logo{
+			position:relative;
+			background: #ef6c25;
+			padding: 22px 20px;
+			overflow: hidden;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				border: 70px solid transparent;
+				border-left-color: #ef6c25;
+				border-bottom-color: #ef6c25;
+				z-index: 1;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: -40px;
+				right: 0;
+				border: 70px solid #f6f6f6;
+				border-left-color: #f19967;
+				border-bottom-color: #f19967;
+			}
+		}
+		.cdz-bottom-logo-cart{
+			padding:0;
+		}
+		.cdz-header-cart{
+			.cdz-top-login{
+				display:inline-block;
+				.cdz-trigger{
+					font-size:0;
+					text-align:center;
+					&:before{
+						@include font-awesome(\f007,22px);
+						width: 38px;
+						height: 38px;
+						line-height: 38px;
+						border-style:solid;
+						border-width:1px;
+					}
+				}
+			}
+		}
+		.cart-icon{
+			position:relative;
+			padding-left:50px;
+			display:inline-block;
+			&:before{
+				background:none;
+				@include font-awesome(\f291,18px);
+				padding:9px 8px 8px;
+				min-height:35px;
+				width:38px;
+				border-style:solid;
+				border-width:1px;
+				position:absolute;
+				left:0;
+			}
+			.cart-label{display:block;}
+			.cart-subtotal .price{
+				padding:0;
+				font-weight:normal;
+				font-size:12px;
+				min-height:1px;
+			}
+			.cart-qty{
+				top:-11px;
+				font-weight:normal;
+				left:11px;
+			}
+		}
+		.cdz-main-menu{
+			.groupmenu li.level0{
+				a.menu-link{
+					padding: 24px 20px;
+				}
+			}
+		} 
+		.sticky-menu{
+			&:not(.active){
+				.cdz-top-cart{
+					margin-top:18px;
+					margin-right:20px;
+					float:right;
+				}
+				.cdz-top-login{
+					margin-top:18px;
+					margin-right:10px;	
+				}
+				.block-search{
+					width:100%;
+					margin-top:15px;
+					input[type="text"]{						
+					}
+				} 
+			}
+			&.active{
+				.block-search{
+					right:89px;
+					top:12px;
+					.form-search .button:hover{
+						background-color:$menu_text;
+						&:before{color:$menu_background;}
+					}
+				}
+				.cdz-header-cart{
+					right:0;
+					top:13px;
+					.cdz-dropdown{float:right;}
+					.cart-icon{
+						padding:0;
+						float:right;
+						width:38px;
+						height:38px;
+						&:before{
+							width:38px;
+							height:38px;
+						}
+					}
+				}
+			}
+		} 
+	}
+}
+/*update 04/14*/

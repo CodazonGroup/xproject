@@ -1,0 +1,289 @@
+
+/*==============================
+==== Deals categories Home Drug
+===============================*/
+.cdz-block-categories-deals{
+	$color_red : #f86532;;
+	$color_blue : #02adec;
+	$color_green : #66c916;
+	$color_orange : #f3a52a;
+	.cdz-block-content{
+		padding:20px 0 0 ;
+	}
+	.block-categories-deals{
+		text-align:center;
+		h3{
+			text-align:center;
+			font:$f_h5;
+			color:$color_green;
+			min-height:40px;
+			a{
+				font:$f_h5;
+				color:#66c916;
+			}
+		}
+		.block-categories-images{
+			img{
+				margin:0 auto;
+			}
+		}
+		.block-categories-desc{
+			border-radius:3px;
+			font:$f_note;
+			font-size:90%;
+			
+			p{
+				margin:0;
+				position:relative;
+				z-index:2;
+			}
+			
+			.block-categories-desc-content{
+				clear: both;
+				width: 100%;
+				border: 1px solid;
+				border-color: $main_border;
+				border-left: 3px solid $color_green;
+				padding: 7px 10px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				position: relative;
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				transition: all 500ms ease;
+				-moz-backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				&:before{
+					content: '';
+					width: 0;
+					height: 100%;
+					background: $color_green;
+					-webkit-border-radius: 0 3px 3px 0;
+					-moz-border-radius: 0 3px 3px 0;
+					border-radius: 0 3px 3px 0;
+					-moz-transition: all 500ms ease;
+					-webkit-transition: all 500ms ease;
+					-o-transition: all 500ms ease;
+					transition: all 500ms ease;
+					-moz-backface-visibility: hidden;
+					-webkit-backface-visibility: hidden;
+					backface-visibility: hidden;
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 1;
+				}
+				&:hover{
+					color:#fff;
+					border-color:#66c916;
+					&:before{
+						width:100%;
+					}
+				}
+			}
+			
+		}
+	}
+
+	.red{
+		h3 a{ color:$color_red;}
+		h3{ color:$color_red;}
+		.block-categories-desc{
+			.block-categories-desc-content{
+				border-left-color:$color_red;
+				&:hover{
+					border-color:$color_red;
+				}
+				&:before{
+					background:$color_red;
+				}
+			}
+		}
+		
+	}
+	.blue{
+		h3 a{ color:$color_blue;}
+		h3{ color:$color_blue;}
+		.block-categories-desc{
+			.block-categories-desc-content{
+				border-left-color:$color_blue;
+				&:hover{
+					border-color:$color_blue;
+				}
+				&:before{
+					background:$color_blue;
+				}
+			}
+		}
+	}
+	.orange{
+		h3 a{ color:$color_orange;}
+		h3 { color:$color_orange;}
+		.block-categories-desc{
+			.block-categories-desc-content{
+				border-left-color:$color_orange;
+				&:hover{
+					border-color:$color_orange;
+				}
+				&:before{
+					background:$color_orange;
+				}
+			}
+		}
+		
+	}
+}
+
+/*==============================
+==== Deals categories Home Drug
+===============================*/
+
+/*==============================
+==== Ads 03 Home Handbag
+===============================*/
+.wrapper-ads03{
+	.text-area{
+		i{
+			float:left;
+			color:#fff;
+			width:14%;
+			text-align:center;
+			line-height:50px;
+			font-size:18px
+		}
+		h5{
+			float:left;
+			color:#fff;
+			width:86%;
+			text-align:center;
+			line-height:50px;
+			margin:0;
+		}
+		&:hover{
+			@include abs-boxshadow (5px 5px 0px #b9baba);
+		}
+	}
+}
+
+.wrapper-ads04{
+	.groupinfo{
+		background: $main_block_background;
+		padding:20px;
+		.grifo-title{ 
+			margin-bottom:30px;
+			a{
+				color: $main_title_text;
+				&:hover{
+					color:$main_hover_text
+				}
+			}
+		}
+	}
+}
+
+.wrapper-ads05{
+	padding:10px 20px;
+	background: $main_block_background;
+	.newsletter-ads{ 
+		background-image: url(../images/bkg-newsletter.png);
+		background-position: 0 center;
+		background-repeat: no-repeat;
+		text-align:center;
+		padding:40px 10px;
+		.h3{ margin-bottom:10px;}
+	}
+	.newsletter-container{
+		font-size:90%;
+		padding:10px 0;
+		.block.block-subscribe{
+			margin-bottom:10px;
+			#newsletter{
+				border:0;
+				background:#f5f5f5;
+				&:focus{
+					outline:none;
+				}
+			}
+			.form-subscribe-header{
+				display:none
+			}
+			.block-title{
+				display:none
+			}
+			.action.subscribe {
+				&:hover{
+				}	
+			}
+			.input-box{
+				padding-top: 2px;
+				display: table-cell;
+				width: 100%;
+			}
+			.actions{
+				margin:0;
+				display: table-cell;
+				.button{
+					padding:10px 20px;
+					margin:0;
+					border: 1px solid;font:$f_h5;
+					color: $btn_secondary_text;
+					background-color: $btn_secondary_background;
+					border-color: $btn_secondary_border;
+					&:hover{
+						background: $btn_hover_background;
+						border-color:$btn_primary_border;
+						color: $btn_hover_text;
+					}
+				}
+			}
+		}
+	}
+}
+.lazy-loading{
+	min-height:150px;
+}
+.wrapper-ads06{
+	padding:20px;
+	&.bg-wrapper-ads{
+		padding:180px 0;
+	}
+	color:#fff;
+	.ads-title{
+		font-size:30px;
+		color:#fff
+	}
+	.ads-desc{ font-size:14px; margin-bottom:3rem}
+	.ads-img img{ width:auto !important; display:inline-block !important;@include abs-borderradius(100%);}
+	a{}
+	.ads-author{ text-transform:uppercase; margin-bottom:0;}
+	.ads-major{ color:#f8b5ad}
+	.owl-carousel{
+		padding-top:0;
+		.owl-nav{
+			position:static;
+		}
+		.owl-nav [class*='owl-']{
+			left:0;
+			top: calc(~'50% - 20px');
+			position:absolute;
+			@include abs-transition();
+			@include abs-borderradius(100%);
+			&.owl-next{
+				right:0;
+				left:auto;
+			}
+			&:hover{
+			}
+		}
+		&:hover{
+			.owl-nav [class*='owl-']{
+			}
+		}
+	}
+}
+/*==============================
+==== Ads 03 Home Handbag
+===============================*/

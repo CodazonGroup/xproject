@@ -97,7 +97,7 @@ CREATE TABLE `adminnotification_inbox` (
   KEY `IDX_ADMINNOTIFICATION_INBOX_SEVERITY` (`severity`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_READ` (`is_read`),
   KEY `IDX_ADMINNOTIFICATION_INBOX_IS_REMOVE` (`is_remove`)
-) ENGINE=InnoDB AUTO_INCREMENT=529 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
+) ENGINE=InnoDB AUTO_INCREMENT=531 DEFAULT CHARSET=utf8 COMMENT='Adminnotification Inbox';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `api2_acl_attribute`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -479,7 +479,7 @@ CREATE TABLE `catalog_category_entity_varchar` (
   CONSTRAINT `FK_CATALOG_CATEGORY_ENTITY_VARCHAR_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_VCHR_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_CTGR_ENTT_VCHR_ENTT_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=1325 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=1327 DEFAULT CHARSET=utf8 COMMENT='Catalog Category Varchar Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `catalog_category_flat_store_1`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -1100,7 +1100,7 @@ CREATE TABLE `catalog_product_entity_varchar` (
   CONSTRAINT `FK_CATALOG_PRODUCT_ENTITY_VARCHAR_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_PRD_ENTT_VCHR_ATTR_ID_EAV_ATTR_ATTR_ID` FOREIGN KEY (`attribute_id`) REFERENCES `eav_attribute` (`attribute_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CAT_PRD_ENTT_VCHR_ENTT_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`entity_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=41814 DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table';
+) ENGINE=InnoDB AUTO_INCREMENT=41935 DEFAULT CHARSET=utf8 COMMENT='Catalog Product Varchar Attribute Backend Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `catalog_product_flat_1`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2376,7 +2376,7 @@ CREATE TABLE `catalogsearch_fulltext` (
   PRIMARY KEY (`fulltext_id`),
   UNIQUE KEY `UNQ_CATALOGSEARCH_FULLTEXT_PRODUCT_ID_STORE_ID` (`product_id`,`store_id`),
   FULLTEXT KEY `FTI_CATALOGSEARCH_FULLTEXT_DATA_INDEX` (`data_index`)
-) ENGINE=MyISAM AUTO_INCREMENT=31080 DEFAULT CHARSET=utf8 COMMENT='Catalog search result table';
+) ENGINE=MyISAM AUTO_INCREMENT=32100 DEFAULT CHARSET=utf8 COMMENT='Catalog search result table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `catalogsearch_query`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2580,7 +2580,7 @@ CREATE TABLE `core_config_data` (
   `value` text COMMENT 'Config Value',
   PRIMARY KEY (`config_id`),
   UNIQUE KEY `UNQ_CORE_CONFIG_DATA_SCOPE_SCOPE_ID_PATH` (`scope`,`scope_id`,`path`)
-) ENGINE=InnoDB AUTO_INCREMENT=1623 DEFAULT CHARSET=utf8 COMMENT='Config Data';
+) ENGINE=InnoDB AUTO_INCREMENT=1625 DEFAULT CHARSET=utf8 COMMENT='Config Data';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_email_queue`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2717,7 +2717,7 @@ CREATE TABLE `core_store` (
   KEY `IDX_CORE_STORE_GROUP_ID` (`group_id`),
   CONSTRAINT `FK_CORE_STORE_GROUP_ID_CORE_STORE_GROUP_GROUP_ID` FOREIGN KEY (`group_id`) REFERENCES `core_store_group` (`group_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CORE_STORE_WEBSITE_ID_CORE_WEBSITE_WEBSITE_ID` FOREIGN KEY (`website_id`) REFERENCES `core_website` (`website_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='Stores';
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='Stores';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_store_group`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2732,7 +2732,7 @@ CREATE TABLE `core_store_group` (
   KEY `IDX_CORE_STORE_GROUP_WEBSITE_ID` (`website_id`),
   KEY `IDX_CORE_STORE_GROUP_DEFAULT_STORE_ID` (`default_store_id`),
   CONSTRAINT `FK_CORE_STORE_GROUP_WEBSITE_ID_CORE_WEBSITE_WEBSITE_ID` FOREIGN KEY (`website_id`) REFERENCES `core_website` (`website_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='Store Groups';
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='Store Groups';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_translate`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -2775,7 +2775,7 @@ CREATE TABLE `core_url_rewrite` (
   CONSTRAINT `FK_CORE_URL_REWRITE_CTGR_ID_CAT_CTGR_ENTT_ENTT_ID` FOREIGN KEY (`category_id`) REFERENCES `catalog_category_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CORE_URL_REWRITE_PRODUCT_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID` FOREIGN KEY (`product_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_CORE_URL_REWRITE_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=159755 DEFAULT CHARSET=utf8 COMMENT='Url Rewrites';
+) ENGINE=InnoDB AUTO_INCREMENT=169154 DEFAULT CHARSET=utf8 COMMENT='Url Rewrites';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `core_variable`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4038,7 +4038,7 @@ CREATE TABLE `index_event` (
   `new_data` mediumtext COMMENT 'New Data',
   PRIMARY KEY (`event_id`),
   UNIQUE KEY `UNQ_INDEX_EVENT_TYPE_ENTITY_ENTITY_PK` (`type`,`entity`,`entity_pk`)
-) ENGINE=InnoDB AUTO_INCREMENT=2765 DEFAULT CHARSET=utf8 COMMENT='Index Event';
+) ENGINE=InnoDB AUTO_INCREMENT=2767 DEFAULT CHARSET=utf8 COMMENT='Index Event';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `index_process`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4727,7 +4727,7 @@ CREATE TABLE `report_event` (
   KEY `IDX_REPORT_EVENT_STORE_ID` (`store_id`),
   CONSTRAINT `FK_REPORT_EVENT_EVENT_TYPE_ID_REPORT_EVENT_TYPES_EVENT_TYPE_ID` FOREIGN KEY (`event_type_id`) REFERENCES `report_event_types` (`event_type_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_EVENT_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=8520 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
+) ENGINE=InnoDB AUTO_INCREMENT=8521 DEFAULT CHARSET=utf8 COMMENT='Reports Event Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `report_event_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -4818,7 +4818,7 @@ CREATE TABLE `report_viewed_product_index` (
   CONSTRAINT `FK_REPORT_VIEWED_PRD_IDX_CSTR_ID_CSTR_ENTT_ENTT_ID` FOREIGN KEY (`customer_id`) REFERENCES `customer_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_VIEWED_PRD_IDX_PRD_ID_CAT_PRD_ENTT_ENTT_ID` FOREIGN KEY (`product_id`) REFERENCES `catalog_product_entity` (`entity_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REPORT_VIEWED_PRODUCT_INDEX_STORE_ID_CORE_STORE_STORE_ID` FOREIGN KEY (`store_id`) REFERENCES `core_store` (`store_id`) ON DELETE SET NULL ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6525 DEFAULT CHARSET=utf8 COMMENT='Reports Viewed Product Index Table';
+) ENGINE=InnoDB AUTO_INCREMENT=6526 DEFAULT CHARSET=utf8 COMMENT='Reports Viewed Product Index Table';
 /*!40101 SET character_set_client = @saved_cs_client */;
 DROP TABLE IF EXISTS `review`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

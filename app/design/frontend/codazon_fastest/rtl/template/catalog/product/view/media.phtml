@@ -1,0 +1,285 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/**
+ * Product media data template
+ *
+ * @see Mage_Catalog_Block_Product_View_Media
+ */
+?>
+<?php
+    $_product = $this->getProduct();
+    $_helper = $this->helper('catalog/output');
+	$_imgHelper = $this->helper('catalog/image');
+	$gallery = 	$this->getGalleryImages();
+	$_baseImg = $_imgHelper->init($_product, 'image');
+	$config = Mage::registry('theme_config')->product_view;
+	$minWidth = 450;
+	$w = max($minWidth,$config['base_image_width']);
+	if($config['keep_image_aspect_ratio']){
+		$h = round(($w/$_baseImg->getOriginalWidth())*$_baseImg->getOriginalHeight());
+	}else{
+		$h = $config['base_image_height'];	
+	}
+	$wSmall = $config['more_view_image_width'];
+	$hSmall = $config['more_view_image_height'];
+	$thumbStyle = ($config['more_view_thumb_style'])?'vertical':'horizontal';
+	//$thumbStyle = 'horizontal';
+?>
+<div class="row">
+<div class="product-image-moreview col-sm-24" >
+    <div class="more-views">
+        <h2><?php echo $this->__('More Views') ?></h2>
+        <div class="fwImage">
+            <div id="viewmore-slider" class="royalSlider rsUni product-image-thumbs cdz-zoom no-fullscreen">
+            	<?php
+					$_baseBigImg = (string)$_imgHelper->init($_product, 'image')->resize(null);
+					$_baseMainImg = (string)$_imgHelper->init($_product, 'image')->resize($w, $h);
+					$_baseSmallImg = (string)$_imgHelper->init($_product, 'image')->resize($wSmall,$hSmall);
+				?>
+	            <div class="rsContent">
+                	<a class="rsImg"  href="<?php echo $_baseMainImg ?>"
+                    data-rsBigImg="<?php echo $_baseBigImg ?>" />
+	                <img data-rsmainimg="<?php echo $_baseMainImg ?>"   class="rsTmb" src="<?php echo $_baseSmallImg ?>" alt="<?php echo $this->getImageLabel() ?>" />
+                    </a>
+                    <div class="magnify" style="background: url('<?php echo $_baseMainImg; ?>') no-repeat; width:225px; height:225px;"></div>
+                </div>
+			<?php if( count($gallery) > 0 ): ?>
+            <?php $_baseImg = (string)$_imgHelper->init($_product, 'image'); ?>
+            <?php foreach ($gallery as $_image): ?>
+				<?php
+					if( $_baseImg == (string)$_imgHelper->init($_product, 'image', $_image->getFile()) ){
+						continue;
+					}
+					$_img = $_imgHelper->init($_product, 'thumbnail', $_image->getFile());
+					$_bigImg = (string)$_img->resize(null);
+					$_mainImg = (string)$_img->resize($w, $h);
+					$_smallImg = (string)$_img->resize($wSmall,$hSmall);
+                ?>
+                <div class="rsContent">
+                    <a class="rsImg"  href="<?php echo $_mainImg ?>"
+                        data-rsbigimg="<?php echo $_bigImg ?>" />
+                        <img data-rsmainimg="<?php echo $_mainImg ?>" class="rsTmb" src="<?php echo $_smallImg ?>" alt="<?php echo $this->escapeHtml($_image->getLabel()) ?>" />
+                    </a>
+                    <div class="magnify" style="background: url('<?php echo $_mainImg; ?>') no-repeat; width:225px; height:225px;"></div>
+                </div>
+            <?php endforeach; ?> 
+            <?php endif ?>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<style>
+<?php if($thumbStyle == 'vertical'): ?>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px; }
+.no-fullscreen .rsOverflow {max-width: <?php echo $minWidth ?>px !important; float: right;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; margin-left:0px !important;}
+.rsFullscreen .rsImg{height:100vh;}
+<?php else: ?>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px }
+.no-fullscreen .rsOverflow {height: <?php echo $minWidth*$h/$w ?>px !important;}
+.rsSlide{display:table !important; width:100%;}
+.rsContent{display:table-cell; vertical-align:middle; text-align:center;}
+.rsImg{display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; max-height: <?php echo $minWidth*$h/$w ?>px; height: auto !important; margin-left:0px !important;}
+<?php endif ?>
+.rsFullscreen .rsSlide{display:table !important; width:100%;}
+.rsFullscreen .rsContent{display:table-cell; vertical-align:middle; text-align:center;}
+.rsFullscreen .rsImg{display: inline; height:auto; width:auto; max-height: 100vh; max-width: 100%;}
+.rs-inner {display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%; position: relative;}
+</style>
+<script>
+(function( $ ) {
+	var $slider = $('#viewmore-slider');
+	var totalSlides = $slider.find('.rsImg').length;
+	$(document).ready(function() {	
+		 $slider.royalSlider({
+			fullscreen: {
+			  enabled: true,
+			  nativeFS: false,
+			},
+			deeplinking: {
+				enabled: true
+			},
+			controlNavigation: 'thumbnails',
+			thumbs: {
+			  orientation: '<?php echo $thumbStyle ?>',
+			  paddingBottom: 0,
+			  firstMargin: false,
+			  appendSpan: true,
+			  autoCenter : false,
+			  spacing: 10,
+			},
+			
+			imageScaleMode: 'none',
+			imageAlignCenter: false,
+			autoScaleSlider: false,
+			usePreloader: true,
+			numImagesToPreload: 100,
+			transitionType:'move',
+			imageScalePadding: 0,
+			autoHeight: false,
+			loop: true,
+			arrowsNav: true,
+			margin: '0px auto',
+			keyboardNavEnabled: true,
+			addActiveClass: true
+		});
+
+		var $curMainSlide = $slider.find('.rsSlide').first();
+		$curMainSlide.addClass('product-image');
+		
+		var slider =  $slider.data('royalSlider');
+		var timeout = false;
+		var curId;
+		
+		$.fn.returnImageSrc = function(){
+			$(this).each(function(){
+				var $this = $(this);
+				$this.click(function(){
+					if(!$slider.hasClass('rsFullscreen')){
+						var src = $this.find('.rsNavSelected img').data('rsmainimg');
+						$slider.find('.rsActiveSlide .rsMainSlideImage').attr('src',src);
+						$slider.find('.rsActiveSlide .magnify').css({background: 'url('+src+') no-repeat'});
+						var $rsInner = $slider.find('.rsActiveSlide .rs-inner');
+						$rsInner.off('mousemove.cdzZoom');
+						$rsInner.off('mouseleave.cdzZoom');
+						$rsInner.cdzZoom();
+					}
+				});
+			});
+		};
+		var builSlider = function (){
+			$slider.find('.rsSlide').removeClass('product-image');
+			$curMainSlide = $slider.find('.rsActiveSlide');	
+			var $newImg = $curMainSlide.find('.rsMainSlideImage');
+			$curMainSlide.addClass('product-image');
+			var $curThumb = $slider.find('.rsNavSelected img.rsTmb');
+			if( ($curThumb.data('rsmainimg') != '') && (!$slider.hasClass('rsFullscreen')) ){
+				$newImg.attr('src',$curThumb.data('rsmainimg'));
+			}
+		};
+		var zoomImage = function(){
+			$slider.find('.rsSlide .rsContent').each(function(index, element) {
+                var $this = $(this);
+				if($this.find('.rs-inner').length == 0){
+					$this.append('<div class="rs-inner"></div>');
+				}
+				var $rsInner = $this.find('.rs-inner');
+				$this.find('.rsImg').appendTo($rsInner);
+				$this.find('.magnify').appendTo($rsInner);
+				$rsInner.cdzZoom();
+            });	
+		}
+		var setSliderHeight = function(){
+			if(!$slider.hasClass('rsFullscreen')){
+				var $mainImg = $slider.find('.rsActiveSlide .rsMainSlideImage');
+				var height = $mainImg.height();
+				$slider.height(height);
+				$slider.find('.rsOverflow').height(height);
+			}
+		}
+		slider.ev.on('rsAfterSlideChange', function(event) {
+			builSlider();
+		});
+		slider.ev.on('rsBeforeAnimStart', function(event) {
+			
+		});
+		
+		slider.ev.on('rsAfterContentSet', function(e, slideObject) {
+			$slider.find('.rsThumbs').returnImageSrc();
+		});
+		slider.ev.on('rsExitFullscreen', function() {
+			$slider.addClass('no-fullscreen');
+			$slider.find('.rsThumbs').returnImageSrc();
+			var src = $slider.find('.rsNavSelected img').data('rsmainimg');
+			$slider.find('.rsActiveSlide .magnify').css({background: 'url('+src+') no-repeat'});
+			//$slider.find('.rsImg').css({'max-height' : ''});
+			zoomImage();
+		});
+		slider.ev.on('rsAfterInit', function() {
+
+		});
+		slider.slides[totalSlides-1].holder.on('rsAfterContentSet', function() {
+			zoomImage();
+			setSliderHeight();
+		});
+		slider.ev.on('rsEnterFullscreen', function(){
+			$slider.removeClass('no-fullscreen');
+			var height = $slider.find('.rsOverflow').height() + 'px';
+			$slider.find('.rsImg').css({'max-height' : height});
+		});
+		
+		$(window).on('swatchUpdateImage',function(event,swatchImageUrl){
+			if(!$slider.hasClass('rsFullscreen')){
+				var $productImg = $curMainSlide.find('img.rsMainSlideImage');
+				$productImg.attr('src',swatchImageUrl);
+				$curMainSlide.find('.magnify').css({background:'url('+swatchImageUrl+') no-repeat'});
+				var $rsInner = $productImg.parents('.rs-inner');
+				$rsInner.off('mousemove.cdzZoom');
+				$rsInner.off('mouseleave.cdzZoom');
+				$rsInner.cdzZoom();
+			}
+		});
+		
+		$(window).on('resize',function(){
+			setTimeout(function(){
+				setSliderHeight();
+				if($slider.hasClass('rsFullscreen')){
+					var height = $slider.find('.rsOverflow').height() + 'px';
+					$slider.find('.rsImg').css({'max-height' : height});	
+				}
+			},200);
+		})
+	});
+})( jQuery );
+</script>
+<script>
+if(typeof ConfigurableMediaImages !== 'undefined'){
+	ConfigurableMediaImages.updateImage = function(el) {
+		var select = $j(el);
+		var label = select.find('option:selected').attr('data-label');
+		var productId = optionsPrice.productId;
+		var selectedLabels = new Array();
+		$j('.product-options .super-attribute-select').each(function() {
+			var $option = $j(this);
+			if($option.val() != '') {
+				selectedLabels.push($option.find('option:selected').attr('data-label'));
+			}
+		});
+		var swatchImageUrl = ConfigurableMediaImages.getSwatchImage(productId, label, selectedLabels);
+		if(!ConfigurableMediaImages.isValidImage(swatchImageUrl)) {
+			return;
+		}
+		var swatchImage = ConfigurableMediaImages.getImageObject(productId, swatchImageUrl);
+		$j(window).trigger('swatchUpdateImage',[swatchImageUrl]);
+	};
+}
+</script>
+<?php echo $this->getChildHtml('after'); ?>

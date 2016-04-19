@@ -1,0 +1,219 @@
+/* ============================================ *
+ * Codazon_Theme_Var
+ * ============================================ */
+//Font
+$f_default: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h1: 500 22px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h2: 500 20px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h3: 500 18px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h4: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h5: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_h6: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_special: 400 25px/1.35 Bentham, Helvetica Neue, Verdana, Arial, sans-serif;
+$f_note: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+// Border Radius
+$border_radius: 5px;
+
+
+//Page
+$page_background:#fff;
+
+//Header
+$header_background: #b0d235;
+$header_top_background: #4f5053;
+$header_top_text: #999999;
+$header_text:#fff;
+$header_hover_text:#444444;
+$header_border: #fff;
+
+$header_cart_background:#67696c;
+$header_text_cart:#fff;
+$header_search_text:#444444;
+$header_search_background:#fff;
+$header_search_dropdown_background:#fff;
+
+$header_drop_text:#444444;
+$header_drop_background:#ffffff;
+
+//Menu
+$menu_background:#b0d235;
+$menu_hover_background:#b0d235;
+$menu_text:#ffffff;
+$menu_hover_text:#ffffff;
+$menu_border:#ffffff;
+$menu_font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$menu_drop_background:#ffffff;
+$menu_drop_hover_background: #f8f8f8;
+$menu_drop_text_title: #282828;
+$menu_drop_text:#282828;
+$menu_drop_hover_text:#b0d235;
+$menu_drop_border:#ebebeb;
+$menu_drop_font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+//Menu Vertical
+$menu_vertical_background:#fafafa;
+$menu_vertical_hover_background:#b0d235;
+$menu_vertical_text:#282828;
+$menu_vertical_hover_text:#ffffff;
+$menu_vertical_border:#ebebeb;
+$menu_vertical_font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$menu_vertical_drop_background:#ffffff;
+$menu_vertical_drop_hover_background: #f8f8f8;
+$menu_vertical_drop_text_title: #282828;
+$menu_vertical_drop_text:#282828;
+$menu_vertical_drop_hover_text:#b0d235;
+$menu_vertical_drop_border:#ebebeb;
+$menu_vertical_drop_font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+//Main Content
+$main_background:#fff;
+$main_block_background:#ffffff;
+$main_block_title_background:#ffffff;
+$main_block_title_color: #282828;
+$main_block_text_background:#121212;
+$main_block_title_border:#ebebeb;
+
+$main_text:#282828;
+$main_hover_text:#b0d235;
+$main_title_text:#121212;
+$main_alink_text:#999;
+$main_note_text:#999;
+$main_productname_text:#282828;
+$main_price_text:#282828;
+$main_old_price_text:#999;
+$main_hover_text_box:#ffffff;
+$main_border:#ebebeb;
+$main_border_dark:#282828;
+$main_title_border:#000000;
+
+//Block Product
+$main_product_hover_background:#ffffff;
+$main_product_hover_price:#282828;
+
+
+$main_tab_background:#fbfbfb;
+$main_tab_hover_background:#fbfbfb;
+$main_tab_text:#999;
+$main_tab_hover_text:#282828;
+$main_tab_border:#ebebeb;
+
+//Footer
+$footer_background: #ffffff;
+$footer_top_background: #f8f8f8;
+$footer_bottom_background: #ffffff;
+$footer_text:#282828;
+$footer_title_text:#282828;
+$footer_hover_text:#b0d235;
+$footer_border:#b0d235;
+
+//Input form-list
+$label_background: #ebebeb;
+$label_text:#444444;
+$label_text_focus:#ffffff;
+$input_background:#ffffff;
+$input_border:#ebebeb;
+$input_border_focus: #282828;
+$input_text: #999999;
+
+//My account
+$menu_myaccount_background:#b0d235;
+$menu_myaccount_hover_background:#b0d235;
+$menu_myaccount_text:#ffffff;
+$menu_myaccount_hover_text:#ffffff;
+$menu_myaccount_border:#ffffff;
+$menu_myaccount_font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+
+//Button
+$btn_primary_background: #ffffff;
+$btn_primary_text: #b0d235;
+$btn_primary_border: #b0d235;
+$btn_primary_font: 600 11px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$btn_default_background: #b0d235;
+$btn_default_text: #ffffff;
+$btn_default_border: #b0d235;
+$btn_default_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+
+
+$btn_secondary_background: #ffffff;
+$btn_secondary_text: #ebebeb;
+$btn_secondary_border: #ebebeb;
+$btn_secondary_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$btn_slider_background: #ffffff;
+$btn_slider_text: #b0d235;
+$btn_slider_border: #b0d235;
+$btn_slider_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+//Home Blog
+$blog_background:#ffffff;
+$blog_text:#282828;
+$blog_text_hover:#b0d235;
+$blog_title_color:#666972;
+$blog_title_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;;
+$blog_background:#ffffff;
+$blog_text_font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;;
+
+//Slideshow desc
+$slideshow_background: #ffffff;
+$slideshow_text: #282828;
+$slideshow_border: #282828;
+$slideshow_background_button: #282828;
+$slideshow_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$btn_productitem_background: transparent;
+$btn_productitem_text: #ffffff;
+$btn_productitem_border: #ffffff;
+$btn_productitem_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+$btn_hover_background: #b0d235;
+$btn_hover_text: #ffffff;
+$btn_hover_border: #b0d235;
+$btn_hover_font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+
+/*Setting padding for template*/
+$indent__base: 20px; // 20px
+$indent__xl: $indent__base * 2; // 40px
+$indent__l: $indent__base * 1.5; // 30px
+$indent__m: $indent__base * 1.25; // 25px
+$indent__s: $indent__base / 2; // 10px
+$indent__xs: $indent__base / 4; // 5px
+
+/*Spacing for each area*/
+$cdz_space_area: 60px;
+$cdz_space_small_area: 20px;
+
+@mixin dropdown-white-shadow{
+	background:$main_block_background;
+	-webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	-moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+@mixin abs_main_background_shadow{
+	background:$main_block_background;
+	padding:20px;  
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border:1px solid #ebebeb;
+}
+@mixin abs_none_main_background_shadow{
+	background-color: transparent;
+	padding:0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border:0;
+}

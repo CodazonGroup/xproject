@@ -1,0 +1,48 @@
+<?php
+$children = $this->getChildren();
+$_helper    = $this->helper('catalog/output');
+$_imgHelper = $this->helper('themeframework/image');
+$_width = 250; $_height =250;
+$size = array('width' => $_width, 'height' => $_height);
+$_placeHolder = $this->helper('catalog/image')->init(Mage::getModel('catalog/product'), 'small_image')->resize($_width, $_height);
+?>
+
+<?php if( count($children) ): ?>
+<div class="page-title category-title">
+	<h1><?php echo $this->__('All categories') ?></h1>
+</div>		
+<div class="cat-wrapper grid">
+	 <div class="toolbar-top">
+        <?php echo $this->getChild('category_list_toolbar')->setCollection($children)->toHtml() ?>
+    </div>
+	<div class="cat-wrapper-content">
+    <ul class="cat-list row">
+    <?php foreach($children as $child): ?>
+    	<?php $_category = $this->getCollectionById($child->getEntityId()) ?>
+		<li class="cat-item col-sm-12 col-md-6">
+			<div class="product-item-info">
+				<div class="cdz-cat-top">
+					<a href="<?php echo $_category->getUrl() ?>">
+						<?php if ($_imgUrl = $_category->getThumbnail()): ?>
+						<img src="<?php echo $_imgHelper->getImage($_category, $size) ?>" />
+						<?php else: ?>
+						<img src="<?php echo $_placeHolder ?>" />
+						<?php endif ?>
+					</a>
+				</div>
+				<div class="cdz-cat-bottom text-center">
+					<a href="<?php echo $_category->getUrl() ?>"><?php echo $_category->getName() ?></a>
+					<span class="product-count">(<?php echo $_category->getProductCount(); ?>)</span>
+				</div>
+			</div>
+    	</li>
+    <?php endforeach ?>
+    </ul>
+	</div>
+	 <div class="toolbar-bottom">
+        <?php echo $this->getChild('category_list_toolbar')->setCollection($children)->toHtml() ?>
+    </div>
+</div>
+<?php else: ?>
+<p class="note-msg"><?php echo $this->__('This category has not chidren') ?></p>
+<?php endif ?>

@@ -1,0 +1,15 @@
+<?php
+$_helper = $this->helper('catalog/output');
+$_product = $this->getProduct(); ?>
+<div class="modal-content">
+    <div class="modal-header">
+    	<button type="button" class="action-close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><a href="<?php echo $_product->getUrl() ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h4>
+    </div>
+    <div class="modal-body">
+        <div class="product-content"><?php echo $this->getChildHtml('qs.product.info') ?></div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+</div>

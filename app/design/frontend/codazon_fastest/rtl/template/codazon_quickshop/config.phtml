@@ -1,0 +1,15 @@
+<?php if($this->quickshopEnabled()): ?>
+<script type="text/javascript">
+	var qsBaseUrl = '<?php echo $this->getBaseUrl() ?>';
+	var itemClass = '<?php echo $this->getItemClass() ?>';
+	var qsLabel = '<?php echo $this->getQuickShopLabel() ?>';
+	var qsLoadProductUrl = '<?php echo $this->getBaseUrl().'quickshop/index/view' ?>';
+</script>
+<script type="text/javascript">
+	jQuery(document).ready(function(e) {
+        new cdzQuickshop({
+			itemClass: '<?php echo $this->getItemClass() ?>',
+		});
+    });
+</script>
+<?php endif ?>

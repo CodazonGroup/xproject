@@ -1,0 +1,128 @@
+<?php
+    $_productCollection = $this->getProductCollection();
+    $_helper = $this->helper('catalog/output');
+	$_uniqId = uniqid('grid');
+	$options = $this->getDataArray();
+?>
+<?php if(!$_productCollection->count()): ?>
+<p class="note-msg"><?php echo $this->__('There are no products matching the selection.') ?></p>
+<?php else: ?>
+<div class="category-products codazon-filter <?php echo $options['custom_class'] ?>" id="<?php echo $_uniqId ?>">
+	<?php $_collectionSize = $_productCollection->count() ?>
+    <?php $_columnCount = $this->getColumnCount(); ?>
+  	<?php if(  $options['use_slider'] == 1 ): ?>
+        <ul class="products-grid">    	
+  	<?php endif ?>
+    <?php $i=0; foreach ($_productCollection as $_product): ?>
+    	<?php if ( ($i++%$_columnCount==0) and ($options['use_slider'] != 1) ): ?>
+        <ul class="products-grid">
+        <?php endif ?>
+            <li class="item<?php if(($i-1)%$_columnCount==0): ?> first<?php elseif($i%$_columnCount==0): ?> last<?php endif; ?>">
+                <?php if( $this->display('image') ):?>
+                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img
+				<?php if($options['lazy_load'] == 0 or $options['use_slider'] == 0 or $_collectionSize < $options['items_1200'] ): ?>
+                src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>"
+                <?php else: ?>
+                class="owl-lazy" data-src= "<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(135); ?>"
+                <?php endif ?>
+                width="135" height="135" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" /></a>
+                <?php endif ?>
+                <?php if( $this->display('name') ):?>
+                <h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
+                <?php endif ?>
+				<?php if( $this->display('rating') ):?>
+					<?php //if($_product->getRatingSummary()): ?>
+                        <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+                    <?php //endif; ?>
+                <?php endif; ?>
+                <?php if( $this->display('price') ):?>
+					<?php echo $this->getPriceHtml($_product, true) ?>
+				<?php endif ?>
+                
+                <?php if ( $this->display('description') ):
+					$desc = $this->stripTags($_helper->productAttribute($_product, nl2br($_product->getShortDescription()), 'short_description'));
+					if(strlen($desc)>80) {
+						$strCutTitle = substr($desc, 0, 80);
+						$desc = substr($strCutTitle, 0, strrpos($strCutTitle, ' '))."&hellip;";
+					}
+				?>
+				<p class="desc"><?php echo $desc; ?></p>
+				<?php endif ;?>                
+                <div class="actions">
+                <?php if( $this->display('addtocart_btn') ):?>
+                    <?php if($_product->isSaleable()): ?>
+                        <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Add to Cart')) ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+                    <?php else: ?>
+                        <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+                    <?php endif; ?>
+				<?php endif ?>
+                    <ul class="add-to-links">
+                    <?php if( $this->display('wishlist_btn') ):?>
+                        <?php if ($this->helper('wishlist')->isAllow()) : ?>
+                            <li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="action link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a></li>
+                        <?php endif; ?>
+					<?php endif ?>
+                    <?php if( $this->display('compare_btn') ):?>
+                        <?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+                            <li>
+                            <?php if( $this->display('wishlist_btn') ):?>
+                            	<span class="separator">|</span>
+                            <?php endif; ?>
+                            <a href="<?php echo $_compareUrl ?>" class="action link-compare"><?php echo $this->__('Add to Compare') ?></a></li>
+                        <?php endif; ?>
+					<?php endif ?>
+                    </ul>
+                </div>
+            </li>
+		<?php if ( ($i%$_columnCount==0 || $i==$_collectionSize) and ($options['use_slider'] != 1) ): ?>
+        </ul>
+        <?php endif ?>
+        <?php endforeach ?>
+		<?php if(  $options['use_slider'] == 1 ): ?>
+        	</ul>
+		<?php else: ?>
+	        <script type="text/javascript">decorateGeneric($$('ul.products-grid'), ['odd','even','first','last'])</script>  	
+    	<?php endif ?>    
+</div>
+<?php endif; ?>
+
+<?php if(  $options['use_slider'] == 1 ): ?>
+<script type="text/javascript">
+	<?php if( !empty( $options['after_load'] ) and ($options['after_load'] == 1) ): ?>
+	jQuery(window).ready(function(e) {
+	<?php endif ?>
+        $<?php echo $_uniqId ?> = jQuery('#<?php echo $_uniqId ?> .products-grid');
+		$<?php echo $_uniqId ?>.owlCarousel({
+			autoplay:	<?php echo (  $options['auto_play'] == 1 )?'true':'false'; ?>,
+			autoplayTimeout: 5000,
+			smartSpeed:	250,
+			<?php if($options['auto_width'] != 1): ?>
+			<?php if( ($options['lazy_load']) == 1 and ($_collectionSize >= $options['items_1200']) ): ?>
+			lazyLoad: true,
+			loop: true,
+			<?php else: ?>
+			loop: <?php echo (  $options['loop'] == 1 )?'true':'false'; ?>,
+			<?php endif ?>
+			responsiveClass:true,
+			nav: <?php echo (  $options['show_nav'] == 1 )?'true':'false'; ?>,
+			navText: ['Prev','Next'],
+			fluidSpeed: true,
+			responsive:{
+				0:{items: 	<?php echo $options['items_0'] ?>},
+				320:{items:	<?php echo $options['items_320'] ?>},
+				360:{items:	<?php echo $options['items_360'] ?>},
+				980:{items:	<?php echo $options['items_980'] ?>},
+				1200:{items: <?php echo $options['items_1200'] ?>}
+			},
+			<?php else: ?>
+			autoWidth: true,
+			<?php endif ?>
+			margin: <?php echo $options['margin'] ?>,
+			center:	false,
+			dots: <?php echo (  $options['show_dots'] == 1 )?'true':'false'; ?>
+		});
+    <?php if( !empty( $options['after_load'] ) and ($options['after_load'] == 1) ): ?>
+	});
+	<?php endif ?>
+</script>
+<?php endif ?>

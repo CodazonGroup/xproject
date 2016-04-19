@@ -1,0 +1,232 @@
+//Codazon Theme Extends=======================================
+@mixin abs-borderradius($_value){
+	-webkit-border-radius: $_value;
+	-moz-border-radius: $_value;
+	border-radius: $_value;
+}
+
+
+@mixin abs-boxshadow($_value){
+	 box-shadow: $_value;
+    -moz-box-shadow: $_value;
+    -webkit-box-shadow: $_value;
+    -o-box-shadow: $_value;
+    -ms-box-shadow: $_value;
+}
+@mixin abs-transition($_value: all 500ms ease){
+	-moz-transition: $_value;
+	  -webkit-transition: $_value;
+	  -o-transition: $_value;
+	  transition: $_value;
+	  -moz-backface-visibility: hidden;
+	  -webkit-backface-visibility: hidden;
+	  backface-visibility: hidden;
+}
+@mixin abs-transform($_value: initial){
+	-moz-transform: $_value;
+	  -webkit-transform: $_value;
+	  -o-transform: $_value;
+	  transform: $_value;
+}
+@mixin abs-iconfont($_font, $_font-size){
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	content:$_font;
+	font-size:$_font-size;
+}
+
+@mixin abs-hidetext(){
+    font-size:0; 
+ 	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: left;
+}
+@mixin abs-opacity($_opacity) {
+	-webkit-opacity: $_opacity;
+	-moz-opacity: $_opacity;
+	opacity: $_opacity; 
+}
+@mixin abs-scale ($_factor) {
+	-webkit-transform: scale($_factor);
+	-moz-transform: 	 scale($_factor);
+	-ms-transform: 		 scale($_factor);
+	-o-transform: 		 scale($_factor);
+}
+
+@mixin abs-colorfont( $_color, $_font){
+	color: $_color;
+	font: $_font;
+}
+@mixin abs-style( $_color, $_border, $_background){
+	color: $_color;
+	border-color: $_border;
+	background: $_background;
+}
+
+@mixin abs-allstyle( $_color, $_background){
+	color: $_color;
+	background: $_background;
+}
+@mixin abs-allstyle( $_color, $_background, $_font){
+	color: $_color;
+	background: $_background;
+	font: $_font;
+}
+@mixin abs-allstyle( $_color, $_border, $_background, $_font){
+	color: $_color;
+	border-color: $_border;
+	background: $_background;
+	font: $_font;
+}
+@mixin abs-link( $_color, $_font){
+	color: $_color;
+	font: $_font;
+}
+
+@mixin abs-csscf( $_color, $_font){
+	color: $_color;
+	font: $_font;
+}
+
+@mixin abs-csscbf( $_color, $_background, $_font){
+	color: $_color;
+	font: $_font;
+	background: $_background;
+	
+}
+
+@mixin abs-cssall( $_color, $_background){
+	color: $_color;
+	background: $_background;
+}
+
+@mixin abs-cssall( $_color, $_border, $_background){
+	color: $_color;
+	border-color: $_border;
+	background: $_background;
+}
+@mixin abs-cssall-button( $_color, $_border, $_background, $_font){
+	color: $_color;
+	border-color: $_border;
+	background: $_background;
+	font: $_font;
+}
+
+@mixin abs-cssbg($_bkgcolor, $_bkgurl, $_bkgposition: "0 0", $_bkgrepeat: no-repeat){
+	background-color:$_bkgcolor;
+	background-image:url("${_bkgurl}");
+	background-position:$_bkgposition;
+	background-repeat:$_bkgrepeat;
+}
+
+/*@mixin abs-stylebg($_bkgcolor, $_bkgurl, $_bkgname, $_bkgposition: 0 0, $_bkgrepeat: no-repeat){
+	background-color:$_bkgcolor;
+	background-image:url("${_bkgurl}${_bkgname}");
+	background-position:$_bkgposition;
+	background-repeat:$_bkgrepeat;
+}
+*/
+
+@mixin abs-icon($_width, $_height, $_animal, $_bkg-position){
+	width:$_width;
+	height:$_height;
+	background-image: url('../images/${_animal}.png');
+	background-position:$_bkg-position;
+	background-repeat:no-repeat;
+}
+
+/// placeholder
+@mixin abs-placeholder($_color: $main_text){
+	::-webkit-input-placeholder {
+	   color: $_color;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $_color;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $_color;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: $_color;  
+	}
+}
+
+
+
+@mixin transition1{
+	-moz-transition: all 400ms ease;
+	-webkit-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+@mixin opacity-extention($opacity) {
+  opacity: $opacity !important;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100) !important;
+  filter: #{alpha(opacity=$opacity-ie)} !important;
+}
+@mixin font-awesome($font,$font-size){
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	content:"#{$font}";
+	font-size:$font-size;
+}
+@mixin bg-white-shadow{
+	background:$main_block_background;
+	padding:20px;  
+	-webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	-moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+@mixin none-bg-white-shadow{
+	background-color: transparent;
+	padding:0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+}
+
+@mixin position_type($position_value, $hoz, $px_hoz, $ver, $px_ver){
+	position:$position_value;
+	#{$hoz}:$px_hoz;
+	#{$ver}:$px_ver;
+}
+
+
+
+@mixin border-radius($radius){
+	-moz-border-radius:$radius; 
+	-webkit-border-radius:$radius; 
+	border-radius:$radius;
+}
+
+@mixin hideText(){
+    font-size:0; 
+ 	display: inline-block;
+	text-indent: -44499px;
+	overflow: hidden;
+	vertical-align: middle;
+	text-align: left;}

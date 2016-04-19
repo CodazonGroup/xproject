@@ -1,0 +1,218 @@
+/*Header 02*/
+.cms-index-index
+.cdz-header-style-02{
+	margin-bottom:20px;
+}
+.cdz-header-style-02{
+	.header{
+		.cdz-header-top{
+			border:0;
+			margin-top:20px;
+			border-radius:5px 5px 0 0;
+			padding-top:0;
+			padding-bottom:0;
+			.cdz-top-link{
+				float:right;
+				margin-right:195px;
+				.link{
+					a{
+						padding:8px 0px;
+					}
+				}
+			}
+			.cdz-col-left{
+				
+				.cdz-trigger{
+					padding:8px 0px;
+					display:inline-block;
+				}
+				.store-switcher{padding-left:10px;}
+			}
+			.cdz-col-right{
+				.cdz-top-cart{
+					margin-right:-10px;
+					margin-top:-5px
+				}
+			}
+			
+		}
+		.cdz-header-bottom{
+			border-radius:0px 0px 5px 5px
+		}
+		
+		.block-search{
+			input[type="text"]{
+				border:0;
+				height:30px!important;
+				line-height:30px;
+				border-radius:15px;
+				float:right;
+				&:focus{
+					border:0;
+					outline:none;
+				}
+			}
+			.button{
+				height:30px;
+				width:40px;
+				&:before{
+					line-height:30px;
+				}
+				&:hover{
+					background:transparent!important;
+				}
+			}
+		}
+		.cdz-header-bottom {
+			padding-bottom:20px;
+			padding-top:30px;
+			.cdz-header-menu{
+				padding-right:10px;
+			}
+		}
+		
+		.cdz-bottom-logo-cart{
+			padding:0;
+			h1.logo{padding-left:10px;}
+			.cdz-main-menu {
+				.groupmenu{
+					li.level0{
+						a.menu-link	{
+							padding:5px 15px;
+							margin:0 0 10px;
+							border-radius:15px;
+							border:2px solid;
+							&:hover{
+								border:2px solid;
+								border-radius:15px;
+							}
+						}
+					}
+					.parent:hover:after{
+						@include font-awesome(\f0d8,21px);
+						bottom:-7px;
+					}
+				}
+			} 
+		}
+		.sticky-menu{
+			.cdz-top-cart{
+				position:absolute;
+				top:-68px;
+				right:-11px;
+			}
+			.cdz-top-cart{
+				float:right;
+				width:auto;
+				text-transform:uppercase;
+				padding:0 10px;
+				border-radius:0 5px 0 0;
+				height: 38px;
+				.cart-icon {
+					.cart-subtotal{
+						.price{
+							font-family:arial;
+							font-weight:bold;
+							padding:10px 0 0px 5px;
+						}
+					}
+					.cart-qty{
+						left:-10px;
+						border-radius:5px;
+					}
+				}
+				.cart-label{
+					display:inherit;
+					padding:10px 0 0px;
+				}
+				.cart-icon:before{
+					background:none;
+					@include font-awesome(\f291,21px);
+					padding:7px 0 0;
+					min-height:35px;
+					width:30px;
+				}
+			}
+		}
+	}
+	.header{
+		.sticky-menu.active{
+			padding-top:10px;
+			padding-bottom:10px;
+			.cdz-top-cart{
+				position:absolute;
+				top:-3px;
+				right:0;
+			}
+			.cdz-bottom-logo-cart{
+				.cdz-main-menu{
+					.groupmenu {
+						li.level0{
+							a.menu-link{
+								margin:0;
+							}
+						} 
+					} 
+				} 
+			}
+			
+			.logo{
+				width:100%;
+			}
+			.cdz-header-logo{
+				display:block;
+				height:auto;
+			}
+			.block-search {
+				input[type="text"]{
+					padding:0;
+					margin:0;
+				}
+				.form-search:hover {
+					input[type="text"]{
+						border:0;
+						padding:0 10px;
+					}
+				}
+			}
+			.cdz-top-cart{
+				background-color:transparent;
+				float:right;
+				width:auto;
+				text-transform:uppercase;
+				padding:0 10px;
+				border-radius:0 5px 0 0;
+				height: 38px;
+				.cart-subtotal,.cart-label{
+					display:none!important;
+				}
+				.cart-icon {
+					.cart-subtotal{
+						.price{
+							font-family:arial;
+							font-weight:bold;
+							padding:10px 0 0px 5px;
+						}
+					}
+					.cart-qty{
+						left:auto;
+						right:0px;
+						border-radius:5px;
+					}
+				}
+				.cart-label{
+					display:inherit;
+					padding:10px 0 0px;
+				}
+				.cart-icon:before{
+					background:none;
+					@include font-awesome(\f291,21px);
+					padding:7px 0 0;
+					min-height:35px;
+					width:30px;
+				}
+			}
+		}
+	}
+}
+
