@@ -848,6 +848,46 @@ fieldset[disabled] .block-search .button {
 		border:1px solid $main_border;
 	}
 }
+
+.footer-cart {
+	.cart-content{
+		.summary{
+			.subtotal{
+				.sub-total-label{}
+				.price{color: $main_price_text;}
+			}
+		}
+		button.button{
+			color: $btn_default_text;
+			background-color: $btn_default_background;
+			border-color: $btn_default_border;
+			&:hover{
+				color: $btn_secondary_text;
+				background-color: $btn_secondary_background;
+				border-color: $btn_secondary_border;
+			}
+		}
+		.cart-item{
+			.btn-remove,
+			.btn-edit{
+				color: $main_title_text;
+				&:hover{color: $main_hover_text;}
+			}
+		}
+		.cart-items{			
+			.owl-nav [class*='owl-'], 
+			.owl-theme .owl-nav [class*=owl-]{
+				border:1px solid $main_title_border;
+				background: $main_block_background;
+				color: $main_title_border;
+				&:hover{
+					border-color:$main_hover_text;
+					color: $main_hover_text;
+				}
+			}
+		}
+	}
+}
 /*Logo and Cart area*/
 /* ============================================ *
  * Codazon_Header

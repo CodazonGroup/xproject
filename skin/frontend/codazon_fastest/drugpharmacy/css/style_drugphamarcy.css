@@ -1688,6 +1688,39 @@ fieldset[disabled] .block-search .button {
   border: 1px solid #ebebeb;
 }
 
+.footer-cart .cart-content .summary .subtotal .price {
+  color: #282828;
+}
+.footer-cart .cart-content button.button {
+  color: white;
+  background-color: #b0d235;
+  border-color: #b0d235;
+}
+.footer-cart .cart-content button.button:hover {
+  color: #ebebeb;
+  background-color: white;
+  border-color: #ebebeb;
+}
+.footer-cart .cart-content .cart-item .btn-remove,
+.footer-cart .cart-content .cart-item .btn-edit {
+  color: #121212;
+}
+.footer-cart .cart-content .cart-item .btn-remove:hover,
+.footer-cart .cart-content .cart-item .btn-edit:hover {
+  color: #b0d235;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-'],
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-']:hover,
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #b0d235;
+  color: #b0d235;
+}
+
 /*Logo and Cart area*/
 /* ============================================ *
  * Codazon_Header

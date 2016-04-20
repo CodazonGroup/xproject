@@ -1116,6 +1116,39 @@ fieldset[disabled] .block-search .button {
   border: 1px solid #e1e1e1;
 }
 
+.footer-cart .cart-content .summary .subtotal .price {
+  color: #f64400;
+}
+.footer-cart .cart-content button.button {
+  color: white;
+  background-color: #f14b00;
+  border-color: #f14b00;
+}
+.footer-cart .cart-content button.button:hover {
+  color: #282828;
+  background-color: white;
+  border-color: #282828;
+}
+.footer-cart .cart-content .cart-item .btn-remove,
+.footer-cart .cart-content .cart-item .btn-edit {
+  color: black;
+}
+.footer-cart .cart-content .cart-item .btn-remove:hover,
+.footer-cart .cart-content .cart-item .btn-edit:hover {
+  color: #f64400;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-'],
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-']:hover,
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
+}
+
 /*Logo and Cart area*/
 /* ============================================ *
  * Codazon_Header
