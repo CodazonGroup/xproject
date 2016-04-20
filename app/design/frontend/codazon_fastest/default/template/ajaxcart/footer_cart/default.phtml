@@ -3,13 +3,15 @@
     $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
     $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
 ?>
-<li class="animated pulse">
+<li class="cart-item row">
+	<div class="col-xs-10">
     <?php if ($this->hasProductUrl()): ?>
-        <a href="<?php echo $this->getProductUrl()?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(50, 50)->setWatermarkSize('30x10'); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></a>
+        <a href="<?php echo $this->getProductUrl()?>" title="<?php echo $this->escapeHtml($this->getProductName()) ?>" class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(78, 78)->setWatermarkSize('30x10'); ?>" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></a>
     <?php else: ?>
-        <span class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(50, 50)->setWatermarkSize('30x10'); ?>" width="50" height="50" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></span>
+        <span class="product-image"><img src="<?php echo $this->getProductThumbnail()->resize(78, 78)->setWatermarkSize('30x10'); ?>" alt="<?php echo $this->escapeHtml($this->getProductName()) ?>" /></span>
     <?php endif; ?>
-    <div class="product-details">
+    </div>
+    <div class="product-details col-xs-14">
         <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove This Item')) ?>" onclick="return confirm('<?php echo Mage::helper('core')->quoteEscape($this->__('Are you sure you would like to remove this item from the shopping cart?'), true) ?>');" class="btn-remove"><?php echo $this->__('Remove This Item') ?></a>
         <?php if ($isVisibleProduct): ?>
         <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Edit item')) ?>" class="btn-edit"><?php echo $this->__('Edit item')?></a>
@@ -17,14 +19,9 @@
 		<div class="product-details-name">
         <p class="product-name"><?php if ($this->hasProductUrl()): ?><a href="<?php echo $this->getProductUrl() ?>"><?php endif; ?><?php echo $this->escapeHtml($this->getProductName()) ?><?php if ($this->hasProductUrl()): ?></a><?php endif; ?></p>
         <strong><?php echo $this->getQty() ?></strong> x
-		
-
     <?php if ($canApplyMsrp): ?>
-
         <span class="map-cart-sidebar-item"><?php echo $this->__('See price before order confirmation.'); ?></span>
-
     <?php else: ?>
-
     <?php if ($this->helper('tax')->displayCartPriceExclTax() || $this->helper('tax')->displayCartBothPrices()): ?>
         <?php if ($this->helper('tax')->displayCartBothPrices()): ?>
             <?php echo $this->__('Excl. Tax'); ?>:

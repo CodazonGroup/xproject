@@ -30,6 +30,7 @@ var ajaxcart = {
                     },
                     onSuccess	: function(response) {
                         // Handle the response content...
+						jQuery(window).trigger('ajaxCartCompleted');
                         try{
                             var res = response.responseText.evalJSON();
                             if(res) {
@@ -141,6 +142,7 @@ var ajaxcart = {
                             });
                         },
                         onSuccess	: function(response) {	
+							jQuery(window).trigger('ajaxCartCompleted');
                             // Handle the response content...
                             try{
                                 var res = response.responseText.evalJSON();
@@ -194,6 +196,7 @@ var ajaxcart = {
             },
             onSuccess	: function(response) {
                 // Handle the response content...
+				jQuery(window).trigger('ajaxCartCompleted');
                 try{
                     var res = response.responseText.evalJSON();
                     if(res) {

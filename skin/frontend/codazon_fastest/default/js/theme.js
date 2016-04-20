@@ -407,21 +407,21 @@
 		pcFooter();
 	}
 	function mobileMenu(){
-		$('.cdz-mobile-menu').find('.parent').each(function(){
+		$('.cdz-mobile-menu').find('.root-parent').each(function(){
 			var $parent = $(this);
-			$parent.addClass('dropdown');
-			$parent.find(' > ul').addClass('dropdown-menu');
-			var html = '<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" ><span class="caret"></span></a>';
-			$parent.find(' > a').after(html);
+			$parent.find('.cdz-sub-cat').hide();
+			$parent.find('.dropdown-toggle').each(function() {
+                var $ddToggle = $(this);
+				$ddToggle.click(function(){
+					var $li = $ddToggle.parents('.menu-item').first();
+					var $subCat = $li.find('.cdz-sub-cat').first();
+					$li.toggleClass('open');
+					$subCat.toggleClass('open');
+					$subCat.slideToggle(300);
+				});
+            });
 		});
-		$('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
-			event.preventDefault(); 
-			event.stopPropagation();
-			var $this = $(this);
-			$this.parents('.open').first().find('.open').removeClass('open');
-			$this.parent().toggleClass('open');
-			//$this.parent().find("ul").parent().find("li.dropdown").toogleClass('open');
-		});
+		
 	}
 	
 	function cdzBackTopButton(){

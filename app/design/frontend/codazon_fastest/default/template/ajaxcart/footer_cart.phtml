@@ -1,16 +1,16 @@
 <?php
 $_cartQty = $this->getSummaryCount();
 ?>
-<div class="cart-footer-inner" id="cart-footer-inner">
+<div class="cart-footer-inner animated fadeIn" id="cart-footer-inner">
 	<a href="javascript:void(0)" class="cart-trigger">
-    	<div class="loading" style="display:none;"><?php echo $this->__('Processing...') ?></div>
-    	<span class="amount loaded"><?php echo $this->__('%s item(s) in your cart', $_cartQty) ?></span>
+    	<span class="loading" style="display:none;"><?php echo $this->__('Processing...') ?></span>
+    	<span class="amount loaded"><?php echo $this->__('%s item(s) in your cart', ($_cartQty?$_cartQty:0) ) ?></span>
     </a>
-    <div class="row cart-content" style="display:none;">
-    	<div class="col-sm-2">
+    <div class="cart-content" style="display:none;">
+    	<div class="">
     		<div class="cart-icon"></div>
         </div>
-        <div class="cart-items col-sm-14">
+        <div class="cart-items">
             <?php $_items = $this->getItems() ?>
             <?php if(count($_items)): ?>
                 <ul class="cart-products-list">
@@ -20,7 +20,7 @@ $_cartQty = $this->getSummaryCount();
                 </ul>
             <?php endif ?>
         </div>
-        <div class="check-out col-sm-8">
+        <div class="check-out">
             <div class="summary">
                  <?php if ($_cartQty==1): ?>
                     <div class="cart-total-title">
@@ -44,12 +44,12 @@ $_cartQty = $this->getSummaryCount();
                     <?php endif; ?>
                 </div>
             </div>
-            <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+            <?php //if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
             <div class="actions">
                 <?php echo $this->getChildHtml('extra_actions') ?>
                 <button type="button" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Checkout')) ?>" class="button" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')"><span><span><?php echo $this->__('Checkout') ?></span></span></button>
             </div>
-            <?php endif ?>
+            <?php //endif ?>
         </div>
     </div>
 </div>
@@ -67,13 +67,16 @@ $_cartQty = $this->getSummaryCount();
 	var $cartItems = $('#cart-footer-inner .cart-products-list');
 	$cartItems.addClass('owl-carousel owl-theme');
 	$cartItems.owlCarousel({
+		dots: false,
+		nav: true,
+		margin: 10,
 		responsive:{
 			0:{items: 	1},
 			320:{items:	2},
-			480:{items:	3},
-			768:{items:	4},
-			1024:{items: 6},
-			1280:{items: 6}	
+			480:{items:	2},
+			768:{items:	3},
+			1024:{items: 4},
+			1280:{items: 4}	
 		}
 	});
 })(jQuery);

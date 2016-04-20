@@ -845,4 +845,83 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 	.actions{border-bottom:0px solid $main_border!important;padding:0px!important;}
 }
 /*Logo and Cart area*/
-/*update 04/14*/
+/*================ CdzCart Bottom ===================*/
+.footer-cart.cdz-dropdown {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+	.cart-trigger{
+		position: absolute;
+		background: #fc7070;
+		color: #fff;
+		top: -34px;
+		font-size: 85%;
+		text-transform: uppercase;
+		padding: 10px 20px 7px;
+		z-index: 200;
+		cursor: pointer;
+		text-decoration:none;
+		&:after{
+			@include font-awesome(\f106,16px);
+			margin:0 5px;
+			float:right;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			transition: all 500ms ease;
+			-moz-backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			margin-top:-1px;
+		}
+	}
+	&.active{
+		.cart-trigger{
+			&:after{
+				-moz-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+		}
+	}
+	.cart-content{
+		background: #fff;
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		.cart-icon{
+			width:0;
+			height:0;
+			@include abs-opacity(0);
+			visibility:hidden;
+		}
+		.check-out{
+			float:right;
+			padding:20px;
+			width:450px;
+		}
+		.cart-items{
+			float:left;
+			padding:20px;
+			overflow:hidden;
+			width: 100%;
+			padding-right: 450px;
+		}
+		.summary{float:left;}
+		.actions{float:right;}
+		.cart-total-title{
+			display:inline-block;
+			width:100%;
+			h4{float:left; margin-right:10px;}
+			.amount{float:right;}
+		}
+		.subtotal{
+			display:inline-block;
+			width:100%;
+			.sub-total-label{float:left; margin-right:10px;}
+			.price{float:right;}
+		}
+	}
+}

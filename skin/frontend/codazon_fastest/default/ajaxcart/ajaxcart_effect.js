@@ -6,7 +6,8 @@
 			parent: '.item',
 			effImg: '#effectImg',
 			dest: '#footer-cart .cart-icon',
-			fCart: '#footer-cart'
+			fCart: '#footer-cart',
+			form: '#product_addtocart_form'
 		};
 		
 		var conf = Object.extend(defaultConfig,options || { });
@@ -18,6 +19,19 @@
 				$this.data('hasBindEffect',true);
 				$this.click(function(){
 					var $pr = $this.parents(conf.parent).first();
+					if($pr.length == 0){
+						
+						if(typeof productAddToCartForm != 'undefined') {
+							console.log(productAddToCartForm.validator);
+							if(productAddToCartForm.submitvalidator && productAddToCartForm.validator.validate()){
+                 				$pr = $(conf.form);
+                			}else{
+								return false;	
+							}
+						}else{
+							return false;	
+						}
+					}
 					var $img = $pr.find(conf.img);
 					var src = $img.attr('src');
 					var width = $img.width(), height = $img.height();
@@ -66,12 +80,12 @@
 			$('body').append(html);
 		}
 		if($('#footer-cart').length == 0){
-			html = '<div class="footer-cart cdz-dropdown" id="'+cartId+'" style="position:fixed; bottom:0; left:0; width:100%; z-index:10000; background:#FFF;"></div>';
+			html = '<div class="footer-cart cdz-dropdown" id="'+cartId+'" style="position:fixed; bottom:0; left:0; width:100%; z-index:10000;"></div>';
 			$('body').append(html);
 			$('#cart-footer-inner').appendTo('#'+cartId);
 		}
 		$('.btn-cart').ajaxCartEffect();
-		$('body').on('ajaxCartCompleted',function(){
+		$(window).on('ajaxCartCompleted',function(){
 			$fCart.find('.loading').hide();
 			$fCart.find('.loaded').show();
 		});

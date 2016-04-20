@@ -42,6 +42,14 @@
 //]]>
 </script>
 <![endif]-->
+
+<?php
+$config = Mage::registry('theme_config')->general;
+$page = $this->getParentBlock();
+if($config['boxedwide'] == 0)$page->addBodyClass('cdz-boxed');
+if($config['enable_rtl'])$page->addBodyClass('cdz-rtl');
+?>
+
 <?php echo $this->getCssJsHtml() ?>
 <?php echo $this->getChildHtml() ?>
 <?php echo $this->helper('core/js')->getTranslatorScript() ?>

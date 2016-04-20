@@ -102,7 +102,7 @@ Default layout, loads most of the pages
                 </block>
 				<block type="core/template" name="cdz.top.links" as="cdzTopLinks" translate="label" template="page/html/cdz_top_links.phtml" />
 				<block type="core/text_list" name="mobile.top.menu" as="mobileTopMenu" translate="label">
-					<block type="page/html_topmenu" name="mobile.catalog.topnav" template="page/html/mobile_top_menu.phtml"/>
+					<block type="themeframework/widget_categoriesmenu" template="page/html/mobile_top_menu.phtml" name="mobile.catalog.topnav" />
 				</block>
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">
                     <label>Page Header</label>
