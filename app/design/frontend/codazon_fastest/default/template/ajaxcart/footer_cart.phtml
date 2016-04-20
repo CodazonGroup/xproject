@@ -1,9 +1,9 @@
 <?php
 $_cartQty = $this->getSummaryCount();
 ?>
-<div class="footer-cart cdz-dropdown" id="footer-cart" style="position:fixed; bottom:0; left:0; width:100%; z-index:10000; background:#FFF;">
+<div class="cart-footer-inner" id="cart-footer-inner">
 	<a href="javascript:void(0)" class="cart-trigger">
-    	<span class="loading" style="display:none;"><?php echo $this->__('Processing...') ?></span>
+    	<div class="loading" style="display:none;"><?php echo $this->__('Processing...') ?></div>
     	<span class="amount loaded"><?php echo $this->__('%s item(s) in your cart', $_cartQty) ?></span>
     </a>
     <div class="row cart-content" style="display:none;">
@@ -11,9 +11,9 @@ $_cartQty = $this->getSummaryCount();
     		<div class="cart-icon"></div>
         </div>
         <div class="cart-items col-sm-14">
-            <?php $_items = $this->getRecentItems() ?>
+            <?php $_items = $this->getItems() ?>
             <?php if(count($_items)): ?>
-                <ul class="cart-products-list row">
+                <ul class="cart-products-list">
                 <?php foreach($_items as $_item): ?>
                     <?php echo $this->getItemHtml($_item) ?>
                 <?php endforeach; ?>
@@ -53,3 +53,28 @@ $_cartQty = $this->getSummaryCount();
         </div>
     </div>
 </div>
+<script>
+(function($){
+	var $fCart = $('#footer-cart');
+	$fCart.find('.cart-trigger').click(function(){
+		var $this = $(this);
+		$fCart.toggleClass('active');
+		$fCart.find('.cart-content').slideToggle(300);
+	});
+	if($fCart.hasClass('active')){
+		$fCart.find('.cart-content').show();
+	}
+	var $cartItems = $('#cart-footer-inner .cart-products-list');
+	$cartItems.addClass('owl-carousel owl-theme');
+	$cartItems.owlCarousel({
+		responsive:{
+			0:{items: 	1},
+			320:{items:	2},
+			480:{items:	3},
+			768:{items:	4},
+			1024:{items: 6},
+			1280:{items: 6}	
+		}
+	});
+})(jQuery);
+</script>

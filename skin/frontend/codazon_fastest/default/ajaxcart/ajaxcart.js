@@ -29,7 +29,6 @@ var ajaxcart = {
                         });
                     },
                     onSuccess	: function(response) {
-						jQuery('body').trigger('ajaxCartCompleted');
                         // Handle the response content...
                         try{
                             var res = response.responseText.evalJSON();
@@ -141,8 +140,7 @@ var ajaxcart = {
                                 life: 5
                             });
                         },
-                        onSuccess	: function(response) {
-							jQuery('body').trigger('ajaxCartCompleted');	
+                        onSuccess	: function(response) {	
                             // Handle the response content...
                             try{
                                 var res = response.responseText.evalJSON();
@@ -195,7 +193,6 @@ var ajaxcart = {
                 });
             },
             onSuccess	: function(response) {
-				jQuery('body').trigger('ajaxCartCompleted');
                 // Handle the response content...
                 try{
                     var res = response.responseText.evalJSON();
