@@ -32,7 +32,7 @@
 							return false;	
 						}
 					}
-					var $img = $pr.find(conf.img);
+					var $img = $pr.find(conf.img).first();
 					var src = $img.attr('src');
 					var width = $img.width(), height = $img.height();
 					var step01Css = {
