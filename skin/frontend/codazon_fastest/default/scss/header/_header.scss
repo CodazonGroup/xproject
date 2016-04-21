@@ -846,7 +846,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 }
 /*Logo and Cart area*/
 /*================ CdzCart Bottom ===================*/
-.footer-cart.cdz-dropdown {
+.footer-cart {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -909,10 +909,11 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 		.check-out{
 			float:right;
 			padding:20px;
-			width:420px;
+			width:421px;
 			position:absolute;
 			top:0;
-			right:0;			
+			right:0;
+			border-left:1px solid;
 			.summary{
 				float:left;
 				width:200px;
@@ -947,6 +948,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 			width: 100%;
 			padding-right: 420px;
 			min-height:90px;
+			.owl-carousel .owl-stage-outer{padding-right:70px;}
 			.cart-products-list{border-right:1px solid #dfdfdf; padding:10px 0;}
 			.product{
 				position:relative;
@@ -989,6 +991,9 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
 					font-size:0;
 					position:relative;
 					display:block;
+					border:none;
+					background:none;
+					float:right;
 					&:before{
 						@include font-awesome(\f040,16px);
 					}

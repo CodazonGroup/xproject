@@ -9,7 +9,8 @@ body{
  * ============================================ */
 input.input-text,
 .cdz-dropdown-content,
-.block-cart.cdz-dropdown-content,.add-to-links li a
+.block-cart.cdz-dropdown-content,.add-to-links li a,
+.products-grid .isotope .item.product-item .out-of-stock span
 {
 	border-radius:5px;
 }
@@ -20,7 +21,9 @@ input.input-text,
 		padding-top:20px;
 	}
 }
-
+.products-grid .product-items:not(.owl-carousel) > .product-item .product-item-info{
+	background:transparent;
+}
 
  /* ============================================ *
  * Codazon_Drug Main content

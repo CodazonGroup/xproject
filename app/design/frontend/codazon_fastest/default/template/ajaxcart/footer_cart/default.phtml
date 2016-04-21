@@ -2,8 +2,9 @@
     $_item = $this->getItem();
     $isVisibleProduct = $_item->getProduct()->isVisibleInSiteVisibility();
     $canApplyMsrp = Mage::helper('catalog')->canApplyMsrp($_item->getProduct(), Mage_Catalog_Model_Product_Attribute_Source_Msrp_Type::TYPE_BEFORE_ORDER_CONFIRM);
+	$formId = 'updatecart_form_'.$_item->getId();
 ?>
-<li class="cart-item">
+<li class="cart-item" style="width:90px; float:left;">
 	<div class="product">
 	<strong><?php echo $this->getQty() ?></strong>
     <?php if ($this->hasProductUrl()): ?>
@@ -15,13 +16,25 @@
     <div class="product-details">
 		<div class="product-hover-container">
 			<div class="product-hover-inner">
-				<input class="item-qty cart-item-qty">
-				<div class="actions">
-					<a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove This Item')) ?>" onclick="return confirm('<?php echo Mage::helper('core')->quoteEscape($this->__('Are you sure you would like to remove this item from the shopping cart?'), true) ?>');" class="btn-remove"><?php echo $this->__('Remove This Item') ?></a>
-					<?php if ($isVisibleProduct): ?>
-					<a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Edit item')) ?>" class="btn-edit"><?php echo $this->__('Edit item')?></a>
-					<?php endif ?>
-				</div>
+            	<?php if($_item->getProduct()->getTypeId() == 'simple'): ?>          	
+            	<form class="ajax-update-cart" id="<?php echo $formId ?>" action="<?php echo $this->getUrl('checkout/cart/updateItemOptions',array('id' => $_item->getId())) ?>" method="post">
+					<input class="item-qty cart-item-qty" name="qty" value="<?php echo $this->getQty() ?>">
+                    <div class="actions">
+                        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove This Item')) ?>" onclick="return confirm('<?php echo Mage::helper('core')->quoteEscape($this->__('Are you sure you would like to remove this item from the shopping cart?'), true) ?>');" class="btn-remove"><?php echo $this->__('Remove This Item') ?></a>
+                        <?php if ($isVisibleProduct): ?>
+                        <button type="submit" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Edit item')) ?>" class="btn-edit"><?php echo $this->__('Edit item')?></button>
+                     </div>
+                    <?php endif ?>
+                </form>
+                <?php else: ?>
+                	<input class="item-qty cart-item-qty" name="qty" value="<?php echo $this->getQty() ?>">
+                	<div class="actions">
+                        <a href="<?php echo $this->getDeleteUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Remove This Item')) ?>" onclick="return confirm('<?php echo Mage::helper('core')->quoteEscape($this->__('Are you sure you would like to remove this item from the shopping cart?'), true) ?>');" class="btn-remove"><?php echo $this->__('Remove This Item') ?></a>
+                        <?php if ($isVisibleProduct): ?>
+                        <a href="<?php echo $this->getConfigureUrl() ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Edit item')) ?>" class="btn-edit"><?php echo $this->__('Edit item')?></a>
+                        <?php endif ?>
+					</div>
+                <?php endif ?>
 			</div>
 		</div>
     </div>

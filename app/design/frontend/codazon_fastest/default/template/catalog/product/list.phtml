@@ -157,6 +157,16 @@
                         <div class="desc product-item-description"><?php echo $desc; ?></div>
                         <?php endif ?>
                         <?php echo $this->getPriceHtml($_product, true) ?>
+                        <?php
+							if ($this->getChild('name.after')) {
+								$_nameAfterChildren = $this->getChild('name.after')->getSortedChildren();
+								foreach ($_nameAfterChildren as $_nameAfterChildName) {
+									$_nameAfterChild = $this->getChild('name.after')->getChild($_nameAfterChildName);
+									$_nameAfterChild->setProduct($_product);
+									echo $_nameAfterChild->toHtml();
+								}
+							}
+						?>
                         <?php if($config['show_rating']): ?>
 						<?php if($_product->getRatingSummary()): ?>
                         <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>

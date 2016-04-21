@@ -18,10 +18,18 @@
                 <name>aw_blog/css/style.css</name>
             </action>
         </reference>
+		<reference name="right">
+            <block type="blog/menu_sidebar" name="left.blog.menu"  before="-">
+                <action method="setTemplate" ifconfig="blog/menu/left">
+                    <template>aw_blog/menu.phtml</template>
+                </action>
+                <block type="blog/tags" name="blog_tags" />
+            </block>
+        </reference>
     </default>
 
     <blog_index_index>
-		<reference name="left">
+		<reference name="right">
             <block type="blog/menu_sidebar" name="left.blog.menu"  before="-">
                 <action method="setTemplate" ifconfig="blog/menu/left">
                     <template>aw_blog/menu.phtml</template>

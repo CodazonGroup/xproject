@@ -29,11 +29,33 @@
 <?php $buttonTitle = $this->__('Update Cart'); ?>
 <?php if ($_product->isSaleable()): ?>
     <div class="add-to-cart">
+		<div class="product-button-top">
         <?php if (!$_product->isGrouped()): ?>
-        <label for="qty"><?php echo $this->__('Qty:') ?></label>
-        <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+		<label for="qty"><?php echo $this->__('Qty:') ?></label>
+    		<div class="qty_cart">
+        		<div class="qty-ctl">
+        			<button title="decrease" onclick="changeQty(0); return false;" class="decrease">decrease</button>
+        		</div>
+                <input type="text" name="qty" id="qty" maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Qty')) ?>" class="input-text qty" />
+        		<div class="qty-ctl">
+        			<button title="increase" onclick="changeQty(1); return false;" class="increase">increase</button>
+        		</div>
+    		</div>
+        
         <?php endif; ?>
+		</div>
+		<div class="product-button-bottom">
         <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
         <?php echo $this->getChildHtml('', true, true) ?>
+		</div>
     </div>
 <?php endif; ?>
+<script type="text/javascript">
+	var changeQty = function(increase) {
+		var qty = parseInt($('qty').value);
+		if ( !isNaN(qty) ) {
+			qty = increase ? qty+1 : (qty>1 ? qty-1 : 1);
+			$('qty').value = qty;
+		}
+	}
+</script>

@@ -12,9 +12,8 @@
 /*Spacing for each area*/
 /*update 04/14*/
 /*Sport Homepage*/
-.page {
-  max-width: 1200px;
-  margin: 0 auto;
+.cms-index-index .col-main-containter .col-main .col-wrapper-main {
+  margin: 0;
 }
 
 /*header logo color*/
@@ -36,6 +35,17 @@
 
 .cdz-slideshow {
   margin: 0;
+}
+
+.product-view .product-shop, .product-collateral, .product-view .block-related, .product-view.block-related {
+  margin-bottom: 0;
+}
+
+.swatch-link, .swatch-label {
+  border-radius: 100%;
+}
+.swatch-link img, .swatch-label img {
+  border-radius: 100%;
 }
 
 /*Sport Header*/
@@ -144,7 +154,8 @@
   left: 11px;
 }
 .cdz-header-style-04 .header .cdz-main-menu .groupmenu li.level0 a.menu-link {
-  padding: 24px 20px;
+  padding: 24px 27px;
+  letter-spacing: 1px;
 }
 .cdz-header-style-04 .header .sticky-menu:not(.active) .cdz-top-cart {
   margin-top: 18px;
@@ -158,6 +169,12 @@
 .cdz-header-style-04 .header .sticky-menu:not(.active) .block-search {
   width: 100%;
   margin-top: 15px;
+}
+.cdz-header-style-04 .header .sticky-menu:not(.active) .cdz-main-menu .groupmenu li.level0.last {
+  float: right;
+}
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-menu {
+  padding-right: 130px;
 }
 .cdz-header-style-04 .header .sticky-menu.active .block-search {
   right: 89px;
@@ -186,9 +203,144 @@
   width: 38px;
   height: 38px;
 }
+.cdz-header-style-04 .header .sticky-menu.active .cdz-header-cart .cart-icon .cart-qty {
+  top: -7px;
+  right: -7px;
+}
 
 /*update 04/14*/
 /*Sport Footer*/
+.page-footer.cdz-footer-style-04 {
+  background: transparent;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper {
+  padding: 0;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-content {
+  padding: 27px 20px;
+  width: 100%;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-content .h2 {
+  margin-bottom: 22px;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-aboutus .box-content .h1 {
+  text-transform: none;
+  margin-bottom: 20px;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .twitter-list .tweet-item {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .twitter-list .tweet-item:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f10d";
+  font-size: 22px;
+  color: #0ba5c9;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  z-index: -1;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .twitter-list .tweet-item .tweet-user {
+  font-style: italic;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .twitter-list .tweet-item .tweet-time {
+  float: left;
+  margin-right: 5px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper {
+  padding-top: 48px;
+  border: none;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-logo-wrapper {
+  padding: 0 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-logo-wrapper img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper address {
+  font-size: 93%;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-box {
+  margin-bottom: 15px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-title {
+  display: none;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content {
+  padding: 0;
+  position: relative;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content .input-box {
+  padding: 0;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content input {
+  border-width: 1px;
+  padding-right: 80px;
+  text-transform: none;
+  background: transparent;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content .actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content .actions button.button {
+  margin: 0;
+  padding: 10px;
+  border-width: 1px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-social {
+  padding: 0;
+  margin: 0 -10px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-social a {
+  width: 50px;
+  height: 50px;
+  padding: 14px 0px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  float: right;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-social a span:before {
+  font-size: 21px;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .col-sm-7 > .footer-box {
+  padding-right: 20px;
+}
+.page-footer.cdz-footer-style-04 .footer-link li {
+  text-transform: uppercase;
+  font-size: 92%;
+}
+.page-footer.cdz-footer-style-04 .footer-link li a {
+  padding: 4px 0;
+}
+
+@media (min-width: 767px) {
+  .page-footer.cdz-footer-style-04 .top-footer-wrapper .row {
+    display: flex;
+  }
+  .page-footer.cdz-footer-style-04 .top-footer-wrapper .box-aboutus,
+  .page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets,
+  .page-footer.cdz-footer-style-04 .top-footer-wrapper .box-facebook {
+    display: flex;
+  }
+}
 /*Color Important*/
 body {
   font: 400 13px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
@@ -330,33 +482,33 @@ a:hover, a:focus {
 }
 
 .block.block-subscribe .block-content input {
-  border-color: #282828;
+  border-color: #383e48;
 }
 
 .page-footer {
-  background: white;
-  color: #282828;
+  background: #f6f6f6;
+  color: #999999;
 }
 .page-footer .top-footer-wrapper {
-  background-color: #fce0dd;
+  background-color: #45d4f5;
 }
 .page-footer .footer-bottom {
-  background: white;
+  background: #1b232e;
 }
 .page-footer a {
-  color: #282828;
+  color: #999999;
 }
 .page-footer a:hover {
-  color: #fc7070;
+  color: white;
 }
 .page-footer p.h5 {
-  color: #282828;
+  color: #999999;
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .page-footer .item_tag li a {
-  color: #282828;
-  background-color: white;
-  border-color: #282828;
+  color: #999999;
+  background-color: #1b232e;
+  border-color: #383e48;
 }
 .page-footer .item_tag li a:hover {
   color: white;
@@ -365,22 +517,39 @@ a:hover, a:focus {
 }
 .page-footer .footer-social a {
   border: 1px solid;
-  border-color: #282828;
+  border-color: #383e48;
 }
 .page-footer .footer-social a:hover {
-  color: white;
-  background-color: #282828;
-  border-color: #282828;
+  color: #1b232e;
+  background-color: #999999;
+  border-color: #383e48;
 }
 .page-footer .bottom-footer-wrapper {
-  background: white;
-  border-top-color: #282828;
+  background: #1b232e;
+  border-top-color: #383e48;
 }
 .page-footer .copyright {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .page-footer .footer-bottom-link li a {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+
+.cdz-footer-style-03 .bottom-footer-wrapper address {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+}
+.cdz-footer-style-03 .footer-social a:hover {
+  background: none;
+  border-color: none;
+}
+.cdz-footer-style-03 .footer-social a:hover:before {
+  border-color: white;
+}
+.cdz-footer-style-03 .footer-social a:hover span {
+  color: white;
+}
+.cdz-footer-style-03 .footer-social a:before {
+  border-color: #999999;
 }
 
 /* ============================================ *
@@ -390,7 +559,7 @@ a:hover, a:focus {
  * End Codazon_Footer Style 2
  * ============================================ */
 .footer-newsletter-02 .ftop-newsletter .block.block-subscribe .block-content .input-box input {
-  border-color: #282828;
+  border-color: #383e48;
 }
 .footer-newsletter-02 .social a {
   color: white;
@@ -409,6 +578,39 @@ a:hover, a:focus {
 
 /* ============================================ *
  * End Codazon_Footer Style 2
+ * ============================================ */
+/* ============================================ *
+* Codazon_Footer style 4
+* ============================================ */
+.page-footer.cdz-footer-style-04 .top-footer-wrapper {
+  background-color: #45d4f5;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-aboutus .box-content {
+  background-color: #f6f6f6;
+  color: #222429;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-facebook .box-content {
+  background-color: #4f70c2;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets {
+  color: white;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets a {
+  color: white;
+}
+.page-footer.cdz-footer-style-04 .top-footer-wrapper .box-tweets a:hover {
+  color: #0ba5c9;
+}
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe .block-content .actions button.button {
+  font: 500 12px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 400;
+  background: #f14b00;
+  color: white;
+  border-color: #383e48;
+}
+
+/* ============================================ *
+ * End Codazon_Footer style 4
  * ============================================ */
 /* ============================================ *
  * Codazon_Slider
@@ -431,6 +633,12 @@ a:hover, a:focus {
 }
 
 .owl-nav [class*='owl-']:hover {
+  color: white;
+  background-color: #f14b00;
+  border-color: #f14b00;
+}
+
+.cdz-slideshow .owl-carousel .owl-nav [class*='owl-']:hover {
   color: white;
   background-color: #f14b00;
   border-color: #f14b00;
@@ -909,6 +1117,39 @@ fieldset[disabled] .block-search .button {
 .header .block-cart .btn-remove:before, .header .block:not(.block-static-block) .btn-remove:before {
   color: #a1a1a1;
   border: 1px solid #e1e1e1;
+}
+
+.footer-cart .cart-content .summary .subtotal .price {
+  color: #f64400;
+}
+.footer-cart .cart-content button.button {
+  color: white;
+  background-color: #f14b00;
+  border-color: #f14b00;
+}
+.footer-cart .cart-content button.button:hover {
+  color: #282828;
+  background-color: white;
+  border-color: #282828;
+}
+.footer-cart .cart-content .cart-item .btn-remove,
+.footer-cart .cart-content .cart-item .btn-edit {
+  color: black;
+}
+.footer-cart .cart-content .cart-item .btn-remove:hover,
+.footer-cart .cart-content .cart-item .btn-edit:hover {
+  color: #f64400;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-'],
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-] {
+  border: 1px solid black;
+  background: white;
+  color: black;
+}
+.footer-cart .cart-content .cart-items .owl-nav [class*='owl-']:hover,
+.footer-cart .cart-content .cart-items .owl-theme .owl-nav [class*=owl-]:hover {
+  border-color: #f64400;
+  color: #f64400;
 }
 
 /*Logo and Cart area*/
@@ -2098,7 +2339,7 @@ button:hover {
   color: white;
   background-color: #f64400;
   border-color: #282828;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
@@ -2165,7 +2406,7 @@ button:hover {
 }
 .cdz-main-menu .groupmenu li.level0 a.menu-link {
   color: white;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .cdz-main-menu .groupmenu li.level0 a.menu-link:hover,
 .cdz-main-menu .groupmenu li.level0 a.menu-link:active,
@@ -2179,7 +2420,7 @@ button:hover {
   color: white;
   background-color: #f64400;
   border-color: #282828;
-  font: 500 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 12px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .cdz-main-menu .groupmenu-drop {
   background-color: white;
@@ -2217,6 +2458,9 @@ button:hover {
   background: #fc6e00;
   color: white;
 }
+.menu-vertical-title h3 a {
+  color: white;
+}
 .menu-vertical-title h3:before {
   color: white;
 }
@@ -2225,6 +2469,10 @@ button:hover {
   border: 1px solid #f64400;
 }
 .menu-vertical .cdz-nav-wrap li.vertical-level1 a.vertical-level1 {
+  color: white;
+  background-color: #f64400;
+}
+.menu-vertical .cdz-nav-wrap li.vertical-level1.view-all a {
   color: white;
   background-color: #f64400;
 }
@@ -2274,8 +2522,8 @@ button:hover {
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item .switch {
   background: #fc6e00;
   color: white;
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-  font-weight: 700;
+  font: 400 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font-weight: 600;
 }
 .menu-vertical-style02 .nav.nav-tabs .nav-tab-item:hover .switch, .menu-vertical-style02 .nav.nav-tabs .nav-tab-item.active .switch {
   background: #f64400;
@@ -2283,7 +2531,7 @@ button:hover {
 }
 .menu-vertical-style02 .nav-tab-content {
   background: #f64400;
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  font: 400 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *
@@ -2400,6 +2648,10 @@ button:hover {
   }
   .codazon-filter-style-05 .products-grid .product-items .item.product-item .price {
     color: #f64400;
+  }
+  .codazon-filter-style-05 .products-grid .product-items .item.product-item .old-price .price {
+    color: #999999;
+    font-weight: 400;
   }
 }
 @media (max-width: 991px) {
@@ -2692,6 +2944,16 @@ form .legend {
 .nav-tabs .nav-tab-item.active .switch {
   color: #f64400;
 }
+.nav-tabs li a {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+  color: #778591;
+  border-color: #dddddd;
+  background: white;
+}
+.nav-tabs li a:hover {
+  color: #f64400;
+  background: white;
+}
 .nav-tabs .nav-tab-item .switch {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
   color: #778591;
@@ -2701,25 +2963,25 @@ form .legend {
   color: #f64400;
   background: white;
 }
-.nav-tabs .nav-tab-item h2 {
-  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-}
-
+.nav-tabs .nav-tab-item:not(.disabled).active .switch,
 .nav-tabs .nav-tab-item:not(.disabled) .switch:focus,
-.nav-tabs .nav-tab-item:not(.disabled) .switch:hover,
-.nav-tabs active.nav-tab-item:not(.disabled) .switch {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:hover {
   background: transparent;
   border-bottom-color: #282828;
   color: #f64400;
 }
-
-.nav-tabs .nav-tab-item:not(.disabled) .switch:active,
-.nav-tabs .active.nav-tab-item .switch,
-.nav-tabs .active.nav-tab-item .switch:focus,
-.nav-tabs .active.nav-tab-item .switch:hover {
+.nav-tabs .nav-tab-item:not(.disabled) .switch:active {
   color: #f64400;
   background: transparent;
   border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item.active .switch, .nav-tabs .nav-tab-item.active .switch:focus, .nav-tabs .nav-tab-item.active .switch:hover {
+  color: #f64400;
+  background: transparent;
+  border-bottom-color: black;
+}
+.nav-tabs .nav-tab-item h2 {
+  font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 
 /* ============================================ *
@@ -2777,10 +3039,8 @@ form .legend {
 
 /*button show01 Home Sport*/
 .cdz-button-show01 .products-grid .product-item-info:hover {
-  background: #dce2d8;
+  background: #f9f9f9;
 }
 .cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
-  background: #dce2d8;
+  background: #f9f9f9;
 }
-
-/*# sourceMappingURL=sport_style.css.map */

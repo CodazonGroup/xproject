@@ -246,9 +246,8 @@ var ajaxcart = {
     },
 
     addSubmitEvent: function () {
-
+		var _this = this;
         if(typeof productAddToCartForm != 'undefined') {
-            var _this = this;
             productAddToCartForm.submit = function(url){
                 if(this.validator && this.validator.validate()){
                     _this.ajaxCartSubmit(this);
@@ -261,6 +260,21 @@ var ajaxcart = {
                 return false;
             };
         }
+		jQuery('.ajax-update-cart').each(function(){
+			var $updateForm = jQuery(this);
+			var formId = $updateForm.attr('id');
+			var updateForm = new VarienForm(formId);
+			updateForm.submit = function(url){
+				 if(this.validator && this.validator.validate()){
+					_this.ajaxCartSubmit(this);
+				 }
+                return false;
+			}
+			updateForm.form.onsubmit = function() {
+                updateForm.submit();
+                return false;
+            };
+		});
     },
 
     updateBlocks: function(blocks) {
@@ -356,7 +370,7 @@ var ajaxcart = {
             {
                 title: 'Please Select Options', 
                 width: 510,
-                height: viewport.height,
+                //height: viewport.height,
                 afterLoad: function() {
                     _this.extractScripts(block);
                     _this.bindEvents();

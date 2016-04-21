@@ -477,6 +477,7 @@
 			display: inline-block;
 			float: left;
 			overflow:hidden;
+			> .dropdown-toggle{display:none;}
 			a.menu-link {
 				text-transform: uppercase;
 				-moz-transition: all 500ms ease;

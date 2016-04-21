@@ -1,19 +1,19 @@
 <?php
 $_cartQty = $this->getSummaryCount();
 ?>
-<div class="cart-footer-inner animated fadeIn" id="cart-footer-inner">
+<div class="cart-footer-inner" id="cart-footer-inner">
 	<a href="javascript:void(0)" class="cart-trigger">
     	<span class="loading" style="display:none;"><?php echo $this->__('Processing...') ?></span>
     	<span class="amount loaded"><?php echo $this->__('%s item(s) in your cart', ($_cartQty?$_cartQty:0) ) ?></span>
     </a>
-    <div class="cart-content" style="display:none;">
+    <div class="cart-content">
     	<div class="">
     		<div class="cart-icon"></div>
         </div>
-        <div class="cart-items">
+        <div class="cart-items" style="overflow:scroll;">
             <?php $_items = $this->getItems() ?>
-            <?php if(count($_items)): ?>
-                <ul class="cart-products-list">
+            <?php if($count = count($_items)): ?>
+                <ul class="cart-products-list" style="width: <?php echo $count*90 + 10 ?>px">
                 <?php foreach($_items as $_item): ?>
                     <?php echo $this->getItemHtml($_item) ?>
                 <?php endforeach; ?>
@@ -61,11 +61,11 @@ $_cartQty = $this->getSummaryCount();
 		$fCart.toggleClass('active');
 		$fCart.find('.cart-content').slideToggle(300);
 	});
-	if($fCart.hasClass('active')){
-		$fCart.find('.cart-content').show();
+	if(!$fCart.hasClass('active')){
+		$fCart.find('.cart-content').hide();
 	}
 	var $cartItems = $('#cart-footer-inner .cart-products-list');
-	$cartItems.addClass('owl-carousel owl-theme');
+	/*$cartItems.addClass('owl-carousel owl-theme');
 	$cartItems.owlCarousel({
 		dots: false,
 		nav: true,
@@ -78,6 +78,6 @@ $_cartQty = $this->getSummaryCount();
 			1024:{items: 7},
 			1280:{items: 9}	
 		}
-	});
+	});*/
 })(jQuery);
 </script>

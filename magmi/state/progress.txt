@@ -1,0 +1,60 @@
+title:MAGMI by dweeves - version:0.7.21
+startup:Running Magmi Product Import Engine v1.9 by dweeves
+startup:Import Profile:default
+startup:Import Mode:create
+step:step:0.5%
+plugin;Magmi_CSVDataSource;pluginhello:CSV Datasource-1.3.1-Dweeves- 
+plugin;CategoryImporter;pluginhello:On the fly category creator/importer-0.2.5-Dweeves-http://wiki.magmi.org/index.php?title=On_the_fly_category_creator/importer 
+plugin;ImageAttributeItemProcessor;pluginhello:Image attributes processor-1.0.33-Dweeves, Tommy Goode-http://wiki.magmi.org/index.php?title=Image_attributes_processor 
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+startup:Performing Datasouce Lookup...
+lookup:20:0.0049998760223389
+startup:Found 20 records, took 0.0049998760223389 sec
+columns:81
+plugin;Magmi_DefaultAttributeItemProcessor;startup:Standard Attribute Import v1.1 - Newly created items will have default values for columns:store,type
+startup:Ajusted processed columns:84
+itime:1 - 0 - 0
+dbtime:0 - 0 - 0 - 0
+itime:2 - 0.063003063201904 - 0.063003063201904
+dbtime:57 - 0.048001766204834 - 0.048001766204834 - 57
+itime:3 - 0.095005035400391 - 0.032001972198486
+dbtime:106 - 0.064002513885498 - 0.016000747680664 - 49
+itime:4 - 0.12900710105896 - 0.033002138137817
+dbtime:155 - 0.082004547119141 - 0.018002033233643 - 49
+itime:5 - 0.15800905227661 - 0.029001951217651
+dbtime:204 - 0.098005533218384 - 0.016000986099243 - 49
+itime:6 - 0.18500995635986 - 0.027000904083252
+dbtime:253 - 0.11100649833679 - 0.013000965118408 - 49
+itime:7 - 0.21301198005676 - 0.027002096176147
+dbtime:302 - 0.1240074634552 - 0.013000965118408 - 49
+itime:8 - 0.23601293563843 - 0.023000955581665
+dbtime:343 - 0.13500738143921 - 0.010999917984009 - 41
+itime:9 - 0.26901507377625 - 0.032001972198486
+dbtime:384 - 0.15400791168213 - 0.01900053024292 - 41
+itime:10 - 0.29201602935791 - 0.022001028060913
+dbtime:425 - 0.16800904273987 - 0.014001131057739 - 41
+itime:11 - 0.33601903915405 - 0.044003009796143
+dbtime:466 - 0.1830096244812 - 0.015000581741333 - 41
+itime:12 - 0.36802101135254 - 0.031002044677734
+dbtime:507 - 0.20101070404053 - 0.018001079559326 - 41
+itime:13 - 0.38902187347412 - 0.021000862121582
+dbtime:548 - 0.21201181411743 - 0.011001110076904 - 41
+itime:14 - 0.41102290153503 - 0.021000862121582
+dbtime:589 - 0.22301244735718 - 0.011000633239746 - 41
+itime:15 - 0.4360249042511 - 0.024001836776733
+dbtime:630 - 0.23501300811768 - 0.012000560760498 - 41
+itime:16 - 0.45902609825134 - 0.022001028060913
+dbtime:671 - 0.24601364135742 - 0.011000633239746 - 41
+itime:17 - 0.48202705383301 - 0.022001028060913
+dbtime:712 - 0.25701379776001 - 0.011000156402588 - 41
+itime:18 - 0.50602889060974 - 0.023001909255981
+dbtime:753 - 0.27101469039917 - 0.01400089263916 - 41
+itime:19 - 0.53102993965149 - 0.024000883102417
+dbtime:794 - 0.28201460838318 - 0.010999917984009 - 41
+itime:20 - 0.55803203582764 - 0.026001930236816
+dbtime:835 - 0.29601550102234 - 0.01400089263916 - 41
+itime:20 - 0.58403301239014 - 0.0260009765625
+dbtime:877 - 0.30701661109924 - 0.011001110076904 - 42
+info:Skus imported OK:20/20
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+end:Import Ended

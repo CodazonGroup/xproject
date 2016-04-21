@@ -271,6 +271,9 @@
 .page-footer.cdz-footer-style-04 .bottom-footer-wrapper address {
   font-size: 93%;
 }
+.page-footer.cdz-footer-style-04 .bottom-footer-wrapper .footer-box {
+  margin-bottom: 15px;
+}
 .page-footer.cdz-footer-style-04 .bottom-footer-wrapper .block-subscribe {
   margin-left: 20px;
   margin-top: 15px;
@@ -3041,5 +3044,3 @@ form .legend {
 .cdz-button-show01 .products-grid .product-item-info:hover .product-item-details {
   background: #f9f9f9;
 }
-
-/*# sourceMappingURL=style_sport.css.map */
